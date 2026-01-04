@@ -1,0 +1,20 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Jekyll / local Pages builds
+_site/
+.jekyll-cache/
+.sass-cache/
+
+# Misc
+*.tmp
+*.swp
