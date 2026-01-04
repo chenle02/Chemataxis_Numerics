@@ -7,12 +7,17 @@ This site hosts numerical results (figures and videos) accompanying our chemotax
 ## Results
 
 - Browse: `docs/results/`
+- Gallery page: `docs/results/index.md` (auto-generated)
 
 ## Upload workflow
 
 1. Copy new media into `docs/results/` (use subfolders per experiment if you like).
-2. Commit and push to GitHub.
-3. GitHub Pages serves everything under `docs/`.
+2. Regenerate the gallery page:
+   ```bash
+   python scripts/generate_gallery.py
+   ```
+3. Commit and push to GitHub.
+4. GitHub Pages serves everything under `docs/`.
 
 ## Notes on large files
 

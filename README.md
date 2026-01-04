@@ -8,6 +8,7 @@ Numerical results (figures and videos) accompanying our chemotaxis papers.
 
 **Where to put outputs**
 - Put publishable media under `docs/results/` so it is served by Pages.
+- Update the gallery page with `python scripts/generate_gallery.py`.
 - For large binaries (especially `*.mp4`), use Git LFS (see below).
 
 **Git LFS (recommended for videos)**
