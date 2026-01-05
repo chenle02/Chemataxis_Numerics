@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <title>nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta2_gamma3_mu1_nu1_L1_n1</title>
+  <style>
+    body { font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 24px; }
+    code { background: #f4f4f4; padding: 2px 4px; border-radius: 4px; }
+    .top { display: grid; gap: 10px; margin-bottom: 16px; }
+    .filters input { width: 100%; padding: 10px 12px; font-size: 14px; }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .card { border: 1px solid #ddd; border-radius: 12px; padding: 10px; background: #fff; }
+    .card img { width: 100%; height: auto; border-radius: 8px; border: 1px solid #eee; }
+    .meta { color: #444; font-size: 12px; margin-bottom: 8px; }
+    .links { margin-top: 8px; font-size: 12px; }
+    .hint { color: #666; font-size: 13px; }
+    @media (max-width: 1100px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 800px) { .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class='top'>
+    <h1>nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta2_gamma3_mu1_nu1_L1_n1</h1>
+    <div class='hint'>Generated: <code>2026-01-05T15:40:29</code> &nbsp;•&nbsp; Folder: <code>/home/lzc0090/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta2_gamma3_mu1_nu1_L1_n1</code> &nbsp;•&nbsp; Panels: <code>0</code></div>
+    <div class='filters'>
+      <input id='q' placeholder='Filter by chi/eps/sign/n0/N/T/path…' />
+    </div>
+  </div>
+  <div id='grid' class='grid'>
+  </div>
+  <script>
+    const q = document.getElementById('q');
+    const cards = Array.from(document.querySelectorAll('.card'));
+    function apply() {
+      const term = (q.value || '').trim().toLowerCase();
+      for (const c of cards) {
+        const hay = (c.dataset.search || '').toLowerCase();
+        c.style.display = (!term || hay.includes(term)) ? '' : 'none';
+      }
+    }
+    q.addEventListener('input', apply);
+  </script>
+</body>
+</html>
