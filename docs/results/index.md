@@ -67,7 +67,7 @@ This page links to per-configuration galleries under `docs/results/`.
         <li class='entry'><code>quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1</code> — <a href='quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/fancy.html'>gallery</a></li>
         <li class='entry'><code>quasilinear/subcritical/a1_b1_alpha1_m1_beta1_gamma1_mu1_nu1_L1_n1</code> — <a href='quasilinear/subcritical/a1_b1_alpha1_m1_beta1_gamma1_mu1_nu1_L1_n1/fancy.html'>gallery</a></li>
         <li class='entry'><code>quasilinear/subcritical/a1_b1_alpha1_m1_beta2_gamma1_mu1_nu1_L1_n1</code> — <a href='quasilinear/subcritical/a1_b1_alpha1_m1_beta2_gamma1_mu1_nu1_L1_n1/fancy.html'>gallery</a></li>
-        <li class='entry missing'><code>quasilinear/subcritical/a1_b1_alpha1_m1_beta3_gamma1_mu1_nu1_L1_n1</code> — missing <code>fancy.html</code></li>
+        <li class='entry'><code>quasilinear/subcritical/a1_b1_alpha1_m1_beta3_gamma1_mu1_nu1_L1_n1</code> — <a href='quasilinear/subcritical/a1_b1_alpha1_m1_beta3_gamma1_mu1_nu1_L1_n1/fancy.html'>gallery</a></li>
       </ul>
     </details>
   </details>
