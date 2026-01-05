@@ -53,7 +53,7 @@ This page links to per-configuration galleries under `docs/results/`.
     <details class='regime' id='quasilinear-supercritical'>
       <summary>supercritical</summary>
       <ul>
-        <li class='entry missing'><code>quasilinear/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1</code> — missing <code>fancy.html</code></li>
+        <li class='entry'><code>quasilinear/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1</code> — <a href='quasilinear/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1/fancy.html'>gallery</a></li>
         <li class='entry missing'><code>quasilinear/supercritical/a10_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1</code> — missing <code>fancy.html</code></li>
         <li class='entry missing'><code>quasilinear/supercritical/a10_b1_alpha1_m1_beta1_gamma1_mu1_nu1_L1_n1</code> — missing <code>fancy.html</code></li>
       </ul>
