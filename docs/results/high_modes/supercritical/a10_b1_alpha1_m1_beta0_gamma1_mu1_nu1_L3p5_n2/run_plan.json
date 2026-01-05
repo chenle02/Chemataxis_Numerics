@@ -1,0 +1,80 @@
+{
+  "computed_classification": "supercritical",
+  "declared_regime": "supercritical",
+  "meshsize": 30,
+  "runs": [
+    {
+      "chi": 1.7498946108916738,
+      "eigen_mode_n": 2,
+      "epsilon": 0.001,
+      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/high_modes/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L3p5_n2/runs/chi1-7499_ep0-0010_p"
+    },
+    {
+      "chi": 1.7498946108916738,
+      "eigen_mode_n": 2,
+      "epsilon": -0.001,
+      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/high_modes/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L3p5_n2/runs/chi1-7499_ep0-0010_m"
+    },
+    {
+      "chi": 1.767220300108423,
+      "eigen_mode_n": 2,
+      "epsilon": 0.001,
+      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/high_modes/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L3p5_n2/runs/chi1-7672_ep0-0010_p"
+    },
+    {
+      "chi": 1.767220300108423,
+      "eigen_mode_n": 2,
+      "epsilon": -0.001,
+      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/high_modes/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L3p5_n2/runs/chi1-7672_ep0-0010_m"
+    },
+    {
+      "chi": 1.8191973677586708,
+      "eigen_mode_n": 2,
+      "epsilon": 0.001,
+      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/high_modes/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L3p5_n2/runs/chi1-8192_ep0-0010_p"
+    },
+    {
+      "chi": 1.8191973677586708,
+      "eigen_mode_n": 2,
+      "epsilon": -0.001,
+      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/high_modes/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L3p5_n2/runs/chi1-8192_ep0-0010_m"
+    },
+    {
+      "chi": 1.7152040616710227,
+      "eigen_mode_n": 2,
+      "epsilon": 0.001,
+      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/high_modes/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L3p5_n2/runs/chi1-7152_ep0-0010_p"
+    },
+    {
+      "chi": 1.7152040616710227,
+      "eigen_mode_n": 2,
+      "epsilon": -0.001,
+      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/high_modes/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L3p5_n2/runs/chi1-7152_ep0-0010_m"
+    },
+    {
+      "chi": 1.6978787681187901,
+      "eigen_mode_n": 2,
+      "epsilon": 0.001,
+      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/high_modes/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L3p5_n2/runs/chi1-6979_ep0-0010_p"
+    },
+    {
+      "chi": 1.6978787681187901,
+      "eigen_mode_n": 2,
+      "epsilon": -0.001,
+      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/high_modes/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L3p5_n2/runs/chi1-6979_ep0-0010_m"
+    },
+    {
+      "chi": 1.6459028874620925,
+      "eigen_mode_n": 2,
+      "epsilon": 0.001,
+      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/high_modes/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L3p5_n2/runs/chi1-6459_ep0-0010_p"
+    },
+    {
+      "chi": 1.6459028874620925,
+      "eigen_mode_n": 2,
+      "epsilon": -0.001,
+      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/high_modes/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L3p5_n2/runs/chi1-6459_ep0-0010_m"
+    }
+  ],
+  "time": 100.0
+}

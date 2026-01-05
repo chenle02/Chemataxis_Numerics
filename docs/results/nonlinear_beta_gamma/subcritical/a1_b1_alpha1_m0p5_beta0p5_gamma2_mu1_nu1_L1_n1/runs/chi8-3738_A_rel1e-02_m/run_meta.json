@@ -1,0 +1,9 @@
+{
+  "chi": 8.373828718359453,
+  "config": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma2_mu1_nu1_L1_n1/config.yaml",
+  "eigen_mode_n": 1,
+  "epsilon": 0.21510005689341555,
+  "folder": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma2_mu1_nu1_L1_n1",
+  "meshsize": 30,
+  "time": 100.0
+}

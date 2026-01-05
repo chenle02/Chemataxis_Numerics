@@ -1,0 +1,9 @@
+{
+  "chi": 1.6458327555752676,
+  "config": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/high_modes/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L5p3_n3/config.yaml",
+  "eigen_mode_n": 3,
+  "epsilon": -0.001,
+  "folder": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/high_modes/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L5p3_n3",
+  "meshsize": 30,
+  "time": 100.0
+}
