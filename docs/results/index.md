@@ -28,7 +28,7 @@ This page links to per-configuration galleries under `docs/results/`.
       <summary>supercritical</summary>
       <ul>
         <li class='entry'><code>nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta0p5_gamma2_mu1_nu1_L1_n1</code> — <a href='nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta0p5_gamma2_mu1_nu1_L1_n1/fancy.html'>gallery</a></li>
-        <li class='entry missing'><code>nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta0p5_gamma3_mu1_nu1_L1_n1</code> — missing <code>fancy.html</code></li>
+        <li class='entry'><code>nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta0p5_gamma3_mu1_nu1_L1_n1</code> — <a href='nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta0p5_gamma3_mu1_nu1_L1_n1/fancy.html'>gallery</a></li>
         <li class='entry missing'><code>nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1</code> — missing <code>fancy.html</code></li>
         <li class='entry missing'><code>nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma3_mu1_nu1_L1_n1</code> — missing <code>fancy.html</code></li>
       </ul>
