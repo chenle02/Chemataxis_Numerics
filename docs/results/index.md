@@ -61,7 +61,7 @@ This page links to per-configuration galleries under `docs/results/`.
     <details class='regime' id='quasilinear-subcritical'>
       <summary>subcritical</summary>
       <ul>
-        <li class='entry missing'><code>quasilinear/subcritical/a10_b1_alpha1_m1_beta1p5_gamma1_mu1_nu1_L1_n1</code> — missing <code>fancy.html</code></li>
+        <li class='entry'><code>quasilinear/subcritical/a10_b1_alpha1_m1_beta1p5_gamma1_mu1_nu1_L1_n1</code> — <a href='quasilinear/subcritical/a10_b1_alpha1_m1_beta1p5_gamma1_mu1_nu1_L1_n1/fancy.html'>gallery</a></li>
         <li class='entry missing'><code>quasilinear/subcritical/a10_b1_alpha1_m1_beta2_gamma1_mu1_nu1_L1_n1</code> — missing <code>fancy.html</code></li>
         <li class='entry missing'><code>quasilinear/subcritical/a1_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1</code> — missing <code>fancy.html</code></li>
         <li class='entry missing'><code>quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1</code> — missing <code>fancy.html</code></li>
