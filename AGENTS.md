@@ -14,8 +14,8 @@ We expect **hundreds/thousands** of files; do **not** put everything in one fold
 
 - Root for results: `docs/results/`
 - Use **subfolders** where the folder path carries most of the meaning, e.g.
-  - `docs/results/paper2/subcritical/m05_b1_g2/chi_11.9700/N50/T100/eps_1e-3/`
-  - `docs/results/paper2/supercritical/beta0/chi_2.1900/N50/T100/eps_1e-3/`
+  - `docs/results/subcritical/m05_b1_g2/chi_11.9700/N50/T100/eps_1e-3/`
+  - `docs/results/supercritical/beta0/chi_2.1900/N50/T100/eps_1e-3/`
 
 Filenames inside a run folder can be simple, e.g. `summary6.png`, `summary6.jpeg`, `movie.mp4`, etc.
 
