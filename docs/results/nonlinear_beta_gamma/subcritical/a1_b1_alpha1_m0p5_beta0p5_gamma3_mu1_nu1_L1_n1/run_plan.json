@@ -7,181 +7,181 @@
       "chi": 5.699579923082502,
       "eigen_mode_n": 1,
       "epsilon": 0.001,
-      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-6996_ep0-0010_p"
+      "run_dir": "/home/lzc0090/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-6996_ep0-0010_p"
     },
     {
       "chi": 5.699579923082502,
       "eigen_mode_n": 1,
       "epsilon": -0.001,
-      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-6996_ep0-0010_m"
+      "run_dir": "/home/lzc0090/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-6996_ep0-0010_m"
     },
     {
       "chi": 5.925305860630324,
       "eigen_mode_n": 1,
       "epsilon": 0.001,
-      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-9253_ep0-0010_p"
+      "run_dir": "/home/lzc0090/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-9253_ep0-0010_p"
     },
     {
       "chi": 5.925305860630324,
       "eigen_mode_n": 1,
       "epsilon": -0.001,
-      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-9253_ep0-0010_m"
+      "run_dir": "/home/lzc0090/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-9253_ep0-0010_m"
     },
     {
       "chi": 6.207463282565102,
       "eigen_mode_n": 1,
       "epsilon": 0.001,
-      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi6-2075_ep0-0010_p"
+      "run_dir": "/home/lzc0090/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi6-2075_ep0-0010_p"
     },
     {
       "chi": 6.207463282565102,
       "eigen_mode_n": 1,
       "epsilon": -0.001,
-      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi6-2075_ep0-0010_m"
+      "run_dir": "/home/lzc0090/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi6-2075_ep0-0010_m"
     },
     {
       "chi": 5.582552478906302,
       "eigen_mode_n": 1,
       "epsilon": 0.23033898850128937,
-      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-5826_A_rel1e-04_m"
+      "run_dir": "/home/lzc0090/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-5826_A_rel1e-04_m"
     },
     {
       "chi": 5.582552478906302,
       "eigen_mode_n": 1,
       "epsilon": 0.23038506090623012,
-      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-5826_A_rel1e-04_p"
+      "run_dir": "/home/lzc0090/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-5826_A_rel1e-04_p"
     },
     {
       "chi": 5.582552478906302,
       "eigen_mode_n": 1,
       "epsilon": 0.230131662679056,
-      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-5826_A_rel1e-03_m"
+      "run_dir": "/home/lzc0090/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-5826_A_rel1e-03_m"
     },
     {
       "chi": 5.582552478906302,
       "eigen_mode_n": 1,
       "epsilon": 0.23059238672846347,
-      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-5826_A_rel1e-03_p"
+      "run_dir": "/home/lzc0090/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-5826_A_rel1e-03_p"
     },
     {
       "chi": 5.582552478906302,
       "eigen_mode_n": 1,
       "epsilon": 0.22805840445672215,
-      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-5826_A_rel1e-02_m"
+      "run_dir": "/home/lzc0090/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-5826_A_rel1e-02_m"
     },
     {
       "chi": 5.582552478906302,
       "eigen_mode_n": 1,
       "epsilon": 0.23266564495079733,
-      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-5826_A_rel1e-02_p"
+      "run_dir": "/home/lzc0090/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-5826_A_rel1e-02_p"
     },
     {
       "chi": 5.582552478906302,
       "eigen_mode_n": 1,
       "epsilon": 0.20732582223338378,
-      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-5826_A_rel1e-01_m"
+      "run_dir": "/home/lzc0090/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-5826_A_rel1e-01_m"
     },
     {
       "chi": 5.582552478906302,
       "eigen_mode_n": 1,
       "epsilon": 0.25339822717413574,
-      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-5826_A_rel1e-01_p"
+      "run_dir": "/home/lzc0090/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-5826_A_rel1e-01_p"
     },
     {
       "chi": 5.526163059927451,
       "eigen_mode_n": 1,
       "epsilon": 0.3200452705144178,
-      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-5262_A_rel1e-04_m"
+      "run_dir": "/home/lzc0090/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-5262_A_rel1e-04_m"
     },
     {
       "chi": 5.526163059927451,
       "eigen_mode_n": 1,
       "epsilon": 0.32010928597006627,
-      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-5262_A_rel1e-04_p"
+      "run_dir": "/home/lzc0090/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-5262_A_rel1e-04_p"
     },
     {
       "chi": 5.526163059927451,
       "eigen_mode_n": 1,
       "epsilon": 0.3197572009639998,
-      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-5262_A_rel1e-03_m"
+      "run_dir": "/home/lzc0090/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-5262_A_rel1e-03_m"
     },
     {
       "chi": 5.526163059927451,
       "eigen_mode_n": 1,
       "epsilon": 0.3203973555204842,
-      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-5262_A_rel1e-03_p"
+      "run_dir": "/home/lzc0090/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-5262_A_rel1e-03_p"
     },
     {
       "chi": 5.526163059927451,
       "eigen_mode_n": 1,
       "epsilon": 0.3168765054598196,
-      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-5262_A_rel1e-02_m"
+      "run_dir": "/home/lzc0090/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-5262_A_rel1e-02_m"
     },
     {
       "chi": 5.526163059927451,
       "eigen_mode_n": 1,
       "epsilon": 0.32327805102466445,
-      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-5262_A_rel1e-02_p"
+      "run_dir": "/home/lzc0090/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-5262_A_rel1e-02_p"
     },
     {
       "chi": 5.526163059927451,
       "eigen_mode_n": 1,
       "epsilon": 0.28806955041801785,
-      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-5262_A_rel1e-01_m"
+      "run_dir": "/home/lzc0090/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-5262_A_rel1e-01_m"
     },
     {
       "chi": 5.526163059927451,
       "eigen_mode_n": 1,
       "epsilon": 0.35208500606646626,
-      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-5262_A_rel1e-01_p"
+      "run_dir": "/home/lzc0090/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-5262_A_rel1e-01_p"
     },
     {
       "chi": 5.356994802990896,
       "eigen_mode_n": 1,
       "epsilon": 0.5005474521393528,
-      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-3570_A_rel1e-04_m"
+      "run_dir": "/home/lzc0090/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-3570_A_rel1e-04_m"
     },
     {
       "chi": 5.356994802990896,
       "eigen_mode_n": 1,
       "epsilon": 0.500647571641731,
-      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-3570_A_rel1e-04_p"
+      "run_dir": "/home/lzc0090/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-3570_A_rel1e-04_p"
     },
     {
       "chi": 5.356994802990896,
       "eigen_mode_n": 1,
       "epsilon": 0.5000969143786513,
-      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-3570_A_rel1e-03_m"
+      "run_dir": "/home/lzc0090/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-3570_A_rel1e-03_m"
     },
     {
       "chi": 5.356994802990896,
       "eigen_mode_n": 1,
       "epsilon": 0.5010981094024324,
-      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-3570_A_rel1e-03_p"
+      "run_dir": "/home/lzc0090/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-3570_A_rel1e-03_p"
     },
     {
       "chi": 5.356994802990896,
       "eigen_mode_n": 1,
       "epsilon": 0.4955915367716365,
-      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-3570_A_rel1e-02_m"
+      "run_dir": "/home/lzc0090/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-3570_A_rel1e-02_m"
     },
     {
       "chi": 5.356994802990896,
       "eigen_mode_n": 1,
       "epsilon": 0.5056034870094473,
-      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-3570_A_rel1e-02_p"
+      "run_dir": "/home/lzc0090/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-3570_A_rel1e-02_p"
     },
     {
       "chi": 5.356994802990896,
       "eigen_mode_n": 1,
       "epsilon": 0.4505377607014877,
-      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-3570_A_rel1e-01_m"
+      "run_dir": "/home/lzc0090/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-3570_A_rel1e-01_m"
     },
     {
       "chi": 5.356994802990896,
       "eigen_mode_n": 1,
       "epsilon": 0.5506572630795962,
-      "run_dir": "/home/lechen/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-3570_A_rel1e-01_p"
+      "run_dir": "/home/lzc0090/Dropbox/workspace/svn/Services/Ian/Chemataxis_Numerics/docs/results/nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta0p5_gamma3_mu1_nu1_L1_n1/runs/chi5-3570_A_rel1e-01_p"
     }
   ],
   "time": 100.0
