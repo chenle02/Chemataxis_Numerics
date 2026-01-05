@@ -2,10 +2,10 @@
   "chi": 7.894921428328833,
   "config": "nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta1_gamma3_mu1_nu1_L1_n1/config.yaml",
   "eigen_mode_n": 1,
-  "epsilon": 0.13533378517062417,
+  "epsilon": 0.12059446203322945,
   "folder": "nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta1_gamma3_mu1_nu1_L1_n1",
   "meshsize": 30,
   "path_base": "results_root",
-  "run_dir": "nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta1_gamma3_mu1_nu1_L1_n1/runs/chi7-8949_A_rel1e-02_p",
+  "run_dir": "nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m0p5_beta1_gamma3_mu1_nu1_L1_n1/runs/chi7-8949_A_rel1e-01_m",
   "time": 100.0
 }
