@@ -22,7 +22,7 @@ Each entry links to the per-configuration gallery `fancy.html`.
 - `high_modes/subcritical/a1_b1_alpha1_m0p5_beta1_gamma2_mu1_nu1_L5p3_n2` — [gallery](high_modes/subcritical/a1_b1_alpha1_m0p5_beta1_gamma2_mu1_nu1_L5p3_n2/fancy.html)
 - `high_modes/subcritical/a1_b1_alpha1_m0p5_beta1_gamma2_mu1_nu1_L8_n3` — [gallery](high_modes/subcritical/a1_b1_alpha1_m0p5_beta1_gamma2_mu1_nu1_L8_n3/fancy.html)
 - `high_modes/subcritical/a1_b1_alpha1_m0p5_beta1_gamma3_mu1_nu1_L5p3_n2` — [gallery](high_modes/subcritical/a1_b1_alpha1_m0p5_beta1_gamma3_mu1_nu1_L5p3_n2/fancy.html)
-- `high_modes/subcritical/a1_b1_alpha1_m0p5_beta1_gamma3_mu1_nu1_L8_n3` — missing `fancy.html`
+- `high_modes/subcritical/a1_b1_alpha1_m0p5_beta1_gamma3_mu1_nu1_L8_n3` — [gallery](high_modes/subcritical/a1_b1_alpha1_m0p5_beta1_gamma3_mu1_nu1_L8_n3/fancy.html)
 
 ## nonlinear_beta_gamma
 
