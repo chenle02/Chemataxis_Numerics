@@ -1,0 +1,81 @@
+{
+  "computed_classification": "supercritical",
+  "declared_regime": "supercritical",
+  "meshsize": 30,
+  "path_base": "results_root",
+  "runs": [
+    {
+      "chi": 4.158123597710656,
+      "eigen_mode_n": 2,
+      "epsilon": 0.001,
+      "run_dir": "high_modes/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L5p3_n2/runs/chi4-1581_ep0-0010_p"
+    },
+    {
+      "chi": 4.158123597710656,
+      "eigen_mode_n": 2,
+      "epsilon": -0.001,
+      "run_dir": "high_modes/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L5p3_n2/runs/chi4-1581_ep0-0010_m"
+    },
+    {
+      "chi": 4.199293138282048,
+      "eigen_mode_n": 2,
+      "epsilon": 0.001,
+      "run_dir": "high_modes/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L5p3_n2/runs/chi4-1993_ep0-0010_p"
+    },
+    {
+      "chi": 4.199293138282048,
+      "eigen_mode_n": 2,
+      "epsilon": -0.001,
+      "run_dir": "high_modes/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L5p3_n2/runs/chi4-1993_ep0-0010_m"
+    },
+    {
+      "chi": 4.322801759996226,
+      "eigen_mode_n": 2,
+      "epsilon": 0.001,
+      "run_dir": "high_modes/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L5p3_n2/runs/chi4-3228_ep0-0010_p"
+    },
+    {
+      "chi": 4.322801759996226,
+      "eigen_mode_n": 2,
+      "epsilon": -0.001,
+      "run_dir": "high_modes/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L5p3_n2/runs/chi4-3228_ep0-0010_m"
+    },
+    {
+      "chi": 4.073286488298542,
+      "eigen_mode_n": 2,
+      "epsilon": 0.001,
+      "run_dir": "high_modes/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L5p3_n2/runs/chi4-0733_ep0-0010_p"
+    },
+    {
+      "chi": 4.073286488298542,
+      "eigen_mode_n": 2,
+      "epsilon": -0.001,
+      "run_dir": "high_modes/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L5p3_n2/runs/chi4-0733_ep0-0010_m"
+    },
+    {
+      "chi": 4.0321421803359305,
+      "eigen_mode_n": 2,
+      "epsilon": 0.001,
+      "run_dir": "high_modes/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L5p3_n2/runs/chi4-0321_ep0-0010_p"
+    },
+    {
+      "chi": 4.0321421803359305,
+      "eigen_mode_n": 2,
+      "epsilon": -0.001,
+      "run_dir": "high_modes/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L5p3_n2/runs/chi4-0321_ep0-0010_m"
+    },
+    {
+      "chi": 3.9087092564480956,
+      "eigen_mode_n": 2,
+      "epsilon": 0.001,
+      "run_dir": "high_modes/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L5p3_n2/runs/chi3-9087_ep0-0010_p"
+    },
+    {
+      "chi": 3.9087092564480956,
+      "eigen_mode_n": 2,
+      "epsilon": -0.001,
+      "run_dir": "high_modes/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L5p3_n2/runs/chi3-9087_ep0-0010_m"
+    }
+  ],
+  "time": 100.0
+}
