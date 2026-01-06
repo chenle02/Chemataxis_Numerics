@@ -1,0 +1,11 @@
+{
+  "chi": 18.622389847695306,
+  "config": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/config.yaml",
+  "eigen_mode_n": 1,
+  "epsilon": 0.001,
+  "folder": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1",
+  "meshsize": 30,
+  "path_base": "results_root",
+  "run_dir": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi18-6224_ep0-0010_p",
+  "time": 100.0
+}

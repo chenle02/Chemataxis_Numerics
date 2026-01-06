@@ -1,0 +1,189 @@
+{
+  "computed_classification": "subcritical",
+  "declared_regime": "subcritical",
+  "meshsize": 30,
+  "path_base": "results_root",
+  "runs": [
+    {
+      "chi": 17.098739769247505,
+      "eigen_mode_n": 1,
+      "epsilon": 0.001,
+      "run_dir": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi17-0987_ep0-0010_p"
+    },
+    {
+      "chi": 17.098739769247505,
+      "eigen_mode_n": 1,
+      "epsilon": -0.001,
+      "run_dir": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi17-0987_ep0-0010_m"
+    },
+    {
+      "chi": 17.775917581890972,
+      "eigen_mode_n": 1,
+      "epsilon": 0.001,
+      "run_dir": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi17-7759_ep0-0010_p"
+    },
+    {
+      "chi": 17.775917581890972,
+      "eigen_mode_n": 1,
+      "epsilon": -0.001,
+      "run_dir": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi17-7759_ep0-0010_m"
+    },
+    {
+      "chi": 18.622389847695306,
+      "eigen_mode_n": 1,
+      "epsilon": 0.001,
+      "run_dir": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi18-6224_ep0-0010_p"
+    },
+    {
+      "chi": 18.622389847695306,
+      "eigen_mode_n": 1,
+      "epsilon": -0.001,
+      "run_dir": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi18-6224_ep0-0010_m"
+    },
+    {
+      "chi": 16.747657436718907,
+      "eigen_mode_n": 1,
+      "epsilon": 0.539682423586628,
+      "run_dir": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi16-7477_A_rel1e-04_m"
+    },
+    {
+      "chi": 16.747657436718907,
+      "eigen_mode_n": 1,
+      "epsilon": 0.5397903708660732,
+      "run_dir": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi16-7477_A_rel1e-04_p"
+    },
+    {
+      "chi": 16.747657436718907,
+      "eigen_mode_n": 1,
+      "epsilon": 0.5391966608291242,
+      "run_dir": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi16-7477_A_rel1e-03_m"
+    },
+    {
+      "chi": 16.747657436718907,
+      "eigen_mode_n": 1,
+      "epsilon": 0.5402761336235768,
+      "run_dir": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi16-7477_A_rel1e-03_p"
+    },
+    {
+      "chi": 16.747657436718907,
+      "eigen_mode_n": 1,
+      "epsilon": 0.534339033254087,
+      "run_dir": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi16-7477_A_rel1e-02_m"
+    },
+    {
+      "chi": 16.747657436718907,
+      "eigen_mode_n": 1,
+      "epsilon": 0.5451337611986141,
+      "run_dir": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi16-7477_A_rel1e-02_p"
+    },
+    {
+      "chi": 16.747657436718907,
+      "eigen_mode_n": 1,
+      "epsilon": 0.48576275750371556,
+      "run_dir": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi16-7477_A_rel1e-01_m"
+    },
+    {
+      "chi": 16.747657436718907,
+      "eigen_mode_n": 1,
+      "epsilon": 0.5937100369489857,
+      "run_dir": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi16-7477_A_rel1e-01_p"
+    },
+    {
+      "chi": 16.578489179782352,
+      "eigen_mode_n": 1,
+      "epsilon": 0.7498635310178605,
+      "run_dir": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi16-5785_A_rel1e-04_m"
+    },
+    {
+      "chi": 16.578489179782352,
+      "eigen_mode_n": 1,
+      "epsilon": 0.7500135187228345,
+      "run_dir": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi16-5785_A_rel1e-04_p"
+    },
+    {
+      "chi": 16.578489179782352,
+      "eigen_mode_n": 1,
+      "epsilon": 0.7491885863454771,
+      "run_dir": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi16-5785_A_rel1e-03_m"
+    },
+    {
+      "chi": 16.578489179782352,
+      "eigen_mode_n": 1,
+      "epsilon": 0.7506884633952178,
+      "run_dir": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi16-5785_A_rel1e-03_p"
+    },
+    {
+      "chi": 16.578489179782352,
+      "eigen_mode_n": 1,
+      "epsilon": 0.742439139621644,
+      "run_dir": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi16-5785_A_rel1e-02_m"
+    },
+    {
+      "chi": 16.578489179782352,
+      "eigen_mode_n": 1,
+      "epsilon": 0.757437910119051,
+      "run_dir": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi16-5785_A_rel1e-02_p"
+    },
+    {
+      "chi": 16.578489179782352,
+      "eigen_mode_n": 1,
+      "epsilon": 0.6749446723833128,
+      "run_dir": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi16-5785_A_rel1e-01_m"
+    },
+    {
+      "chi": 16.578489179782352,
+      "eigen_mode_n": 1,
+      "epsilon": 0.8249323773573823,
+      "run_dir": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi16-5785_A_rel1e-01_p"
+    },
+    {
+      "chi": 16.070984408972688,
+      "eigen_mode_n": 1,
+      "epsilon": 1.1727787112739068,
+      "run_dir": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi16-0710_A_rel1e-04_m"
+    },
+    {
+      "chi": 16.070984408972688,
+      "eigen_mode_n": 1,
+      "epsilon": 1.1730132904740815,
+      "run_dir": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi16-0710_A_rel1e-04_p"
+    },
+    {
+      "chi": 16.070984408972688,
+      "eigen_mode_n": 1,
+      "epsilon": 1.1717231048731203,
+      "run_dir": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi16-0710_A_rel1e-03_m"
+    },
+    {
+      "chi": 16.070984408972688,
+      "eigen_mode_n": 1,
+      "epsilon": 1.174068896874868,
+      "run_dir": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi16-0710_A_rel1e-03_p"
+    },
+    {
+      "chi": 16.070984408972688,
+      "eigen_mode_n": 1,
+      "epsilon": 1.1611670408652541,
+      "run_dir": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi16-0710_A_rel1e-02_m"
+    },
+    {
+      "chi": 16.070984408972688,
+      "eigen_mode_n": 1,
+      "epsilon": 1.1846249608827342,
+      "run_dir": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi16-0710_A_rel1e-02_p"
+    },
+    {
+      "chi": 16.070984408972688,
+      "eigen_mode_n": 1,
+      "epsilon": 1.0556064007865948,
+      "run_dir": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi16-0710_A_rel1e-01_m"
+    },
+    {
+      "chi": 16.070984408972688,
+      "eigen_mode_n": 1,
+      "epsilon": 1.2901856009613937,
+      "run_dir": "quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi16-0710_A_rel1e-01_p"
+    }
+  ],
+  "time": 100.0
+}
