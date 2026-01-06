@@ -1,6 +1,4 @@
----
-title: Results
----
+# Results
 
 This page links to per-configuration galleries under `docs/results/`.
 
