@@ -1,0 +1,43 @@
+# Paper II: Table~\ref{Tb:singular-beta-gamma-high-modes} (higher-mode nonlinear examples).
+# Type: subcritical (as reported in the table).
+# Domain/mode: L=5.3, n0=2 (paper indexing); set eigen_index=3 to seed \phi_{2}.
+
+ui:
+  confirm: "no"
+  verbose: "no"
+  generate_video: "no"
+
+model:
+  a: 1.0
+  b: 1.0
+  c: 1.0
+  alpha: 1.0
+  m: 0.5
+  beta: 1.0
+  mu: 1.0
+  nu: 1.0
+  gamma: 3.0
+
+grid:
+  L: 5.3
+  meshsize: 30
+  time: 100.0
+  eigen_index: 3
+  epsilon: 0.001
+  epsilon2: 0.0
+
+stopping:
+  until_converged: "yes"
+  convergence_tol: 1.0e-5
+  convergence_window_time: 5.0
+  convergence_min_time: 10.0
+  max_saved_frames: 2000
+
+output:
+  output_dir: "."
+  basename: ""
+  save_data: "yes"
+  data_format: "npz"
+  save_max_frames: 2000
+  save_summary6: "yes"
+  save_static_plots: "no"
