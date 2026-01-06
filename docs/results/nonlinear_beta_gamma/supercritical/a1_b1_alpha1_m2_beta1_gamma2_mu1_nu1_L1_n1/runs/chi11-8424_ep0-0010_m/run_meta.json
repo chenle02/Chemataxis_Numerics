@@ -1,0 +1,11 @@
+{
+  "chi": 11.84238214249325,
+  "config": "nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1/config.yaml",
+  "eigen_mode_n": 1,
+  "epsilon": -0.001,
+  "folder": "nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1",
+  "meshsize": 30,
+  "path_base": "results_root",
+  "run_dir": "nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1/runs/chi11-8424_ep0-0010_m",
+  "time": 100.0
+}
