@@ -1,0 +1,11 @@
+{
+  "chi": 2.6880947868906198,
+  "config": "high_modes/subcritical/a1_b1_alpha1_m0p5_beta1_gamma3_mu1_nu1_L5p3_n2/config.yaml",
+  "eigen_mode_n": 2,
+  "epsilon": 0.14014001492607855,
+  "folder": "high_modes/subcritical/a1_b1_alpha1_m0p5_beta1_gamma3_mu1_nu1_L5p3_n2",
+  "meshsize": 30,
+  "path_base": "results_root",
+  "run_dir": "high_modes/subcritical/a1_b1_alpha1_m0p5_beta1_gamma3_mu1_nu1_L5p3_n2/runs/chi2-6881_A_rel1e-03_p",
+  "time": 100.0
+}
