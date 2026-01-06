@@ -1,0 +1,11 @@
+{
+  "chi": 23.445524241703808,
+  "config": "nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m2_beta2_gamma2_mu1_nu1_L1_n1/config.yaml",
+  "eigen_mode_n": 1,
+  "epsilon": 1.391078004197859,
+  "folder": "nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m2_beta2_gamma2_mu1_nu1_L1_n1",
+  "meshsize": 30,
+  "path_base": "results_root",
+  "run_dir": "nonlinear_beta_gamma/subcritical/a1_b1_alpha1_m2_beta2_gamma2_mu1_nu1_L1_n1/runs/chi23-4455_A_rel1e-04_p",
+  "time": 100.0
+}
