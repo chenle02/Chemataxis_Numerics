@@ -1,0 +1,13 @@
+{
+  "L": 5.3,
+  "chi": 2.7995287588546987,
+  "config": "high_modes/supercritical/a1_b1_alpha1_m2_beta1_gamma3_mu1_nu1_L5p3_n2/config.yaml",
+  "eigen_mode_n": 2,
+  "epsilon": -0.001,
+  "folder": "high_modes/supercritical/a1_b1_alpha1_m2_beta1_gamma3_mu1_nu1_L5p3_n2",
+  "mesh_per_unit": 30.0,
+  "meshsize_N": 159,
+  "path_base": "results_root",
+  "run_dir": "high_modes/supercritical/a1_b1_alpha1_m2_beta1_gamma3_mu1_nu1_L5p3_n2/runs/chi2-7995_ep0-0010_m",
+  "time": 100.0
+}
