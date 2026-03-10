@@ -1,0 +1,12 @@
+{
+  "chi": 10.7408,
+  "config": "minimal_model/supercritical/u1_beta1_m2_gamma2_mu1_nu1_L1_n1/config.yaml",
+  "eigen_mode_n": 1,
+  "epsilon": -0.001,
+  "folder": "minimal_model/supercritical/u1_beta1_m2_gamma2_mu1_nu1_L1_n1",
+  "meshsize": 20,
+  "meshsize_N": 20,
+  "path_base": "results_root",
+  "run_dir": "minimal_model/supercritical/u1_beta1_m2_gamma2_mu1_nu1_L1_n1/runs/chi10-7408_ep1e-03_m",
+  "time": 60.0
+}

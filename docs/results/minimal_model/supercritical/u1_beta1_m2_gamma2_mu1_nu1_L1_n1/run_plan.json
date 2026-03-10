@@ -1,0 +1,31 @@
+{
+  "case": "u1_beta1_m2_gamma2_mu1_nu1_L1_n1",
+  "path_base": "results_root",
+  "regime": "supercritical",
+  "runs": [
+    {
+      "chi": 10.89,
+      "epsilon": 0.001,
+      "kind": "seed",
+      "tag": "chi10-8900_ep1e-03_p"
+    },
+    {
+      "chi": 10.89,
+      "epsilon": -0.001,
+      "kind": "seed",
+      "tag": "chi10-8900_ep1e-03_m"
+    },
+    {
+      "chi": 10.7408,
+      "epsilon": 0.001,
+      "kind": "control",
+      "tag": "chi10-7408_ep1e-03_p"
+    },
+    {
+      "chi": 10.7408,
+      "epsilon": -0.001,
+      "kind": "control",
+      "tag": "chi10-7408_ep1e-03_m"
+    }
+  ]
+}
