@@ -1,0 +1,56 @@
+{
+  "bifurcation": {
+    "C1_n0": 0.18399933670075047,
+    "C2_0": 0.5,
+    "C2_2n0": 0.01235226151592882,
+    "C3_n0": 0.0,
+    "a01": null,
+    "a2n0": null,
+    "alpha_n0": 0.9080003316496248,
+    "beta_n0": 0.8615402839653153,
+    "chi_star_mode_n0": 10.869604401089358,
+    "classification": "supercritical",
+    "gamma_2n0": 1.976288803167489,
+    "gamma_cubic": 0.07926142039529711,
+    "lambda_2n0": 39.47841760435743,
+    "lambda_n0": 9.869604401089358,
+    "sigma_2n0": -28.87734159554197
+  },
+  "consistency": {
+    "chi_a_star_minus_chi_star_n0": 0.0,
+    "n0_matches_argmin": true
+  },
+  "equilibrium": {
+    "u_star": 1.0,
+    "v_star": 1.0
+  },
+  "inputs": {
+    "L": 1.0,
+    "a": 0.0,
+    "alpha": 1.0,
+    "b": 0.0,
+    "beta": 1.0,
+    "c": 1.0,
+    "early_stop_patience": 2000,
+    "equilibrium_mode": "fixed",
+    "gamma": 2.0,
+    "m": 2.0,
+    "meshsize": 20.0,
+    "meshsize_abs": null,
+    "mu": 1.0,
+    "n0": 1,
+    "n_max": 200000,
+    "nu": 1.0,
+    "u_star_fixed": 1.0
+  },
+  "threshold": {
+    "chi_a_star": 10.869604401089358,
+    "chi_star_disc": 10.849327523889817,
+    "lambda_min": 9.869604401089358,
+    "lambda_min_disc": 9.849327523889817,
+    "mesh_per_unit": 20.0,
+    "meshsize": 20,
+    "n_min": 1,
+    "n_min_disc": 1
+  }
+}

@@ -1,0 +1,44 @@
+# Paper III minimal-model benchmark configuration.
+# Benchmark supercritical minimal-model case from Table 6.1 in Paper III.
+
+ui:
+  confirm: "no"
+  verbose: "no"
+  generate_video: "no"
+
+model:
+  a: 0.0
+  b: 0.0
+  c: 1.0
+  equilibrium_mode: "fixed"
+  u_star_fixed: 1
+  alpha: 1.0
+  m: 2
+  beta: 1
+  mu: 1
+  nu: 1
+  gamma: 2
+
+grid:
+  L: 1
+  meshsize: 20
+  time: 60
+  eigen_mode_n: 1
+  epsilon: 0.001
+  epsilon2: 0.0
+
+stopping:
+  until_converged: "yes"
+  convergence_tol: 1.0e-5
+  convergence_window_time: 5.0
+  convergence_min_time: 10.0
+  max_saved_frames: 2000
+
+output:
+  output_dir: "."
+  basename: ""
+  save_data: "yes"
+  data_format: "npz"
+  save_max_frames: 2000
+  save_summary6: "yes"
+  save_static_plots: "no"

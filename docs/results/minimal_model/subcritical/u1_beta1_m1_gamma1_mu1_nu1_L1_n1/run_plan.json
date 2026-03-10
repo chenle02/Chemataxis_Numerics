@@ -1,0 +1,67 @@
+{
+  "case": "u1_beta1_m1_gamma1_mu1_nu1_L1_n1",
+  "path_base": "results_root",
+  "regime": "subcritical",
+  "runs": [
+    {
+      "chi": 21.9566008902005,
+      "epsilon": 0.001,
+      "kind": "control",
+      "tag": "chi21-9566_ep1e-03_p"
+    },
+    {
+      "chi": 21.9566008902005,
+      "epsilon": -0.001,
+      "kind": "control",
+      "tag": "chi21-9566_ep1e-03_m"
+    },
+    {
+      "chi": 21.48166849730184,
+      "epsilon": 1.028758811165588,
+      "kind": "branch_seed",
+      "tag": "chi21-4817_A_rel1e-02_m"
+    },
+    {
+      "chi": 21.48166849730184,
+      "epsilon": 1.0495418174517617,
+      "kind": "branch_seed",
+      "tag": "chi21-4817_A_rel1e-02_p"
+    },
+    {
+      "chi": 21.48166849730184,
+      "epsilon": 0.9352352828778074,
+      "kind": "branch_seed",
+      "tag": "chi21-4817_A_rel1e-01_m"
+    },
+    {
+      "chi": 21.48166849730184,
+      "epsilon": 1.1430653457395425,
+      "kind": "branch_seed",
+      "tag": "chi21-4817_A_rel1e-01_p"
+    },
+    {
+      "chi": 20.61372229539065,
+      "epsilon": 2.150607279613231,
+      "kind": "branch_seed",
+      "tag": "chi20-6137_A_rel1e-02_m"
+    },
+    {
+      "chi": 20.61372229539065,
+      "epsilon": 2.1940538913225893,
+      "kind": "branch_seed",
+      "tag": "chi20-6137_A_rel1e-02_p"
+    },
+    {
+      "chi": 20.61372229539065,
+      "epsilon": 1.9550975269211193,
+      "kind": "branch_seed",
+      "tag": "chi20-6137_A_rel1e-01_m"
+    },
+    {
+      "chi": 20.61372229539065,
+      "epsilon": 2.3895636440147014,
+      "kind": "branch_seed",
+      "tag": "chi20-6137_A_rel1e-01_p"
+    }
+  ]
+}
