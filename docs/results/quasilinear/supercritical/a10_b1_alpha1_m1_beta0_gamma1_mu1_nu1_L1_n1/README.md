@@ -1,10 +1,9 @@
 # quasilinear/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1
 
-> **Historical folder name; not a supercritical benchmark.** The corrected
-> cubic coefficient is `beta_n0 = -0.0471513520639057`, so this parameter set is
-> subcritical. The directory is retained in place to preserve existing data
-> links. Its trajectories must not be cited as evidence for a local
-> supercritical branch and are not part of the Paper III figure contract.
+> **Paper III benchmark.** The full center-graph cubic coefficient is
+> `beta_n0 = 0.07650308051520315`, confirming that this parameter set is
+> supercritical. The 1%-above-threshold run has final cosine amplitude
+> `1.62372574646`, compared with the leading-order prediction `1.61159217017`.
 
 ## Gallery
 
