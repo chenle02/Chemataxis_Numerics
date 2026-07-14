@@ -7,6 +7,11 @@ It is intentionally separate from the manuscript + code repo.
 
 - Pages source: publish from the `docs/` folder (Settings → Pages → `master` / `docs`).
 - All publishable assets should live under `docs/` so they are served by Pages.
+- The account token cannot switch this repository from legacy Pages mode.
+  Keep `docs/.nojekyll` and, after changing the MkDocs sources or theme, run
+  `mkdocs build --strict` followed by `rsync -a site/ docs/`. Commit the updated
+  static snapshot so legacy Pages and the Actions deployment render the same
+  Material site.
 
 ## Results Organization (Subfolders First)
 
@@ -36,4 +41,3 @@ Each meaningful results folder should include:
 
 - Put **run scripts, YAML configs, raw logs, and reproducibility notes** in the manuscript/code repo.
 - Put **curated outputs** (selected images/videos + per-folder `README.md` + `fancy.html`) in this public repo.
-

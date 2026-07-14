@@ -43,6 +43,20 @@ python -m venv .venv
 .venv/bin/mkdocs build --strict
 ```
 
+GitHub Pages is currently locked to the legacy `master/docs` publishing mode.
+After changing the reader-facing Markdown or theme, refresh the committed
+static snapshot so the legacy deployment and the Actions deployment serve the
+same Material site:
+
+```bash
+.venv/bin/mkdocs build --strict
+rsync -a site/ docs/
+```
+
+The committed `docs/.nojekyll` file makes the legacy Pages job publish that
+snapshot directly instead of rebuilding the Markdown with a different Jekyll
+theme.
+
 Open the curated guide at
 [chenle02.github.io/Chemataxis_Numerics](https://chenle02.github.io/Chemataxis_Numerics/).
 The full result tree stays available under
@@ -53,7 +67,9 @@ intentionally excluded from the deployed Pages artifact.
 
 ```text
 docs/
-  index.md                         site landing page
+  .nojekyll                        publish the Material snapshot verbatim
+  index.md                         landing-page source
+  index.html                       committed legacy-Pages snapshot
   paper-iii.md                     model and paper-to-data contract
   results/index.md                 curated Paper III result families
   reproduce.md                     verification and rerun guide

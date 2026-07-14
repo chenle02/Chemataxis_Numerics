@@ -84,6 +84,12 @@ copyright: >-
 # versioned and downloadable from GitHub, but is not copied into the site build.
 exclude_docs: |
   _config.yml
+  .nojekyll
+  404.html
+  **/index.html
+  search/**
+  sitemap.xml
+  sitemap.xml.gz
   results/.gitkeep
   results/**/README.md
   results/**/*.html

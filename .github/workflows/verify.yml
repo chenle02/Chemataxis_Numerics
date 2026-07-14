@@ -35,3 +35,17 @@ jobs:
 
       - name: Build documentation strictly
         run: mkdocs build --strict
+
+      - name: Verify legacy Pages snapshot
+        shell: bash
+        run: |
+          changes="$(rsync -acin --checksum \
+            --exclude sitemap.xml \
+            --exclude sitemap.xml.gz \
+            site/ docs/)"
+          if [[ -n "${changes}" ]]; then
+            echo "docs/ does not contain the current MkDocs snapshot."
+            echo "Run: mkdocs build --strict && rsync -a site/ docs/"
+            echo "${changes}"
+            exit 1
+          fi
