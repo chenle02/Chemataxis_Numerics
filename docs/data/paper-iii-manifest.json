@@ -1,0 +1,148 @@
+{
+  "schema_version": "1.0",
+  "generated_on": "2026-07-13",
+  "paper": {
+    "title": "Chemotaxis models with signal-dependent sensitivity and a logistic-type source. III: Bifurcation",
+    "authors": [
+      "Le Chen",
+      "Ian Ruau",
+      "Wenxian Shen"
+    ],
+    "manuscript_working_file": "04-02-2026-CRS-3.tex",
+    "status": "working manuscript"
+  },
+  "evidence_policy": {
+    "validated_current": "The full center-graph coefficient audit, archived metadata, and named fixed-seed trajectories agree within the stated semidiscrete scope.",
+    "under_review": "The analytical metadata is corrected, but the archived trajectory is unsuitable for a current Paper III numerical claim or requires a coefficient-dependent rerun."
+  },
+  "cases": [
+    {
+      "id": "nonminimal-a10-beta0",
+      "title": "Quasi-linear supercritical pitchfork",
+      "status": "validated_current",
+      "quantitative_use": true,
+      "claim_scope": "Paper III near-threshold semidiscrete evidence: below-threshold decay and symmetry-related patterned trajectories above threshold.",
+      "paper_figure_id": "paper3-supercritical-quasilinear",
+      "raw_path": "docs/results/quasilinear/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1",
+      "constants_path": "docs/results/quasilinear/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1/constants.json",
+      "archive_assertions": {
+        "classification": "supercritical",
+        "chi_star_mode_n0": 2.1882816237512737,
+        "beta_n0": 0.07650308051520315
+      },
+      "featured_runs": [
+        {
+          "role": "below-threshold positive seed",
+          "run_path": "docs/results/quasilinear/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1/runs/chi2-1656_ep0-0010_p/run.npz",
+          "metadata_path": "docs/results/quasilinear/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1/runs/chi2-1656_ep0-0010_p/run_meta.json",
+          "preview_path": "docs/results/quasilinear/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1/runs/chi2-1656_ep0-0010_p/run_summary6.png"
+        },
+        {
+          "role": "above-threshold positive branch",
+          "run_path": "docs/results/quasilinear/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1/runs/chi2-2102_ep0-0010_p/run.npz",
+          "metadata_path": "docs/results/quasilinear/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1/runs/chi2-2102_ep0-0010_p/run_meta.json",
+          "preview_path": "docs/results/quasilinear/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1/runs/chi2-2102_ep0-0010_p/run_summary6.png"
+        },
+        {
+          "role": "above-threshold negative branch",
+          "run_path": "docs/results/quasilinear/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1/runs/chi2-2102_ep0-0010_m/run.npz",
+          "metadata_path": "docs/results/quasilinear/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1/runs/chi2-2102_ep0-0010_m/run_meta.json",
+          "preview_path": "docs/results/quasilinear/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1/runs/chi2-2102_ep0-0010_m/run_summary6.png"
+        }
+      ]
+    },
+    {
+      "id": "nonminimal-m2-beta1-gamma2",
+      "title": "Nonlinear-mobility supercritical pitchfork",
+      "status": "validated_current",
+      "quantitative_use": true,
+      "claim_scope": "Paper III near-threshold semidiscrete evidence for nonlinear mobility and signal production.",
+      "paper_figure_id": "paper3-supercritical-nonlinear",
+      "raw_path": "docs/results/nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1",
+      "constants_path": "docs/results/nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1/constants.json",
+      "archive_assertions": {
+        "classification": "supercritical",
+        "chi_star_mode_n0": 11.970925584731697,
+        "beta_n0": 9.508880363384589
+      },
+      "featured_runs": [
+        {
+          "role": "below-threshold positive seed",
+          "run_path": "docs/results/nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1/runs/chi11-8424_ep0-0010_p/run.npz",
+          "metadata_path": "docs/results/nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1/runs/chi11-8424_ep0-0010_p/run_meta.json",
+          "preview_path": "docs/results/nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1/runs/chi11-8424_ep0-0010_p/run_summary6.png"
+        },
+        {
+          "role": "above-threshold positive branch",
+          "run_path": "docs/results/nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1/runs/chi12-0906_ep0-0010_p/run.npz",
+          "metadata_path": "docs/results/nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1/runs/chi12-0906_ep0-0010_p/run_meta.json",
+          "preview_path": "docs/results/nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1/runs/chi12-0906_ep0-0010_p/run_summary6.png"
+        },
+        {
+          "role": "above-threshold negative branch",
+          "run_path": "docs/results/nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1/runs/chi12-0906_ep0-0010_m/run.npz",
+          "metadata_path": "docs/results/nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1/runs/chi12-0906_ep0-0010_m/run_meta.json",
+          "preview_path": "docs/results/nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1/runs/chi12-0906_ep0-0010_m/run_summary6.png"
+        }
+      ]
+    }
+  ],
+  "pending_review": [
+    {
+      "id": "minimal-m1-beta1-gamma1",
+      "title": "Minimal-model supercritical rerun",
+      "status": "under_review",
+      "quantitative_use": false,
+      "claim_scope": "The coefficient is corrected, but the archived above-threshold trajectory has unacceptable mass drift and is not Paper III evidence.",
+      "raw_path": "docs/results/minimal_model/subcritical/u1_beta1_m1_gamma1_mu1_nu1_L1_n1",
+      "constants_path": "docs/results/minimal_model/subcritical/u1_beta1_m1_gamma1_mu1_nu1_L1_n1/constants.json",
+      "archived_runs": [
+        {
+          "role": "mass-drifting positive seed",
+          "run_path": "docs/results/minimal_model/subcritical/u1_beta1_m1_gamma1_mu1_nu1_L1_n1/runs/chi21-9566_ep1e-03_p/run.npz",
+          "metadata_path": "docs/results/minimal_model/subcritical/u1_beta1_m1_gamma1_mu1_nu1_L1_n1/runs/chi21-9566_ep1e-03_p/run_meta.json",
+          "preview_path": "docs/results/minimal_model/subcritical/u1_beta1_m1_gamma1_mu1_nu1_L1_n1/runs/chi21-9566_ep1e-03_p/run_summary6.png"
+        }
+      ]
+    },
+    {
+      "id": "minimal-m2-beta1-gamma2",
+      "title": "Minimal-model subcritical archive",
+      "status": "under_review",
+      "quantitative_use": false,
+      "claim_scope": "This family was generated as a supercritical example before its coefficient was corrected; its fixed-seed trajectories are provenance only.",
+      "raw_path": "docs/results/minimal_model/supercritical/u1_beta1_m2_gamma2_mu1_nu1_L1_n1",
+      "constants_path": "docs/results/minimal_model/supercritical/u1_beta1_m2_gamma2_mu1_nu1_L1_n1/constants.json",
+      "archived_runs": [
+        {
+          "role": "historical positive seed",
+          "run_path": "docs/results/minimal_model/supercritical/u1_beta1_m2_gamma2_mu1_nu1_L1_n1/runs/chi10-8900_ep1e-03_p/run.npz",
+          "metadata_path": "docs/results/minimal_model/supercritical/u1_beta1_m2_gamma2_mu1_nu1_L1_n1/runs/chi10-8900_ep1e-03_p/run_meta.json",
+          "preview_path": "docs/results/minimal_model/supercritical/u1_beta1_m2_gamma2_mu1_nu1_L1_n1/runs/chi10-8900_ep1e-03_p/run_summary6.png"
+        }
+      ]
+    }
+  ],
+  "rerun_queue": [
+    {
+      "id": "nonminimal-subcritical-beta3",
+      "title": "Corrected subcritical continuation target",
+      "status": "under_review",
+      "quantitative_use": false,
+      "claim_scope": "Existing branch-seeded runs used an obsolete asymptotic amplitude; regenerate or solve the stationary problem with the corrected coefficient before use.",
+      "raw_path": "docs/results/quasilinear/subcritical/a1_b1_alpha1_m1_beta3_gamma1_mu1_nu1_L1_n1",
+      "constants_path": "docs/results/quasilinear/subcritical/a1_b1_alpha1_m1_beta3_gamma1_mu1_nu1_L1_n1/constants.json"
+    }
+  ],
+  "excluded_cases": [
+    {
+      "id": "nonminimal-m1-beta1-gamma1-misseeded",
+      "title": "Reclassified all-ones branch-seeded archive",
+      "status": "under_review",
+      "quantitative_use": false,
+      "claim_scope": "The case is supercritical, while its A_rel files were generated from an obsolete negative coefficient; retain for provenance only.",
+      "raw_path": "docs/results/quasilinear/subcritical/a1_b1_alpha1_m1_beta1_gamma1_mu1_nu1_L1_n1",
+      "constants_path": "docs/results/quasilinear/subcritical/a1_b1_alpha1_m1_beta1_gamma1_mu1_nu1_L1_n1/constants.json"
+    }
+  ]
+}

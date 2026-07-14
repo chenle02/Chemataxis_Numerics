@@ -1,0 +1,36 @@
+name: Verify data contract
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install documentation dependencies
+        run: python -m pip install --requirement requirements-docs.txt
+
+      - name: Validate Paper III manifest
+        run: python scripts/validate_paper3_manifest.py
+
+      - name: Validate citation metadata
+        run: cffconvert --validate
+
+      - name: Build documentation strictly
+        run: mkdocs build --strict

@@ -1,0 +1,2 @@
+cffconvert==2.0.0
+mkdocs-material==9.6.15

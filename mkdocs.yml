@@ -1,0 +1,99 @@
+site_name: Chemotaxis Models III · Bifurcation
+site_description: >-
+  Reader-facing numerical companion and public data archive for Paper III on
+  bifurcation in chemotaxis models with signal-dependent sensitivity.
+site_author: Le Chen, Ian Ruau, and Wenxian Shen
+site_url: https://chenle02.github.io/Chemataxis_Numerics/
+repo_url: https://github.com/chenle02/Chemataxis_Numerics
+repo_name: chenle02/Chemataxis_Numerics
+edit_uri: edit/master/docs/
+docs_dir: docs
+site_dir: site
+strict: true
+
+theme:
+  name: material
+  language: en
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - content.tooltips
+    - search.highlight
+    - search.share
+
+nav:
+  - Home: index.md
+  - Paper III: paper-iii.md
+  - Results: results/index.md
+  - Reproduce: reproduce.md
+  - Data & provenance: data.md
+  - Cite: cite.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra_javascript:
+  - assets/javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+copyright: >-
+  &copy; 2026 Le Chen, Ian Ruau, and Wenxian Shen · Numerical material licensed
+  under CC BY 4.0
+
+# Keep the public Pages artifact reader-sized. The complete raw archive remains
+# versioned and downloadable from GitHub, but is not copied into the site build.
+exclude_docs: |
+  _config.yml
+  results/.gitkeep
+  results/**/README.md
+  results/**/*.html
+  results/**/*.yaml
+  results/**/*.json
+  results/**/*.npz
+  results/**/*.png
+  results/**/*.jpeg
+  results/**/*.jpg
+  results/**/*.npy
+  results/**/*.mp4
+  results/**/*.mov
+  results/**/*.webm

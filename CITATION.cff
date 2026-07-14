@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: >-
+  If you use these numerical data, please cite this repository and the
+  associated Paper III manuscript.
+title: >-
+  Chemotaxis Models III: Bifurcation — Numerical Companion and Data Archive
+type: dataset
+authors:
+  - family-names: Chen
+    given-names: Le
+  - family-names: Ruau
+    given-names: Ian
+  - family-names: Shen
+    given-names: Wenxian
+repository-code: https://github.com/chenle02/Chemataxis_Numerics
+url: https://chenle02.github.io/Chemataxis_Numerics/
+license: CC-BY-4.0
+version: 0.1.0
+date-released: 2026-07-13
+keywords:
+  - chemotaxis
+  - bifurcation
+  - Keller-Segel systems
+  - numerical simulation
+  - reproducible research
