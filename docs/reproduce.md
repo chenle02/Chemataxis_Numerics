@@ -19,6 +19,8 @@ It checks that:
 - quantitative use is disabled for every under-review record;
 - every selected preview and run belongs to its declared family; and
 - historical or rerun-required families remain outside the validated list.
+- corrected analytical values recorded for an under-review family remain
+  explicitly separated from, and checked against, its archived constants.
 
 To build the same reader-facing site used by GitHub Pages:
 
@@ -62,18 +64,20 @@ Paper III result from a folder name alone.
 
 ## Review and rerun queue
 
-Three items remain outside the validated Paper III contract:
+Four items remain outside the validated Paper III contract:
 
 1. Rerun the analytically supercritical minimal `m=1`, `gamma=1` case with the
    conservative fixed-mass solver and verify the invariant in the published
    raw array.
-2. Regenerate the genuinely subcritical non-minimal `beta=3` branch seeds with
+2. Rerun or continue the minimal `m=2`, `gamma=2` case, whose corrected
+   coefficient is subcritical despite its historical `supercritical` folder.
+3. Regenerate the genuinely subcritical non-minimal `beta=3` branch seeds with
    the corrected coefficient, or solve the stationary problem by continuation.
-3. Keep the reclassified all-ones `beta=1` `A_rel` archive out of the paper
+4. Keep the reclassified all-ones `beta=1` `A_rel` archive out of the paper
    contract; those files were initialized from an obsolete negative
    coefficient even though the case is supercritical.
 
-The manifest keeps all three items non-quantitative until replacement files are
+The manifest keeps all four items non-quantitative until replacement files are
 versioned and checked.
 
 !!! info "Current validated scope"

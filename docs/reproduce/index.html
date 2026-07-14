@@ -545,6 +545,8 @@
 <li>quantitative use is disabled for every under-review record;</li>
 <li>every selected preview and run belongs to its declared family; and</li>
 <li>historical or rerun-required families remain outside the validated list.</li>
+<li>corrected analytical values recorded for an under-review family remain
+  explicitly separated from, and checked against, its archived constants.</li>
 </ul>
 <p>To build the same reader-facing site used by GitHub Pages:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
@@ -578,18 +580,20 @@ invariant.</p>
 <p>Use the configuration and run metadata together. Do not infer a quantitative
 Paper III result from a folder name alone.</p>
 <h2 id="review-and-rerun-queue">Review and rerun queue<a class="headerlink" href="#review-and-rerun-queue" title="Permanent link">&para;</a></h2>
-<p>Three items remain outside the validated Paper III contract:</p>
+<p>Four items remain outside the validated Paper III contract:</p>
 <ol>
 <li>Rerun the analytically supercritical minimal <code>m=1</code>, <code>gamma=1</code> case with the
    conservative fixed-mass solver and verify the invariant in the published
    raw array.</li>
+<li>Rerun or continue the minimal <code>m=2</code>, <code>gamma=2</code> case, whose corrected
+   coefficient is subcritical despite its historical <code>supercritical</code> folder.</li>
 <li>Regenerate the genuinely subcritical non-minimal <code>beta=3</code> branch seeds with
    the corrected coefficient, or solve the stationary problem by continuation.</li>
 <li>Keep the reclassified all-ones <code>beta=1</code> <code>A_rel</code> archive out of the paper
    contract; those files were initialized from an obsolete negative
    coefficient even though the case is supercritical.</li>
 </ol>
-<p>The manifest keeps all three items non-quantitative until replacement files are
+<p>The manifest keeps all four items non-quantitative until replacement files are
 versioned and checked.</p>
 <div class="admonition info">
 <p class="admonition-title">Current validated scope</p>

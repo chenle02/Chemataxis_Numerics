@@ -1,5 +1,5 @@
-# Paper II: Table~\ref{Tb:singular-beta-gamma} (nonlinear sensitivity/production).
-# Type: supercritical (as reported in the table).
+# Paper III: validated nonlinear-mobility supercritical benchmark.
+# Current type: supercritical under the full center-graph coefficient.
 # Domain/mode: L=1, n0=1 (paper indexing); set eigen_index=2 to seed \phi_{1}.
 
 ui:

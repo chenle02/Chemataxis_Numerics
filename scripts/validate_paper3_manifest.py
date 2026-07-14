@@ -119,7 +119,47 @@ def validate_under_review(entry: Any, context: str, runs_field: str | None = Non
     for forbidden_key in ("classification", "current_values", "archive_assertions"):
         require(forbidden_key not in entry, f"{context} must not freeze {forbidden_key} while under review")
     raw_path = validate_archive_path(entry.get("raw_path"), f"{context}.raw_path")
-    validate_archive_path(entry.get("constants_path"), f"{context}.constants_path")
+    constants_path = validate_archive_path(
+        entry.get("constants_path"), f"{context}.constants_path"
+    )
+    corrected = entry.get("corrected_analysis")
+    archived = entry.get("archived_constants")
+    require(
+        (corrected is None) == (archived is None),
+        f"{context} must provide corrected_analysis and archived_constants together",
+    )
+    if corrected is not None:
+        require(
+            isinstance(corrected, dict),
+            f"{context}.corrected_analysis must be an object",
+        )
+        require(
+            isinstance(archived, dict),
+            f"{context}.archived_constants must be an object",
+        )
+        require(
+            isinstance(corrected.get("source_revision"), str)
+            and corrected["source_revision"],
+            f"{context}.corrected_analysis.source_revision must be nonempty",
+        )
+        require(
+            corrected.get("classification") in {"supercritical", "subcritical"},
+            f"{context}.corrected_analysis.classification is invalid",
+        )
+        constants = coefficient_record(git_json(constants_path))
+        require(
+            constants.get("classification") == archived.get("classification"),
+            f"{context} archived classification changed",
+        )
+        assert_close(
+            constants.get("beta_n0"),
+            archived.get("beta_n0"),
+            f"{context}.archived_constants.beta_n0",
+        )
+        require(
+            isinstance(corrected.get("beta_n0"), (int, float)),
+            f"{context}.corrected_analysis.beta_n0 must be numeric",
+        )
     if runs_field is not None:
         validate_run_paths(entry.get(runs_field), raw_path, f"{context}.{runs_field}")
     return entry_id
@@ -129,7 +169,7 @@ def main() -> int:
     try:
         manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
         require(isinstance(manifest, dict), "manifest root must be a JSON object")
-        require(manifest.get("schema_version") == "1.0", "unsupported schema_version")
+        require(manifest.get("schema_version") == "1.1", "unsupported schema_version")
         policies = manifest.get("evidence_policy")
         require(isinstance(policies, dict), "evidence_policy must be an object")
         require(set(policies) == ALLOWED_STATUSES, "evidence_policy keys do not match allowed statuses")

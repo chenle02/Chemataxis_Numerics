@@ -42,7 +42,8 @@ of truth for the curated layer. Each case records:
   requirements;
 - the analytical values approved by the current audit;
 - archive objects that exist without treating provisional coefficients as
-  final analytical values;
+  final analytical values, including an explicit corrected-versus-archived
+  record when those values differ;
 - selected run and preview paths; and
 - the precise boundary on permissible claims.
 

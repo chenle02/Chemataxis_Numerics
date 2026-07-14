@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "generated_on": "2026-07-13",
   "paper": {
     "title": "Chemotaxis models with signal-dependent sensitivity and a logistic-type source. III: Bifurcation",
@@ -13,7 +13,7 @@
   },
   "evidence_policy": {
     "validated_current": "The full center-graph coefficient audit, archived metadata, and named fixed-seed trajectories agree within the stated semidiscrete scope.",
-    "under_review": "The analytical metadata is corrected, but the archived trajectory is unsuitable for a current Paper III numerical claim or requires a coefficient-dependent rerun."
+    "under_review": "The analytical metadata may be corrected and recorded separately, but the archived trajectory is unsuitable for a current Paper III numerical claim or requires a coefficient-dependent rerun."
   },
   "cases": [
     {
@@ -131,7 +131,16 @@
       "quantitative_use": false,
       "claim_scope": "Existing branch-seeded runs used an obsolete asymptotic amplitude; regenerate or solve the stationary problem with the corrected coefficient before use.",
       "raw_path": "docs/results/quasilinear/subcritical/a1_b1_alpha1_m1_beta3_gamma1_mu1_nu1_L1_n1",
-      "constants_path": "docs/results/quasilinear/subcritical/a1_b1_alpha1_m1_beta3_gamma1_mu1_nu1_L1_n1/constants.json"
+      "constants_path": "docs/results/quasilinear/subcritical/a1_b1_alpha1_m1_beta3_gamma1_mu1_nu1_L1_n1/constants.json",
+      "corrected_analysis": {
+        "source_revision": "Chemotaxis_simulation@b414cee",
+        "classification": "subcritical",
+        "beta_n0": -2.232172436126313
+      },
+      "archived_constants": {
+        "classification": "subcritical",
+        "beta_n0": -1.047765363208696
+      }
     }
   ],
   "excluded_cases": [
