@@ -4,88 +4,127 @@ title: Reproduce
 
 # Reproduce and verify
 
-## Verify the public evidence contract
+## Verify the frozen evidence contract
 
-The validator uses only the Python standard library. From the repository root:
+From the repository root, run the dependency-free validator and the bundle
+checksum audit:
 
 ```bash
 python scripts/validate_paper3_manifest.py
+(cd docs/results/paper-iii/stationary-continuation/v1 && \
+  sha256sum --check SHA256SUMS)
 ```
 
-It checks that:
+The validator checks:
 
-- every featured family, constants file, and selected run exists in Git;
-- validated coefficient values agree with archive assertions;
-- quantitative use is disabled for every under-review record;
-- every selected run belongs to its declared family;
-- each current paper-figure PNG/PDF matches its declared SHA-256 digest;
-- legacy per-run previews remain marked as archive-only and are not embedded
-  on the curated Results page;
-- historical or rerun-required families remain outside the validated list; and
-- corrected analytical values recorded for an under-review family remain
-  explicitly separated from, and checked against, its archived constants.
+- the exact simulator, manuscript-science, figure-source, and immutable-data
+  revisions;
+- the seven files named by the v1 `SHA256SUMS` manifest;
+- `acceptance.passed=true`, 96 states, and 780 of 780 passing gates;
+- all four stationary case IDs, analytical slopes, fitted mesh slopes, and
+  observed orders;
+- the stationary and time-figure PNG/PDF hashes;
+- the two validated time-integration archives, constants, and featured runs;
+- absence of legacy run previews and provenance-only raw paths from the
+  curated Results page; and
+- the exact four-family provenance-only boundary.
 
-To build the same reader-facing site used by GitHub Pages:
+Expected output:
+
+```text
+Paper III manifest valid: 4 stationary cases (96 states, 780/780 gates), 2 time-integration figures, 4 provenance-only archives.
+```
+
+## Reproduce stationary continuation
+
+Use the exact public simulator revision frozen by release 1.0.0:
 
 ```bash
+git clone https://github.com/ianruau/Chemotaxis_simulation.git
+cd Chemotaxis_simulation
+git checkout 7c2a09b24fdebb9000b9b996eb34150d6de5ed17
 python -m venv .venv
-.venv/bin/pip install --requirement requirements-docs.txt
-.venv/bin/mkdocs build --strict
+.venv/bin/pip install --editable .
+.venv/bin/python stationary_branch_validation.py \
+  --output-dir /tmp/paper3-stationary-validation \
+  --check
 ```
 
-## Reproduce a simulation
+The generator prescribes the signed first-cosine amplitude, eliminates the
+elliptic variable with the production solver, and solves the remaining
+stationary equations. For each of four cases it uses
 
-The numerical solver is maintained in
-[`ianruau/Chemotaxis_simulation`](https://github.com/ianruau/Chemotaxis_simulation)
-and released on PyPI as `chemotaxis-sim`.
+- meshes `N=40,80,160`;
+- amplitudes `A=+/-{0.0025,0.005,0.01,0.02}`; and
+- the constrained fit `chi-chi_star_disc=c2*A^2+c4*A^4`.
+
+For minimal cases, one dependent flux equation is replaced in the Newton
+system by the fixed-mass constraint; the omitted endpoint equation is restored
+and checked in the published full residual.
+
+The command writes:
+
+```text
+branch-points.csv
+fit-summary.json
+states-index.json
+stationary-continuation.pdf
+stationary-continuation.png
+stationary-profiles.csv
+stationary-states.npz
+SHA256SUMS
+```
+
+The published bundle was produced in two empty output directories. `diff -qr`
+reported no difference, including the deterministic NPZ archive and PDF.
+
+## Inspect the immutable data
+
+The bundle is frozen at
+[`stationary-continuation/v1`](https://github.com/chenle02/Chemataxis_Numerics/tree/master/docs/results/paper-iii/stationary-continuation/v1)
+in public data commit
+`e62ffa1e99122f8fbbeb3df7586f4050c4ff5c58`.
+
+- `branch-points.csv` is the compact 96-row scalar table.
+- `stationary-profiles.csv` is the long-form profile table.
+- `stationary-states.npz` stores every `x`, `u`, and `v` array.
+- `states-index.json` maps stable state IDs to NPZ array names and reflection
+  partners.
+- `fit-summary.json` records coefficients, gates, methods, runtime versions,
+  and full source revisions.
+
+Version `v1` is immutable. A changed method or regenerated artifact requires a
+new version directory.
+
+## Reproduce time-dependent diagnostics
+
+The same simulator revision can reproduce or extend the two archived
+time-integration families. Use each family's `config.yaml`, `constants.json`,
+`run_plan.json`, and per-run `run_meta.json` together. Do not infer a current
+coefficient or classification from a historical folder name or old preview
+annotation.
+
+The two current reader-facing composites are separately hashed in the release
+manifest. Historical per-run summary images are not part of the paper
+contract.
+
+## Build the companion site
 
 ```bash
-python -m venv .venv-sim
-.venv-sim/bin/pip install \
-  "chemotaxis-sim @ git+https://github.com/ianruau/Chemotaxis_simulation.git@b414cee"
-.venv-sim/bin/chemotaxis-sim --help
+python -m venv .venv-docs
+.venv-docs/bin/pip install --requirement requirements-docs.txt
+.venv-docs/bin/mkdocs build --strict
 ```
 
-Commit `b414cee` includes the full center-graph coefficient calculation and
-the conservative fixed-mass spatial flux. Use that revision or a later release
-that contains both fixes; older package builds can reproduce raw trajectories
-but not the corrected Paper III coefficient metadata or minimal-model mass
-invariant.
+The Pages build omits raw arrays, CSV files, result PDFs, checksums, legacy
+galleries, and duplicate media. Git remains the complete archive; the site is
+the restrained reading layer.
 
-Each archived family contains:
+## Frozen provenance
 
-- `config.yaml` — model and solver parameters;
-- `constants.json` — threshold and bifurcation diagnostics as computed at the
-  time of the run;
-- `run_plan.json` — the batch design;
-- `runs/*/run_meta.json` — the realized sensitivity, amplitude, mesh, and time;
-- `runs/*/run.npz` — raw solution arrays; and
-- `runs/*/run_summary6.png` — a compact historical trajectory rendering.
-
-Use the configuration and run metadata together. Do not infer a quantitative
-Paper III result from a folder name or an old summary-image annotation alone.
-The current reader-facing composites are versioned separately under
-`docs/assets/images/` and identified by hash in the manifest.
-
-## Review and rerun queue
-
-Four items remain outside the validated Paper III contract:
-
-1. Rerun the analytically supercritical minimal `m=1`, `gamma=1` case with the
-   conservative fixed-mass solver and verify the invariant in the published
-   raw array.
-2. Rerun or continue the minimal `m=2`, `gamma=2` case, whose corrected
-   coefficient is subcritical despite its historical `supercritical` folder.
-3. Regenerate the genuinely subcritical non-minimal `beta=3` branch seeds with
-   the corrected coefficient, or solve the stationary problem by continuation.
-4. Keep the reclassified all-ones `beta=1` `A_rel` archive out of the paper
-   contract; those files were initialized from an obsolete negative
-   coefficient even though the case is supercritical.
-
-The manifest keeps all four items non-quantitative until replacement files are
-versioned and checked.
-
-!!! info "Current validated scope"
-    The quasi-linear `a=10`, `beta=0` and nonlinear `m=2`, `beta=1`, `gamma=2`
-    fixed-seed families are the two validated Paper III numerical examples.
-    The manifest fixes their exact constants and selected run paths.
+| Component | Revision |
+| --- | --- |
+| Paper III numerical science | `fde25e17187bc3f247b36ce411f6f14eb93d52cf` |
+| Simulator and generator | `7c2a09b24fdebb9000b9b996eb34150d6de5ed17` |
+| Immutable stationary data | `e62ffa1e99122f8fbbeb3df7586f4050c4ff5c58` |
+| Font-embedded time figures | `c0bfc431a19b81b1c45363dea472c29a745ad055` |

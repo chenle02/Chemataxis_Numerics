@@ -434,6 +434,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#what-to-cite-for-a-reproduced-result" class="md-nav__link">
+    <span class="md-ellipsis">
+      What to cite for a reproduced result
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#license" class="md-nav__link">
     <span class="md-ellipsis">
       License
@@ -443,9 +452,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#reuse-note" class="md-nav__link">
+  <a href="#reuse-boundary" class="md-nav__link">
     <span class="md-ellipsis">
-      Reuse note
+      Reuse boundary
     </span>
   </a>
   
@@ -495,6 +504,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#what-to-cite-for-a-reproduced-result" class="md-nav__link">
+    <span class="md-ellipsis">
+      What to cite for a reproduced result
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#license" class="md-nav__link">
     <span class="md-ellipsis">
       License
@@ -504,9 +522,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#reuse-note" class="md-nav__link">
+  <a href="#reuse-boundary" class="md-nav__link">
     <span class="md-ellipsis">
-      Reuse note
+      Reuse boundary
     </span>
   </a>
   
@@ -532,30 +550,44 @@
 
 
 <h1 id="cite-this-companion">Cite this companion<a class="headerlink" href="#cite-this-companion" title="Permanent link">&para;</a></h1>
-<p>Please cite both the Paper III manuscript and the exact repository revision
-used in your work. The repository includes a machine-readable
+<p>Please cite both the Paper III manuscript and the exact numerical-companion
+revision used. GitHub exposes the repository's machine-readable
 <a href="https://github.com/chenle02/Chemataxis_Numerics/blob/master/CITATION.cff"><code>CITATION.cff</code></a>
-file, which GitHub exposes through its <strong>Cite this repository</strong> panel.</p>
+through <strong>Cite this repository</strong>.</p>
 <h2 id="suggested-data-citation">Suggested data citation<a class="headerlink" href="#suggested-data-citation" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>Chen, Le; Ruau, Ian; and Shen, Wenxian (2026). <em>Chemotaxis Models III:
-Bifurcation — Numerical Companion and Data Archive</em>, version 0.1.0. GitHub.
+Bifurcation — Numerical Companion and Data Archive</em>, version 1.0.0. GitHub.
 https://github.com/chenle02/Chemataxis_Numerics</p>
 </blockquote>
-<p>Add the Git commit hash or release tag you used. For example:</p>
+<p>Add the 40-character Git revision and access date:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Repository revision: &lt;40-character Git commit&gt;
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Accessed: YYYY-MM-DD
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Data release: 1.0.0 (2026-07-14)
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Accessed: YYYY-MM-DD
 </code></pre></div>
+<p>For the immutable stationary bundle, also record its data commit:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Stationary data revision: e62ffa1e99122f8fbbeb3df7586f4050c4ff5c58
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>Simulator revision: 7c2a09b24fdebb9000b9b996eb34150d6de5ed17
+</code></pre></div>
+<h2 id="what-to-cite-for-a-reproduced-result">What to cite for a reproduced result<a class="headerlink" href="#what-to-cite-for-a-reproduced-result" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Cite the Paper III manuscript for the analytical theorem and coefficient.</li>
+<li>Cite this companion and its exact revision for the published numerical
+  tables, states, or figures.</li>
+<li>Cite the simulator revision when reporting a fresh regeneration or modified
+  numerical experiment.</li>
+</ul>
+<p>The <a href="../data/paper-iii-manifest.json">manifest</a> identifies the manuscript-science
+revision and the permitted scope of each public artifact.</p>
 <h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h2>
-<p>The documentation and numerical material in this repository are available
-under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Attribution
-must identify the authors, repository, and version or commit.</p>
-<h2 id="reuse-note">Reuse note<a class="headerlink" href="#reuse-note" title="Permanent link">&para;</a></h2>
-<p>Before quoting a threshold or bifurcation coefficient, check the case status in
-the <a href="../data/paper-iii-manifest.json">Paper III evidence manifest</a>. Only
-<code>validated_current</code> records are approved as current paper evidence.
-<code>under_review</code> records may contain corrected analytical metadata, but their
-archived trajectories are not approved for a Paper III numerical claim.</p>
+<p>The documentation and published numerical material are available under
+<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Attribution must
+identify the authors, repository, release version, and exact Git revision.</p>
+<h2 id="reuse-boundary">Reuse boundary<a class="headerlink" href="#reuse-boundary" title="Permanent link">&para;</a></h2>
+<p>Only records marked <code>validated_current</code> may support current Paper III
+numerical statements, and only within their declared semidiscrete scope.
+Records marked <code>provenance_only</code> document superseded work and must not be used
+as quantitative evidence.</p>
 
 
 

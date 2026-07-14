@@ -95,6 +95,9 @@ exclude_docs: |
   results/**/*.html
   results/**/*.yaml
   results/**/*.json
+  results/**/*.csv
+  results/**/*.pdf
+  results/**/SHA256SUMS
   results/**/*.npz
   results/**/*.png
   results/**/*.jpeg

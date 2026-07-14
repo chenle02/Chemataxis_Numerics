@@ -4,73 +4,94 @@ title: Data & provenance
 
 # Data and provenance
 
-## One archive, two delivery layers
+## One repository, three layers
 
-The Git repository is the complete archive. It retains configurations,
-constants, metadata, raw NumPy arrays, JPEG/PNG renderings, and historical HTML
-galleries under `docs/results/`.
+<div class="provenance-stack" markdown>
 
-The GitHub Pages site is a curated reading layer. Its build deliberately omits
-raw arrays, duplicate media, legacy galleries, and per-folder support files.
-Reader-facing pages link back to the corresponding GitHub tree, so the archive
-paths remain stable without pushing roughly a gigabyte of experiment material
-through Pages.
+1. **Curated evidence** — three hashed manuscript figures and the exact
+   stationary values summarized on this site.
+2. **Immutable release data** — the complete stationary-continuation v1 bundle
+   with file-level SHA-256 digests.
+3. **Historical archive** — earlier configurations, trajectories, arrays, and
+   galleries retained in Git, including explicitly provenance-only families.
 
-```text
-docs/results/
-  <experiment family>/
-    <classification>/
-      <parameter slug>/
-        config.yaml
-        constants.json
-        run_plan.json
-        runs/
-          <run slug>/
-            run_meta.json
-            run.npz
-            run_summary6.png
-```
+</div>
+
+The layers are intentionally distinct. A file's presence in Git does not make
+it current Paper III evidence; the versioned manifest does.
+
+## Immutable stationary bundle
+
+The v1 release lives at
+`docs/results/paper-iii/stationary-continuation/v1/` and was frozen in commit
+`e62ffa1e99122f8fbbeb3df7586f4050c4ff5c58`.
+
+| File | Purpose |
+| --- | --- |
+| `branch-points.csv` | One row per case, mesh, and signed amplitude |
+| `stationary-profiles.csv` | Long-form nodal `x`, `u`, and `v` profiles |
+| `stationary-states.npz` | Compact numerical arrays for all 96 states |
+| `states-index.json` | Stable state IDs, array names, and reflection partners |
+| `fit-summary.json` | Method, coefficients, gates, runtime, and source provenance |
+| `stationary-continuation.pdf/png` | Four-panel release figure |
+| `SHA256SUMS` | Digests for every generated file above |
+
+The bundle is deterministic: two complete runs from the same clean simulator
+revision were byte-identical. Version `v1` is immutable.
 
 ## Evidence manifest
 
-[`docs/data/paper-iii-manifest.json`](data/paper-iii-manifest.json) is the source
-of truth for the curated layer. Each case records:
+[`paper-iii-manifest.json`](data/paper-iii-manifest.json) is the source of truth
+for release 1.0.0. Schema 2.0 records:
 
-- its exact raw archive path;
-- the manuscript figure role, if any;
-- validated-current or under-review status, plus any separate rerun
-  requirements;
-- the analytical values approved by the current audit;
-- archive objects that exist without treating provisional coefficients as
-  final analytical values, including an explicit corrected-versus-archived
-  record when those values differ;
-- selected run paths, manuscript-matched figure assets, and legacy-preview
-  status; and
-- the precise boundary on permissible claims.
+- the full Paper III, simulator, figure-source, and data revisions;
+- the stationary design, acceptance metrics, case IDs, theoretical
+  coefficients, and three-mesh fits;
+- all bundle checksums and reader-facing asset hashes;
+- the two validated time-integration families and their selected raw runs; and
+- four historical families whose status is `provenance_only`.
 
-The validator reads constants directly from the referenced Git objects. This
-means a sparse checkout can verify provenance without materializing every raw
-array.
+The standard-library validator resolves each declared object from the Git
+index or `HEAD`, then compares the manifest with the archived JSON and SHA-256
+records.
 
 ## Status vocabulary
 
-| Status | Meaning | Quantitative use |
+| Status | Meaning | Reader-facing quantitative use |
 | --- | --- | --- |
-| `validated_current` | Corrected analysis and archived metadata agree | Allowed within the named scope |
-| `under_review` | The archive needs a conservative rerun, corrected initialization, or is retained only for provenance | Not allowed |
+| `validated_current` | The named artifact passed the frozen release checks | Allowed only within its declared semidiscrete scope |
+| `provenance_only` | Superseded or invalid numerical work retained for audit history | Prohibited |
 
-## Historical paths
+## Historical archive policy
 
-Several directory names predate the full center-graph audit. In particular,
-the all-ones `beta=1` non-minimal archive is stored below `subcritical` but is
-supercritical, while the two minimal-model directory names are reversed by the
-corrected coefficients. Paths are not renamed because they are stable
-provenance identifiers; the committed `constants.json`, per-family README, and
-manifest carry the current interpretation.
+Historical directory names are never silently rewritten. Some predate the
+full center-graph audit and therefore disagree with current classifications;
+some branch seeds were built from obsolete coefficients; some minimal-model
+time runs have unacceptable mass drift. The raw objects remain available for
+reproducibility of the research process, but the curated Results page neither
+embeds nor links their galleries.
 
-## Integrity and versioning
+This policy preserves stable Git paths while preventing an old annotation or
+folder label from being mistaken for a current numerical claim.
 
-Git object identity supplies the present file-level audit trail. A tagged data
-release with checksums and an archival DOI is planned after the conservative
-minimal rerun and corrected subcritical continuation experiment. Until then,
-cite the repository URL and the commit used for analysis.
+## Pages delivery boundary
+
+The repository is the complete archive. GitHub Pages is a reader-sized build
+that excludes raw arrays, CSV and result PDF files, checksums, per-folder JSON
+and YAML, legacy galleries, and duplicate historical media. Reader-facing
+pages link to immutable Git objects when direct data access is appropriate.
+
+## Release chain
+
+The provenance order is deliberate:
+
+1. simulator and stationary generator:
+   `7c2a09b24fdebb9000b9b996eb34150d6de5ed17`;
+2. immutable stationary data:
+   `e62ffa1e99122f8fbbeb3df7586f4050c4ff5c58`;
+3. manuscript numerical science:
+   `fde25e17187bc3f247b36ce411f6f14eb93d52cf`; and
+4. this versioned reader-facing companion.
+
+The [citation guide](cite.md) explains how to identify the exact companion
+revision used in downstream work.

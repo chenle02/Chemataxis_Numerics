@@ -405,9 +405,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#one-archive-two-delivery-layers" class="md-nav__link">
+  <a href="#one-repository-three-layers" class="md-nav__link">
     <span class="md-ellipsis">
-      One archive, two delivery layers
+      One repository, three layers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#immutable-stationary-bundle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Immutable stationary bundle
     </span>
   </a>
   
@@ -432,18 +441,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#historical-paths" class="md-nav__link">
+  <a href="#historical-archive-policy" class="md-nav__link">
     <span class="md-ellipsis">
-      Historical paths
+      Historical archive policy
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#integrity-and-versioning" class="md-nav__link">
+  <a href="#pages-delivery-boundary" class="md-nav__link">
     <span class="md-ellipsis">
-      Integrity and versioning
+      Pages delivery boundary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#release-chain" class="md-nav__link">
+    <span class="md-ellipsis">
+      Release chain
     </span>
   </a>
   
@@ -506,9 +524,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#one-archive-two-delivery-layers" class="md-nav__link">
+  <a href="#one-repository-three-layers" class="md-nav__link">
     <span class="md-ellipsis">
-      One archive, two delivery layers
+      One repository, three layers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#immutable-stationary-bundle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Immutable stationary bundle
     </span>
   </a>
   
@@ -533,18 +560,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#historical-paths" class="md-nav__link">
+  <a href="#historical-archive-policy" class="md-nav__link">
     <span class="md-ellipsis">
-      Historical paths
+      Historical archive policy
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#integrity-and-versioning" class="md-nav__link">
+  <a href="#pages-delivery-boundary" class="md-nav__link">
     <span class="md-ellipsis">
-      Integrity and versioning
+      Pages delivery boundary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#release-chain" class="md-nav__link">
+    <span class="md-ellipsis">
+      Release chain
     </span>
   </a>
   
@@ -570,81 +606,126 @@
 
 
 <h1 id="data-and-provenance">Data and provenance<a class="headerlink" href="#data-and-provenance" title="Permanent link">&para;</a></h1>
-<h2 id="one-archive-two-delivery-layers">One archive, two delivery layers<a class="headerlink" href="#one-archive-two-delivery-layers" title="Permanent link">&para;</a></h2>
-<p>The Git repository is the complete archive. It retains configurations,
-constants, metadata, raw NumPy arrays, JPEG/PNG renderings, and historical HTML
-galleries under <code>docs/results/</code>.</p>
-<p>The GitHub Pages site is a curated reading layer. Its build deliberately omits
-raw arrays, duplicate media, legacy galleries, and per-folder support files.
-Reader-facing pages link back to the corresponding GitHub tree, so the archive
-paths remain stable without pushing roughly a gigabyte of experiment material
-through Pages.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>docs/results/
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  &lt;experiment family&gt;/
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    &lt;classification&gt;/
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>      &lt;parameter slug&gt;/
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        config.yaml
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        constants.json
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>        run_plan.json
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        runs/
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>          &lt;run slug&gt;/
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>            run_meta.json
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>            run.npz
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>            run_summary6.png
-</code></pre></div>
+<h2 id="one-repository-three-layers">One repository, three layers<a class="headerlink" href="#one-repository-three-layers" title="Permanent link">&para;</a></h2>
+<div class="provenance-stack">
+<ol>
+<li><strong>Curated evidence</strong> — three hashed manuscript figures and the exact
+   stationary values summarized on this site.</li>
+<li><strong>Immutable release data</strong> — the complete stationary-continuation v1 bundle
+   with file-level SHA-256 digests.</li>
+<li><strong>Historical archive</strong> — earlier configurations, trajectories, arrays, and
+   galleries retained in Git, including explicitly provenance-only families.</li>
+</ol>
+</div>
+<p>The layers are intentionally distinct. A file's presence in Git does not make
+it current Paper III evidence; the versioned manifest does.</p>
+<h2 id="immutable-stationary-bundle">Immutable stationary bundle<a class="headerlink" href="#immutable-stationary-bundle" title="Permanent link">&para;</a></h2>
+<p>The v1 release lives at
+<code>docs/results/paper-iii/stationary-continuation/v1/</code> and was frozen in commit
+<code>e62ffa1e99122f8fbbeb3df7586f4050c4ff5c58</code>.</p>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>branch-points.csv</code></td>
+<td>One row per case, mesh, and signed amplitude</td>
+</tr>
+<tr>
+<td><code>stationary-profiles.csv</code></td>
+<td>Long-form nodal <code>x</code>, <code>u</code>, and <code>v</code> profiles</td>
+</tr>
+<tr>
+<td><code>stationary-states.npz</code></td>
+<td>Compact numerical arrays for all 96 states</td>
+</tr>
+<tr>
+<td><code>states-index.json</code></td>
+<td>Stable state IDs, array names, and reflection partners</td>
+</tr>
+<tr>
+<td><code>fit-summary.json</code></td>
+<td>Method, coefficients, gates, runtime, and source provenance</td>
+</tr>
+<tr>
+<td><code>stationary-continuation.pdf/png</code></td>
+<td>Four-panel release figure</td>
+</tr>
+<tr>
+<td><code>SHA256SUMS</code></td>
+<td>Digests for every generated file above</td>
+</tr>
+</tbody>
+</table>
+<p>The bundle is deterministic: two complete runs from the same clean simulator
+revision were byte-identical. Version <code>v1</code> is immutable.</p>
 <h2 id="evidence-manifest">Evidence manifest<a class="headerlink" href="#evidence-manifest" title="Permanent link">&para;</a></h2>
-<p><a href="paper-iii-manifest.json"><code>docs/data/paper-iii-manifest.json</code></a> is the source
-of truth for the curated layer. Each case records:</p>
+<p><a href="paper-iii-manifest.json"><code>paper-iii-manifest.json</code></a> is the source of truth
+for release 1.0.0. Schema 2.0 records:</p>
 <ul>
-<li>its exact raw archive path;</li>
-<li>the manuscript figure role, if any;</li>
-<li>validated-current or under-review status, plus any separate rerun
-  requirements;</li>
-<li>the analytical values approved by the current audit;</li>
-<li>archive objects that exist without treating provisional coefficients as
-  final analytical values, including an explicit corrected-versus-archived
-  record when those values differ;</li>
-<li>selected run paths, manuscript-matched figure assets, and legacy-preview
-  status; and</li>
-<li>the precise boundary on permissible claims.</li>
+<li>the full Paper III, simulator, figure-source, and data revisions;</li>
+<li>the stationary design, acceptance metrics, case IDs, theoretical
+  coefficients, and three-mesh fits;</li>
+<li>all bundle checksums and reader-facing asset hashes;</li>
+<li>the two validated time-integration families and their selected raw runs; and</li>
+<li>four historical families whose status is <code>provenance_only</code>.</li>
 </ul>
-<p>The validator reads constants directly from the referenced Git objects. This
-means a sparse checkout can verify provenance without materializing every raw
-array.</p>
+<p>The standard-library validator resolves each declared object from the Git
+index or <code>HEAD</code>, then compares the manifest with the archived JSON and SHA-256
+records.</p>
 <h2 id="status-vocabulary">Status vocabulary<a class="headerlink" href="#status-vocabulary" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
 <th>Status</th>
 <th>Meaning</th>
-<th>Quantitative use</th>
+<th>Reader-facing quantitative use</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>validated_current</code></td>
-<td>Corrected analysis and archived metadata agree</td>
-<td>Allowed within the named scope</td>
+<td>The named artifact passed the frozen release checks</td>
+<td>Allowed only within its declared semidiscrete scope</td>
 </tr>
 <tr>
-<td><code>under_review</code></td>
-<td>The archive needs a conservative rerun, corrected initialization, or is retained only for provenance</td>
-<td>Not allowed</td>
+<td><code>provenance_only</code></td>
+<td>Superseded or invalid numerical work retained for audit history</td>
+<td>Prohibited</td>
 </tr>
 </tbody>
 </table>
-<h2 id="historical-paths">Historical paths<a class="headerlink" href="#historical-paths" title="Permanent link">&para;</a></h2>
-<p>Several directory names predate the full center-graph audit. In particular,
-the all-ones <code>beta=1</code> non-minimal archive is stored below <code>subcritical</code> but is
-supercritical, while the two minimal-model directory names are reversed by the
-corrected coefficients. Paths are not renamed because they are stable
-provenance identifiers; the committed <code>constants.json</code>, per-family README, and
-manifest carry the current interpretation.</p>
-<h2 id="integrity-and-versioning">Integrity and versioning<a class="headerlink" href="#integrity-and-versioning" title="Permanent link">&para;</a></h2>
-<p>Git object identity supplies the present file-level audit trail. A tagged data
-release with checksums and an archival DOI is planned after the conservative
-minimal rerun and corrected subcritical continuation experiment. Until then,
-cite the repository URL and the commit used for analysis.</p>
+<h2 id="historical-archive-policy">Historical archive policy<a class="headerlink" href="#historical-archive-policy" title="Permanent link">&para;</a></h2>
+<p>Historical directory names are never silently rewritten. Some predate the
+full center-graph audit and therefore disagree with current classifications;
+some branch seeds were built from obsolete coefficients; some minimal-model
+time runs have unacceptable mass drift. The raw objects remain available for
+reproducibility of the research process, but the curated Results page neither
+embeds nor links their galleries.</p>
+<p>This policy preserves stable Git paths while preventing an old annotation or
+folder label from being mistaken for a current numerical claim.</p>
+<h2 id="pages-delivery-boundary">Pages delivery boundary<a class="headerlink" href="#pages-delivery-boundary" title="Permanent link">&para;</a></h2>
+<p>The repository is the complete archive. GitHub Pages is a reader-sized build
+that excludes raw arrays, CSV and result PDF files, checksums, per-folder JSON
+and YAML, legacy galleries, and duplicate historical media. Reader-facing
+pages link to immutable Git objects when direct data access is appropriate.</p>
+<h2 id="release-chain">Release chain<a class="headerlink" href="#release-chain" title="Permanent link">&para;</a></h2>
+<p>The provenance order is deliberate:</p>
+<ol>
+<li>simulator and stationary generator:
+   <code>7c2a09b24fdebb9000b9b996eb34150d6de5ed17</code>;</li>
+<li>immutable stationary data:
+   <code>e62ffa1e99122f8fbbeb3df7586f4050c4ff5c58</code>;</li>
+<li>manuscript numerical science:
+   <code>fde25e17187bc3f247b36ce411f6f14eb93d52cf</code>; and</li>
+<li>this versioned reader-facing companion.</li>
+</ol>
+<p>The <a href="../cite/">citation guide</a> explains how to identify the exact companion
+revision used in downstream work.</p>
 
 
 

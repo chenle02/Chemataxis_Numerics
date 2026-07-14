@@ -5,6 +5,10 @@ message: >-
 title: >-
   Chemotaxis Models III: Bifurcation — Numerical Companion and Data Archive
 type: dataset
+abstract: >-
+  Reproducible numerical companion for Paper III, containing four validated
+  amplitude-constrained stationary continuation cases and two selected
+  near-threshold time-integration figure families.
 authors:
   - family-names: Chen
     given-names: Le
@@ -15,11 +19,12 @@ authors:
 repository-code: https://github.com/chenle02/Chemataxis_Numerics
 url: https://chenle02.github.io/Chemataxis_Numerics/
 license: CC-BY-4.0
-version: 0.1.0
-date-released: 2026-07-13
+version: 1.0.0
+date-released: 2026-07-14
 keywords:
   - chemotaxis
   - bifurcation
   - Keller-Segel systems
   - numerical simulation
+  - numerical continuation
   - reproducible research

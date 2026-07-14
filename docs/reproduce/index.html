@@ -383,27 +383,54 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#verify-the-public-evidence-contract" class="md-nav__link">
+  <a href="#verify-the-frozen-evidence-contract" class="md-nav__link">
     <span class="md-ellipsis">
-      Verify the public evidence contract
+      Verify the frozen evidence contract
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#reproduce-a-simulation" class="md-nav__link">
+  <a href="#reproduce-stationary-continuation" class="md-nav__link">
     <span class="md-ellipsis">
-      Reproduce a simulation
+      Reproduce stationary continuation
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#review-and-rerun-queue" class="md-nav__link">
+  <a href="#inspect-the-immutable-data" class="md-nav__link">
     <span class="md-ellipsis">
-      Review and rerun queue
+      Inspect the immutable data
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reproduce-time-dependent-diagnostics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reproduce time-dependent diagnostics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-the-companion-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      Build the companion site
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frozen-provenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frozen provenance
     </span>
   </a>
   
@@ -488,27 +515,54 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#verify-the-public-evidence-contract" class="md-nav__link">
+  <a href="#verify-the-frozen-evidence-contract" class="md-nav__link">
     <span class="md-ellipsis">
-      Verify the public evidence contract
+      Verify the frozen evidence contract
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#reproduce-a-simulation" class="md-nav__link">
+  <a href="#reproduce-stationary-continuation" class="md-nav__link">
     <span class="md-ellipsis">
-      Reproduce a simulation
+      Reproduce stationary continuation
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#review-and-rerun-queue" class="md-nav__link">
+  <a href="#inspect-the-immutable-data" class="md-nav__link">
     <span class="md-ellipsis">
-      Review and rerun queue
+      Inspect the immutable data
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reproduce-time-dependent-diagnostics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reproduce time-dependent diagnostics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-the-companion-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      Build the companion site
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frozen-provenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frozen provenance
     </span>
   </a>
   
@@ -534,78 +588,124 @@
 
 
 <h1 id="reproduce-and-verify">Reproduce and verify<a class="headerlink" href="#reproduce-and-verify" title="Permanent link">&para;</a></h1>
-<h2 id="verify-the-public-evidence-contract">Verify the public evidence contract<a class="headerlink" href="#verify-the-public-evidence-contract" title="Permanent link">&para;</a></h2>
-<p>The validator uses only the Python standard library. From the repository root:</p>
+<h2 id="verify-the-frozen-evidence-contract">Verify the frozen evidence contract<a class="headerlink" href="#verify-the-frozen-evidence-contract" title="Permanent link">&para;</a></h2>
+<p>From the repository root, run the dependency-free validator and the bundle
+checksum audit:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python<span class="w"> </span>scripts/validate_paper3_manifest.py
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="o">(</span><span class="nb">cd</span><span class="w"> </span>docs/results/paper-iii/stationary-continuation/v1<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span>sha256sum<span class="w"> </span>--check<span class="w"> </span>SHA256SUMS<span class="o">)</span>
 </code></pre></div>
-<p>It checks that:</p>
+<p>The validator checks:</p>
 <ul>
-<li>every featured family, constants file, and selected run exists in Git;</li>
-<li>validated coefficient values agree with archive assertions;</li>
-<li>quantitative use is disabled for every under-review record;</li>
-<li>every selected run belongs to its declared family;</li>
-<li>each current paper-figure PNG/PDF matches its declared SHA-256 digest;</li>
-<li>legacy per-run previews remain marked as archive-only and are not embedded
-  on the curated Results page;</li>
-<li>historical or rerun-required families remain outside the validated list; and</li>
-<li>corrected analytical values recorded for an under-review family remain
-  explicitly separated from, and checked against, its archived constants.</li>
+<li>the exact simulator, manuscript-science, figure-source, and immutable-data
+  revisions;</li>
+<li>the seven files named by the v1 <code>SHA256SUMS</code> manifest;</li>
+<li><code>acceptance.passed=true</code>, 96 states, and 780 of 780 passing gates;</li>
+<li>all four stationary case IDs, analytical slopes, fitted mesh slopes, and
+  observed orders;</li>
+<li>the stationary and time-figure PNG/PDF hashes;</li>
+<li>the two validated time-integration archives, constants, and featured runs;</li>
+<li>absence of legacy run previews and provenance-only raw paths from the
+  curated Results page; and</li>
+<li>the exact four-family provenance-only boundary.</li>
 </ul>
-<p>To build the same reader-facing site used by GitHub Pages:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>.venv/bin/pip<span class="w"> </span>install<span class="w"> </span>--requirement<span class="w"> </span>requirements-docs.txt
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>.venv/bin/mkdocs<span class="w"> </span>build<span class="w"> </span>--strict
+<p>Expected output:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Paper III manifest valid: 4 stationary cases (96 states, 780/780 gates), 2 time-integration figures, 4 provenance-only archives.
 </code></pre></div>
-<h2 id="reproduce-a-simulation">Reproduce a simulation<a class="headerlink" href="#reproduce-a-simulation" title="Permanent link">&para;</a></h2>
-<p>The numerical solver is maintained in
-<a href="https://github.com/ianruau/Chemotaxis_simulation"><code>ianruau/Chemotaxis_simulation</code></a>
-and released on PyPI as <code>chemotaxis-sim</code>.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv-sim
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>.venv-sim/bin/pip<span class="w"> </span>install<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="s2">&quot;chemotaxis-sim @ git+https://github.com/ianruau/Chemotaxis_simulation.git@b414cee&quot;</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>.venv-sim/bin/chemotaxis-sim<span class="w"> </span>--help
+<h2 id="reproduce-stationary-continuation">Reproduce stationary continuation<a class="headerlink" href="#reproduce-stationary-continuation" title="Permanent link">&para;</a></h2>
+<p>Use the exact public simulator revision frozen by release 1.0.0:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/ianruau/Chemotaxis_simulation.git
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nb">cd</span><span class="w"> </span>Chemotaxis_simulation
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>git<span class="w"> </span>checkout<span class="w"> </span>7c2a09b24fdebb9000b9b996eb34150d6de5ed17
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>.venv/bin/pip<span class="w"> </span>install<span class="w"> </span>--editable<span class="w"> </span>.
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>.venv/bin/python<span class="w"> </span>stationary_branch_validation.py<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span>--output-dir<span class="w"> </span>/tmp/paper3-stationary-validation<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">  </span>--check
 </code></pre></div>
-<p>Commit <code>b414cee</code> includes the full center-graph coefficient calculation and
-the conservative fixed-mass spatial flux. Use that revision or a later release
-that contains both fixes; older package builds can reproduce raw trajectories
-but not the corrected Paper III coefficient metadata or minimal-model mass
-invariant.</p>
-<p>Each archived family contains:</p>
+<p>The generator prescribes the signed first-cosine amplitude, eliminates the
+elliptic variable with the production solver, and solves the remaining
+stationary equations. For each of four cases it uses</p>
 <ul>
-<li><code>config.yaml</code> — model and solver parameters;</li>
-<li><code>constants.json</code> — threshold and bifurcation diagnostics as computed at the
-  time of the run;</li>
-<li><code>run_plan.json</code> — the batch design;</li>
-<li><code>runs/*/run_meta.json</code> — the realized sensitivity, amplitude, mesh, and time;</li>
-<li><code>runs/*/run.npz</code> — raw solution arrays; and</li>
-<li><code>runs/*/run_summary6.png</code> — a compact historical trajectory rendering.</li>
+<li>meshes <code>N=40,80,160</code>;</li>
+<li>amplitudes <code>A=+/-{0.0025,0.005,0.01,0.02}</code>; and</li>
+<li>the constrained fit <code>chi-chi_star_disc=c2*A^2+c4*A^4</code>.</li>
 </ul>
-<p>Use the configuration and run metadata together. Do not infer a quantitative
-Paper III result from a folder name or an old summary-image annotation alone.
-The current reader-facing composites are versioned separately under
-<code>docs/assets/images/</code> and identified by hash in the manifest.</p>
-<h2 id="review-and-rerun-queue">Review and rerun queue<a class="headerlink" href="#review-and-rerun-queue" title="Permanent link">&para;</a></h2>
-<p>Four items remain outside the validated Paper III contract:</p>
-<ol>
-<li>Rerun the analytically supercritical minimal <code>m=1</code>, <code>gamma=1</code> case with the
-   conservative fixed-mass solver and verify the invariant in the published
-   raw array.</li>
-<li>Rerun or continue the minimal <code>m=2</code>, <code>gamma=2</code> case, whose corrected
-   coefficient is subcritical despite its historical <code>supercritical</code> folder.</li>
-<li>Regenerate the genuinely subcritical non-minimal <code>beta=3</code> branch seeds with
-   the corrected coefficient, or solve the stationary problem by continuation.</li>
-<li>Keep the reclassified all-ones <code>beta=1</code> <code>A_rel</code> archive out of the paper
-   contract; those files were initialized from an obsolete negative
-   coefficient even though the case is supercritical.</li>
-</ol>
-<p>The manifest keeps all four items non-quantitative until replacement files are
-versioned and checked.</p>
-<div class="admonition info">
-<p class="admonition-title">Current validated scope</p>
-<p>The quasi-linear <code>a=10</code>, <code>beta=0</code> and nonlinear <code>m=2</code>, <code>beta=1</code>, <code>gamma=2</code>
-fixed-seed families are the two validated Paper III numerical examples.
-The manifest fixes their exact constants and selected run paths.</p>
-</div>
+<p>For minimal cases, one dependent flux equation is replaced in the Newton
+system by the fixed-mass constraint; the omitted endpoint equation is restored
+and checked in the published full residual.</p>
+<p>The command writes:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>branch-points.csv
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>fit-summary.json
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>states-index.json
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>stationary-continuation.pdf
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>stationary-continuation.png
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>stationary-profiles.csv
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>stationary-states.npz
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>SHA256SUMS
+</code></pre></div>
+<p>The published bundle was produced in two empty output directories. <code>diff -qr</code>
+reported no difference, including the deterministic NPZ archive and PDF.</p>
+<h2 id="inspect-the-immutable-data">Inspect the immutable data<a class="headerlink" href="#inspect-the-immutable-data" title="Permanent link">&para;</a></h2>
+<p>The bundle is frozen at
+<a href="https://github.com/chenle02/Chemataxis_Numerics/tree/master/docs/results/paper-iii/stationary-continuation/v1"><code>stationary-continuation/v1</code></a>
+in public data commit
+<code>e62ffa1e99122f8fbbeb3df7586f4050c4ff5c58</code>.</p>
+<ul>
+<li><code>branch-points.csv</code> is the compact 96-row scalar table.</li>
+<li><code>stationary-profiles.csv</code> is the long-form profile table.</li>
+<li><code>stationary-states.npz</code> stores every <code>x</code>, <code>u</code>, and <code>v</code> array.</li>
+<li><code>states-index.json</code> maps stable state IDs to NPZ array names and reflection
+  partners.</li>
+<li><code>fit-summary.json</code> records coefficients, gates, methods, runtime versions,
+  and full source revisions.</li>
+</ul>
+<p>Version <code>v1</code> is immutable. A changed method or regenerated artifact requires a
+new version directory.</p>
+<h2 id="reproduce-time-dependent-diagnostics">Reproduce time-dependent diagnostics<a class="headerlink" href="#reproduce-time-dependent-diagnostics" title="Permanent link">&para;</a></h2>
+<p>The same simulator revision can reproduce or extend the two archived
+time-integration families. Use each family's <code>config.yaml</code>, <code>constants.json</code>,
+<code>run_plan.json</code>, and per-run <code>run_meta.json</code> together. Do not infer a current
+coefficient or classification from a historical folder name or old preview
+annotation.</p>
+<p>The two current reader-facing composites are separately hashed in the release
+manifest. Historical per-run summary images are not part of the paper
+contract.</p>
+<h2 id="build-the-companion-site">Build the companion site<a class="headerlink" href="#build-the-companion-site" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv-docs
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>.venv-docs/bin/pip<span class="w"> </span>install<span class="w"> </span>--requirement<span class="w"> </span>requirements-docs.txt
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>.venv-docs/bin/mkdocs<span class="w"> </span>build<span class="w"> </span>--strict
+</code></pre></div>
+<p>The Pages build omits raw arrays, CSV files, result PDFs, checksums, legacy
+galleries, and duplicate media. Git remains the complete archive; the site is
+the restrained reading layer.</p>
+<h2 id="frozen-provenance">Frozen provenance<a class="headerlink" href="#frozen-provenance" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Revision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Paper III numerical science</td>
+<td><code>fde25e17187bc3f247b36ce411f6f14eb93d52cf</code></td>
+</tr>
+<tr>
+<td>Simulator and generator</td>
+<td><code>7c2a09b24fdebb9000b9b996eb34150d6de5ed17</code></td>
+</tr>
+<tr>
+<td>Immutable stationary data</td>
+<td><code>e62ffa1e99122f8fbbeb3df7586f4050c4ff5c58</code></td>
+</tr>
+<tr>
+<td>Font-embedded time figures</td>
+<td><code>c0bfc431a19b81b1c45363dea472c29a745ad055</code></td>
+</tr>
+</tbody>
+</table>
 
 
 

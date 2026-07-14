@@ -1,1 +1,8 @@
 * text=auto eol=lf
+
+# MkDocs emits deterministic whitespace-only template lines in the committed
+# legacy Pages snapshot. Source Markdown, CSS, YAML, JSON, and Python retain
+# Git's normal whitespace checks.
+docs/*.html -whitespace
+docs/**/*.html -whitespace
+docs/search/search_index.json -whitespace

@@ -348,18 +348,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-the-numerical-layer-is-for" class="md-nav__link">
+  <a href="#two-complementary-numerical-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      What the numerical layer is for
+      Two complementary numerical questions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Two complementary numerical questions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stationary-continuation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stationary continuation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Time integration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stationary-branch-contract" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stationary branch contract
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#paper-to-data-contract" class="md-nav__link">
+  <a href="#paper-to-data-map" class="md-nav__link">
     <span class="md-ellipsis">
-      Paper-to-data contract
+      Paper-to-data map
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#revisions-frozen-by-release-100" class="md-nav__link">
+    <span class="md-ellipsis">
+      Revisions frozen by release 1.0.0
     </span>
   </a>
   
@@ -506,18 +548,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-the-numerical-layer-is-for" class="md-nav__link">
+  <a href="#two-complementary-numerical-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      What the numerical layer is for
+      Two complementary numerical questions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Two complementary numerical questions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stationary-continuation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stationary continuation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Time integration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stationary-branch-contract" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stationary branch contract
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#paper-to-data-contract" class="md-nav__link">
+  <a href="#paper-to-data-map" class="md-nav__link">
     <span class="md-ellipsis">
-      Paper-to-data contract
+      Paper-to-data map
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#revisions-frozen-by-release-100" class="md-nav__link">
+    <span class="md-ellipsis">
+      Revisions frozen by release 1.0.0
     </span>
   </a>
   
@@ -554,7 +638,7 @@
 <h1 id="paper-iii">Paper III<a class="headerlink" href="#paper-iii" title="Permanent link">&para;</a></h1>
 <h2 id="the-model">The model<a class="headerlink" href="#the-model" title="Permanent link">&para;</a></h2>
 <p>On a one-dimensional interval with no-flux boundary conditions, Paper III
-studies the parabolic--elliptic system</p>
+studies</p>
 <div class="arithmatex">\[
 \begin{aligned}
 u_t &amp;= u_{xx}
@@ -564,61 +648,128 @@ u_t &amp;= u_{xx}
 \end{aligned}
 \]</div>
 <p>The bifurcation parameter is the sensitivity strength <span class="arithmatex">\(\chi_0\)</span>. The paper
-tracks when a positive constant equilibrium loses stability, computes the
-cubic coefficient that selects the local branch direction, treats the
+locates the first loss of stability of a positive constant equilibrium,
+computes the coefficient selecting the local branch direction, treats the
 fixed-mass minimal case <span class="arithmatex">\(a=b=0\)</span>, and develops global continuation for the
 non-minimal model.</p>
-<h2 id="what-the-numerical-layer-is-for">What the numerical layer is for<a class="headerlink" href="#what-the-numerical-layer-is-for" title="Permanent link">&para;</a></h2>
-<p>The numerical experiments are diagnostics for the spatially semidiscrete
-system. They compare runs just below and just above the analytical threshold,
-seed the critical cosine mode with both signs, and record whether the solution
-returns to the constant state or moves toward a patterned state.</p>
-<p>The site uses two public evidence levels:</p>
-<ol>
-<li><strong>Validated current</strong> — archived constants agree with the completed full
-   center-graph audit and the named raw runs support the stated semidiscrete
-   observation.</li>
-<li><strong>Under review</strong> — analytical metadata may be corrected, but the numerical
-   run needs a conservative rerun, corrected initialization, or is retained
-   only for provenance.</li>
-</ol>
-<p>These labels are encoded in
-<a href="../data/paper-iii-manifest.json"><code>paper-iii-manifest.json</code></a> and enforced in CI.</p>
-<h2 id="paper-to-data-contract">Paper-to-data contract<a class="headerlink" href="#paper-to-data-contract" title="Permanent link">&para;</a></h2>
+<h2 id="two-complementary-numerical-questions">Two complementary numerical questions<a class="headerlink" href="#two-complementary-numerical-questions" title="Permanent link">&para;</a></h2>
+<div class="method-grid">
+<article class="method-card">
+<h3 id="stationary-continuation">Stationary continuation<a class="headerlink" href="#stationary-continuation" title="Permanent link">&para;</a></h3>
+<p>Does the discrete branch leave the threshold with the sign and quadratic
+coefficient predicted by the local bifurcation calculation?</p>
+<p>The solver prescribes a signed first-cosine amplitude <span class="arithmatex">\(A\)</span>, solves the
+stationary equations, and fits</p>
+<div class="arithmatex">\[
+\chi_h(A)-\chi_h^*=c_{2,h}A^2+c_{4,h}A^4.
+\]</div>
+</article>
+<article class="method-card">
+<h3 id="time-integration">Time integration<a class="headerlink" href="#time-integration" title="Permanent link">&para;</a></h3>
+<p>Do selected semidiscrete trajectories decay below threshold and move toward
+opposite patterned states above threshold?</p>
+<p>Two non-minimal manuscript figures answer this diagnostic question for fixed
+positive and negative seeds. They are supportive numerical observations, not
+proofs of PDE stability.</p>
+</article>
+</div>
+<h2 id="stationary-branch-contract">Stationary branch contract<a class="headerlink" href="#stationary-branch-contract" title="Permanent link">&para;</a></h2>
+<p>For the four cases below, theory predicts <span class="arithmatex">\(c_2=\beta_{n_0}/\alpha_{n_0}\)</span>.
+The numerical value is the constrained fit on the finest mesh, <code>N=160</code>.</p>
 <table>
 <thead>
 <tr>
-<th>Paper-side role</th>
-<th>Public evidence</th>
-<th>Present scope</th>
+<th>Parameter regime</th>
+<th>Direction</th>
+<th style="text-align: right;">Theory <span class="arithmatex">\(c_2\)</span></th>
+<th style="text-align: right;">Numerical <span class="arithmatex">\(c_{2,160}\)</span></th>
+<th style="text-align: right;">Observed order</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Quasi-linear supercritical figure</td>
-<td>Logistic <code>a=10</code>, <code>beta=0</code> archive</td>
-<td>Validated coefficient and three fixed-seed trajectories</td>
+<td>Non-minimal <code>a=10, beta=0</code></td>
+<td>Supercritical</td>
+<td style="text-align: right;"><code>0.0084254463</code></td>
+<td style="text-align: right;"><code>0.0084220572</code></td>
+<td style="text-align: right;"><code>2.009</code></td>
 </tr>
 <tr>
-<td>Nonlinear-mobility supercritical figure</td>
-<td>Logistic <code>m=2</code>, <code>beta=1</code>, <code>gamma=2</code> archive</td>
-<td>Validated coefficient and three fixed-seed trajectories</td>
+<td>Non-minimal <code>beta=3</code></td>
+<td>Subcritical</td>
+<td style="text-align: right;"><code>-19.66671032</code></td>
+<td style="text-align: right;"><code>-19.64492609</code></td>
+<td style="text-align: right;"><code>2.000</code></td>
 </tr>
 <tr>
-<td>Minimal-model numerics</td>
-<td>Historical fixed-mass archives</td>
-<td>Withheld pending a conservative rerun</td>
+<td>Minimal <code>m=gamma=1</code></td>
+<td>Supercritical</td>
+<td style="text-align: right;"><code>1.922989917</code></td>
+<td style="text-align: right;"><code>1.922366447</code></td>
+<td style="text-align: right;"><code>2.000</code></td>
+</tr>
+<tr>
+<td>Minimal <code>m=gamma=2</code></td>
+<td>Subcritical</td>
+<td style="text-align: right;"><code>-1.148587331</code></td>
+<td style="text-align: right;"><code>-1.150522206</code></td>
+<td style="text-align: right;"><code>2.000</code></td>
 </tr>
 </tbody>
 </table>
-<p>The retired branch-seeded panel is no longer in the figure contract. Its
-logistic <code>m=1</code>, <code>beta=1</code>, <code>gamma=1</code> archive used a coefficient-dependent seed
-with the wrong sign. The corrected subcritical rerun target uses <code>beta=3</code>.</p>
+<p>The full design uses three meshes and eight symmetric nonzero amplitudes per
+case: 96 stationary states. All 780 acceptance gates pass, including solver,
+positivity, residual, amplitude, reflection, mass, sign, intercept, and mesh
+refinement checks.</p>
+<h2 id="paper-to-data-map">Paper-to-data map<a class="headerlink" href="#paper-to-data-map" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Paper-side role</th>
+<th>Public object</th>
+<th>Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Four local branch-direction checks</td>
+<td>Immutable stationary continuation v1</td>
+<td>Coefficient sign, value, symmetry, and mesh convergence</td>
+</tr>
+<tr>
+<td>Quasi-linear supercritical figure</td>
+<td>Non-minimal <code>a=10, beta=0</code> time archive</td>
+<td>Below-threshold decay and two above-threshold trajectories</td>
+</tr>
+<tr>
+<td>Nonlinear-mobility supercritical figure</td>
+<td><code>m=2, beta=1, gamma=2</code> time archive</td>
+<td>Nonlinear mobility and signal-production diagnostic</td>
+</tr>
+<tr>
+<td>Earlier minimal or branch-seeded runs</td>
+<td>Historical Git objects</td>
+<td>Provenance only; excluded from numerical claims</td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="../data/paper-iii-manifest.json">manifest</a> records the exact boundary and is
+checked on every push.</p>
+<h2 id="revisions-frozen-by-release-100">Revisions frozen by release 1.0.0<a class="headerlink" href="#revisions-frozen-by-release-100" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Paper III numerical science:
+  <code>fde25e17187bc3f247b36ce411f6f14eb93d52cf</code></li>
+<li>Simulator and stationary generator:
+  <code>7c2a09b24fdebb9000b9b996eb34150d6de5ed17</code></li>
+<li>Immutable public data:
+  <code>e62ffa1e99122f8fbbeb3df7586f4050c4ff5c58</code></li>
+<li>Font-embedded time figures:
+  <code>c0bfc431a19b81b1c45363dea472c29a745ad055</code></li>
+</ul>
 <div class="admonition info">
 <p class="admonition-title">Interpretation boundary</p>
-<p>The simulation archive supports comparisons with the semidiscrete
-numerical model. It is not, by itself, a proof of the continuous PDE
-stability statements.</p>
+<p>The public archive supports comparisons with the spatially semidiscrete
+model. It is not, by itself, a proof of the continuous PDE statements.</p>
 </div>
 <h2 id="authors">Authors<a class="headerlink" href="#authors" title="Permanent link">&para;</a></h2>
 <ul>
@@ -626,9 +777,6 @@ stability statements.</p>
 <li>Ian Ruau, Department of Mathematics and Statistics, Auburn University</li>
 <li>Wenxian Shen, Department of Mathematics and Statistics, Auburn University</li>
 </ul>
-<p>Paper III is an active manuscript. The public contract will be versioned again
-when the conservative minimal rerun and corrected subcritical continuation
-data are complete.</p>
 
 
 

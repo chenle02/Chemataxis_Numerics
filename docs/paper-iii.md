@@ -7,7 +7,7 @@ title: Paper III
 ## The model
 
 On a one-dimensional interval with no-flux boundary conditions, Paper III
-studies the parabolic--elliptic system
+studies
 
 \[
 \begin{aligned}
@@ -19,53 +19,90 @@ u_t &= u_{xx}
 \]
 
 The bifurcation parameter is the sensitivity strength \(\chi_0\). The paper
-tracks when a positive constant equilibrium loses stability, computes the
-cubic coefficient that selects the local branch direction, treats the
+locates the first loss of stability of a positive constant equilibrium,
+computes the coefficient selecting the local branch direction, treats the
 fixed-mass minimal case \(a=b=0\), and develops global continuation for the
 non-minimal model.
 
-## What the numerical layer is for
+## Two complementary numerical questions
 
-The numerical experiments are diagnostics for the spatially semidiscrete
-system. They compare runs just below and just above the analytical threshold,
-seed the critical cosine mode with both signs, and record whether the solution
-returns to the constant state or moves toward a patterned state.
+<div class="method-grid" markdown>
 
-The site uses two public evidence levels:
+<article class="method-card" markdown>
 
-1. **Validated current** — archived constants agree with the completed full
-   center-graph audit and the named raw runs support the stated semidiscrete
-   observation.
-2. **Under review** — analytical metadata may be corrected, but the numerical
-   run needs a conservative rerun, corrected initialization, or is retained
-   only for provenance.
+### Stationary continuation
 
-These labels are encoded in
-[`paper-iii-manifest.json`](data/paper-iii-manifest.json) and enforced in CI.
+Does the discrete branch leave the threshold with the sign and quadratic
+coefficient predicted by the local bifurcation calculation?
 
-## Paper-to-data contract
+The solver prescribes a signed first-cosine amplitude \(A\), solves the
+stationary equations, and fits
 
-| Paper-side role | Public evidence | Present scope |
+\[
+\chi_h(A)-\chi_h^*=c_{2,h}A^2+c_{4,h}A^4.
+\]
+</article>
+
+<article class="method-card" markdown>
+
+### Time integration
+
+Do selected semidiscrete trajectories decay below threshold and move toward
+opposite patterned states above threshold?
+
+Two non-minimal manuscript figures answer this diagnostic question for fixed
+positive and negative seeds. They are supportive numerical observations, not
+proofs of PDE stability.
+</article>
+
+</div>
+
+## Stationary branch contract
+
+For the four cases below, theory predicts \(c_2=\beta_{n_0}/\alpha_{n_0}\).
+The numerical value is the constrained fit on the finest mesh, `N=160`.
+
+| Parameter regime | Direction | Theory \(c_2\) | Numerical \(c_{2,160}\) | Observed order |
+| --- | --- | ---: | ---: | ---: |
+| Non-minimal `a=10, beta=0` | Supercritical | `0.0084254463` | `0.0084220572` | `2.009` |
+| Non-minimal `beta=3` | Subcritical | `-19.66671032` | `-19.64492609` | `2.000` |
+| Minimal `m=gamma=1` | Supercritical | `1.922989917` | `1.922366447` | `2.000` |
+| Minimal `m=gamma=2` | Subcritical | `-1.148587331` | `-1.150522206` | `2.000` |
+
+The full design uses three meshes and eight symmetric nonzero amplitudes per
+case: 96 stationary states. All 780 acceptance gates pass, including solver,
+positivity, residual, amplitude, reflection, mass, sign, intercept, and mesh
+refinement checks.
+
+## Paper-to-data map
+
+| Paper-side role | Public object | Scope |
 | --- | --- | --- |
-| Quasi-linear supercritical figure | Logistic `a=10`, `beta=0` archive | Validated coefficient and three fixed-seed trajectories |
-| Nonlinear-mobility supercritical figure | Logistic `m=2`, `beta=1`, `gamma=2` archive | Validated coefficient and three fixed-seed trajectories |
-| Minimal-model numerics | Historical fixed-mass archives | Withheld pending a conservative rerun |
+| Four local branch-direction checks | Immutable stationary continuation v1 | Coefficient sign, value, symmetry, and mesh convergence |
+| Quasi-linear supercritical figure | Non-minimal `a=10, beta=0` time archive | Below-threshold decay and two above-threshold trajectories |
+| Nonlinear-mobility supercritical figure | `m=2, beta=1, gamma=2` time archive | Nonlinear mobility and signal-production diagnostic |
+| Earlier minimal or branch-seeded runs | Historical Git objects | Provenance only; excluded from numerical claims |
 
-The retired branch-seeded panel is no longer in the figure contract. Its
-logistic `m=1`, `beta=1`, `gamma=1` archive used a coefficient-dependent seed
-with the wrong sign. The corrected subcritical rerun target uses `beta=3`.
+The [manifest](data/paper-iii-manifest.json) records the exact boundary and is
+checked on every push.
+
+## Revisions frozen by release 1.0.0
+
+- Paper III numerical science:
+  `fde25e17187bc3f247b36ce411f6f14eb93d52cf`
+- Simulator and stationary generator:
+  `7c2a09b24fdebb9000b9b996eb34150d6de5ed17`
+- Immutable public data:
+  `e62ffa1e99122f8fbbeb3df7586f4050c4ff5c58`
+- Font-embedded time figures:
+  `c0bfc431a19b81b1c45363dea472c29a745ad055`
 
 !!! info "Interpretation boundary"
-    The simulation archive supports comparisons with the semidiscrete
-    numerical model. It is not, by itself, a proof of the continuous PDE
-    stability statements.
+    The public archive supports comparisons with the spatially semidiscrete
+    model. It is not, by itself, a proof of the continuous PDE statements.
 
 ## Authors
 
 - Le Chen, Department of Mathematics and Statistics, Auburn University
 - Ian Ruau, Department of Mathematics and Statistics, Auburn University
 - Wenxian Shen, Department of Mathematics and Statistics, Auburn University
-
-Paper III is an active manuscript. The public contract will be versioned again
-when the conservative minimal rerun and corrected subcritical continuation
-data are complete.

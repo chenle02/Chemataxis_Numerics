@@ -1,6 +1,13 @@
 {
-  "schema_version": "1.1",
-  "generated_on": "2026-07-13",
+  "schema_version": "2.0",
+  "released_on": "2026-07-14",
+  "release": {
+    "version": "1.0.0",
+    "data_revision": "e62ffa1e99122f8fbbeb3df7586f4050c4ff5c58",
+    "manuscript_science_revision": "fde25e17187bc3f247b36ce411f6f14eb93d52cf",
+    "figure_source_revision": "c0bfc431a19b81b1c45363dea472c29a745ad055",
+    "simulator_revision": "7c2a09b24fdebb9000b9b996eb34150d6de5ed17"
+  },
   "paper": {
     "title": "Chemotaxis models with signal-dependent sensitivity and a logistic-type source. III: Bifurcation",
     "authors": [
@@ -9,28 +16,176 @@
       "Wenxian Shen"
     ],
     "manuscript_working_file": "04-02-2026-CRS-3.tex",
-    "status": "working manuscript"
+    "status": "active submission manuscript"
   },
   "evidence_policy": {
-    "validated_current": "The full center-graph coefficient audit, archived metadata, and named fixed-seed trajectories agree within the stated semidiscrete scope.",
-    "under_review": "The analytical metadata may be corrected and recorded separately, but the archived trajectory is unsuitable for a current Paper III numerical claim or requires a coefficient-dependent rerun."
+    "validated_current": "The named artifact passed the checks frozen in this manifest and may support only its stated semidiscrete claim.",
+    "provenance_only": "The object is retained to document earlier work but is excluded from the reader-facing numerical evidence."
   },
-  "cases": [
+  "stationary_validation": {
+    "id": "paper3-stationary-continuation-v1",
+    "title": "Amplitude-constrained stationary continuation",
+    "status": "validated_current",
+    "quantitative_use": true,
+    "claim_scope": "Finite-difference validation of the local branch direction and the coefficient beta_n0/alpha_n0 for four Paper III parameter sets.",
+    "bundle_path": "docs/results/paper-iii/stationary-continuation/v1",
+    "checksums_path": "docs/results/paper-iii/stationary-continuation/v1/SHA256SUMS",
+    "method": "Prescribe the signed first-cosine amplitude, solve the stationary equations, and fit chi-chi_star_disc=c2*A^2+c4*A^4.",
+    "design": {
+      "meshes": [
+        40,
+        80,
+        160
+      ],
+      "amplitudes": [
+        -0.02,
+        -0.01,
+        -0.005,
+        -0.0025,
+        0.0025,
+        0.005,
+        0.01,
+        0.02
+      ],
+      "state_count": 96
+    },
+    "acceptance": {
+      "passed": true,
+      "gates_passed": 780,
+      "gates_total": 780,
+      "max_full_stationary_residual": 8.50945980346296e-11,
+      "max_elliptic_residual": 1.1404210908949608e-10,
+      "max_mass_error": 3.3306690738754696e-16,
+      "observed_order_min": 1.9984495528615873,
+      "observed_order_max": 2.009423448648791
+    },
+    "paper_figure_id": "paper3-stationary-continuation",
+    "paper_figure": {
+      "source_manuscript_commit": "fde25e17187bc3f247b36ce411f6f14eb93d52cf",
+      "preview_path": "docs/assets/images/paper3-stationary-continuation.png",
+      "preview_sha256": "3560d2ccd1fa46737d6ee8b236ef54236cadfa4b40db9de1a57b852db466e08c",
+      "vector_path": "docs/assets/images/paper3-stationary-continuation.pdf",
+      "vector_sha256": "432761bcdadd6cca9d06954c533eec7c1334ea5d26cfd4b8d5e4714b0b25e7d7"
+    },
+    "cases": [
+      {
+        "id": "nonminimal-a10-beta0",
+        "title": "Non-minimal a=10, beta=0",
+        "classification": "supercritical",
+        "alpha_n0": 9.080003316496247,
+        "beta_n0": 0.07650308051520315,
+        "theory_c2": 0.00842544631852886,
+        "fits": [
+          {
+            "mesh": 40,
+            "c2": 0.008370760765781244,
+            "observed_order": null
+          },
+          {
+            "mesh": 80,
+            "c2": 0.008411801148577492,
+            "observed_order": 2.0027693774459787
+          },
+          {
+            "mesh": 160,
+            "c2": 0.008422057235434008,
+            "observed_order": 2.009423448648791
+          }
+        ]
+      },
+      {
+        "id": "nonminimal-beta3",
+        "title": "Non-minimal beta=3",
+        "classification": "subcritical",
+        "alpha_n0": 0.1135000414562031,
+        "beta_n0": -2.232172436126313,
+        "theory_c2": -19.666710315587455,
+        "fits": [
+          {
+            "mesh": 40,
+            "c2": -19.318560593702777,
+            "observed_order": null
+          },
+          {
+            "mesh": 80,
+            "c2": -19.579579296748616,
+            "observed_order": 1.9984495528615873
+          },
+          {
+            "mesh": 160,
+            "c2": -19.64492609095355,
+            "observed_order": 1.9999026486399063
+          }
+        ]
+      },
+      {
+        "id": "minimal-m1-g1",
+        "title": "Minimal m=1, gamma=1",
+        "classification": "supercritical",
+        "alpha_n0": 0.4540001658248124,
+        "beta_n0": 0.8730377411877027,
+        "theory_c2": 1.9229899169785474,
+        "fits": [
+          {
+            "mesh": 40,
+            "c2": 1.9130168027041174,
+            "observed_order": null
+          },
+          {
+            "mesh": 80,
+            "c2": 1.9204956382538594,
+            "observed_order": 1.9994213920153865
+          },
+          {
+            "mesh": 160,
+            "c2": 1.92236644735955,
+            "observed_order": 2.0002315231020047
+          }
+        ]
+      },
+      {
+        "id": "minimal-m2-g2",
+        "title": "Minimal m=2, gamma=2",
+        "classification": "subcritical",
+        "alpha_n0": 0.9080003316496248,
+        "beta_n0": -1.0429176776256086,
+        "theory_c2": -1.1485873311641532,
+        "fits": [
+          {
+            "mesh": 40,
+            "c2": -1.1795328096525204,
+            "observed_order": null
+          },
+          {
+            "mesh": 80,
+            "c2": -1.1563262402309178,
+            "observed_order": 1.9995265165374327
+          },
+          {
+            "mesh": 160,
+            "c2": -1.1505222060103328,
+            "observed_order": 1.9998899565433161
+          }
+        ]
+      }
+    ]
+  },
+  "time_integration_cases": [
     {
-      "id": "nonminimal-a10-beta0",
-      "title": "Quasi-linear supercritical pitchfork",
+      "id": "time-nonminimal-a10-beta0",
+      "title": "Quasi-linear supercritical time evolution",
       "status": "validated_current",
       "quantitative_use": true,
-      "claim_scope": "Paper III near-threshold semidiscrete evidence: below-threshold decay and symmetry-related patterned trajectories above threshold.",
+      "claim_scope": "Near-threshold semidiscrete trajectories: below-threshold decay and symmetry-related patterned trajectories above threshold.",
       "paper_figure_id": "paper3-supercritical-quasilinear",
       "paper_figure": {
-        "source_manuscript_commit": "7d69c6e",
+        "source_manuscript_commit": "c0bfc431a19b81b1c45363dea472c29a745ad055",
         "preview_path": "docs/assets/images/paper3-supercritical-quasilinear.png",
-        "preview_sha256": "7c8d78658056e7206bdc1935fb865208c4c9253bffe6b065a76747e854008283",
+        "preview_sha256": "e96975dbaa9a3a81f22c23ef7f1f76e85b485b8180f443817d409c49d0bb7575",
         "vector_path": "docs/assets/images/paper3-supercritical-quasilinear.pdf",
-        "vector_sha256": "935200fa204f9178c95052840a8c1d8da2794a324ab48035c714a2d447debad4"
+        "vector_sha256": "dc1d3705e6a43b524d583bc244de741be17096bd96a5b44a50362d1126989b92"
       },
-      "legacy_preview_policy": "Per-run summary images retain obsolete coefficient annotations and are archive provenance only; the paper_figure assets are the current reader-facing figures.",
+      "legacy_preview_policy": "Per-run summaries retain obsolete annotations and are provenance only; only the hashed paper_figure assets are reader-facing.",
       "raw_path": "docs/results/quasilinear/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1",
       "constants_path": "docs/results/quasilinear/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1/constants.json",
       "archive_assertions": {
@@ -60,20 +215,20 @@
       ]
     },
     {
-      "id": "nonminimal-m2-beta1-gamma2",
-      "title": "Nonlinear-mobility supercritical pitchfork",
+      "id": "time-nonminimal-m2-beta1-gamma2",
+      "title": "Nonlinear-mobility supercritical time evolution",
       "status": "validated_current",
       "quantitative_use": true,
-      "claim_scope": "Paper III near-threshold semidiscrete evidence for nonlinear mobility and signal production.",
+      "claim_scope": "Near-threshold semidiscrete trajectories for nonlinear mobility and signal production.",
       "paper_figure_id": "paper3-supercritical-nonlinear",
       "paper_figure": {
-        "source_manuscript_commit": "7d69c6e",
+        "source_manuscript_commit": "c0bfc431a19b81b1c45363dea472c29a745ad055",
         "preview_path": "docs/assets/images/paper3-supercritical-nonlinear.png",
-        "preview_sha256": "b287873930bb8ed56f6ad7dfded889a1dec2f6a9ae11ede8000bec0d63d3860d",
+        "preview_sha256": "66333a7ffdd4c06afdb17d735412aa50158ceb289ad5ab5cf3cda86d217077c3",
         "vector_path": "docs/assets/images/paper3-supercritical-nonlinear.pdf",
-        "vector_sha256": "40bbb4bc4e5c459dedf1b0b960c932ce41c581a0fc5bb876b901be1b1a19b631"
+        "vector_sha256": "7b5f03c9cbf7097c330321700d7d7c9b15255169580d8ef2e2e756287fa74405"
       },
-      "legacy_preview_policy": "Per-run summary images retain obsolete coefficient annotations and are archive provenance only; the paper_figure assets are the current reader-facing figures.",
+      "legacy_preview_policy": "Per-run summaries retain obsolete annotations and are provenance only; only the hashed paper_figure assets are reader-facing.",
       "raw_path": "docs/results/nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1",
       "constants_path": "docs/results/nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1/constants.json",
       "archive_assertions": {
@@ -103,69 +258,44 @@
       ]
     }
   ],
-  "pending_review": [
+  "provenance_only": [
     {
-      "id": "minimal-m1-beta1-gamma1",
-      "title": "Minimal-model supercritical rerun",
-      "status": "under_review",
+      "id": "legacy-minimal-m1-g1-time-run",
+      "title": "Historical minimal m=1, gamma=1 time integration",
+      "status": "provenance_only",
       "quantitative_use": false,
-      "claim_scope": "The coefficient is corrected, but the archived above-threshold trajectory has unacceptable mass drift and is not Paper III evidence.",
+      "reader_facing": false,
+      "reason": "The archived above-threshold trajectory has unacceptable mass drift; the replacement stationary continuation is the validated evidence.",
       "raw_path": "docs/results/minimal_model/subcritical/u1_beta1_m1_gamma1_mu1_nu1_L1_n1",
-      "constants_path": "docs/results/minimal_model/subcritical/u1_beta1_m1_gamma1_mu1_nu1_L1_n1/constants.json",
-      "archived_runs": [
-        {
-          "role": "mass-drifting positive seed",
-          "run_path": "docs/results/minimal_model/subcritical/u1_beta1_m1_gamma1_mu1_nu1_L1_n1/runs/chi21-9566_ep1e-03_p/run.npz",
-          "metadata_path": "docs/results/minimal_model/subcritical/u1_beta1_m1_gamma1_mu1_nu1_L1_n1/runs/chi21-9566_ep1e-03_p/run_meta.json",
-          "preview_path": "docs/results/minimal_model/subcritical/u1_beta1_m1_gamma1_mu1_nu1_L1_n1/runs/chi21-9566_ep1e-03_p/run_summary6.png"
-        }
-      ]
+      "constants_path": "docs/results/minimal_model/subcritical/u1_beta1_m1_gamma1_mu1_nu1_L1_n1/constants.json"
     },
     {
-      "id": "minimal-m2-beta1-gamma2",
-      "title": "Minimal-model subcritical archive",
-      "status": "under_review",
+      "id": "legacy-minimal-m2-g2-time-run",
+      "title": "Historical minimal m=2, gamma=2 time integration",
+      "status": "provenance_only",
       "quantitative_use": false,
-      "claim_scope": "This family was generated as a supercritical example before its coefficient was corrected; its fixed-seed trajectories are provenance only.",
+      "reader_facing": false,
+      "reason": "This archive predates the corrected subcritical classification; the replacement stationary continuation is the validated evidence.",
       "raw_path": "docs/results/minimal_model/supercritical/u1_beta1_m2_gamma2_mu1_nu1_L1_n1",
-      "constants_path": "docs/results/minimal_model/supercritical/u1_beta1_m2_gamma2_mu1_nu1_L1_n1/constants.json",
-      "archived_runs": [
-        {
-          "role": "historical positive seed",
-          "run_path": "docs/results/minimal_model/supercritical/u1_beta1_m2_gamma2_mu1_nu1_L1_n1/runs/chi10-8900_ep1e-03_p/run.npz",
-          "metadata_path": "docs/results/minimal_model/supercritical/u1_beta1_m2_gamma2_mu1_nu1_L1_n1/runs/chi10-8900_ep1e-03_p/run_meta.json",
-          "preview_path": "docs/results/minimal_model/supercritical/u1_beta1_m2_gamma2_mu1_nu1_L1_n1/runs/chi10-8900_ep1e-03_p/run_summary6.png"
-        }
-      ]
-    }
-  ],
-  "rerun_queue": [
+      "constants_path": "docs/results/minimal_model/supercritical/u1_beta1_m2_gamma2_mu1_nu1_L1_n1/constants.json"
+    },
     {
-      "id": "nonminimal-subcritical-beta3",
-      "title": "Corrected subcritical continuation target",
-      "status": "under_review",
+      "id": "legacy-nonminimal-beta3-misseeded",
+      "title": "Historical beta=3 coefficient-dependent branch seeds",
+      "status": "provenance_only",
       "quantitative_use": false,
-      "claim_scope": "Existing branch-seeded runs used an obsolete asymptotic amplitude; regenerate or solve the stationary problem with the corrected coefficient before use.",
+      "reader_facing": false,
+      "reason": "The branch seeds used an obsolete asymptotic coefficient; the v1 stationary continuation is the validated replacement.",
       "raw_path": "docs/results/quasilinear/subcritical/a1_b1_alpha1_m1_beta3_gamma1_mu1_nu1_L1_n1",
-      "constants_path": "docs/results/quasilinear/subcritical/a1_b1_alpha1_m1_beta3_gamma1_mu1_nu1_L1_n1/constants.json",
-      "corrected_analysis": {
-        "source_revision": "Chemotaxis_simulation@b414cee",
-        "classification": "subcritical",
-        "beta_n0": -2.232172436126313
-      },
-      "archived_constants": {
-        "classification": "subcritical",
-        "beta_n0": -1.047765363208696
-      }
-    }
-  ],
-  "excluded_cases": [
+      "constants_path": "docs/results/quasilinear/subcritical/a1_b1_alpha1_m1_beta3_gamma1_mu1_nu1_L1_n1/constants.json"
+    },
     {
-      "id": "nonminimal-m1-beta1-gamma1-misseeded",
-      "title": "Reclassified all-ones branch-seeded archive",
-      "status": "under_review",
+      "id": "legacy-nonminimal-beta1-misseeded",
+      "title": "Reclassified all-ones coefficient-dependent branch seeds",
+      "status": "provenance_only",
       "quantitative_use": false,
-      "claim_scope": "The case is supercritical, while its A_rel files were generated from an obsolete negative coefficient; retain for provenance only.",
+      "reader_facing": false,
+      "reason": "The case is supercritical, while its A_rel files were generated from an obsolete negative coefficient.",
       "raw_path": "docs/results/quasilinear/subcritical/a1_b1_alpha1_m1_beta1_gamma1_mu1_nu1_L1_n1",
       "constants_path": "docs/results/quasilinear/subcritical/a1_b1_alpha1_m1_beta1_gamma1_mu1_nu1_L1_n1/constants.json"
     }
