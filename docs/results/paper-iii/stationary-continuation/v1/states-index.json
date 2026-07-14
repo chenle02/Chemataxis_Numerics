@@ -1,0 +1,1738 @@
+{
+  "archive": "stationary-states.npz",
+  "array_dtype": "float64",
+  "array_naming": "<state_id>__<x|u|v>",
+  "schema_version": 1,
+  "state_count": 96,
+  "state_order": "case declaration, mesh ascending, amplitude ascending",
+  "states": [
+    {
+      "array_names": {
+        "u": "nonminimal-a10-beta0__N0040__Aminus_0p02__u",
+        "v": "nonminimal-a10-beta0__N0040__Aminus_0p02__v",
+        "x": "nonminimal-a10-beta0__N0040__Aminus_0p02__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "nonminimal-a10-beta0",
+      "chi": 2.1878298367617717,
+      "measured_amplitude": -0.019999999999999893,
+      "mesh": 40,
+      "reflection_partner_id": "nonminimal-a10-beta0__N0040__Aplus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.02,
+      "state_id": "nonminimal-a10-beta0__N0040__Aminus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-a10-beta0__N0040__Aminus_0p01__u",
+        "v": "nonminimal-a10-beta0__N0040__Aminus_0p01__v",
+        "x": "nonminimal-a10-beta0__N0040__Aminus_0p01__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "nonminimal-a10-beta0",
+      "chi": 2.1878273255209364,
+      "measured_amplitude": -0.009999999999999953,
+      "mesh": 40,
+      "reflection_partner_id": "nonminimal-a10-beta0__N0040__Aplus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.01,
+      "state_id": "nonminimal-a10-beta0__N0040__Aminus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-a10-beta0__N0040__Aminus_0p005__u",
+        "v": "nonminimal-a10-beta0__N0040__Aminus_0p005__v",
+        "x": "nonminimal-a10-beta0__N0040__Aminus_0p005__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "nonminimal-a10-beta0",
+      "chi": 2.187826697717011,
+      "measured_amplitude": -0.005000000000000168,
+      "mesh": 40,
+      "reflection_partner_id": "nonminimal-a10-beta0__N0040__Aplus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.005,
+      "state_id": "nonminimal-a10-beta0__N0040__Aminus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-a10-beta0__N0040__Aminus_0p0025__u",
+        "v": "nonminimal-a10-beta0__N0040__Aminus_0p0025__v",
+        "x": "nonminimal-a10-beta0__N0040__Aminus_0p0025__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "nonminimal-a10-beta0",
+      "chi": 2.187826540768144,
+      "measured_amplitude": -0.002500000000000075,
+      "mesh": 40,
+      "reflection_partner_id": "nonminimal-a10-beta0__N0040__Aplus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.0025,
+      "state_id": "nonminimal-a10-beta0__N0040__Aminus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-a10-beta0__N0040__Aplus_0p0025__u",
+        "v": "nonminimal-a10-beta0__N0040__Aplus_0p0025__v",
+        "x": "nonminimal-a10-beta0__N0040__Aplus_0p0025__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "nonminimal-a10-beta0",
+      "chi": 2.1878265407519852,
+      "measured_amplitude": 0.0024999999999999983,
+      "mesh": 40,
+      "reflection_partner_id": "nonminimal-a10-beta0__N0040__Aminus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.0025,
+      "state_id": "nonminimal-a10-beta0__N0040__Aplus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-a10-beta0__N0040__Aplus_0p005__u",
+        "v": "nonminimal-a10-beta0__N0040__Aplus_0p005__v",
+        "x": "nonminimal-a10-beta0__N0040__Aplus_0p005__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "nonminimal-a10-beta0",
+      "chi": 2.1878266977089007,
+      "measured_amplitude": 0.00500000000000012,
+      "mesh": 40,
+      "reflection_partner_id": "nonminimal-a10-beta0__N0040__Aminus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.005,
+      "state_id": "nonminimal-a10-beta0__N0040__Aplus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-a10-beta0__N0040__Aplus_0p01__u",
+        "v": "nonminimal-a10-beta0__N0040__Aplus_0p01__v",
+        "x": "nonminimal-a10-beta0__N0040__Aplus_0p01__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "nonminimal-a10-beta0",
+      "chi": 2.1878273255169276,
+      "measured_amplitude": 0.010000000000000092,
+      "mesh": 40,
+      "reflection_partner_id": "nonminimal-a10-beta0__N0040__Aminus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.01,
+      "state_id": "nonminimal-a10-beta0__N0040__Aplus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-a10-beta0__N0040__Aplus_0p02__u",
+        "v": "nonminimal-a10-beta0__N0040__Aplus_0p02__v",
+        "x": "nonminimal-a10-beta0__N0040__Aplus_0p02__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "nonminimal-a10-beta0",
+      "chi": 2.1878298367595743,
+      "measured_amplitude": 0.019999999999999844,
+      "mesh": 40,
+      "reflection_partner_id": "nonminimal-a10-beta0__N0040__Aminus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.02,
+      "state_id": "nonminimal-a10-beta0__N0040__Aplus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-a10-beta0__N0080__Aminus_0p02__u",
+        "v": "nonminimal-a10-beta0__N0080__Aminus_0p02__v",
+        "x": "nonminimal-a10-beta0__N0080__Aminus_0p02__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "nonminimal-a10-beta0",
+      "chi": 2.1881711820705445,
+      "measured_amplitude": -0.019999999999999987,
+      "mesh": 80,
+      "reflection_partner_id": "nonminimal-a10-beta0__N0080__Aplus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.02,
+      "state_id": "nonminimal-a10-beta0__N0080__Aminus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-a10-beta0__N0080__Aminus_0p01__u",
+        "v": "nonminimal-a10-beta0__N0080__Aminus_0p01__v",
+        "x": "nonminimal-a10-beta0__N0080__Aminus_0p01__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "nonminimal-a10-beta0",
+      "chi": 2.188168658518897,
+      "measured_amplitude": -0.00999999999999999,
+      "mesh": 80,
+      "reflection_partner_id": "nonminimal-a10-beta0__N0080__Aplus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.01,
+      "state_id": "nonminimal-a10-beta0__N0080__Aminus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-a10-beta0__N0080__Aminus_0p005__u",
+        "v": "nonminimal-a10-beta0__N0080__Aminus_0p005__v",
+        "x": "nonminimal-a10-beta0__N0080__Aminus_0p005__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "nonminimal-a10-beta0",
+      "chi": 2.1881680276199957,
+      "measured_amplitude": -0.004999999999999928,
+      "mesh": 80,
+      "reflection_partner_id": "nonminimal-a10-beta0__N0080__Aplus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.005,
+      "state_id": "nonminimal-a10-beta0__N0080__Aminus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-a10-beta0__N0080__Aminus_0p0025__u",
+        "v": "nonminimal-a10-beta0__N0080__Aminus_0p0025__v",
+        "x": "nonminimal-a10-beta0__N0080__Aminus_0p0025__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "nonminimal-a10-beta0",
+      "chi": 2.1881678698705502,
+      "measured_amplitude": -0.0025000000000000022,
+      "mesh": 80,
+      "reflection_partner_id": "nonminimal-a10-beta0__N0080__Aplus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.0025,
+      "state_id": "nonminimal-a10-beta0__N0080__Aminus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-a10-beta0__N0080__Aplus_0p0025__u",
+        "v": "nonminimal-a10-beta0__N0080__Aplus_0p0025__v",
+        "x": "nonminimal-a10-beta0__N0080__Aplus_0p0025__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "nonminimal-a10-beta0",
+      "chi": 2.188167869989303,
+      "measured_amplitude": 0.0024999999999998725,
+      "mesh": 80,
+      "reflection_partner_id": "nonminimal-a10-beta0__N0080__Aminus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.0025,
+      "state_id": "nonminimal-a10-beta0__N0080__Aplus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-a10-beta0__N0080__Aplus_0p005__u",
+        "v": "nonminimal-a10-beta0__N0080__Aplus_0p005__v",
+        "x": "nonminimal-a10-beta0__N0080__Aplus_0p005__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "nonminimal-a10-beta0",
+      "chi": 2.1881680276835196,
+      "measured_amplitude": 0.004999999999999858,
+      "mesh": 80,
+      "reflection_partner_id": "nonminimal-a10-beta0__N0080__Aminus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.005,
+      "state_id": "nonminimal-a10-beta0__N0080__Aplus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-a10-beta0__N0080__Aplus_0p01__u",
+        "v": "nonminimal-a10-beta0__N0080__Aplus_0p01__v",
+        "x": "nonminimal-a10-beta0__N0080__Aplus_0p01__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "nonminimal-a10-beta0",
+      "chi": 2.188168658548733,
+      "measured_amplitude": 0.009999999999999964,
+      "mesh": 80,
+      "reflection_partner_id": "nonminimal-a10-beta0__N0080__Aminus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.01,
+      "state_id": "nonminimal-a10-beta0__N0080__Aplus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-a10-beta0__N0080__Aplus_0p02__u",
+        "v": "nonminimal-a10-beta0__N0080__Aplus_0p02__v",
+        "x": "nonminimal-a10-beta0__N0080__Aplus_0p02__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "nonminimal-a10-beta0",
+      "chi": 2.18817118208619,
+      "measured_amplitude": 0.01999999999999996,
+      "mesh": 80,
+      "reflection_partner_id": "nonminimal-a10-beta0__N0080__Aminus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.02,
+      "state_id": "nonminimal-a10-beta0__N0080__Aplus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-a10-beta0__N0160__Aminus_0p02__u",
+        "v": "nonminimal-a10-beta0__N0160__Aminus_0p02__v",
+        "x": "nonminimal-a10-beta0__N0160__Aminus_0p02__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "nonminimal-a10-beta0",
+      "chi": 2.188256539611287,
+      "measured_amplitude": -0.019999999999999976,
+      "mesh": 160,
+      "reflection_partner_id": "nonminimal-a10-beta0__N0160__Aplus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.02,
+      "state_id": "nonminimal-a10-beta0__N0160__Aminus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-a10-beta0__N0160__Aminus_0p01__u",
+        "v": "nonminimal-a10-beta0__N0160__Aminus_0p01__v",
+        "x": "nonminimal-a10-beta0__N0160__Aminus_0p01__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "nonminimal-a10-beta0",
+      "chi": 2.1882540130307486,
+      "measured_amplitude": -0.010000000000000139,
+      "mesh": 160,
+      "reflection_partner_id": "nonminimal-a10-beta0__N0160__Aplus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.01,
+      "state_id": "nonminimal-a10-beta0__N0160__Aminus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-a10-beta0__N0160__Aminus_0p005__u",
+        "v": "nonminimal-a10-beta0__N0160__Aminus_0p005__v",
+        "x": "nonminimal-a10-beta0__N0160__Aminus_0p005__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "nonminimal-a10-beta0",
+      "chi": 2.188253381458722,
+      "measured_amplitude": -0.004999999999999907,
+      "mesh": 160,
+      "reflection_partner_id": "nonminimal-a10-beta0__N0160__Aplus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.005,
+      "state_id": "nonminimal-a10-beta0__N0160__Aminus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-a10-beta0__N0160__Aminus_0p0025__u",
+        "v": "nonminimal-a10-beta0__N0160__Aminus_0p0025__v",
+        "x": "nonminimal-a10-beta0__N0160__Aminus_0p0025__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "nonminimal-a10-beta0",
+      "chi": 2.1882532237139483,
+      "measured_amplitude": -0.002499999999999976,
+      "mesh": 160,
+      "reflection_partner_id": "nonminimal-a10-beta0__N0160__Aplus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.0025,
+      "state_id": "nonminimal-a10-beta0__N0160__Aminus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-a10-beta0__N0160__Aplus_0p0025__u",
+        "v": "nonminimal-a10-beta0__N0160__Aplus_0p0025__v",
+        "x": "nonminimal-a10-beta0__N0160__Aplus_0p0025__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "nonminimal-a10-beta0",
+      "chi": 2.1882532230536156,
+      "measured_amplitude": 0.002499999999999862,
+      "mesh": 160,
+      "reflection_partner_id": "nonminimal-a10-beta0__N0160__Aminus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.0025,
+      "state_id": "nonminimal-a10-beta0__N0160__Aplus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-a10-beta0__N0160__Aplus_0p005__u",
+        "v": "nonminimal-a10-beta0__N0160__Aplus_0p005__v",
+        "x": "nonminimal-a10-beta0__N0160__Aplus_0p005__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "nonminimal-a10-beta0",
+      "chi": 2.188253381124968,
+      "measured_amplitude": 0.00500000000000003,
+      "mesh": 160,
+      "reflection_partner_id": "nonminimal-a10-beta0__N0160__Aminus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.005,
+      "state_id": "nonminimal-a10-beta0__N0160__Aplus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-a10-beta0__N0160__Aplus_0p01__u",
+        "v": "nonminimal-a10-beta0__N0160__Aplus_0p01__v",
+        "x": "nonminimal-a10-beta0__N0160__Aplus_0p01__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "nonminimal-a10-beta0",
+      "chi": 2.1882540128639305,
+      "measured_amplitude": 0.009999999999999974,
+      "mesh": 160,
+      "reflection_partner_id": "nonminimal-a10-beta0__N0160__Aminus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.01,
+      "state_id": "nonminimal-a10-beta0__N0160__Aplus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-a10-beta0__N0160__Aplus_0p02__u",
+        "v": "nonminimal-a10-beta0__N0160__Aplus_0p02__v",
+        "x": "nonminimal-a10-beta0__N0160__Aplus_0p02__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "nonminimal-a10-beta0",
+      "chi": 2.188256539527902,
+      "measured_amplitude": 0.020000000000000046,
+      "mesh": 160,
+      "reflection_partner_id": "nonminimal-a10-beta0__N0160__Aminus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.02,
+      "state_id": "nonminimal-a10-beta0__N0160__Aplus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-beta3__N0040__Aminus_0p02__u",
+        "v": "nonminimal-beta3__N0040__Aminus_0p02__v",
+        "x": "nonminimal-beta3__N0040__Aminus_0p02__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "nonminimal-beta3",
+      "chi": 95.7195150109161,
+      "measured_amplitude": -0.020000000000000014,
+      "mesh": 40,
+      "reflection_partner_id": "nonminimal-beta3__N0040__Aplus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.02,
+      "state_id": "nonminimal-beta3__N0040__Aminus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-beta3__N0040__Aminus_0p01__u",
+        "v": "nonminimal-beta3__N0040__Aminus_0p01__v",
+        "x": "nonminimal-beta3__N0040__Aminus_0p01__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "nonminimal-beta3",
+      "chi": 95.72531082392938,
+      "measured_amplitude": -0.010000000000000005,
+      "mesh": 40,
+      "reflection_partner_id": "nonminimal-beta3__N0040__Aplus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.01,
+      "state_id": "nonminimal-beta3__N0040__Aminus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-beta3__N0040__Aminus_0p005__u",
+        "v": "nonminimal-beta3__N0040__Aminus_0p005__v",
+        "x": "nonminimal-beta3__N0040__Aminus_0p005__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "nonminimal-beta3",
+      "chi": 95.72675973118427,
+      "measured_amplitude": -0.004999999999999994,
+      "mesh": 40,
+      "reflection_partner_id": "nonminimal-beta3__N0040__Aplus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.005,
+      "state_id": "nonminimal-beta3__N0040__Aminus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-beta3__N0040__Aminus_0p0025__u",
+        "v": "nonminimal-beta3__N0040__Aminus_0p0025__v",
+        "x": "nonminimal-beta3__N0040__Aminus_0p0025__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "nonminimal-beta3",
+      "chi": 95.72712195514053,
+      "measured_amplitude": -0.002499999999999987,
+      "mesh": 40,
+      "reflection_partner_id": "nonminimal-beta3__N0040__Aplus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.0025,
+      "state_id": "nonminimal-beta3__N0040__Aminus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-beta3__N0040__Aplus_0p0025__u",
+        "v": "nonminimal-beta3__N0040__Aplus_0p0025__v",
+        "x": "nonminimal-beta3__N0040__Aplus_0p0025__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "nonminimal-beta3",
+      "chi": 95.72712195508497,
+      "measured_amplitude": 0.0025000000000000144,
+      "mesh": 40,
+      "reflection_partner_id": "nonminimal-beta3__N0040__Aminus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.0025,
+      "state_id": "nonminimal-beta3__N0040__Aplus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-beta3__N0040__Aplus_0p005__u",
+        "v": "nonminimal-beta3__N0040__Aplus_0p005__v",
+        "x": "nonminimal-beta3__N0040__Aplus_0p005__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "nonminimal-beta3",
+      "chi": 95.72675973115476,
+      "measured_amplitude": 0.005000000000000019,
+      "mesh": 40,
+      "reflection_partner_id": "nonminimal-beta3__N0040__Aminus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.005,
+      "state_id": "nonminimal-beta3__N0040__Aplus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-beta3__N0040__Aplus_0p01__u",
+        "v": "nonminimal-beta3__N0040__Aplus_0p01__v",
+        "x": "nonminimal-beta3__N0040__Aplus_0p01__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "nonminimal-beta3",
+      "chi": 95.7253108239106,
+      "measured_amplitude": 0.010000000000000009,
+      "mesh": 40,
+      "reflection_partner_id": "nonminimal-beta3__N0040__Aminus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.01,
+      "state_id": "nonminimal-beta3__N0040__Aplus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-beta3__N0040__Aplus_0p02__u",
+        "v": "nonminimal-beta3__N0040__Aplus_0p02__v",
+        "x": "nonminimal-beta3__N0040__Aplus_0p02__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "nonminimal-beta3",
+      "chi": 95.71951501090632,
+      "measured_amplitude": 0.01999999999999999,
+      "mesh": 40,
+      "reflection_partner_id": "nonminimal-beta3__N0040__Aminus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.02,
+      "state_id": "nonminimal-beta3__N0040__Aplus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-beta3__N0080__Aminus_0p02__u",
+        "v": "nonminimal-beta3__N0080__Aminus_0p02__v",
+        "x": "nonminimal-beta3__N0080__Aminus_0p02__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "nonminimal-beta3",
+      "chi": 95.74953045714275,
+      "measured_amplitude": -0.02,
+      "mesh": 80,
+      "reflection_partner_id": "nonminimal-beta3__N0080__Aplus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.02,
+      "state_id": "nonminimal-beta3__N0080__Aminus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-beta3__N0080__Aminus_0p01__u",
+        "v": "nonminimal-beta3__N0080__Aminus_0p01__v",
+        "x": "nonminimal-beta3__N0080__Aminus_0p01__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "nonminimal-beta3",
+      "chi": 95.75540461686019,
+      "measured_amplitude": -0.009999999999999992,
+      "mesh": 80,
+      "reflection_partner_id": "nonminimal-beta3__N0080__Aplus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.01,
+      "state_id": "nonminimal-beta3__N0080__Aminus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-beta3__N0080__Aminus_0p005__u",
+        "v": "nonminimal-beta3__N0080__Aminus_0p005__v",
+        "x": "nonminimal-beta3__N0080__Aminus_0p005__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "nonminimal-beta3",
+      "chi": 95.75687310277256,
+      "measured_amplitude": -0.005000000000000002,
+      "mesh": 80,
+      "reflection_partner_id": "nonminimal-beta3__N0080__Aplus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.005,
+      "state_id": "nonminimal-beta3__N0080__Aminus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-beta3__N0080__Aminus_0p0025__u",
+        "v": "nonminimal-beta3__N0080__Aminus_0p0025__v",
+        "x": "nonminimal-beta3__N0080__Aminus_0p0025__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "nonminimal-beta3",
+      "chi": 95.75724022073506,
+      "measured_amplitude": -0.002499999999999993,
+      "mesh": 80,
+      "reflection_partner_id": "nonminimal-beta3__N0080__Aplus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.0025,
+      "state_id": "nonminimal-beta3__N0080__Aminus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-beta3__N0080__Aplus_0p0025__u",
+        "v": "nonminimal-beta3__N0080__Aplus_0p0025__v",
+        "x": "nonminimal-beta3__N0080__Aplus_0p0025__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "nonminimal-beta3",
+      "chi": 95.75724022127473,
+      "measured_amplitude": 0.002500000000000015,
+      "mesh": 80,
+      "reflection_partner_id": "nonminimal-beta3__N0080__Aminus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.0025,
+      "state_id": "nonminimal-beta3__N0080__Aplus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-beta3__N0080__Aplus_0p005__u",
+        "v": "nonminimal-beta3__N0080__Aplus_0p005__v",
+        "x": "nonminimal-beta3__N0080__Aplus_0p005__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "nonminimal-beta3",
+      "chi": 95.75687310302779,
+      "measured_amplitude": 0.005000000000000001,
+      "mesh": 80,
+      "reflection_partner_id": "nonminimal-beta3__N0080__Aminus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.005,
+      "state_id": "nonminimal-beta3__N0080__Aplus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-beta3__N0080__Aplus_0p01__u",
+        "v": "nonminimal-beta3__N0080__Aplus_0p01__v",
+        "x": "nonminimal-beta3__N0080__Aplus_0p01__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "nonminimal-beta3",
+      "chi": 95.75540461699153,
+      "measured_amplitude": 0.010000000000000005,
+      "mesh": 80,
+      "reflection_partner_id": "nonminimal-beta3__N0080__Aminus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.01,
+      "state_id": "nonminimal-beta3__N0080__Aplus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-beta3__N0080__Aplus_0p02__u",
+        "v": "nonminimal-beta3__N0080__Aplus_0p02__v",
+        "x": "nonminimal-beta3__N0080__Aplus_0p02__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "nonminimal-beta3",
+      "chi": 95.74953045721055,
+      "measured_amplitude": 0.02,
+      "mesh": 80,
+      "reflection_partner_id": "nonminimal-beta3__N0080__Aminus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.02,
+      "state_id": "nonminimal-beta3__N0080__Aplus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-beta3__N0160__Aminus_0p02__u",
+        "v": "nonminimal-beta3__N0160__Aminus_0p02__v",
+        "x": "nonminimal-beta3__N0160__Aminus_0p02__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "nonminimal-beta3",
+      "chi": 95.7570357709462,
+      "measured_amplitude": -0.020000000000000004,
+      "mesh": 160,
+      "reflection_partner_id": "nonminimal-beta3__N0160__Aplus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.02,
+      "state_id": "nonminimal-beta3__N0160__Aminus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-beta3__N0160__Aminus_0p01__u",
+        "v": "nonminimal-beta3__N0160__Aminus_0p01__v",
+        "x": "nonminimal-beta3__N0160__Aminus_0p01__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "nonminimal-beta3",
+      "chi": 95.76292954562993,
+      "measured_amplitude": -0.01,
+      "mesh": 160,
+      "reflection_partner_id": "nonminimal-beta3__N0160__Aplus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.01,
+      "state_id": "nonminimal-beta3__N0160__Aminus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-beta3__N0160__Aminus_0p005__u",
+        "v": "nonminimal-beta3__N0160__Aminus_0p005__v",
+        "x": "nonminimal-beta3__N0160__Aminus_0p005__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "nonminimal-beta3",
+      "chi": 95.76440293362408,
+      "measured_amplitude": -0.005000000000000003,
+      "mesh": 160,
+      "reflection_partner_id": "nonminimal-beta3__N0160__Aplus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.005,
+      "state_id": "nonminimal-beta3__N0160__Aminus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-beta3__N0160__Aminus_0p0025__u",
+        "v": "nonminimal-beta3__N0160__Aminus_0p0025__v",
+        "x": "nonminimal-beta3__N0160__Aminus_0p0025__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "nonminimal-beta3",
+      "chi": 95.76477127781271,
+      "measured_amplitude": -0.0025000000000000118,
+      "mesh": 160,
+      "reflection_partner_id": "nonminimal-beta3__N0160__Aplus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.0025,
+      "state_id": "nonminimal-beta3__N0160__Aminus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-beta3__N0160__Aplus_0p0025__u",
+        "v": "nonminimal-beta3__N0160__Aplus_0p0025__v",
+        "x": "nonminimal-beta3__N0160__Aplus_0p0025__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "nonminimal-beta3",
+      "chi": 95.76477127486251,
+      "measured_amplitude": 0.002500000000000001,
+      "mesh": 160,
+      "reflection_partner_id": "nonminimal-beta3__N0160__Aminus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.0025,
+      "state_id": "nonminimal-beta3__N0160__Aplus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-beta3__N0160__Aplus_0p005__u",
+        "v": "nonminimal-beta3__N0160__Aplus_0p005__v",
+        "x": "nonminimal-beta3__N0160__Aplus_0p005__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "nonminimal-beta3",
+      "chi": 95.76440293217868,
+      "measured_amplitude": 0.005000000000000004,
+      "mesh": 160,
+      "reflection_partner_id": "nonminimal-beta3__N0160__Aminus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.005,
+      "state_id": "nonminimal-beta3__N0160__Aplus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-beta3__N0160__Aplus_0p01__u",
+        "v": "nonminimal-beta3__N0160__Aplus_0p01__v",
+        "x": "nonminimal-beta3__N0160__Aplus_0p01__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "nonminimal-beta3",
+      "chi": 95.7629295449084,
+      "measured_amplitude": 0.009999999999999993,
+      "mesh": 160,
+      "reflection_partner_id": "nonminimal-beta3__N0160__Aminus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.01,
+      "state_id": "nonminimal-beta3__N0160__Aplus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "nonminimal-beta3__N0160__Aplus_0p02__u",
+        "v": "nonminimal-beta3__N0160__Aplus_0p02__v",
+        "x": "nonminimal-beta3__N0160__Aplus_0p02__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "nonminimal-beta3",
+      "chi": 95.75703577059035,
+      "measured_amplitude": 0.019999999999999993,
+      "mesh": 160,
+      "reflection_partner_id": "nonminimal-beta3__N0160__Aminus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.02,
+      "state_id": "nonminimal-beta3__N0160__Aplus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m1-g1__N0040__Aminus_0p02__u",
+        "v": "minimal-m1-g1__N0040__Aminus_0p02__v",
+        "x": "minimal-m1-g1__N0040__Aminus_0p02__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "minimal-m1-g1",
+      "chi": 21.729829364039944,
+      "measured_amplitude": -0.020000000000000004,
+      "mesh": 40,
+      "reflection_partner_id": "minimal-m1-g1__N0040__Aplus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.02,
+      "state_id": "minimal-m1-g1__N0040__Aminus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m1-g1__N0040__Aminus_0p01__u",
+        "v": "minimal-m1-g1__N0040__Aminus_0p01__v",
+        "x": "minimal-m1-g1__N0040__Aminus_0p01__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "minimal-m1-g1",
+      "chi": 21.72925541272613,
+      "measured_amplitude": -0.010000000000000004,
+      "mesh": 40,
+      "reflection_partner_id": "minimal-m1-g1__N0040__Aplus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.01,
+      "state_id": "minimal-m1-g1__N0040__Aminus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m1-g1__N0040__Aminus_0p005__u",
+        "v": "minimal-m1-g1__N0040__Aminus_0p005__v",
+        "x": "minimal-m1-g1__N0040__Aminus_0p005__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "minimal-m1-g1",
+      "chi": 21.729111933543358,
+      "measured_amplitude": -0.005000000000000011,
+      "mesh": 40,
+      "reflection_partner_id": "minimal-m1-g1__N0040__Aplus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.005,
+      "state_id": "minimal-m1-g1__N0040__Aminus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m1-g1__N0040__Aminus_0p0025__u",
+        "v": "minimal-m1-g1__N0040__Aminus_0p0025__v",
+        "x": "minimal-m1-g1__N0040__Aminus_0p0025__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "minimal-m1-g1",
+      "chi": 21.729076064274075,
+      "measured_amplitude": -0.002499999999999999,
+      "mesh": 40,
+      "reflection_partner_id": "minimal-m1-g1__N0040__Aplus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.0025,
+      "state_id": "minimal-m1-g1__N0040__Aminus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m1-g1__N0040__Aplus_0p0025__u",
+        "v": "minimal-m1-g1__N0040__Aplus_0p0025__v",
+        "x": "minimal-m1-g1__N0040__Aplus_0p0025__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "minimal-m1-g1",
+      "chi": 21.729076064432476,
+      "measured_amplitude": 0.002499999999999978,
+      "mesh": 40,
+      "reflection_partner_id": "minimal-m1-g1__N0040__Aminus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.0025,
+      "state_id": "minimal-m1-g1__N0040__Aplus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m1-g1__N0040__Aplus_0p005__u",
+        "v": "minimal-m1-g1__N0040__Aplus_0p005__v",
+        "x": "minimal-m1-g1__N0040__Aplus_0p005__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "minimal-m1-g1",
+      "chi": 21.729111933652707,
+      "measured_amplitude": 0.005000000000000005,
+      "mesh": 40,
+      "reflection_partner_id": "minimal-m1-g1__N0040__Aminus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.005,
+      "state_id": "minimal-m1-g1__N0040__Aplus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m1-g1__N0040__Aplus_0p01__u",
+        "v": "minimal-m1-g1__N0040__Aplus_0p01__v",
+        "x": "minimal-m1-g1__N0040__Aplus_0p01__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "minimal-m1-g1",
+      "chi": 21.729255412761535,
+      "measured_amplitude": 0.010000000000000002,
+      "mesh": 40,
+      "reflection_partner_id": "minimal-m1-g1__N0040__Aminus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.01,
+      "state_id": "minimal-m1-g1__N0040__Aplus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m1-g1__N0040__Aplus_0p02__u",
+        "v": "minimal-m1-g1__N0040__Aplus_0p02__v",
+        "x": "minimal-m1-g1__N0040__Aplus_0p02__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "minimal-m1-g1",
+      "chi": 21.72982936406412,
+      "measured_amplitude": 0.01999999999999998,
+      "mesh": 40,
+      "reflection_partner_id": "minimal-m1-g1__N0040__Aminus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.02,
+      "state_id": "minimal-m1-g1__N0040__Aplus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m1-g1__N0080__Aminus_0p02__u",
+        "v": "minimal-m1-g1__N0080__Aminus_0p02__v",
+        "x": "minimal-m1-g1__N0080__Aminus_0p02__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "minimal-m1-g1",
+      "chi": 21.737440485484644,
+      "measured_amplitude": -0.020000000000000004,
+      "mesh": 80,
+      "reflection_partner_id": "minimal-m1-g1__N0080__Aplus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.02,
+      "state_id": "minimal-m1-g1__N0080__Aminus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m1-g1__N0080__Aminus_0p01__u",
+        "v": "minimal-m1-g1__N0080__Aminus_0p01__v",
+        "x": "minimal-m1-g1__N0080__Aminus_0p01__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "minimal-m1-g1",
+      "chi": 21.73686429031811,
+      "measured_amplitude": -0.00999999999999999,
+      "mesh": 80,
+      "reflection_partner_id": "minimal-m1-g1__N0080__Aplus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.01,
+      "state_id": "minimal-m1-g1__N0080__Aminus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m1-g1__N0080__Aminus_0p005__u",
+        "v": "minimal-m1-g1__N0080__Aminus_0p005__v",
+        "x": "minimal-m1-g1__N0080__Aminus_0p005__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "minimal-m1-g1",
+      "chi": 21.736720250381854,
+      "measured_amplitude": -0.0049999999999999975,
+      "mesh": 80,
+      "reflection_partner_id": "minimal-m1-g1__N0080__Aplus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.005,
+      "state_id": "minimal-m1-g1__N0080__Aminus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m1-g1__N0080__Aminus_0p0025__u",
+        "v": "minimal-m1-g1__N0080__Aminus_0p0025__v",
+        "x": "minimal-m1-g1__N0080__Aminus_0p0025__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "minimal-m1-g1",
+      "chi": 21.73668424118779,
+      "measured_amplitude": -0.002500000000000001,
+      "mesh": 80,
+      "reflection_partner_id": "minimal-m1-g1__N0080__Aplus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.0025,
+      "state_id": "minimal-m1-g1__N0080__Aminus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m1-g1__N0080__Aplus_0p0025__u",
+        "v": "minimal-m1-g1__N0080__Aplus_0p0025__v",
+        "x": "minimal-m1-g1__N0080__Aplus_0p0025__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "minimal-m1-g1",
+      "chi": 21.73668424001083,
+      "measured_amplitude": 0.002499999999999996,
+      "mesh": 80,
+      "reflection_partner_id": "minimal-m1-g1__N0080__Aminus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.0025,
+      "state_id": "minimal-m1-g1__N0080__Aplus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m1-g1__N0080__Aplus_0p005__u",
+        "v": "minimal-m1-g1__N0080__Aplus_0p005__v",
+        "x": "minimal-m1-g1__N0080__Aplus_0p005__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "minimal-m1-g1",
+      "chi": 21.736720249771214,
+      "measured_amplitude": 0.005000000000000005,
+      "mesh": 80,
+      "reflection_partner_id": "minimal-m1-g1__N0080__Aminus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.005,
+      "state_id": "minimal-m1-g1__N0080__Aplus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m1-g1__N0080__Aplus_0p01__u",
+        "v": "minimal-m1-g1__N0080__Aplus_0p01__v",
+        "x": "minimal-m1-g1__N0080__Aplus_0p01__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "minimal-m1-g1",
+      "chi": 21.73686429000427,
+      "measured_amplitude": 0.009999999999999983,
+      "mesh": 80,
+      "reflection_partner_id": "minimal-m1-g1__N0080__Aminus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.01,
+      "state_id": "minimal-m1-g1__N0080__Aplus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m1-g1__N0080__Aplus_0p02__u",
+        "v": "minimal-m1-g1__N0080__Aplus_0p02__v",
+        "x": "minimal-m1-g1__N0080__Aplus_0p02__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "minimal-m1-g1",
+      "chi": 21.737440485333867,
+      "measured_amplitude": 0.02,
+      "mesh": 80,
+      "reflection_partner_id": "minimal-m1-g1__N0080__Aminus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.02,
+      "state_id": "minimal-m1-g1__N0080__Aplus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m1-g1__N0160__Aminus_0p02__u",
+        "v": "minimal-m1-g1__N0160__Aminus_0p02__v",
+        "x": "minimal-m1-g1__N0160__Aminus_0p02__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "minimal-m1-g1",
+      "chi": 21.73934363243488,
+      "measured_amplitude": -0.020000000000000004,
+      "mesh": 160,
+      "reflection_partner_id": "minimal-m1-g1__N0160__Aplus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.02,
+      "state_id": "minimal-m1-g1__N0160__Aminus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m1-g1__N0160__Aminus_0p01__u",
+        "v": "minimal-m1-g1__N0160__Aminus_0p01__v",
+        "x": "minimal-m1-g1__N0160__Aminus_0p01__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "minimal-m1-g1",
+      "chi": 21.73876687549033,
+      "measured_amplitude": -0.00999999999999999,
+      "mesh": 160,
+      "reflection_partner_id": "minimal-m1-g1__N0160__Aplus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.01,
+      "state_id": "minimal-m1-g1__N0160__Aminus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m1-g1__N0160__Aminus_0p005__u",
+        "v": "minimal-m1-g1__N0160__Aminus_0p005__v",
+        "x": "minimal-m1-g1__N0160__Aminus_0p005__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "minimal-m1-g1",
+      "chi": 21.738622694313065,
+      "measured_amplitude": -0.004999999999999997,
+      "mesh": 160,
+      "reflection_partner_id": "minimal-m1-g1__N0160__Aplus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.005,
+      "state_id": "minimal-m1-g1__N0160__Aminus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m1-g1__N0160__Aminus_0p0025__u",
+        "v": "minimal-m1-g1__N0160__Aminus_0p0025__v",
+        "x": "minimal-m1-g1__N0160__Aminus_0p0025__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "minimal-m1-g1",
+      "chi": 21.738586648085963,
+      "measured_amplitude": -0.002499999999999992,
+      "mesh": 160,
+      "reflection_partner_id": "minimal-m1-g1__N0160__Aplus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.0025,
+      "state_id": "minimal-m1-g1__N0160__Aminus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m1-g1__N0160__Aplus_0p0025__u",
+        "v": "minimal-m1-g1__N0160__Aplus_0p0025__v",
+        "x": "minimal-m1-g1__N0160__Aplus_0p0025__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "minimal-m1-g1",
+      "chi": 21.738586654653627,
+      "measured_amplitude": 0.0025000000000000066,
+      "mesh": 160,
+      "reflection_partner_id": "minimal-m1-g1__N0160__Aminus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.0025,
+      "state_id": "minimal-m1-g1__N0160__Aplus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m1-g1__N0160__Aplus_0p005__u",
+        "v": "minimal-m1-g1__N0160__Aplus_0p005__v",
+        "x": "minimal-m1-g1__N0160__Aplus_0p005__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "minimal-m1-g1",
+      "chi": 21.738622697572115,
+      "measured_amplitude": 0.004999999999999993,
+      "mesh": 160,
+      "reflection_partner_id": "minimal-m1-g1__N0160__Aminus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.005,
+      "state_id": "minimal-m1-g1__N0160__Aplus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m1-g1__N0160__Aplus_0p01__u",
+        "v": "minimal-m1-g1__N0160__Aplus_0p01__v",
+        "x": "minimal-m1-g1__N0160__Aplus_0p01__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "minimal-m1-g1",
+      "chi": 21.7387668771106,
+      "measured_amplitude": 0.010000000000000009,
+      "mesh": 160,
+      "reflection_partner_id": "minimal-m1-g1__N0160__Aminus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.01,
+      "state_id": "minimal-m1-g1__N0160__Aplus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m1-g1__N0160__Aplus_0p02__u",
+        "v": "minimal-m1-g1__N0160__Aplus_0p02__v",
+        "x": "minimal-m1-g1__N0160__Aplus_0p02__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "minimal-m1-g1",
+      "chi": 21.739343633254503,
+      "measured_amplitude": 0.020000000000000004,
+      "mesh": 160,
+      "reflection_partner_id": "minimal-m1-g1__N0160__Aminus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.02,
+      "state_id": "minimal-m1-g1__N0160__Aplus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m2-g2__N0040__Aminus_0p02__u",
+        "v": "minimal-m2-g2__N0040__Aminus_0p02__v",
+        "x": "minimal-m2-g2__N0040__Aminus_0p02__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "minimal-m2-g2",
+      "chi": 10.864060249054635,
+      "measured_amplitude": -0.02000000000000001,
+      "mesh": 40,
+      "reflection_partner_id": "minimal-m2-g2__N0040__Aplus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.02,
+      "state_id": "minimal-m2-g2__N0040__Aminus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m2-g2__N0040__Aminus_0p01__u",
+        "v": "minimal-m2-g2__N0040__Aminus_0p01__v",
+        "x": "minimal-m2-g2__N0040__Aminus_0p01__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "minimal-m2-g2",
+      "chi": 10.86441410121593,
+      "measured_amplitude": -0.009999999999999993,
+      "mesh": 40,
+      "reflection_partner_id": "minimal-m2-g2__N0040__Aplus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.01,
+      "state_id": "minimal-m2-g2__N0040__Aminus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m2-g2__N0040__Aminus_0p005__u",
+        "v": "minimal-m2-g2__N0040__Aminus_0p005__v",
+        "x": "minimal-m2-g2__N0040__Aminus_0p005__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "minimal-m2-g2",
+      "chi": 10.86450256569548,
+      "measured_amplitude": -0.0049999999999999845,
+      "mesh": 40,
+      "reflection_partner_id": "minimal-m2-g2__N0040__Aplus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.005,
+      "state_id": "minimal-m2-g2__N0040__Aminus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m2-g2__N0040__Aminus_0p0025__u",
+        "v": "minimal-m2-g2__N0040__Aminus_0p0025__v",
+        "x": "minimal-m2-g2__N0040__Aminus_0p0025__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "minimal-m2-g2",
+      "chi": 10.864524681885907,
+      "measured_amplitude": -0.002500000000000007,
+      "mesh": 40,
+      "reflection_partner_id": "minimal-m2-g2__N0040__Aplus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.0025,
+      "state_id": "minimal-m2-g2__N0040__Aminus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m2-g2__N0040__Aplus_0p0025__u",
+        "v": "minimal-m2-g2__N0040__Aplus_0p0025__v",
+        "x": "minimal-m2-g2__N0040__Aplus_0p0025__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "minimal-m2-g2",
+      "chi": 10.864524681929982,
+      "measured_amplitude": 0.002499999999999983,
+      "mesh": 40,
+      "reflection_partner_id": "minimal-m2-g2__N0040__Aminus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.0025,
+      "state_id": "minimal-m2-g2__N0040__Aplus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m2-g2__N0040__Aplus_0p005__u",
+        "v": "minimal-m2-g2__N0040__Aplus_0p005__v",
+        "x": "minimal-m2-g2__N0040__Aplus_0p005__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "minimal-m2-g2",
+      "chi": 10.864502565715208,
+      "measured_amplitude": 0.005000000000000011,
+      "mesh": 40,
+      "reflection_partner_id": "minimal-m2-g2__N0040__Aminus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.005,
+      "state_id": "minimal-m2-g2__N0040__Aplus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m2-g2__N0040__Aplus_0p01__u",
+        "v": "minimal-m2-g2__N0040__Aplus_0p01__v",
+        "x": "minimal-m2-g2__N0040__Aplus_0p01__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "minimal-m2-g2",
+      "chi": 10.864414101225712,
+      "measured_amplitude": 0.009999999999999995,
+      "mesh": 40,
+      "reflection_partner_id": "minimal-m2-g2__N0040__Aminus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.01,
+      "state_id": "minimal-m2-g2__N0040__Aplus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m2-g2__N0040__Aplus_0p02__u",
+        "v": "minimal-m2-g2__N0040__Aplus_0p02__v",
+        "x": "minimal-m2-g2__N0040__Aplus_0p02__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "minimal-m2-g2",
+      "chi": 10.864060249060035,
+      "measured_amplitude": 0.01999999999999999,
+      "mesh": 40,
+      "reflection_partner_id": "minimal-m2-g2__N0040__Aminus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.02,
+      "state_id": "minimal-m2-g2__N0040__Aplus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m2-g2__N0080__Aminus_0p02__u",
+        "v": "minimal-m2-g2__N0080__Aminus_0p02__v",
+        "x": "minimal-m2-g2__N0080__Aminus_0p02__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "minimal-m2-g2",
+      "chi": 10.867873600431723,
+      "measured_amplitude": -0.020000000000000004,
+      "mesh": 80,
+      "reflection_partner_id": "minimal-m2-g2__N0080__Aplus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.02,
+      "state_id": "minimal-m2-g2__N0080__Aminus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m2-g2__N0080__Aminus_0p01__u",
+        "v": "minimal-m2-g2__N0080__Aminus_0p01__v",
+        "x": "minimal-m2-g2__N0080__Aminus_0p01__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "minimal-m2-g2",
+      "chi": 10.868220486920865,
+      "measured_amplitude": -0.010000000000000002,
+      "mesh": 80,
+      "reflection_partner_id": "minimal-m2-g2__N0080__Aplus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.01,
+      "state_id": "minimal-m2-g2__N0080__Aminus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m2-g2__N0080__Aminus_0p005__u",
+        "v": "minimal-m2-g2__N0080__Aminus_0p005__v",
+        "x": "minimal-m2-g2__N0080__Aminus_0p005__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "minimal-m2-g2",
+      "chi": 10.868307210711157,
+      "measured_amplitude": -0.005000000000000006,
+      "mesh": 80,
+      "reflection_partner_id": "minimal-m2-g2__N0080__Aplus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.005,
+      "state_id": "minimal-m2-g2__N0080__Aminus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m2-g2__N0080__Aminus_0p0025__u",
+        "v": "minimal-m2-g2__N0080__Aminus_0p0025__v",
+        "x": "minimal-m2-g2__N0080__Aminus_0p0025__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "minimal-m2-g2",
+      "chi": 10.868328891860864,
+      "measured_amplitude": -0.002500000000000011,
+      "mesh": 80,
+      "reflection_partner_id": "minimal-m2-g2__N0080__Aplus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.0025,
+      "state_id": "minimal-m2-g2__N0080__Aminus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m2-g2__N0080__Aplus_0p0025__u",
+        "v": "minimal-m2-g2__N0080__Aplus_0p0025__v",
+        "x": "minimal-m2-g2__N0080__Aplus_0p0025__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "minimal-m2-g2",
+      "chi": 10.868328891560383,
+      "measured_amplitude": 0.0025000000000000035,
+      "mesh": 80,
+      "reflection_partner_id": "minimal-m2-g2__N0080__Aminus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.0025,
+      "state_id": "minimal-m2-g2__N0080__Aplus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m2-g2__N0080__Aplus_0p005__u",
+        "v": "minimal-m2-g2__N0080__Aplus_0p005__v",
+        "x": "minimal-m2-g2__N0080__Aplus_0p005__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "minimal-m2-g2",
+      "chi": 10.868307210565012,
+      "measured_amplitude": 0.005000000000000005,
+      "mesh": 80,
+      "reflection_partner_id": "minimal-m2-g2__N0080__Aminus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.005,
+      "state_id": "minimal-m2-g2__N0080__Aplus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m2-g2__N0080__Aplus_0p01__u",
+        "v": "minimal-m2-g2__N0080__Aplus_0p01__v",
+        "x": "minimal-m2-g2__N0080__Aplus_0p01__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "minimal-m2-g2",
+      "chi": 10.868220486844232,
+      "measured_amplitude": 0.009999999999999997,
+      "mesh": 80,
+      "reflection_partner_id": "minimal-m2-g2__N0080__Aminus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.01,
+      "state_id": "minimal-m2-g2__N0080__Aplus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m2-g2__N0080__Aplus_0p02__u",
+        "v": "minimal-m2-g2__N0080__Aplus_0p02__v",
+        "x": "minimal-m2-g2__N0080__Aplus_0p02__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "minimal-m2-g2",
+      "chi": 10.867873600395452,
+      "measured_amplitude": 0.020000000000000007,
+      "mesh": 80,
+      "reflection_partner_id": "minimal-m2-g2__N0080__Aminus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.02,
+      "state_id": "minimal-m2-g2__N0080__Aplus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m2-g2__N0160__Aminus_0p02__u",
+        "v": "minimal-m2-g2__N0160__Aminus_0p02__v",
+        "x": "minimal-m2-g2__N0160__Aminus_0p02__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "minimal-m2-g2",
+      "chi": 10.868827122464847,
+      "measured_amplitude": -0.020000000000000004,
+      "mesh": 160,
+      "reflection_partner_id": "minimal-m2-g2__N0160__Aplus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.02,
+      "state_id": "minimal-m2-g2__N0160__Aminus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m2-g2__N0160__Aminus_0p01__u",
+        "v": "minimal-m2-g2__N0160__Aminus_0p01__v",
+        "x": "minimal-m2-g2__N0160__Aminus_0p01__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "minimal-m2-g2",
+      "chi": 10.869172266677117,
+      "measured_amplitude": -0.009999999999999995,
+      "mesh": 160,
+      "reflection_partner_id": "minimal-m2-g2__N0160__Aplus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.01,
+      "state_id": "minimal-m2-g2__N0160__Aminus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m2-g2__N0160__Aminus_0p005__u",
+        "v": "minimal-m2-g2__N0160__Aminus_0p005__v",
+        "x": "minimal-m2-g2__N0160__Aminus_0p005__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "minimal-m2-g2",
+      "chi": 10.869258554865416,
+      "measured_amplitude": -0.004999999999999999,
+      "mesh": 160,
+      "reflection_partner_id": "minimal-m2-g2__N0160__Aplus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.005,
+      "state_id": "minimal-m2-g2__N0160__Aminus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m2-g2__N0160__Aminus_0p0025__u",
+        "v": "minimal-m2-g2__N0160__Aminus_0p0025__v",
+        "x": "minimal-m2-g2__N0160__Aminus_0p0025__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "minimal-m2-g2",
+      "chi": 10.869280126700321,
+      "measured_amplitude": -0.002500000000000015,
+      "mesh": 160,
+      "reflection_partner_id": "minimal-m2-g2__N0160__Aplus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.0025,
+      "state_id": "minimal-m2-g2__N0160__Aminus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m2-g2__N0160__Aplus_0p0025__u",
+        "v": "minimal-m2-g2__N0160__Aplus_0p0025__v",
+        "x": "minimal-m2-g2__N0160__Aplus_0p0025__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "minimal-m2-g2",
+      "chi": 10.869280128323508,
+      "measured_amplitude": 0.0024999999999999927,
+      "mesh": 160,
+      "reflection_partner_id": "minimal-m2-g2__N0160__Aminus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.0025,
+      "state_id": "minimal-m2-g2__N0160__Aplus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m2-g2__N0160__Aplus_0p005__u",
+        "v": "minimal-m2-g2__N0160__Aplus_0p005__v",
+        "x": "minimal-m2-g2__N0160__Aplus_0p005__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "minimal-m2-g2",
+      "chi": 10.869258555688877,
+      "measured_amplitude": 0.005,
+      "mesh": 160,
+      "reflection_partner_id": "minimal-m2-g2__N0160__Aminus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.005,
+      "state_id": "minimal-m2-g2__N0160__Aplus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m2-g2__N0160__Aplus_0p01__u",
+        "v": "minimal-m2-g2__N0160__Aplus_0p01__v",
+        "x": "minimal-m2-g2__N0160__Aplus_0p01__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "minimal-m2-g2",
+      "chi": 10.86917226708696,
+      "measured_amplitude": 0.009999999999999995,
+      "mesh": 160,
+      "reflection_partner_id": "minimal-m2-g2__N0160__Aminus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.01,
+      "state_id": "minimal-m2-g2__N0160__Aplus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "minimal-m2-g2__N0160__Aplus_0p02__u",
+        "v": "minimal-m2-g2__N0160__Aplus_0p02__v",
+        "x": "minimal-m2-g2__N0160__Aplus_0p02__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "minimal-m2-g2",
+      "chi": 10.868827122671252,
+      "measured_amplitude": 0.019999999999999987,
+      "mesh": 160,
+      "reflection_partner_id": "minimal-m2-g2__N0160__Aminus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.02,
+      "state_id": "minimal-m2-g2__N0160__Aplus_0p02"
+    }
+  ]
+}

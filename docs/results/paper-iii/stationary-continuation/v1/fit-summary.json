@@ -1,0 +1,5171 @@
+{
+  "acceptance": {
+    "gates": [
+      {
+        "limit": 1,
+        "name": "nonminimal-a10-beta0/N40/A-0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N40/A-0.02/full-residual",
+        "passed": true,
+        "value": 4.405364961712621e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N40/A-0.02/elliptic-residual",
+        "passed": true,
+        "value": 6.5352168121535215e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-a10-beta0/N40/A-0.02/amplitude",
+        "passed": true,
+        "value": 1.0755285551056204e-16
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N40/A-0.02/u-positive",
+        "passed": true,
+        "value": 9.980001208889144
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N40/A-0.02/v-positive",
+        "passed": true,
+        "value": 9.998139732522926
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N40/A-0.02/sensitivity-positive",
+        "passed": true,
+        "value": 10.998139732522926
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-a10-beta0/N40/A-0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N40/A-0.01/full-residual",
+        "passed": true,
+        "value": 4.419575816427823e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N40/A-0.01/elliptic-residual",
+        "passed": true,
+        "value": 6.284750497798086e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-a10-beta0/N40/A-0.01/amplitude",
+        "passed": true,
+        "value": 4.683753385137379e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N40/A-0.01/u-positive",
+        "passed": true,
+        "value": 9.990000304680738
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N40/A-0.01/v-positive",
+        "passed": true,
+        "value": 9.999074720065686
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N40/A-0.01/sensitivity-positive",
+        "passed": true,
+        "value": 10.999074720065686
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-a10-beta0/N40/A-0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N40/A-0.005/full-residual",
+        "passed": true,
+        "value": 4.575895218295045e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N40/A-0.005/elliptic-residual",
+        "passed": true,
+        "value": 5.192291041566932e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-a10-beta0/N40/A-0.005/amplitude",
+        "passed": true,
+        "value": 1.682681771697503e-16
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N40/A-0.005/u-positive",
+        "passed": true,
+        "value": 9.99500007647448
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N40/A-0.005/v-positive",
+        "passed": true,
+        "value": 9.999538573467692
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N40/A-0.005/sensitivity-positive",
+        "passed": true,
+        "value": 10.999538573467692
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-a10-beta0/N40/A-0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N40/A-0.0025/full-residual",
+        "passed": true,
+        "value": 4.675371201301459e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N40/A-0.0025/elliptic-residual",
+        "passed": true,
+        "value": 5.10880227011512e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-a10-beta0/N40/A-0.0025/amplitude",
+        "passed": true,
+        "value": 7.502679033599691e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N40/A-0.0025/u-positive",
+        "passed": true,
+        "value": 9.997500019153744
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N40/A-0.0025/v-positive",
+        "passed": true,
+        "value": 9.999769590090034
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N40/A-0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 10.999769590090034
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-a10-beta0/N40/A+0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N40/A+0.0025/full-residual",
+        "passed": true,
+        "value": 4.746425474877469e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N40/A+0.0025/elliptic-residual",
+        "passed": true,
+        "value": 7.128519996513205e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-a10-beta0/N40/A+0.0025/amplitude",
+        "passed": true,
+        "value": 1.734723475976807e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N40/A+0.0025/u-positive",
+        "passed": true,
+        "value": 9.997500019153746
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N40/A+0.0025/v-positive",
+        "passed": true,
+        "value": 9.999769590090052
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N40/A+0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 10.999769590090052
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-a10-beta0/N40/A+0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N40/A+0.005/full-residual",
+        "passed": true,
+        "value": 4.689582056016661e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N40/A+0.005/elliptic-residual",
+        "passed": true,
+        "value": 6.6062710857295315e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-a10-beta0/N40/A+0.005/amplitude",
+        "passed": true,
+        "value": 1.196959198423997e-16
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N40/A+0.005/u-positive",
+        "passed": true,
+        "value": 9.995000076474472
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N40/A+0.005/v-positive",
+        "passed": true,
+        "value": 9.999538573467698
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N40/A+0.005/sensitivity-positive",
+        "passed": true,
+        "value": 10.999538573467698
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-a10-beta0/N40/A+0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N40/A+0.01/full-residual",
+        "passed": true,
+        "value": 5.073275133327115e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N40/A+0.01/elliptic-residual",
+        "passed": true,
+        "value": 5.481837206389173e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-a10-beta0/N40/A+0.01/amplitude",
+        "passed": true,
+        "value": 9.194034422677078e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N40/A+0.01/u-positive",
+        "passed": true,
+        "value": 9.990000304680743
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N40/A+0.01/v-positive",
+        "passed": true,
+        "value": 9.999074720065698
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N40/A+0.01/sensitivity-positive",
+        "passed": true,
+        "value": 10.999074720065698
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-a10-beta0/N40/A+0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N40/A+0.02/full-residual",
+        "passed": true,
+        "value": 3.936406756110955e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N40/A+0.02/elliptic-residual",
+        "passed": true,
+        "value": 5.38946665074036e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-a10-beta0/N40/A+0.02/amplitude",
+        "passed": true,
+        "value": 1.5612511283791264e-16
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N40/A+0.02/u-positive",
+        "passed": true,
+        "value": 9.980001208889137
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N40/A+0.02/v-positive",
+        "passed": true,
+        "value": 9.99813973252293
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N40/A+0.02/sensitivity-positive",
+        "passed": true,
+        "value": 10.99813973252293
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-a10-beta0/N80/A-0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N80/A-0.02/full-residual",
+        "passed": true,
+        "value": 1.766409241099609e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N80/A-0.02/elliptic-residual",
+        "passed": true,
+        "value": 3.778133361720393e-11
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-a10-beta0/N80/A-0.02/amplitude",
+        "passed": true,
+        "value": 1.3877787807814457e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N80/A-0.02/u-positive",
+        "passed": true,
+        "value": 9.980001142083308
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N80/A-0.02/v-positive",
+        "passed": true,
+        "value": 9.998140329618339
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N80/A-0.02/sensitivity-positive",
+        "passed": true,
+        "value": 10.998140329618339
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-a10-beta0/N80/A-0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N80/A-0.01/full-residual",
+        "passed": true,
+        "value": 1.816147232602816e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N80/A-0.01/elliptic-residual",
+        "passed": true,
+        "value": 2.6206592451671895e-11
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-a10-beta0/N80/A-0.01/amplitude",
+        "passed": true,
+        "value": 1.0408340855860843e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N80/A-0.01/u-positive",
+        "passed": true,
+        "value": 9.99000028796513
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N80/A-0.01/v-positive",
+        "passed": true,
+        "value": 9.999075030415872
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N80/A-0.01/sensitivity-positive",
+        "passed": true,
+        "value": 10.999075030415872
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-a10-beta0/N80/A-0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N80/A-0.005/full-residual",
+        "passed": true,
+        "value": 1.837463514675619e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N80/A-0.005/elliptic-residual",
+        "passed": true,
+        "value": 2.6194157953796093e-11
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-a10-beta0/N80/A-0.005/amplitude",
+        "passed": true,
+        "value": 7.19910242530375e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N80/A-0.005/u-positive",
+        "passed": true,
+        "value": 9.995000072286514
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N80/A-0.005/v-positive",
+        "passed": true,
+        "value": 9.999538731591192
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N80/A-0.005/sensitivity-positive",
+        "passed": true,
+        "value": 10.999538731591192
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-a10-beta0/N80/A-0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N80/A-0.0025/full-residual",
+        "passed": true,
+        "value": 1.8047785488306545e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N80/A-0.0025/elliptic-residual",
+        "passed": true,
+        "value": 2.9388047551037744e-11
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-a10-beta0/N80/A-0.0025/amplitude",
+        "passed": true,
+        "value": 2.168404344971009e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N80/A-0.0025/u-positive",
+        "passed": true,
+        "value": 9.997500018098375
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N80/A-0.0025/v-positive",
+        "passed": true,
+        "value": 9.999769669886742
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N80/A-0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 10.999769669886742
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-a10-beta0/N80/A+0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N80/A+0.0025/full-residual",
+        "passed": true,
+        "value": 1.638511548662791e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N80/A+0.0025/elliptic-residual",
+        "passed": true,
+        "value": 2.9249491717564524e-11
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-a10-beta0/N80/A+0.0025/amplitude",
+        "passed": true,
+        "value": 1.2750217548429532e-16
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N80/A+0.0025/u-positive",
+        "passed": true,
+        "value": 9.997500018098366
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N80/A+0.0025/v-positive",
+        "passed": true,
+        "value": 9.999769669886595
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N80/A+0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 10.999769669886595
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-a10-beta0/N80/A+0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N80/A+0.005/full-residual",
+        "passed": true,
+        "value": 1.872990651463624e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N80/A+0.005/elliptic-residual",
+        "passed": true,
+        "value": 2.9061197892588098e-11
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-a10-beta0/N80/A+0.005/amplitude",
+        "passed": true,
+        "value": 1.4224732503009818e-16
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N80/A+0.005/u-positive",
+        "passed": true,
+        "value": 9.995000072286514
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N80/A+0.005/v-positive",
+        "passed": true,
+        "value": 9.99953873159107
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N80/A+0.005/sensitivity-positive",
+        "passed": true,
+        "value": 10.99953873159107
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-a10-beta0/N80/A+0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N80/A+0.01/full-residual",
+        "passed": true,
+        "value": 1.7564616427989677e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N80/A+0.01/elliptic-residual",
+        "passed": true,
+        "value": 2.1245227799226996e-11
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-a10-beta0/N80/A+0.01/amplitude",
+        "passed": true,
+        "value": 3.642919299551295e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N80/A+0.01/u-positive",
+        "passed": true,
+        "value": 9.99000028796511
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N80/A+0.01/v-positive",
+        "passed": true,
+        "value": 9.999075030415712
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N80/A+0.01/sensitivity-positive",
+        "passed": true,
+        "value": 10.999075030415712
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-a10-beta0/N80/A+0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N80/A+0.02/full-residual",
+        "passed": true,
+        "value": 1.7195134205394424e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N80/A+0.02/elliptic-residual",
+        "passed": true,
+        "value": 3.185363084412529e-11
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-a10-beta0/N80/A+0.02/amplitude",
+        "passed": true,
+        "value": 4.163336342344337e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N80/A+0.02/u-positive",
+        "passed": true,
+        "value": 9.980001142083314
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N80/A+0.02/v-positive",
+        "passed": true,
+        "value": 9.99814032961822
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N80/A+0.02/sensitivity-positive",
+        "passed": true,
+        "value": 10.99814032961822
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-a10-beta0/N160/A-0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N160/A-0.02/full-residual",
+        "passed": true,
+        "value": 7.054268280626275e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N160/A-0.02/elliptic-residual",
+        "passed": true,
+        "value": 9.64526236657548e-11
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-a10-beta0/N160/A-0.02/amplitude",
+        "passed": true,
+        "value": 2.42861286636753e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N160/A-0.02/u-positive",
+        "passed": true,
+        "value": 9.980001125383861
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N160/A-0.02/v-positive",
+        "passed": true,
+        "value": 9.998140478846182
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N160/A-0.02/sensitivity-positive",
+        "passed": true,
+        "value": 10.998140478846182
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-a10-beta0/N160/A-0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N160/A-0.01/full-residual",
+        "passed": true,
+        "value": 6.980371836107224e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N160/A-0.01/elliptic-residual",
+        "passed": true,
+        "value": 1.0458300891968975e-10
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-a10-beta0/N160/A-0.01/amplitude",
+        "passed": true,
+        "value": 1.3877787807814457e-16
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N160/A-0.01/u-positive",
+        "passed": true,
+        "value": 9.990000283788774
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N160/A-0.01/v-positive",
+        "passed": true,
+        "value": 9.999075107982806
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N160/A-0.01/sensitivity-positive",
+        "passed": true,
+        "value": 10.999075107982806
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-a10-beta0/N160/A-0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N160/A-0.005/full-residual",
+        "passed": true,
+        "value": 8.50945980346296e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N160/A-0.005/elliptic-residual",
+        "passed": true,
+        "value": 1.0082068513384002e-10
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-a10-beta0/N160/A-0.005/amplitude",
+        "passed": true,
+        "value": 9.280770596475918e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N160/A-0.005/u-positive",
+        "passed": true,
+        "value": 9.995000071242215
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N160/A-0.005/v-positive",
+        "passed": true,
+        "value": 9.999538771112789
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N160/A-0.005/sensitivity-positive",
+        "passed": true,
+        "value": 10.999538771112789
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-a10-beta0/N160/A-0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N160/A-0.0025/full-residual",
+        "passed": true,
+        "value": 7.788969469402218e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N160/A-0.0025/elliptic-residual",
+        "passed": true,
+        "value": 8.962430797510024e-11
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-a10-beta0/N160/A-0.0025/amplitude",
+        "passed": true,
+        "value": 2.3852447794681098e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N160/A-0.0025/u-positive",
+        "passed": true,
+        "value": 9.997500017837242
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N160/A-0.0025/v-positive",
+        "passed": true,
+        "value": 9.999769689831881
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N160/A-0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 10.999769689831881
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-a10-beta0/N160/A+0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N160/A+0.0025/full-residual",
+        "passed": true,
+        "value": 6.977529665164184e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N160/A+0.0025/elliptic-residual",
+        "passed": true,
+        "value": 1.0151879337172431e-10
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-a10-beta0/N160/A+0.0025/amplitude",
+        "passed": true,
+        "value": 1.3791051634015616e-16
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N160/A+0.0025/u-positive",
+        "passed": true,
+        "value": 9.997500017837224
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N160/A+0.0025/v-positive",
+        "passed": true,
+        "value": 9.999769689832585
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N160/A+0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 10.999769689832585
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-a10-beta0/N160/A+0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N160/A+0.005/full-residual",
+        "passed": true,
+        "value": 8.08597633294994e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N160/A+0.005/elliptic-residual",
+        "passed": true,
+        "value": 1.1404210908949608e-10
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-a10-beta0/N160/A+0.005/amplitude",
+        "passed": true,
+        "value": 2.949029909160572e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N160/A+0.005/u-positive",
+        "passed": true,
+        "value": 9.995000071242224
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N160/A+0.005/v-positive",
+        "passed": true,
+        "value": 9.999538771113519
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N160/A+0.005/sensitivity-positive",
+        "passed": true,
+        "value": 10.999538771113519
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-a10-beta0/N160/A+0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N160/A+0.01/full-residual",
+        "passed": true,
+        "value": 8.098766102193622e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N160/A+0.01/elliptic-residual",
+        "passed": true,
+        "value": 1.1111467301816447e-10
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-a10-beta0/N160/A+0.01/amplitude",
+        "passed": true,
+        "value": 2.6020852139652106e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N160/A+0.01/u-positive",
+        "passed": true,
+        "value": 9.990000283788772
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N160/A+0.01/v-positive",
+        "passed": true,
+        "value": 9.999075107983542
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N160/A+0.01/sensitivity-positive",
+        "passed": true,
+        "value": 10.999075107983542
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-a10-beta0/N160/A+0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N160/A+0.02/full-residual",
+        "passed": true,
+        "value": 7.686651315452764e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/N160/A+0.02/elliptic-residual",
+        "passed": true,
+        "value": 1.1009149147866992e-10
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-a10-beta0/N160/A+0.02/amplitude",
+        "passed": true,
+        "value": 4.5102810375396984e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N160/A+0.02/u-positive",
+        "passed": true,
+        "value": 9.980001125383868
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N160/A+0.02/v-positive",
+        "passed": true,
+        "value": 9.99814047884691
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-a10-beta0/N160/A+0.02/sensitivity-positive",
+        "passed": true,
+        "value": 10.99814047884691
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-beta3/N40/A-0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N40/A-0.02/full-residual",
+        "passed": true,
+        "value": 4.560796185160143e-13
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N40/A-0.02/elliptic-residual",
+        "passed": true,
+        "value": 5.948574965941589e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-beta3/N40/A-0.02/amplitude",
+        "passed": true,
+        "value": 1.3877787807814457e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N40/A-0.02/u-positive",
+        "passed": true,
+        "value": 0.9799256002227402
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N40/A-0.02/v-positive",
+        "passed": true,
+        "value": 0.9979650357456292
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N40/A-0.02/sensitivity-positive",
+        "passed": true,
+        "value": 1.9979650357456293
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-beta3/N40/A-0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N40/A-0.01/full-residual",
+        "passed": true,
+        "value": 4.627409566637652e-13
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N40/A-0.01/elliptic-residual",
+        "passed": true,
+        "value": 7.973621762857874e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-beta3/N40/A-0.01/amplitude",
+        "passed": true,
+        "value": 5.204170427930421e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N40/A-0.01/u-positive",
+        "passed": true,
+        "value": 0.989981477844194
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N40/A-0.01/v-positive",
+        "passed": true,
+        "value": 0.999031055070417
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N40/A-0.01/sensitivity-positive",
+        "passed": true,
+        "value": 1.9990310550704171
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-beta3/N40/A-0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N40/A-0.005/full-residual",
+        "passed": true,
+        "value": 3.9124259387790516e-13
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N40/A-0.005/elliptic-residual",
+        "passed": true,
+        "value": 6.508127370352668e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-beta3/N40/A-0.005/amplitude",
+        "passed": true,
+        "value": 6.071532165918825e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N40/A-0.005/u-positive",
+        "passed": true,
+        "value": 0.994995379005878
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N40/A-0.005/v-positive",
+        "passed": true,
+        "value": 0.9995276578443933
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N40/A-0.005/sensitivity-positive",
+        "passed": true,
+        "value": 1.9995276578443932
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-beta3/N40/A-0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N40/A-0.0025/full-residual",
+        "passed": true,
+        "value": 4.39648317751562e-13
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N40/A-0.0025/elliptic-residual",
+        "passed": true,
+        "value": 6.342704139683519e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-beta3/N40/A-0.0025/amplitude",
+        "passed": true,
+        "value": 1.3010426069826053e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N40/A-0.0025/u-positive",
+        "passed": true,
+        "value": 0.9974988459321165
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N40/A-0.0025/v-positive",
+        "passed": true,
+        "value": 0.9997668612297955
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N40/A-0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 1.9997668612297956
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-beta3/N40/A+0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N40/A+0.0025/full-residual",
+        "passed": true,
+        "value": 5.553335569175033e-13
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N40/A+0.0025/elliptic-residual",
+        "passed": true,
+        "value": 5.95967719618784e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-beta3/N40/A+0.0025/amplitude",
+        "passed": true,
+        "value": 1.431146867680866e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N40/A+0.0025/u-positive",
+        "passed": true,
+        "value": 0.9974988459321171
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N40/A+0.0025/v-positive",
+        "passed": true,
+        "value": 0.999766861229797
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N40/A+0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 1.999766861229797
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-beta3/N40/A+0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N40/A+0.005/full-residual",
+        "passed": true,
+        "value": 4.1255887595070817e-13
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N40/A+0.005/elliptic-residual",
+        "passed": true,
+        "value": 6.479261571712414e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-beta3/N40/A+0.005/amplitude",
+        "passed": true,
+        "value": 1.9081958235744878e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N40/A+0.005/u-positive",
+        "passed": true,
+        "value": 0.9949953790058804
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N40/A+0.005/v-positive",
+        "passed": true,
+        "value": 0.999527657844396
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N40/A+0.005/sensitivity-positive",
+        "passed": true,
+        "value": 1.999527657844396
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-beta3/N40/A+0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N40/A+0.01/full-residual",
+        "passed": true,
+        "value": 3.8835601401387976e-13
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N40/A+0.01/elliptic-residual",
+        "passed": true,
+        "value": 7.411848912397545e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-beta3/N40/A+0.01/amplitude",
+        "passed": true,
+        "value": 8.673617379884035e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N40/A+0.01/u-positive",
+        "passed": true,
+        "value": 0.9899814778441974
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N40/A+0.01/v-positive",
+        "passed": true,
+        "value": 0.9990310550704219
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N40/A+0.01/sensitivity-positive",
+        "passed": true,
+        "value": 1.999031055070422
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-beta3/N40/A+0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N40/A+0.02/full-residual",
+        "passed": true,
+        "value": 6.352696146905146e-13
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N40/A+0.02/elliptic-residual",
+        "passed": true,
+        "value": 7.824851877558103e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-beta3/N40/A+0.02/amplitude",
+        "passed": true,
+        "value": 1.0408340855860843e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N40/A+0.02/u-positive",
+        "passed": true,
+        "value": 0.9799256002227453
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N40/A+0.02/v-positive",
+        "passed": true,
+        "value": 0.9979650357456357
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N40/A+0.02/sensitivity-positive",
+        "passed": true,
+        "value": 1.9979650357456356
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-beta3/N80/A-0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N80/A-0.02/full-residual",
+        "passed": true,
+        "value": 2.2426505097428162e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N80/A-0.02/elliptic-residual",
+        "passed": true,
+        "value": 3.2520652837320085e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-beta3/N80/A-0.02/amplitude",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N80/A-0.02/u-positive",
+        "passed": true,
+        "value": 0.979923320943779
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N80/A-0.02/v-positive",
+        "passed": true,
+        "value": 0.9979635065967183
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N80/A-0.02/sensitivity-positive",
+        "passed": true,
+        "value": 1.9979635065967183
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-beta3/N80/A-0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N80/A-0.01/full-residual",
+        "passed": true,
+        "value": 2.0616841567289157e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N80/A-0.01/elliptic-residual",
+        "passed": true,
+        "value": 4.177547197059539e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-beta3/N80/A-0.01/amplitude",
+        "passed": true,
+        "value": 8.673617379884035e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N80/A-0.01/u-positive",
+        "passed": true,
+        "value": 0.9899809080890862
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N80/A-0.01/v-positive",
+        "passed": true,
+        "value": 0.9990308341492482
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N80/A-0.01/sensitivity-positive",
+        "passed": true,
+        "value": 1.9990308341492482
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-beta3/N80/A-0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N80/A-0.005/full-residual",
+        "passed": true,
+        "value": 1.9542145679452005e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N80/A-0.005/elliptic-residual",
+        "passed": true,
+        "value": 2.7876589925313056e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-beta3/N80/A-0.005/amplitude",
+        "passed": true,
+        "value": 1.734723475976807e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N80/A-0.005/u-positive",
+        "passed": true,
+        "value": 0.9949952365555916
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N80/A-0.005/v-positive",
+        "passed": true,
+        "value": 0.999527683168146
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N80/A-0.005/sensitivity-positive",
+        "passed": true,
+        "value": 1.999527683168146
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-beta3/N80/A-0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N80/A-0.0025/full-residual",
+        "passed": true,
+        "value": 1.7914558725351526e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N80/A-0.0025/elliptic-residual",
+        "passed": true,
+        "value": 2.886801908630332e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-beta3/N80/A-0.0025/amplitude",
+        "passed": true,
+        "value": 6.938893903907228e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N80/A-0.0025/u-positive",
+        "passed": true,
+        "value": 0.9974988103131484
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N80/A-0.0025/v-positive",
+        "passed": true,
+        "value": 0.999766907827846
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N80/A-0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 1.999766907827846
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-beta3/N80/A+0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N80/A+0.0025/full-residual",
+        "passed": true,
+        "value": 2.538413923502958e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N80/A+0.0025/elliptic-residual",
+        "passed": true,
+        "value": 2.745581539898012e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-beta3/N80/A+0.0025/amplitude",
+        "passed": true,
+        "value": 1.474514954580286e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N80/A+0.0025/u-positive",
+        "passed": true,
+        "value": 0.9974988103131565
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N80/A+0.0025/v-positive",
+        "passed": true,
+        "value": 0.9997669078278449
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N80/A+0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 1.999766907827845
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-beta3/N80/A+0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N80/A+0.005/full-residual",
+        "passed": true,
+        "value": 1.8682833058392134e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N80/A+0.005/elliptic-residual",
+        "passed": true,
+        "value": 2.6578739209526248e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-beta3/N80/A+0.005/amplitude",
+        "passed": true,
+        "value": 8.673617379884035e-19
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N80/A+0.005/u-positive",
+        "passed": true,
+        "value": 0.9949952365555564
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N80/A+0.005/v-positive",
+        "passed": true,
+        "value": 0.9995276831680955
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N80/A+0.005/sensitivity-positive",
+        "passed": true,
+        "value": 1.9995276831680955
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-beta3/N80/A+0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N80/A+0.01/full-residual",
+        "passed": true,
+        "value": 1.894706613825292e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N80/A+0.01/elliptic-residual",
+        "passed": true,
+        "value": 3.4483527144857362e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-beta3/N80/A+0.01/amplitude",
+        "passed": true,
+        "value": 5.204170427930421e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N80/A+0.01/u-positive",
+        "passed": true,
+        "value": 0.9899809080890892
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N80/A+0.01/v-positive",
+        "passed": true,
+        "value": 0.9990308341492387
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N80/A+0.01/sensitivity-positive",
+        "passed": true,
+        "value": 1.9990308341492387
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-beta3/N80/A+0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N80/A+0.02/full-residual",
+        "passed": true,
+        "value": 2.1875834477214084e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N80/A+0.02/elliptic-residual",
+        "passed": true,
+        "value": 2.787547970228843e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-beta3/N80/A+0.02/amplitude",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N80/A+0.02/u-positive",
+        "passed": true,
+        "value": 0.9799233209437694
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N80/A+0.02/v-positive",
+        "passed": true,
+        "value": 0.9979635065966949
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N80/A+0.02/sensitivity-positive",
+        "passed": true,
+        "value": 1.9979635065966947
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-beta3/N160/A-0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N160/A-0.02/full-residual",
+        "passed": true,
+        "value": 7.774891841449971e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N160/A-0.02/elliptic-residual",
+        "passed": true,
+        "value": 1.0591971744133843e-11
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-beta3/N160/A-0.02/amplitude",
+        "passed": true,
+        "value": 3.469446951953614e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N160/A-0.02/u-positive",
+        "passed": true,
+        "value": 0.9799227506272142
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N160/A-0.02/v-positive",
+        "passed": true,
+        "value": 0.9979631237356573
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N160/A-0.02/sensitivity-positive",
+        "passed": true,
+        "value": 1.9979631237356572
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-beta3/N160/A-0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N160/A-0.01/full-residual",
+        "passed": true,
+        "value": 8.183675959116954e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N160/A-0.01/elliptic-residual",
+        "passed": true,
+        "value": 1.3642420526593924e-11
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-beta3/N160/A-0.01/amplitude",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N160/A-0.01/u-positive",
+        "passed": true,
+        "value": 0.9899807655279834
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N160/A-0.01/v-positive",
+        "passed": true,
+        "value": 0.9990307787672625
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N160/A-0.01/sensitivity-positive",
+        "passed": true,
+        "value": 1.9990307787672625
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-beta3/N160/A-0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N160/A-0.005/full-residual",
+        "passed": true,
+        "value": 8.12039324671332e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N160/A-0.005/elliptic-residual",
+        "passed": true,
+        "value": 1.0325074129013956e-11
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-beta3/N160/A-0.005/amplitude",
+        "passed": true,
+        "value": 2.6020852139652106e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N160/A-0.005/u-positive",
+        "passed": true,
+        "value": 0.9949952009135734
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N160/A-0.005/v-positive",
+        "passed": true,
+        "value": 0.9995276894572227
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N160/A-0.005/sensitivity-positive",
+        "passed": true,
+        "value": 1.9995276894572227
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-beta3/N160/A-0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N160/A-0.0025/full-residual",
+        "passed": true,
+        "value": 8.891554159617954e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N160/A-0.0025/elliptic-residual",
+        "passed": true,
+        "value": 9.96691618126988e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-beta3/N160/A-0.0025/amplitude",
+        "passed": true,
+        "value": 1.1709383462843448e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N160/A-0.0025/u-positive",
+        "passed": true,
+        "value": 0.9974988014022027
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N160/A-0.0025/v-positive",
+        "passed": true,
+        "value": 0.9997669194654545
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N160/A-0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 1.9997669194654546
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-beta3/N160/A+0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N160/A+0.0025/full-residual",
+        "passed": true,
+        "value": 1.007061101176987e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N160/A+0.0025/elliptic-residual",
+        "passed": true,
+        "value": 1.0031087072093214e-11
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-beta3/N160/A+0.0025/amplitude",
+        "passed": true,
+        "value": 8.673617379884035e-19
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N160/A+0.0025/u-positive",
+        "passed": true,
+        "value": 0.9974988014021957
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N160/A+0.0025/v-positive",
+        "passed": true,
+        "value": 0.9997669194655233
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N160/A+0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 1.9997669194655234
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-beta3/N160/A+0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N160/A+0.005/full-residual",
+        "passed": true,
+        "value": 8.126610495651221e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N160/A+0.005/elliptic-residual",
+        "passed": true,
+        "value": 9.234168985017277e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-beta3/N160/A+0.005/amplitude",
+        "passed": true,
+        "value": 3.469446951953614e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N160/A+0.005/u-positive",
+        "passed": true,
+        "value": 0.9949952009136376
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N160/A+0.005/v-positive",
+        "passed": true,
+        "value": 0.9995276894573596
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N160/A+0.005/sensitivity-positive",
+        "passed": true,
+        "value": 1.9995276894573597
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-beta3/N160/A+0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N160/A+0.01/full-residual",
+        "passed": true,
+        "value": 8.447909038977741e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N160/A+0.01/elliptic-residual",
+        "passed": true,
+        "value": 1.1619594175726888e-11
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-beta3/N160/A+0.01/amplitude",
+        "passed": true,
+        "value": 6.938893903907228e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N160/A+0.01/u-positive",
+        "passed": true,
+        "value": 0.9899807655281757
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N160/A+0.01/v-positive",
+        "passed": true,
+        "value": 0.9990307787675107
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N160/A+0.01/sensitivity-positive",
+        "passed": true,
+        "value": 1.9990307787675108
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-beta3/N160/A+0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N160/A+0.02/full-residual",
+        "passed": true,
+        "value": 8.440137477805365e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/N160/A+0.02/elliptic-residual",
+        "passed": true,
+        "value": 9.255596289392543e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "nonminimal-beta3/N160/A+0.02/amplitude",
+        "passed": true,
+        "value": 6.938893903907228e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N160/A+0.02/u-positive",
+        "passed": true,
+        "value": 0.9799227506273042
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N160/A+0.02/v-positive",
+        "passed": true,
+        "value": 0.997963123735819
+      },
+      {
+        "limit": "> 0",
+        "name": "nonminimal-beta3/N160/A+0.02/sensitivity-positive",
+        "passed": true,
+        "value": 1.9979631237358189
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m1-g1/N40/A-0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N40/A-0.02/full-residual",
+        "passed": true,
+        "value": 5.376254996747321e-13
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N40/A-0.02/elliptic-residual",
+        "passed": true,
+        "value": 6.189493362285248e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m1-g1/N40/A-0.02/amplitude",
+        "passed": true,
+        "value": 3.469446951953614e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N40/A-0.02/u-positive",
+        "passed": true,
+        "value": 0.9801297897067925
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N40/A-0.02/v-positive",
+        "passed": true,
+        "value": 0.9981623699856975
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N40/A-0.02/sensitivity-positive",
+        "passed": true,
+        "value": 1.9981623699856974
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m1-g1/N40/A-0.02/mass",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m1-g1/N40/A-0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N40/A-0.01/full-residual",
+        "passed": true,
+        "value": 4.150985111195382e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N40/A-0.01/elliptic-residual",
+        "passed": true,
+        "value": 7.123190925995004e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m1-g1/N40/A-0.01/amplitude",
+        "passed": true,
+        "value": 3.469446951953614e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N40/A-0.01/u-positive",
+        "passed": true,
+        "value": 0.9900325349344007
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N40/A-0.01/v-positive",
+        "passed": true,
+        "value": 0.999080380369085
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N40/A-0.01/sensitivity-positive",
+        "passed": true,
+        "value": 1.9990803803690849
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m1-g1/N40/A-0.01/mass",
+        "passed": true,
+        "value": 1.1102230246251565e-16
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m1-g1/N40/A-0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N40/A-0.005/full-residual",
+        "passed": true,
+        "value": 7.1771148052457434e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N40/A-0.005/elliptic-residual",
+        "passed": true,
+        "value": 7.885914143912487e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m1-g1/N40/A-0.005/amplitude",
+        "passed": true,
+        "value": 1.1275702593849246e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N40/A-0.005/u-positive",
+        "passed": true,
+        "value": 0.9950081447448671
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N40/A-0.005/v-positive",
+        "passed": true,
+        "value": 0.9995399886642422
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N40/A-0.005/sensitivity-positive",
+        "passed": true,
+        "value": 1.9995399886642422
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m1-g1/N40/A-0.005/mass",
+        "passed": true,
+        "value": 3.3306690738754696e-16
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m1-g1/N40/A-0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N40/A-0.0025/full-residual",
+        "passed": true,
+        "value": 6.261380303129727e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N40/A-0.0025/elliptic-residual",
+        "passed": true,
+        "value": 5.31574784190525e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m1-g1/N40/A-0.0025/amplitude",
+        "passed": true,
+        "value": 8.673617379884035e-19
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N40/A-0.0025/u-positive",
+        "passed": true,
+        "value": 0.9975020375671981
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N40/A-0.0025/v-positive",
+        "passed": true,
+        "value": 0.999769943906102
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N40/A-0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 1.9997699439061019
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m1-g1/N40/A-0.0025/mass",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m1-g1/N40/A+0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N40/A+0.0025/full-residual",
+        "passed": true,
+        "value": 8.470424882334182e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N40/A+0.0025/elliptic-residual",
+        "passed": true,
+        "value": 6.444844657949034e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m1-g1/N40/A+0.0025/amplitude",
+        "passed": true,
+        "value": 2.211772431870429e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N40/A+0.0025/u-positive",
+        "passed": true,
+        "value": 0.997502037567194
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N40/A+0.0025/v-positive",
+        "passed": true,
+        "value": 0.9997699439061029
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N40/A+0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 1.9997699439061027
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m1-g1/N40/A+0.0025/mass",
+        "passed": true,
+        "value": 1.1102230246251565e-16
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m1-g1/N40/A+0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N40/A+0.005/full-residual",
+        "passed": true,
+        "value": 3.980080154342147e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N40/A+0.005/elliptic-residual",
+        "passed": true,
+        "value": 6.203926261605375e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m1-g1/N40/A+0.005/amplitude",
+        "passed": true,
+        "value": 5.204170427930421e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N40/A+0.005/u-positive",
+        "passed": true,
+        "value": 0.9950081447448571
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N40/A+0.005/v-positive",
+        "passed": true,
+        "value": 0.9995399886642438
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N40/A+0.005/sensitivity-positive",
+        "passed": true,
+        "value": 1.9995399886642438
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m1-g1/N40/A+0.005/mass",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m1-g1/N40/A+0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N40/A+0.01/full-residual",
+        "passed": true,
+        "value": 5.015432513744145e-13
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N40/A+0.01/elliptic-residual",
+        "passed": true,
+        "value": 6.67021993194794e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m1-g1/N40/A+0.01/amplitude",
+        "passed": true,
+        "value": 1.734723475976807e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N40/A+0.01/u-positive",
+        "passed": true,
+        "value": 0.9900325349343981
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N40/A+0.01/v-positive",
+        "passed": true,
+        "value": 0.9990803803690859
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N40/A+0.01/sensitivity-positive",
+        "passed": true,
+        "value": 1.9990803803690858
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m1-g1/N40/A+0.01/mass",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m1-g1/N40/A+0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N40/A+0.02/full-residual",
+        "passed": true,
+        "value": 5.437317263101704e-13
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N40/A+0.02/elliptic-residual",
+        "passed": true,
+        "value": 6.119549311733863e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m1-g1/N40/A+0.02/amplitude",
+        "passed": true,
+        "value": 2.0816681711721685e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N40/A+0.02/u-positive",
+        "passed": true,
+        "value": 0.9801297897067835
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N40/A+0.02/v-positive",
+        "passed": true,
+        "value": 0.9981623699857
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N40/A+0.02/sensitivity-positive",
+        "passed": true,
+        "value": 1.9981623699857
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m1-g1/N40/A+0.02/mass",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m1-g1/N80/A-0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N80/A-0.02/full-residual",
+        "passed": true,
+        "value": 8.225087277935472e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N80/A-0.02/elliptic-residual",
+        "passed": true,
+        "value": 3.76010333980048e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m1-g1/N80/A-0.02/amplitude",
+        "passed": true,
+        "value": 3.469446951953614e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N80/A-0.02/u-positive",
+        "passed": true,
+        "value": 0.9801297371661634
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N80/A-0.02/v-positive",
+        "passed": true,
+        "value": 0.9981630081736553
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N80/A-0.02/sensitivity-positive",
+        "passed": true,
+        "value": 1.9981630081736554
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m1-g1/N80/A-0.02/mass",
+        "passed": true,
+        "value": 1.1102230246251565e-16
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m1-g1/N80/A-0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N80/A-0.01/full-residual",
+        "passed": true,
+        "value": 3.547162563677375e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N80/A-0.01/elliptic-residual",
+        "passed": true,
+        "value": 2.468913962161423e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m1-g1/N80/A-0.01/amplitude",
+        "passed": true,
+        "value": 1.0408340855860843e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N80/A-0.01/u-positive",
+        "passed": true,
+        "value": 0.9900325217228355
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N80/A-0.01/v-positive",
+        "passed": true,
+        "value": 0.999080700993071
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N80/A-0.01/sensitivity-positive",
+        "passed": true,
+        "value": 1.999080700993071
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m1-g1/N80/A-0.01/mass",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m1-g1/N80/A-0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N80/A-0.005/full-residual",
+        "passed": true,
+        "value": 2.2595120219293108e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N80/A-0.005/elliptic-residual",
+        "passed": true,
+        "value": 3.759881295195555e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m1-g1/N80/A-0.005/amplitude",
+        "passed": true,
+        "value": 2.6020852139652106e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N80/A-0.005/u-positive",
+        "passed": true,
+        "value": 0.9950081414324135
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N80/A-0.005/v-positive",
+        "passed": true,
+        "value": 0.9995401493605058
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N80/A-0.005/sensitivity-positive",
+        "passed": true,
+        "value": 1.9995401493605058
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m1-g1/N80/A-0.005/mass",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m1-g1/N80/A-0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N80/A-0.0025/full-residual",
+        "passed": true,
+        "value": 2.6615654125095034e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N80/A-0.0025/elliptic-residual",
+        "passed": true,
+        "value": 2.6683100173841012e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m1-g1/N80/A-0.0025/amplitude",
+        "passed": true,
+        "value": 8.673617379884035e-19
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N80/A-0.0025/u-positive",
+        "passed": true,
+        "value": 0.9975020367379371
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N80/A-0.0025/v-positive",
+        "passed": true,
+        "value": 0.9997700243506941
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N80/A-0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 1.9997700243506942
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m1-g1/N80/A-0.0025/mass",
+        "passed": true,
+        "value": 1.1102230246251565e-16
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m1-g1/N80/A+0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N80/A+0.0025/full-residual",
+        "passed": true,
+        "value": 2.7146479508743937e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N80/A+0.0025/elliptic-residual",
+        "passed": true,
+        "value": 3.1097346919750635e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m1-g1/N80/A+0.0025/amplitude",
+        "passed": true,
+        "value": 3.903127820947816e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N80/A+0.0025/u-positive",
+        "passed": true,
+        "value": 0.9975020367379318
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N80/A+0.0025/v-positive",
+        "passed": true,
+        "value": 0.9997700243506814
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N80/A+0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 1.9997700243506813
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m1-g1/N80/A+0.0025/mass",
+        "passed": true,
+        "value": 2.220446049250313e-16
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m1-g1/N80/A+0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N80/A+0.005/full-residual",
+        "passed": true,
+        "value": 1.9290818942252486e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N80/A+0.005/elliptic-residual",
+        "passed": true,
+        "value": 3.1941116418465754e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m1-g1/N80/A+0.005/amplitude",
+        "passed": true,
+        "value": 5.204170427930421e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N80/A+0.005/u-positive",
+        "passed": true,
+        "value": 0.9950081414324147
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N80/A+0.005/v-positive",
+        "passed": true,
+        "value": 0.9995401493604935
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N80/A+0.005/sensitivity-positive",
+        "passed": true,
+        "value": 1.9995401493604934
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m1-g1/N80/A+0.005/mass",
+        "passed": true,
+        "value": 1.1102230246251565e-16
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m1-g1/N80/A+0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N80/A+0.01/full-residual",
+        "passed": true,
+        "value": 2.7697288906836093e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N80/A+0.01/elliptic-residual",
+        "passed": true,
+        "value": 3.3288927170360694e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m1-g1/N80/A+0.01/amplitude",
+        "passed": true,
+        "value": 1.734723475976807e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N80/A+0.01/u-positive",
+        "passed": true,
+        "value": 0.9900325217228277
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N80/A+0.01/v-positive",
+        "passed": true,
+        "value": 0.9990807009930576
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N80/A+0.01/sensitivity-positive",
+        "passed": true,
+        "value": 1.9990807009930576
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m1-g1/N80/A+0.01/mass",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m1-g1/N80/A+0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N80/A+0.02/full-residual",
+        "passed": true,
+        "value": 1.4985616914042765e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N80/A+0.02/elliptic-residual",
+        "passed": true,
+        "value": 2.949862576429041e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m1-g1/N80/A+0.02/amplitude",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N80/A+0.02/u-positive",
+        "passed": true,
+        "value": 0.9801297371661593
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N80/A+0.02/v-positive",
+        "passed": true,
+        "value": 0.9981630081736431
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N80/A+0.02/sensitivity-positive",
+        "passed": true,
+        "value": 1.998163008173643
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m1-g1/N80/A+0.02/mass",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m1-g1/N160/A-0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N160/A-0.02/full-residual",
+        "passed": true,
+        "value": 6.414313524771842e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N160/A-0.02/elliptic-residual",
+        "passed": true,
+        "value": 9.878542428509718e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m1-g1/N160/A-0.02/amplitude",
+        "passed": true,
+        "value": 3.469446951953614e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N160/A-0.02/u-positive",
+        "passed": true,
+        "value": 0.9801297240504147
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N160/A-0.02/v-positive",
+        "passed": true,
+        "value": 0.9981631676834682
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N160/A-0.02/sensitivity-positive",
+        "passed": true,
+        "value": 1.9981631676834684
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m1-g1/N160/A-0.02/mass",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m1-g1/N160/A-0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N160/A-0.01/full-residual",
+        "passed": true,
+        "value": 8.786305016883489e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N160/A-0.01/elliptic-residual",
+        "passed": true,
+        "value": 1.3810952381732022e-11
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m1-g1/N160/A-0.01/amplitude",
+        "passed": true,
+        "value": 1.0408340855860843e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N160/A-0.01/u-positive",
+        "passed": true,
+        "value": 0.9900325184248165
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N160/A-0.01/v-positive",
+        "passed": true,
+        "value": 0.9990807811297912
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N160/A-0.01/sensitivity-positive",
+        "passed": true,
+        "value": 1.9990807811297913
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m1-g1/N160/A-0.01/mass",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m1-g1/N160/A-0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N160/A-0.005/full-residual",
+        "passed": true,
+        "value": 9.90444705417648e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N160/A-0.005/elliptic-residual",
+        "passed": true,
+        "value": 1.0611733713972171e-11
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m1-g1/N160/A-0.005/amplitude",
+        "passed": true,
+        "value": 3.469446951953614e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N160/A-0.005/u-positive",
+        "passed": true,
+        "value": 0.9950081406055004
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N160/A-0.005/v-positive",
+        "passed": true,
+        "value": 0.9995401895246987
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N160/A-0.005/sensitivity-positive",
+        "passed": true,
+        "value": 1.9995401895246987
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m1-g1/N160/A-0.005/mass",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m1-g1/N160/A-0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N160/A-0.0025/full-residual",
+        "passed": true,
+        "value": 1.1751571937779204e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N160/A-0.0025/elliptic-residual",
+        "passed": true,
+        "value": 1.2779111102645402e-11
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m1-g1/N160/A-0.0025/amplitude",
+        "passed": true,
+        "value": 8.239936510889834e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N160/A-0.0025/u-positive",
+        "passed": true,
+        "value": 0.9975020365308973
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N160/A-0.0025/v-positive",
+        "passed": true,
+        "value": 0.9997700444567821
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N160/A-0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 1.999770044456782
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m1-g1/N160/A-0.0025/mass",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m1-g1/N160/A+0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N160/A+0.0025/full-residual",
+        "passed": true,
+        "value": 6.411426944907817e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N160/A+0.0025/elliptic-residual",
+        "passed": true,
+        "value": 1.2807310767470881e-11
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m1-g1/N160/A+0.0025/amplitude",
+        "passed": true,
+        "value": 6.5052130349130266e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N160/A+0.0025/u-positive",
+        "passed": true,
+        "value": 0.9975020365309344
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N160/A+0.0025/v-positive",
+        "passed": true,
+        "value": 0.9997700444568535
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N160/A+0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 1.9997700444568536
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m1-g1/N160/A+0.0025/mass",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m1-g1/N160/A+0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N160/A+0.005/full-residual",
+        "passed": true,
+        "value": 6.763867244075072e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N160/A+0.005/elliptic-residual",
+        "passed": true,
+        "value": 1.368860580441833e-11
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m1-g1/N160/A+0.005/amplitude",
+        "passed": true,
+        "value": 6.938893903907228e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N160/A+0.005/u-positive",
+        "passed": true,
+        "value": 0.9950081406055281
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N160/A+0.005/v-positive",
+        "passed": true,
+        "value": 0.9995401895247693
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N160/A+0.005/sensitivity-positive",
+        "passed": true,
+        "value": 1.9995401895247693
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m1-g1/N160/A+0.005/mass",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m1-g1/N160/A+0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N160/A+0.01/full-residual",
+        "passed": true,
+        "value": 1.0800804695065835e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N160/A+0.01/elliptic-residual",
+        "passed": true,
+        "value": 9.921841126470099e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m1-g1/N160/A+0.01/amplitude",
+        "passed": true,
+        "value": 8.673617379884035e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N160/A+0.01/u-positive",
+        "passed": true,
+        "value": 0.9900325184248469
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N160/A+0.01/v-positive",
+        "passed": true,
+        "value": 0.9990807811298615
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N160/A+0.01/sensitivity-positive",
+        "passed": true,
+        "value": 1.9990807811298614
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m1-g1/N160/A+0.01/mass",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m1-g1/N160/A+0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N160/A+0.02/full-residual",
+        "passed": true,
+        "value": 6.222786175236195e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/N160/A+0.02/elliptic-residual",
+        "passed": true,
+        "value": 9.838130310413362e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m1-g1/N160/A+0.02/amplitude",
+        "passed": true,
+        "value": 3.469446951953614e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N160/A+0.02/u-positive",
+        "passed": true,
+        "value": 0.9801297240504447
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N160/A+0.02/v-positive",
+        "passed": true,
+        "value": 0.99816316768354
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m1-g1/N160/A+0.02/sensitivity-positive",
+        "passed": true,
+        "value": 1.9981631676835399
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m1-g1/N160/A+0.02/mass",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m2-g2/N40/A-0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N40/A-0.02/full-residual",
+        "passed": true,
+        "value": 2.690556111240028e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N40/A-0.02/elliptic-residual",
+        "passed": true,
+        "value": 7.371880883511039e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m2-g2/N40/A-0.02/amplitude",
+        "passed": true,
+        "value": 1.0408340855860843e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N40/A-0.02/u-positive",
+        "passed": true,
+        "value": 0.9802930384763701
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N40/A-0.02/v-positive",
+        "passed": true,
+        "value": 0.9965373140815293
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N40/A-0.02/sensitivity-positive",
+        "passed": true,
+        "value": 1.9965373140815292
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m2-g2/N40/A-0.02/mass",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m2-g2/N40/A-0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N40/A-0.01/full-residual",
+        "passed": true,
+        "value": 6.191921975151615e-13
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N40/A-0.01/elliptic-residual",
+        "passed": true,
+        "value": 7.975842208907125e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m2-g2/N40/A-0.01/amplitude",
+        "passed": true,
+        "value": 6.938893903907228e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N40/A-0.01/u-positive",
+        "passed": true,
+        "value": 0.9900738471134237
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N40/A-0.01/v-positive",
+        "passed": true,
+        "value": 0.9982139835881759
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N40/A-0.01/sensitivity-positive",
+        "passed": true,
+        "value": 1.998213983588176
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m2-g2/N40/A-0.01/mass",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m2-g2/N40/A-0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N40/A-0.005/full-residual",
+        "passed": true,
+        "value": 6.419170750504577e-13
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N40/A-0.005/elliptic-residual",
+        "passed": true,
+        "value": 6.480371794737039e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m2-g2/N40/A-0.005/amplitude",
+        "passed": true,
+        "value": 1.5612511283791264e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N40/A-0.005/u-positive",
+        "passed": true,
+        "value": 0.9950185360411781
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N40/A-0.005/v-positive",
+        "passed": true,
+        "value": 0.9990932935163749
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N40/A-0.005/sensitivity-positive",
+        "passed": true,
+        "value": 1.999093293516375
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m2-g2/N40/A-0.005/mass",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m2-g2/N40/A-0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N40/A-0.0025/full-residual",
+        "passed": true,
+        "value": 3.1512986664594678e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N40/A-0.0025/elliptic-residual",
+        "passed": true,
+        "value": 6.848965838912591e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m2-g2/N40/A-0.0025/amplitude",
+        "passed": true,
+        "value": 6.938893903907228e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N40/A-0.0025/u-positive",
+        "passed": true,
+        "value": 0.9975046433454539
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N40/A-0.0025/v-positive",
+        "passed": true,
+        "value": 0.9995432182035647
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N40/A-0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 1.9995432182035646
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m2-g2/N40/A-0.0025/mass",
+        "passed": true,
+        "value": 2.220446049250313e-16
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m2-g2/N40/A+0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N40/A+0.0025/full-residual",
+        "passed": true,
+        "value": 4.520251360717875e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N40/A+0.0025/elliptic-residual",
+        "passed": true,
+        "value": 7.465139617579553e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m2-g2/N40/A+0.0025/amplitude",
+        "passed": true,
+        "value": 1.691355389077387e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N40/A+0.0025/u-positive",
+        "passed": true,
+        "value": 0.9975046433454506
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N40/A+0.0025/v-positive",
+        "passed": true,
+        "value": 0.9995432182035653
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N40/A+0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 1.9995432182035653
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m2-g2/N40/A+0.0025/mass",
+        "passed": true,
+        "value": 3.3306690738754696e-16
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m2-g2/N40/A+0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N40/A+0.005/full-residual",
+        "passed": true,
+        "value": 4.397090330732212e-13
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N40/A+0.005/elliptic-residual",
+        "passed": true,
+        "value": 6.492584248007915e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m2-g2/N40/A+0.005/amplitude",
+        "passed": true,
+        "value": 1.1275702593849246e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N40/A+0.005/u-positive",
+        "passed": true,
+        "value": 0.9950185360411786
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N40/A+0.005/v-positive",
+        "passed": true,
+        "value": 0.9990932935163753
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N40/A+0.005/sensitivity-positive",
+        "passed": true,
+        "value": 1.9990932935163754
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m2-g2/N40/A+0.005/mass",
+        "passed": true,
+        "value": 1.1102230246251565e-16
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m2-g2/N40/A+0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N40/A+0.01/full-residual",
+        "passed": true,
+        "value": 5.583380979778951e-13
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N40/A+0.01/elliptic-residual",
+        "passed": true,
+        "value": 6.392664175791651e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m2-g2/N40/A+0.01/amplitude",
+        "passed": true,
+        "value": 5.204170427930421e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N40/A+0.01/u-positive",
+        "passed": true,
+        "value": 0.990073847113424
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N40/A+0.01/v-positive",
+        "passed": true,
+        "value": 0.9982139835881779
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N40/A+0.01/sensitivity-positive",
+        "passed": true,
+        "value": 1.9982139835881778
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m2-g2/N40/A+0.01/mass",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m2-g2/N40/A+0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N40/A+0.02/full-residual",
+        "passed": true,
+        "value": 4.174161016834432e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N40/A+0.02/elliptic-residual",
+        "passed": true,
+        "value": 7.718270467194088e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m2-g2/N40/A+0.02/amplitude",
+        "passed": true,
+        "value": 1.0408340855860843e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N40/A+0.02/u-positive",
+        "passed": true,
+        "value": 0.9802930384763676
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N40/A+0.02/v-positive",
+        "passed": true,
+        "value": 0.99653731408153
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N40/A+0.02/sensitivity-positive",
+        "passed": true,
+        "value": 1.9965373140815301
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m2-g2/N40/A+0.02/mass",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m2-g2/N80/A-0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N80/A-0.02/full-residual",
+        "passed": true,
+        "value": 1.6505685707102202e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N80/A-0.02/elliptic-residual",
+        "passed": true,
+        "value": 3.4592329001270627e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m2-g2/N80/A-0.02/amplitude",
+        "passed": true,
+        "value": 3.469446951953614e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N80/A-0.02/u-positive",
+        "passed": true,
+        "value": 0.9802928793052982
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N80/A-0.02/v-positive",
+        "passed": true,
+        "value": 0.9965385661738884
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N80/A-0.02/sensitivity-positive",
+        "passed": true,
+        "value": 1.9965385661738884
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m2-g2/N80/A-0.02/mass",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m2-g2/N80/A-0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N80/A-0.01/full-residual",
+        "passed": true,
+        "value": 2.1993171173129156e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N80/A-0.01/elliptic-residual",
+        "passed": true,
+        "value": 4.2654768606098514e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m2-g2/N80/A-0.01/amplitude",
+        "passed": true,
+        "value": 1.734723475976807e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N80/A-0.01/u-positive",
+        "passed": true,
+        "value": 0.990073806693458
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N80/A-0.01/v-positive",
+        "passed": true,
+        "value": 0.9982146186315061
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N80/A-0.01/sensitivity-positive",
+        "passed": true,
+        "value": 1.998214618631506
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m2-g2/N80/A-0.01/mass",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m2-g2/N80/A-0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N80/A-0.005/full-residual",
+        "passed": true,
+        "value": 2.849630253987101e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N80/A-0.005/elliptic-residual",
+        "passed": true,
+        "value": 3.680167282027469e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m2-g2/N80/A-0.005/amplitude",
+        "passed": true,
+        "value": 6.071532165918825e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N80/A-0.005/u-positive",
+        "passed": true,
+        "value": 0.995018525854359
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N80/A-0.005/v-positive",
+        "passed": true,
+        "value": 0.9990936133397935
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N80/A-0.005/sensitivity-positive",
+        "passed": true,
+        "value": 1.9990936133397934
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m2-g2/N80/A-0.005/mass",
+        "passed": true,
+        "value": 1.1102230246251565e-16
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m2-g2/N80/A-0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N80/A-0.0025/full-residual",
+        "passed": true,
+        "value": 1.0486923829322592e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N80/A-0.0025/elliptic-residual",
+        "passed": true,
+        "value": 2.4786839247781245e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m2-g2/N80/A-0.0025/amplitude",
+        "passed": true,
+        "value": 1.0842021724855044e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N80/A-0.0025/u-positive",
+        "passed": true,
+        "value": 0.9975046407883239
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N80/A-0.0025/v-positive",
+        "passed": true,
+        "value": 0.9995433786978336
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N80/A-0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 1.9995433786978336
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m2-g2/N80/A-0.0025/mass",
+        "passed": true,
+        "value": 1.1102230246251565e-16
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m2-g2/N80/A+0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N80/A+0.0025/full-residual",
+        "passed": true,
+        "value": 1.2698158496915468e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N80/A+0.0025/elliptic-residual",
+        "passed": true,
+        "value": 2.8621549574836536e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m2-g2/N80/A+0.0025/amplitude",
+        "passed": true,
+        "value": 3.469446951953614e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N80/A+0.0025/u-positive",
+        "passed": true,
+        "value": 0.9975046407883229
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N80/A+0.0025/v-positive",
+        "passed": true,
+        "value": 0.9995433786978212
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N80/A+0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 1.9995433786978212
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m2-g2/N80/A+0.0025/mass",
+        "passed": true,
+        "value": 2.220446049250313e-16
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m2-g2/N80/A+0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N80/A+0.005/full-residual",
+        "passed": true,
+        "value": 7.072571694966001e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N80/A+0.005/elliptic-residual",
+        "passed": true,
+        "value": 3.048450381015755e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m2-g2/N80/A+0.005/amplitude",
+        "passed": true,
+        "value": 5.204170427930421e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N80/A+0.005/u-positive",
+        "passed": true,
+        "value": 0.9950185258543583
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N80/A+0.005/v-positive",
+        "passed": true,
+        "value": 0.9990936133397812
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N80/A+0.005/sensitivity-positive",
+        "passed": true,
+        "value": 1.9990936133397812
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m2-g2/N80/A+0.005/mass",
+        "passed": true,
+        "value": 2.220446049250313e-16
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m2-g2/N80/A+0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N80/A+0.01/full-residual",
+        "passed": true,
+        "value": 7.783114430726101e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N80/A+0.01/elliptic-residual",
+        "passed": true,
+        "value": 3.4485747590906612e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m2-g2/N80/A+0.01/amplitude",
+        "passed": true,
+        "value": 3.469446951953614e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N80/A+0.01/u-positive",
+        "passed": true,
+        "value": 0.9900738066934595
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N80/A+0.01/v-positive",
+        "passed": true,
+        "value": 0.9982146186314932
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N80/A+0.01/sensitivity-positive",
+        "passed": true,
+        "value": 1.998214618631493
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m2-g2/N80/A+0.01/mass",
+        "passed": true,
+        "value": 3.3306690738754696e-16
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m2-g2/N80/A+0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N80/A+0.02/full-residual",
+        "passed": true,
+        "value": 1.6021628468365634e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N80/A+0.02/elliptic-residual",
+        "passed": true,
+        "value": 3.0335733924857777e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m2-g2/N80/A+0.02/amplitude",
+        "passed": true,
+        "value": 6.938893903907228e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N80/A+0.02/u-positive",
+        "passed": true,
+        "value": 0.9802928793052982
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N80/A+0.02/v-positive",
+        "passed": true,
+        "value": 0.9965385661738766
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N80/A+0.02/sensitivity-positive",
+        "passed": true,
+        "value": 1.9965385661738766
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m2-g2/N80/A+0.02/mass",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m2-g2/N160/A-0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N160/A-0.02/full-residual",
+        "passed": true,
+        "value": 5.5894178174753506e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N160/A-0.02/elliptic-residual",
+        "passed": true,
+        "value": 1.042765873648932e-11
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m2-g2/N160/A-0.02/amplitude",
+        "passed": true,
+        "value": 3.469446951953614e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N160/A-0.02/u-positive",
+        "passed": true,
+        "value": 0.9802928395698437
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N160/A-0.02/v-positive",
+        "passed": true,
+        "value": 0.9965388791322276
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N160/A-0.02/sensitivity-positive",
+        "passed": true,
+        "value": 1.9965388791322276
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m2-g2/N160/A-0.02/mass",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m2-g2/N160/A-0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N160/A-0.01/full-residual",
+        "passed": true,
+        "value": 1.2314038677629924e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N160/A-0.01/elliptic-residual",
+        "passed": true,
+        "value": 1.0932366123483916e-11
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m2-g2/N160/A-0.01/amplitude",
+        "passed": true,
+        "value": 5.204170427930421e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N160/A-0.01/u-positive",
+        "passed": true,
+        "value": 0.9900737966032173
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N160/A-0.01/v-positive",
+        "passed": true,
+        "value": 0.9982147773563972
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N160/A-0.01/sensitivity-positive",
+        "passed": true,
+        "value": 1.9982147773563972
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m2-g2/N160/A-0.01/mass",
+        "passed": true,
+        "value": 1.1102230246251565e-16
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m2-g2/N160/A-0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N160/A-0.005/full-residual",
+        "passed": true,
+        "value": 8.8662410746565e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N160/A-0.005/elliptic-residual",
+        "passed": true,
+        "value": 9.982459303614633e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m2-g2/N160/A-0.005/amplitude",
+        "passed": true,
+        "value": 8.673617379884035e-19
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N160/A-0.005/u-positive",
+        "passed": true,
+        "value": 0.9950185233113887
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N160/A-0.005/v-positive",
+        "passed": true,
+        "value": 0.9990936932766912
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N160/A-0.005/sensitivity-positive",
+        "passed": true,
+        "value": 1.9990936932766912
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m2-g2/N160/A-0.005/mass",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m2-g2/N160/A-0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N160/A-0.0025/full-residual",
+        "passed": true,
+        "value": 6.550794628967793e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N160/A-0.0025/elliptic-residual",
+        "passed": true,
+        "value": 1.2712053631958042e-11
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m2-g2/N160/A-0.0025/amplitude",
+        "passed": true,
+        "value": 1.474514954580286e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N160/A-0.0025/u-positive",
+        "passed": true,
+        "value": 0.9975046401499643
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N160/A-0.0025/v-positive",
+        "passed": true,
+        "value": 0.9995434188116071
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N160/A-0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 1.9995434188116072
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m2-g2/N160/A-0.0025/mass",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m2-g2/N160/A+0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N160/A+0.0025/full-residual",
+        "passed": true,
+        "value": 1.579535113815922e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N160/A+0.0025/elliptic-residual",
+        "passed": true,
+        "value": 1.1637579788725816e-11
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m2-g2/N160/A+0.0025/amplitude",
+        "passed": true,
+        "value": 7.37257477290143e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N160/A+0.0025/u-positive",
+        "passed": true,
+        "value": 0.9975046401499854
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N160/A+0.0025/v-positive",
+        "passed": true,
+        "value": 0.9995434188116773
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N160/A+0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 1.9995434188116774
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m2-g2/N160/A+0.0025/mass",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m2-g2/N160/A+0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N160/A+0.005/full-residual",
+        "passed": true,
+        "value": 3.268163517589073e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N160/A+0.005/elliptic-residual",
+        "passed": true,
+        "value": 9.960920976936904e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m2-g2/N160/A+0.005/amplitude",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N160/A+0.005/u-positive",
+        "passed": true,
+        "value": 0.9950185233114016
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N160/A+0.005/v-positive",
+        "passed": true,
+        "value": 0.9990936932767626
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N160/A+0.005/sensitivity-positive",
+        "passed": true,
+        "value": 1.9990936932767625
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m2-g2/N160/A+0.005/mass",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m2-g2/N160/A+0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N160/A+0.01/full-residual",
+        "passed": true,
+        "value": 3.0115909765981996e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N160/A+0.01/elliptic-residual",
+        "passed": true,
+        "value": 1.1773804153847323e-11
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m2-g2/N160/A+0.01/amplitude",
+        "passed": true,
+        "value": 5.204170427930421e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N160/A+0.01/u-positive",
+        "passed": true,
+        "value": 0.9900737966032307
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N160/A+0.01/v-positive",
+        "passed": true,
+        "value": 0.998214777356469
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N160/A+0.01/sensitivity-positive",
+        "passed": true,
+        "value": 1.998214777356469
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m2-g2/N160/A+0.01/mass",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m2-g2/N160/A+0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N160/A+0.02/full-residual",
+        "passed": true,
+        "value": 7.07711667047306e-11
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/N160/A+0.02/elliptic-residual",
+        "passed": true,
+        "value": 8.966050124570302e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "minimal-m2-g2/N160/A+0.02/amplitude",
+        "passed": true,
+        "value": 1.3877787807814457e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N160/A+0.02/u-positive",
+        "passed": true,
+        "value": 0.9802928395698578
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N160/A+0.02/v-positive",
+        "passed": true,
+        "value": 0.9965388791322985
+      },
+      {
+        "limit": "> 0",
+        "name": "minimal-m2-g2/N160/A+0.02/sensitivity-positive",
+        "passed": true,
+        "value": 1.9965388791322987
+      },
+      {
+        "limit": 5e-12,
+        "name": "minimal-m2-g2/N160/A+0.02/mass",
+        "passed": true,
+        "value": 1.1102230246251565e-16
+      },
+      {
+        "limit": "same sign as +0.00842544631853",
+        "name": "nonminimal-a10-beta0/N40/c2-sign",
+        "passed": true,
+        "value": 0.008370760765781244
+      },
+      {
+        "limit": 1e-09,
+        "name": "nonminimal-a10-beta0/N40/intercept",
+        "passed": true,
+        "value": 1.0413891970983968e-12
+      },
+      {
+        "limit": "same sign as +0.00842544631853",
+        "name": "nonminimal-a10-beta0/N80/c2-sign",
+        "passed": true,
+        "value": 0.008411801148577492
+      },
+      {
+        "limit": 1e-09,
+        "name": "nonminimal-a10-beta0/N80/intercept",
+        "passed": true,
+        "value": 2.6196822489055194e-12
+      },
+      {
+        "limit": ">= 1.8",
+        "name": "nonminimal-a10-beta0/N80/c2-observed-order",
+        "passed": true,
+        "value": 2.0027693774459787
+      },
+      {
+        "limit": "same sign as +0.00842544631853",
+        "name": "nonminimal-a10-beta0/N160/c2-sign",
+        "passed": true,
+        "value": 0.008422057235434008
+      },
+      {
+        "limit": 1e-09,
+        "name": "nonminimal-a10-beta0/N160/intercept",
+        "passed": true,
+        "value": 2.7919888623273437e-12
+      },
+      {
+        "limit": ">= 1.8",
+        "name": "nonminimal-a10-beta0/N160/c2-observed-order",
+        "passed": true,
+        "value": 2.009423448648791
+      },
+      {
+        "limit": "< 1",
+        "name": "nonminimal-a10-beta0/c2-error-monotone-N40-N80",
+        "passed": true,
+        "value": 0.2495205637646557
+      },
+      {
+        "limit": "< 1",
+        "name": "nonminimal-a10-beta0/c2-error-monotone-N80-N160",
+        "passed": true,
+        "value": 0.2483723623033489
+      },
+      {
+        "limit": 0.005,
+        "name": "nonminimal-a10-beta0/finest-c2-relative-error",
+        "passed": true,
+        "value": 0.00040224374670793853
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-a10-beta0/finest-reflection-pairs-complete",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-a10-beta0/finest-reflection-chi",
+        "passed": true,
+        "value": 6.603326774268226e-10
+      },
+      {
+        "limit": 1e-09,
+        "name": "nonminimal-a10-beta0/finest-reflection-u",
+        "passed": true,
+        "value": 5.684341886080802e-14
+      },
+      {
+        "limit": 1e-09,
+        "name": "nonminimal-a10-beta0/finest-reflection-v",
+        "passed": true,
+        "value": 7.371880883511039e-13
+      },
+      {
+        "limit": "same sign as -19.6667103156",
+        "name": "nonminimal-beta3/N40/c2-sign",
+        "passed": true,
+        "value": -19.318560593702777
+      },
+      {
+        "limit": 1e-09,
+        "name": "nonminimal-beta3/N40/intercept",
+        "passed": true,
+        "value": 1.0327028121537296e-10
+      },
+      {
+        "limit": "same sign as -19.6667103156",
+        "name": "nonminimal-beta3/N80/c2-sign",
+        "passed": true,
+        "value": -19.579579296748616
+      },
+      {
+        "limit": 1e-09,
+        "name": "nonminimal-beta3/N80/intercept",
+        "passed": true,
+        "value": 3.9250380723387934e-10
+      },
+      {
+        "limit": ">= 1.8",
+        "name": "nonminimal-beta3/N80/c2-observed-order",
+        "passed": true,
+        "value": 1.9984495528615873
+      },
+      {
+        "limit": "same sign as -19.6667103156",
+        "name": "nonminimal-beta3/N160/c2-sign",
+        "passed": true,
+        "value": -19.64492609095355
+      },
+      {
+        "limit": 1e-09,
+        "name": "nonminimal-beta3/N160/intercept",
+        "passed": true,
+        "value": 3.8747316466469783e-10
+      },
+      {
+        "limit": ">= 1.8",
+        "name": "nonminimal-beta3/N160/c2-observed-order",
+        "passed": true,
+        "value": 1.9999026486399063
+      },
+      {
+        "limit": "< 1",
+        "name": "nonminimal-beta3/c2-error-monotone-N40-N80",
+        "passed": true,
+        "value": 0.25026881643668475
+      },
+      {
+        "limit": "< 1",
+        "name": "nonminimal-beta3/c2-error-monotone-N80-N160",
+        "passed": true,
+        "value": 0.25001687027437985
+      },
+      {
+        "limit": 0.005,
+        "name": "nonminimal-beta3/finest-c2-relative-error",
+        "passed": true,
+        "value": 0.0011076699806087478
+      },
+      {
+        "limit": 1,
+        "name": "nonminimal-beta3/finest-reflection-pairs-complete",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "nonminimal-beta3/finest-reflection-chi",
+        "passed": true,
+        "value": 2.9502018605853664e-09
+      },
+      {
+        "limit": 1e-09,
+        "name": "nonminimal-beta3/finest-reflection-u",
+        "passed": true,
+        "value": 1.9406698470447736e-13
+      },
+      {
+        "limit": 1e-09,
+        "name": "nonminimal-beta3/finest-reflection-v",
+        "passed": true,
+        "value": 2.4857893521357255e-13
+      },
+      {
+        "limit": "same sign as +1.92298991698",
+        "name": "minimal-m1-g1/N40/c2-sign",
+        "passed": true,
+        "value": 1.9130168027041174
+      },
+      {
+        "limit": 1e-09,
+        "name": "minimal-m1-g1/N40/intercept",
+        "passed": true,
+        "value": 6.188827228470473e-12
+      },
+      {
+        "limit": "same sign as +1.92298991698",
+        "name": "minimal-m1-g1/N80/c2-sign",
+        "passed": true,
+        "value": 1.9204956382538594
+      },
+      {
+        "limit": 1e-09,
+        "name": "minimal-m1-g1/N80/intercept",
+        "passed": true,
+        "value": 3.197442310920451e-12
+      },
+      {
+        "limit": ">= 1.8",
+        "name": "minimal-m1-g1/N80/c2-observed-order",
+        "passed": true,
+        "value": 1.9994213920153865
+      },
+      {
+        "limit": "same sign as +1.92298991698",
+        "name": "minimal-m1-g1/N160/c2-sign",
+        "passed": true,
+        "value": 1.92236644735955
+      },
+      {
+        "limit": 1e-09,
+        "name": "minimal-m1-g1/N160/intercept",
+        "passed": true,
+        "value": 2.2151169787321123e-11
+      },
+      {
+        "limit": ">= 1.8",
+        "name": "minimal-m1-g1/N160/c2-observed-order",
+        "passed": true,
+        "value": 2.0002315231020047
+      },
+      {
+        "limit": "< 1",
+        "name": "minimal-m1-g1/c2-error-monotone-N40-N80",
+        "passed": true,
+        "value": 0.2501002852321742
+      },
+      {
+        "limit": "< 1",
+        "name": "minimal-m1-g1/c2-error-monotone-N80-N160",
+        "passed": true,
+        "value": 0.24995988332269273
+      },
+      {
+        "limit": 0.005,
+        "name": "minimal-m1-g1/finest-c2-relative-error",
+        "passed": true,
+        "value": 0.00032421887056844137
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m1-g1/finest-reflection-pairs-complete",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m1-g1/finest-reflection-chi",
+        "passed": true,
+        "value": 6.5676637461820064e-09
+      },
+      {
+        "limit": 1e-09,
+        "name": "minimal-m1-g1/finest-reflection-u",
+        "passed": true,
+        "value": 7.882583474838611e-14
+      },
+      {
+        "limit": 1e-09,
+        "name": "minimal-m1-g1/finest-reflection-v",
+        "passed": true,
+        "value": 7.37188088351104e-14
+      },
+      {
+        "limit": "same sign as -1.14858733116",
+        "name": "minimal-m2-g2/N40/c2-sign",
+        "passed": true,
+        "value": -1.1795328096525204
+      },
+      {
+        "limit": 1e-09,
+        "name": "minimal-m2-g2/N40/intercept",
+        "passed": true,
+        "value": 1.5258905250448151e-12
+      },
+      {
+        "limit": "same sign as -1.14858733116",
+        "name": "minimal-m2-g2/N80/c2-sign",
+        "passed": true,
+        "value": -1.1563262402309178
+      },
+      {
+        "limit": 1e-09,
+        "name": "minimal-m2-g2/N80/intercept",
+        "passed": true,
+        "value": 2.4513724383723456e-13
+      },
+      {
+        "limit": ">= 1.8",
+        "name": "minimal-m2-g2/N80/c2-observed-order",
+        "passed": true,
+        "value": 1.9995265165374327
+      },
+      {
+        "limit": "same sign as -1.14858733116",
+        "name": "minimal-m2-g2/N160/c2-sign",
+        "passed": true,
+        "value": -1.1505222060103328
+      },
+      {
+        "limit": 1e-09,
+        "name": "minimal-m2-g2/N160/intercept",
+        "passed": true,
+        "value": 4.170885858911788e-12
+      },
+      {
+        "limit": ">= 1.8",
+        "name": "minimal-m2-g2/N160/c2-observed-order",
+        "passed": true,
+        "value": 1.9998899565433161
+      },
+      {
+        "limit": "< 1",
+        "name": "minimal-m2-g2/c2-error-monotone-N40-N80",
+        "passed": true,
+        "value": 0.25008206189714344
+      },
+      {
+        "limit": "< 1",
+        "name": "minimal-m2-g2/c2-error-monotone-N80-N160",
+        "passed": true,
+        "value": 0.2500190698052128
+      },
+      {
+        "limit": 0.005,
+        "name": "minimal-m2-g2/finest-c2-relative-error",
+        "passed": true,
+        "value": 0.0016845692039964475
+      },
+      {
+        "limit": 1,
+        "name": "minimal-m2-g2/finest-reflection-pairs-complete",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "minimal-m2-g2/finest-reflection-chi",
+        "passed": true,
+        "value": 1.623186918209285e-09
+      },
+      {
+        "limit": 1e-09,
+        "name": "minimal-m2-g2/finest-reflection-u",
+        "passed": true,
+        "value": 4.04121180963557e-14
+      },
+      {
+        "limit": 1e-09,
+        "name": "minimal-m2-g2/finest-reflection-v",
+        "passed": true,
+        "value": 7.438494264988549e-14
+      }
+    ],
+    "passed": true
+  },
+  "amplitudes": [
+    -0.02,
+    -0.01,
+    -0.005,
+    -0.0025,
+    0.0025,
+    0.005,
+    0.01,
+    0.02
+  ],
+  "artifacts": {
+    "branch_points": "branch-points.csv",
+    "checksums": "SHA256SUMS",
+    "figure_pdf": "stationary-continuation.pdf",
+    "figure_png": "stationary-continuation.png",
+    "fit_summary": "fit-summary.json",
+    "profiles": "stationary-profiles.csv",
+    "states": "stationary-states.npz",
+    "states_index": "states-index.json"
+  },
+  "cases": [
+    {
+      "bifurcation_coefficients": {
+        "C1_n0": 0.09199966835037524,
+        "C2_0": 0.0,
+        "C2_2n0": 0.0,
+        "C3_n0": 0.0,
+        "a01": -0.05,
+        "a2n0": 0.0528486479360943,
+        "alpha_n0": 9.080003316496247,
+        "beta_n0": 0.07650308051520315,
+        "chi_star": 2.1882816237512737,
+        "chi_star_mode_n0": 2.1882816237512737,
+        "gamma_2n0": 0.9080003316496248,
+        "gamma_cubic": -0.056507549685096546,
+        "lambda_2n0": 39.47841760435743,
+        "lambda_n0": 9.869604401089358,
+        "sigma_2n0": -28.13620590458624
+      },
+      "continuum_threshold": {
+        "chi_star": 2.1882816237512737,
+        "minimizing_mode": 1,
+        "runner_up_gap": 2.8848904325950544
+      },
+      "fits": [
+        {
+          "c2": 0.008370760765781244,
+          "c2_relative_error": 0.006490522956315507,
+          "c4": 8.676406530674993e-05,
+          "case_name": "nonminimal-a10-beta0",
+          "chi_star_disc": 2.1878264884424605,
+          "discrete_eigenvalue": 9.864532053990475,
+          "fit_residual_max": 8.42516643770154e-12,
+          "intercept_error": 1.0413891970983968e-12,
+          "mesh": 40,
+          "minimizing_mode": 1,
+          "observed_order": null,
+          "reflection_chi_error_max": 1.6158629989604378e-11,
+          "reflection_u_error_max": 1.0658141036401503e-14,
+          "reflection_v_error_max": 2.6645352591003757e-14,
+          "theory_c2": 0.00842544631852886,
+          "unconstrained_c2": 0.00837074402713274,
+          "unconstrained_c4": 0.00012219771388842653,
+          "unconstrained_fit_residual_max": 8.671730000742173e-12,
+          "unconstrained_intercept": 2.187826488443502
+        },
+        {
+          "c2": 0.008411801148577492,
+          "c2_relative_error": 0.0016195189471872851,
+          "c4": 2.1863869065150743e-05,
+          "case_name": "nonminimal-a10-beta0",
+          "chi_star_disc": 2.188167817354364,
+          "discrete_eigenvalue": 9.868336118746432,
+          "fit_residual_max": 6.118059716965696e-11,
+          "intercept_error": 2.6196822489055194e-12,
+          "mesh": 80,
+          "minimizing_mode": 1,
+          "observed_order": 2.0027693774459787,
+          "reflection_chi_error_max": 1.187525633383757e-10,
+          "reflection_u_error_max": 2.842170943040401e-14,
+          "reflection_v_error_max": 1.6342482922482304e-13,
+          "theory_c2": 0.00842544631852886,
+          "unconstrained_c2": 0.008411759036296844,
+          "unconstrained_c4": 0.00011101047251714765,
+          "unconstrained_fit_residual_max": 5.99320593153152e-11,
+          "unconstrained_intercept": 2.188167817356984
+        },
+        {
+          "c2": 0.008422057235434008,
+          "c2_relative_error": 0.00040224374670793853,
+          "c4": 3.335589867407484e-05,
+          "case_name": "nonminimal-a10-beta0",
+          "chi_star_disc": 2.188253170741356,
+          "discrete_eigenvalue": 9.86928731827935,
+          "fit_residual_max": 3.347330661559072e-10,
+          "intercept_error": 2.7919888623273437e-12,
+          "mesh": 160,
+          "minimizing_mode": 1,
+          "observed_order": 2.009423448648791,
+          "reflection_chi_error_max": 6.603326774268226e-10,
+          "reflection_u_error_max": 5.684341886080802e-14,
+          "reflection_v_error_max": 7.371880883511039e-13,
+          "theory_c2": 0.00842544631852886,
+          "unconstrained_c2": 0.008422012343105868,
+          "unconstrained_c4": 0.00012838453101570422,
+          "unconstrained_fit_residual_max": 3.322182529075235e-10,
+          "unconstrained_intercept": 2.188253170744148
+        }
+      ],
+      "parameters": {
+        "a": 10.0,
+        "alpha": 1.0,
+        "b": 1.0,
+        "beta": 0.0,
+        "c": 1.0,
+        "gamma": 1.0,
+        "length": 1.0,
+        "m": 1.0,
+        "minimal": false,
+        "mode": 1,
+        "mu": 1.0,
+        "name": "nonminimal-a10-beta0",
+        "nu": 1.0,
+        "title": "nonminimal: a=10, beta=0 (supercritical)",
+        "u_star": 10.0
+      }
+    },
+    {
+      "bifurcation_coefficients": {
+        "C1_n0": 0.09199966835037524,
+        "C2_0": 0.0,
+        "C2_2n0": 0.0,
+        "C3_n0": 0.0,
+        "a01": -0.5,
+        "a2n0": 0.3079378600532382,
+        "alpha_n0": 0.1135000414562031,
+        "beta_n0": -2.232172436126313,
+        "chi_star": 95.76740467785358,
+        "chi_star_mode_n0": 95.76740467785358,
+        "gamma_2n0": 0.0978370921986163,
+        "gamma_cubic": 0.01608177961343151,
+        "lambda_2n0": 39.47841760435743,
+        "lambda_n0": 9.869604401089358,
+        "sigma_2n0": -28.803228026446398
+      },
+      "continuum_threshold": {
+        "chi_star": 95.76740467785356,
+        "minimizing_mode": 1,
+        "runner_up_gap": 236.26257852429057
+      },
+      "fits": [
+        {
+          "c2": -19.318560593702777,
+          "c2_relative_error": 0.017702488941871528,
+          "c4": -1.6320058011952494,
+          "case_name": "nonminimal-beta3",
+          "chi_star_disc": 95.7272426962711,
+          "discrete_eigenvalue": 9.864532053990475,
+          "fit_residual_max": 1.186763830653484e-10,
+          "intercept_error": -1.0327028121537296e-10,
+          "mesh": 40,
+          "minimizing_mode": 1,
+          "observed_order": null,
+          "reflection_chi_error_max": 5.5564441936439835e-11,
+          "reflection_u_error_max": 5.10702591327572e-15,
+          "reflection_v_error_max": 6.661338147750939e-15,
+          "theory_c2": -19.666710315587455,
+          "unconstrained_c2": -19.318558933488976,
+          "unconstrained_c4": -1.6355196980261977,
+          "unconstrained_fit_residual_max": 2.992806003021542e-11,
+          "unconstrained_intercept": 95.72724269616783
+        },
+        {
+          "c2": -19.579579296748616,
+          "c2_relative_error": 0.004430380955465687,
+          "c4": -1.9056776915268854,
+          "case_name": "nonminimal-beta3",
+          "chi_star_disc": 95.75736259380922,
+          "discrete_eigenvalue": 9.868336118746432,
+          "fit_residual_max": 6.291176378133735e-10,
+          "intercept_error": -3.9250380723387934e-10,
+          "mesh": 80,
+          "minimizing_mode": 1,
+          "observed_order": 1.9984495528615873,
+          "reflection_chi_error_max": 5.396714186645113e-10,
+          "reflection_u_error_max": 4.0190073491430667e-14,
+          "reflection_v_error_max": 5.0959236830294685e-14,
+          "theory_c2": -19.666710315587455,
+          "unconstrained_c2": -19.579572986480606,
+          "unconstrained_c4": -1.9190348436314182,
+          "unconstrained_fit_residual_max": 2.7553426207305165e-10,
+          "unconstrained_intercept": 95.75736259341672
+        },
+        {
+          "c2": -19.64492609095355,
+          "c2_relative_error": 0.0011076699806087478,
+          "c4": -1.977074376721542,
+          "case_name": "nonminimal-beta3",
+          "chi_star_disc": 95.76489405754216,
+          "discrete_eigenvalue": 9.86928731827935,
+          "fit_residual_max": 1.8143557826120777e-09,
+          "intercept_error": -3.8747316466469783e-10,
+          "mesh": 160,
+          "minimizing_mode": 1,
+          "observed_order": 1.9999026486399063,
+          "reflection_chi_error_max": 2.9502018605853664e-09,
+          "reflection_u_error_max": 1.9406698470447736e-13,
+          "reflection_v_error_max": 2.4857893521357255e-13,
+          "theory_c2": -19.666710315587455,
+          "unconstrained_c2": -19.64491986122002,
+          "unconstrained_c4": -1.9902609712802841,
+          "unconstrained_fit_residual_max": 1.4849064200461726e-09,
+          "unconstrained_intercept": 95.76489405715469
+        }
+      ],
+      "parameters": {
+        "a": 1.0,
+        "alpha": 1.0,
+        "b": 1.0,
+        "beta": 3.0,
+        "c": 1.0,
+        "gamma": 1.0,
+        "length": 1.0,
+        "m": 1.0,
+        "minimal": false,
+        "mode": 1,
+        "mu": 1.0,
+        "name": "nonminimal-beta3",
+        "nu": 1.0,
+        "title": "nonminimal: beta=3 (subcritical)",
+        "u_star": 1.0
+      }
+    },
+    {
+      "bifurcation_coefficients": {
+        "C1_n0": 0.09199966835037524,
+        "C2_0": 0.0,
+        "C2_2n0": 0.0,
+        "C3_n0": 0.0,
+        "a01": 0.0,
+        "a2n0": 0.32605509077463385,
+        "alpha_n0": 0.4540001658248124,
+        "beta_n0": 0.8730377411877027,
+        "chi_star": 21.739208802178716,
+        "chi_star_mode_n0": 21.739208802178716,
+        "gamma_2n0": 0.43311623348136336,
+        "gamma_cubic": -0.04015959132331469,
+        "lambda_2n0": 39.47841760435743,
+        "lambda_n0": 9.869604401089358,
+        "sigma_2n0": -28.87734159554197
+      },
+      "continuum_threshold": {
+        "chi_star": 21.739208802178716,
+        "minimizing_mode": 1,
+        "runner_up_gap": 59.21762640653615
+      },
+      "fits": [
+        {
+          "c2": 1.9130168027041174,
+          "c2_relative_error": 0.005186254065283893,
+          "c4": 0.30843692754223995,
+          "case_name": "minimal-m1-g1",
+          "chi_star_disc": 21.72906410798095,
+          "discrete_eigenvalue": 9.864532053990475,
+          "fit_residual_max": 8.446141083519332e-11,
+          "intercept_error": 6.188827228470473e-12,
+          "mesh": 40,
+          "minimizing_mode": 1,
+          "observed_order": null,
+          "reflection_chi_error_max": 1.5840129208299913e-10,
+          "reflection_u_error_max": 9.992007221626409e-15,
+          "reflection_v_error_max": 2.9976021664879227e-15,
+          "theory_c2": 1.9229899169785474,
+          "unconstrained_c2": 1.9130167032525616,
+          "unconstrained_c4": 0.30864749437250183,
+          "unconstrained_fit_residual_max": 7.951683755891281e-11,
+          "unconstrained_intercept": 21.72906410798714
+        },
+        {
+          "c2": 1.9204956382538594,
+          "c2_relative_error": 0.0012970836210140246,
+          "c4": 0.3103820343677139,
+          "case_name": "minimal-m1-g1",
+          "chi_star_disc": 21.736672237492865,
+          "discrete_eigenvalue": 9.868336118746432,
+          "fit_residual_max": 5.918972039352323e-10,
+          "intercept_error": -3.197442310920451e-12,
+          "mesh": 80,
+          "minimizing_mode": 1,
+          "observed_order": 1.9994213920153865,
+          "reflection_chi_error_max": 1.1769571983677451e-09,
+          "reflection_u_error_max": 2.5757174171303632e-14,
+          "reflection_v_error_max": 1.4876988529977098e-14,
+          "theory_c2": 1.9229899169785474,
+          "unconstrained_c2": 1.9204956896953609,
+          "unconstrained_c4": 0.3102731550130828,
+          "unconstrained_fit_residual_max": 5.890150589493715e-10,
+          "unconstrained_intercept": 21.736672237489667
+        },
+        {
+          "c2": 1.92236644735955,
+          "c2_relative_error": 0.00032421887056844137,
+          "c4": 0.31066600661857485,
+          "case_name": "minimal-m1-g1",
+          "chi_star_disc": 21.7385746365587,
+          "discrete_eigenvalue": 9.86928731827935,
+          "fit_residual_max": 3.29249673537402e-09,
+          "intercept_error": 2.2151169787321123e-11,
+          "mesh": 160,
+          "minimizing_mode": 1,
+          "observed_order": 2.0002315231020047,
+          "reflection_chi_error_max": 6.5676637461820064e-09,
+          "reflection_u_error_max": 7.882583474838611e-14,
+          "reflection_v_error_max": 7.37188088351104e-14,
+          "theory_c2": 1.9229899169785474,
+          "unconstrained_c2": 1.9223660911986182,
+          "unconstrained_c4": 0.31141989795470837,
+          "unconstrained_fit_residual_max": 3.295120620805392e-09,
+          "unconstrained_intercept": 21.73857463658085
+        }
+      ],
+      "parameters": {
+        "a": 0.0,
+        "alpha": 1.0,
+        "b": 0.0,
+        "beta": 1.0,
+        "c": 1.0,
+        "gamma": 1.0,
+        "length": 1.0,
+        "m": 1.0,
+        "minimal": true,
+        "mode": 1,
+        "mu": 1.0,
+        "name": "minimal-m1-g1",
+        "nu": 1.0,
+        "title": "minimal: m=1, gamma=1 (supercritical)",
+        "u_star": 1.0
+      }
+    },
+    {
+      "bifurcation_coefficients": {
+        "C1_n0": 0.18399933670075047,
+        "C2_0": 0.5,
+        "C2_2n0": 0.01235226151592882,
+        "C3_n0": 0.0,
+        "a01": 0.0,
+        "a2n0": 0.7438869468527958,
+        "alpha_n0": 0.9080003316496248,
+        "beta_n0": -1.0429176776256086,
+        "chi_star": 10.869604401089358,
+        "chi_star_mode_n0": 10.869604401089358,
+        "gamma_2n0": 1.976288803167489,
+        "gamma_cubic": 0.09594808045829954,
+        "lambda_2n0": 39.47841760435743,
+        "lambda_n0": 9.869604401089358,
+        "sigma_2n0": -28.87734159554197
+      },
+      "continuum_threshold": {
+        "chi_star": 10.869604401089358,
+        "minimizing_mode": 1,
+        "runner_up_gap": 29.608813203268074
+      },
+      "fits": [
+        {
+          "c2": -1.1795328096525204,
+          "c2_relative_error": 0.026942207744013937,
+          "c4": 0.05119183966694187,
+          "case_name": "minimal-m2-g2",
+          "chi_star_disc": 10.864532053990475,
+          "discrete_eigenvalue": 9.864532053990475,
+          "fit_residual_max": 2.650704631122449e-11,
+          "intercept_error": -1.5258905250448151e-12,
+          "mesh": 40,
+          "minimizing_mode": 1,
+          "observed_order": null,
+          "reflection_chi_error_max": 4.4074965899199015e-11,
+          "reflection_u_error_max": 5.551115123125783e-15,
+          "reflection_v_error_max": 2.886579864025407e-15,
+          "theory_c2": -1.1485873311641532,
+          "unconstrained_c2": -1.179532785098301,
+          "unconstrained_c4": 0.0511398964191459,
+          "unconstrained_fit_residual_max": 2.5133672920674144e-11,
+          "unconstrained_intercept": 10.864532053988949
+        },
+        {
+          "c2": -1.1563262402309178,
+          "c2_relative_error": 0.006737762864684191,
+          "c4": 0.07602027613023038,
+          "case_name": "minimal-m2-g2",
+          "chi_star_disc": 10.868336118746432,
+          "discrete_eigenvalue": 9.868336118746432,
+          "fit_residual_max": 1.5046370003122302e-10,
+          "intercept_error": 2.4513724383723456e-13,
+          "mesh": 80,
+          "minimizing_mode": 1,
+          "observed_order": 1.9995265165374327,
+          "reflection_chi_error_max": 3.0048141752558877e-10,
+          "reflection_u_error_max": 1.3100631690576847e-14,
+          "reflection_v_error_max": 1.509903313490213e-14,
+          "theory_c2": -1.1485873311641532,
+          "unconstrained_c2": -1.156326244133934,
+          "unconstrained_c4": 0.07602856685452014,
+          "unconstrained_fit_residual_max": 1.5024248511963378e-10,
+          "unconstrained_intercept": 10.868336118746678
+        },
+        {
+          "c2": -1.1505222060103328,
+          "c2_relative_error": 0.0016845692039964475,
+          "c4": 0.08231946428171356,
+          "case_name": "minimal-m2-g2",
+          "chi_star_disc": 10.86928731827935,
+          "discrete_eigenvalue": 9.86928731827935,
+          "fit_residual_max": 8.184563267582995e-10,
+          "intercept_error": -4.170885858911788e-12,
+          "mesh": 160,
+          "minimizing_mode": 1,
+          "observed_order": 1.9998899565433161,
+          "reflection_chi_error_max": 1.623186918209285e-09,
+          "reflection_u_error_max": 4.04121180963557e-14,
+          "reflection_v_error_max": 7.438494264988549e-14,
+          "theory_c2": -1.1485873311641532,
+          "unconstrained_c2": -1.1505221389847617,
+          "unconstrained_c4": 0.082177586036605,
+          "unconstrained_fit_residual_max": 8.146994190383339e-10,
+          "unconstrained_intercept": 10.869287318275179
+        }
+      ],
+      "parameters": {
+        "a": 0.0,
+        "alpha": 1.0,
+        "b": 0.0,
+        "beta": 1.0,
+        "c": 1.0,
+        "gamma": 2.0,
+        "length": 1.0,
+        "m": 2.0,
+        "minimal": true,
+        "mode": 1,
+        "mu": 1.0,
+        "name": "minimal-m2-g2",
+        "nu": 1.0,
+        "title": "minimal: m=2, gamma=2 (subcritical)",
+        "u_star": 1.0
+      }
+    }
+  ],
+  "meshes": [
+    40,
+    80,
+    160
+  ],
+  "method": {
+    "coefficient_source": "Chemotaxis_simulation.implied_constants.compute_bifurcation_coefficients",
+    "continuation_parameter": "signed first-cosine amplitude",
+    "diagnostic_fit": "chi = intercept + c2*A^2 + c4*A^4",
+    "discrete_threshold": "Chemotaxis_simulation.thresholds.chi_star_disc_fd",
+    "elliptic_operator": "Chemotaxis_simulation.simulation.solve_v",
+    "elliptic_residual_scope": "independent reconstruction of laplacian(v)-mu*v+nu*u^gamma",
+    "intercept_absolute_tolerance": 1e-09,
+    "minimum_observed_order": 1.8,
+    "primary_fit": "chi-chi_star_disc = c2*A^2 + c4*A^4",
+    "stationary_operator": "Chemotaxis_simulation.simulation.rhs",
+    "u_residual_scope": "all nodal u equations, including the dependent endpoint equation omitted from each minimal-model Newton system"
+  },
+  "point_count": 96,
+  "provenance": {
+    "generator": {
+      "dirty": false,
+      "path": "stationary_branch_validation.py",
+      "revision": "7c2a09b24fdebb9000b9b996eb34150d6de5ed17"
+    },
+    "runtime": {
+      "matplotlib": "3.11.0",
+      "numpy": "2.5.1",
+      "python": "3.14.6",
+      "scipy": "1.18.0"
+    },
+    "simulator": {
+      "dirty": false,
+      "path": "simulation.py",
+      "revision": "7c2a09b24fdebb9000b9b996eb34150d6de5ed17"
+    }
+  },
+  "schema_version": 2
+}
