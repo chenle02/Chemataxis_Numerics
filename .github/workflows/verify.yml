@@ -39,7 +39,7 @@ jobs:
       - name: Verify legacy Pages snapshot
         shell: bash
         run: |
-          changes="$(rsync -acin --checksum \
+          changes="$(rsync -rcin --checksum \
             --exclude sitemap.xml \
             --exclude sitemap.xml.gz \
             site/ docs/)"
