@@ -88,8 +88,9 @@ Simulation code is maintained separately in
 
 > **Maintainer note:** `scripts/generate_gallery.py` is the legacy full-archive
 > indexer and is not part of the curated Paper III site build. If it overwrites
-> `docs/results/index.md`, the manifest validator will reject any retired family
-> that reappears as featured evidence.
+> `docs/results/index.md`, the manifest validator rejects the page because the
+> two hashed manuscript figures disappear or a legacy `run_summary6.png`
+> becomes reader-facing.
 
 ## License
 

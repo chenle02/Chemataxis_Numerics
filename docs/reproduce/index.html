@@ -543,8 +543,11 @@
 <li>every featured family, constants file, and selected run exists in Git;</li>
 <li>validated coefficient values agree with archive assertions;</li>
 <li>quantitative use is disabled for every under-review record;</li>
-<li>every selected preview and run belongs to its declared family; and</li>
-<li>historical or rerun-required families remain outside the validated list.</li>
+<li>every selected run belongs to its declared family;</li>
+<li>each current paper-figure PNG/PDF matches its declared SHA-256 digest;</li>
+<li>legacy per-run previews remain marked as archive-only and are not embedded
+  on the curated Results page;</li>
+<li>historical or rerun-required families remain outside the validated list; and</li>
 <li>corrected analytical values recorded for an under-review family remain
   explicitly separated from, and checked against, its archived constants.</li>
 </ul>
@@ -575,10 +578,12 @@ invariant.</p>
 <li><code>run_plan.json</code> — the batch design;</li>
 <li><code>runs/*/run_meta.json</code> — the realized sensitivity, amplitude, mesh, and time;</li>
 <li><code>runs/*/run.npz</code> — raw solution arrays; and</li>
-<li><code>runs/*/run_summary6.png</code> — a compact trajectory rendering.</li>
+<li><code>runs/*/run_summary6.png</code> — a compact historical trajectory rendering.</li>
 </ul>
 <p>Use the configuration and run metadata together. Do not infer a quantitative
-Paper III result from a folder name alone.</p>
+Paper III result from a folder name or an old summary-image annotation alone.
+The current reader-facing composites are versioned separately under
+<code>docs/assets/images/</code> and identified by hash in the manifest.</p>
 <h2 id="review-and-rerun-queue">Review and rerun queue<a class="headerlink" href="#review-and-rerun-queue" title="Permanent link">&para;</a></h2>
 <p>Four items remain outside the validated Paper III contract:</p>
 <ol>

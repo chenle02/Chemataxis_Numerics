@@ -17,8 +17,11 @@ It checks that:
 - every featured family, constants file, and selected run exists in Git;
 - validated coefficient values agree with archive assertions;
 - quantitative use is disabled for every under-review record;
-- every selected preview and run belongs to its declared family; and
-- historical or rerun-required families remain outside the validated list.
+- every selected run belongs to its declared family;
+- each current paper-figure PNG/PDF matches its declared SHA-256 digest;
+- legacy per-run previews remain marked as archive-only and are not embedded
+  on the curated Results page;
+- historical or rerun-required families remain outside the validated list; and
 - corrected analytical values recorded for an under-review family remain
   explicitly separated from, and checked against, its archived constants.
 
@@ -57,10 +60,12 @@ Each archived family contains:
 - `run_plan.json` — the batch design;
 - `runs/*/run_meta.json` — the realized sensitivity, amplitude, mesh, and time;
 - `runs/*/run.npz` — raw solution arrays; and
-- `runs/*/run_summary6.png` — a compact trajectory rendering.
+- `runs/*/run_summary6.png` — a compact historical trajectory rendering.
 
 Use the configuration and run metadata together. Do not infer a quantitative
-Paper III result from a folder name alone.
+Paper III result from a folder name or an old summary-image annotation alone.
+The current reader-facing composites are versioned separately under
+`docs/assets/images/` and identified by hash in the manifest.
 
 ## Review and rerun queue
 

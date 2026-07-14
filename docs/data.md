@@ -44,7 +44,8 @@ of truth for the curated layer. Each case records:
 - archive objects that exist without treating provisional coefficients as
   final analytical values, including an explicit corrected-versus-archived
   record when those values differ;
-- selected run and preview paths; and
+- selected run paths, manuscript-matched figure assets, and legacy-preview
+  status; and
 - the precise boundary on permissible claims.
 
 The validator reads constants directly from the referenced Git objects. This

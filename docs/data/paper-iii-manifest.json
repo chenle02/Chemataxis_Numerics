@@ -23,6 +23,14 @@
       "quantitative_use": true,
       "claim_scope": "Paper III near-threshold semidiscrete evidence: below-threshold decay and symmetry-related patterned trajectories above threshold.",
       "paper_figure_id": "paper3-supercritical-quasilinear",
+      "paper_figure": {
+        "source_manuscript_commit": "7d69c6e",
+        "preview_path": "docs/assets/images/paper3-supercritical-quasilinear.png",
+        "preview_sha256": "7c8d78658056e7206bdc1935fb865208c4c9253bffe6b065a76747e854008283",
+        "vector_path": "docs/assets/images/paper3-supercritical-quasilinear.pdf",
+        "vector_sha256": "935200fa204f9178c95052840a8c1d8da2794a324ab48035c714a2d447debad4"
+      },
+      "legacy_preview_policy": "Per-run summary images retain obsolete coefficient annotations and are archive provenance only; the paper_figure assets are the current reader-facing figures.",
       "raw_path": "docs/results/quasilinear/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1",
       "constants_path": "docs/results/quasilinear/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1/constants.json",
       "archive_assertions": {
@@ -35,19 +43,19 @@
           "role": "below-threshold positive seed",
           "run_path": "docs/results/quasilinear/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1/runs/chi2-1656_ep0-0010_p/run.npz",
           "metadata_path": "docs/results/quasilinear/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1/runs/chi2-1656_ep0-0010_p/run_meta.json",
-          "preview_path": "docs/results/quasilinear/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1/runs/chi2-1656_ep0-0010_p/run_summary6.png"
+          "legacy_preview_path": "docs/results/quasilinear/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1/runs/chi2-1656_ep0-0010_p/run_summary6.png"
         },
         {
           "role": "above-threshold positive branch",
           "run_path": "docs/results/quasilinear/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1/runs/chi2-2102_ep0-0010_p/run.npz",
           "metadata_path": "docs/results/quasilinear/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1/runs/chi2-2102_ep0-0010_p/run_meta.json",
-          "preview_path": "docs/results/quasilinear/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1/runs/chi2-2102_ep0-0010_p/run_summary6.png"
+          "legacy_preview_path": "docs/results/quasilinear/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1/runs/chi2-2102_ep0-0010_p/run_summary6.png"
         },
         {
           "role": "above-threshold negative branch",
           "run_path": "docs/results/quasilinear/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1/runs/chi2-2102_ep0-0010_m/run.npz",
           "metadata_path": "docs/results/quasilinear/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1/runs/chi2-2102_ep0-0010_m/run_meta.json",
-          "preview_path": "docs/results/quasilinear/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1/runs/chi2-2102_ep0-0010_m/run_summary6.png"
+          "legacy_preview_path": "docs/results/quasilinear/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1/runs/chi2-2102_ep0-0010_m/run_summary6.png"
         }
       ]
     },
@@ -58,6 +66,14 @@
       "quantitative_use": true,
       "claim_scope": "Paper III near-threshold semidiscrete evidence for nonlinear mobility and signal production.",
       "paper_figure_id": "paper3-supercritical-nonlinear",
+      "paper_figure": {
+        "source_manuscript_commit": "7d69c6e",
+        "preview_path": "docs/assets/images/paper3-supercritical-nonlinear.png",
+        "preview_sha256": "b287873930bb8ed56f6ad7dfded889a1dec2f6a9ae11ede8000bec0d63d3860d",
+        "vector_path": "docs/assets/images/paper3-supercritical-nonlinear.pdf",
+        "vector_sha256": "40bbb4bc4e5c459dedf1b0b960c932ce41c581a0fc5bb876b901be1b1a19b631"
+      },
+      "legacy_preview_policy": "Per-run summary images retain obsolete coefficient annotations and are archive provenance only; the paper_figure assets are the current reader-facing figures.",
       "raw_path": "docs/results/nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1",
       "constants_path": "docs/results/nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1/constants.json",
       "archive_assertions": {
@@ -70,19 +86,19 @@
           "role": "below-threshold positive seed",
           "run_path": "docs/results/nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1/runs/chi11-8424_ep0-0010_p/run.npz",
           "metadata_path": "docs/results/nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1/runs/chi11-8424_ep0-0010_p/run_meta.json",
-          "preview_path": "docs/results/nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1/runs/chi11-8424_ep0-0010_p/run_summary6.png"
+          "legacy_preview_path": "docs/results/nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1/runs/chi11-8424_ep0-0010_p/run_summary6.png"
         },
         {
           "role": "above-threshold positive branch",
           "run_path": "docs/results/nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1/runs/chi12-0906_ep0-0010_p/run.npz",
           "metadata_path": "docs/results/nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1/runs/chi12-0906_ep0-0010_p/run_meta.json",
-          "preview_path": "docs/results/nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1/runs/chi12-0906_ep0-0010_p/run_summary6.png"
+          "legacy_preview_path": "docs/results/nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1/runs/chi12-0906_ep0-0010_p/run_summary6.png"
         },
         {
           "role": "above-threshold negative branch",
           "run_path": "docs/results/nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1/runs/chi12-0906_ep0-0010_m/run.npz",
           "metadata_path": "docs/results/nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1/runs/chi12-0906_ep0-0010_m/run_meta.json",
-          "preview_path": "docs/results/nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1/runs/chi12-0906_ep0-0010_m/run_summary6.png"
+          "legacy_preview_path": "docs/results/nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1/runs/chi12-0906_ep0-0010_m/run_summary6.png"
         }
       ]
     }

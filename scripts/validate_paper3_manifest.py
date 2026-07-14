@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import math
 import subprocess
@@ -13,6 +14,7 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST_PATH = ROOT / "docs" / "data" / "paper-iii-manifest.json"
+RESULTS_PATH = ROOT / "docs" / "results" / "index.md"
 ALLOWED_STATUSES = {"validated_current", "under_review"}
 
 
@@ -26,17 +28,21 @@ def require(condition: bool, message: str) -> None:
 
 
 def git_bytes(path: str) -> bytes:
-    process = subprocess.run(
-        ["git", "show", f"HEAD:{path}"],
-        cwd=ROOT,
-        check=False,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
+    details = []
+    for object_name in (f":{path}", f"HEAD:{path}"):
+        process = subprocess.run(
+            ["git", "show", object_name],
+            cwd=ROOT,
+            check=False,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+        )
+        if process.returncode == 0:
+            return process.stdout
+        details.append(process.stderr.decode("utf-8", errors="replace").strip())
+    raise ValidationError(
+        f"missing Git index/HEAD object for {path}: {'; '.join(details)}"
     )
-    if process.returncode != 0:
-        detail = process.stderr.decode("utf-8", errors="replace").strip()
-        raise ValidationError(f"missing Git object HEAD:{path}: {detail}")
-    return process.stdout
 
 
 def git_json(path: str) -> dict[str, Any]:
@@ -55,6 +61,29 @@ def validate_archive_path(path: Any, context: str) -> str:
     require(".." not in pure_path.parts, f"{context} must not traverse upward: {path}")
     require(path.startswith("docs/results/"), f"{context} must be under docs/results/: {path}")
     git_bytes(path)
+    return path
+
+
+def validate_public_asset(path: Any, expected_hash: Any, context: str) -> str:
+    require(isinstance(path, str) and path, f"{context}.path must be nonempty")
+    pure_path = PurePosixPath(path)
+    require(
+        path.startswith("docs/assets/images/"),
+        f"{context}.path must be under docs/assets/images/: {path}",
+    )
+    require(
+        pure_path.suffix in {".png", ".pdf"},
+        f"{context}.path must be a PNG or PDF: {path}",
+    )
+    require(
+        isinstance(expected_hash, str) and len(expected_hash) == 64,
+        f"{context}.sha256 must be a 64-character digest",
+    )
+    actual_hash = hashlib.sha256(git_bytes(path)).hexdigest()
+    require(
+        actual_hash == expected_hash,
+        f"{context} hash mismatch: object={actual_hash}, manifest={expected_hash}",
+    )
     return path
 
 
@@ -85,14 +114,50 @@ def validate_archive_assertions(entry: dict[str, Any], context: str) -> None:
         assert_close(constants.get(key), assertions.get(key), f"{context}.{key}")
 
 
-def validate_run_paths(runs: Any, raw_path: str, context: str) -> None:
+def validate_run_paths(
+    runs: Any,
+    raw_path: str,
+    context: str,
+    preview_field: str = "preview_path",
+) -> None:
     require(isinstance(runs, list), f"{context} must be an array")
     for run_index, run in enumerate(runs):
         run_context = f"{context}[{run_index}]"
         require(isinstance(run, dict), f"{run_context} must be an object")
-        for field in ("run_path", "metadata_path", "preview_path"):
+        for field in ("run_path", "metadata_path", preview_field):
             run_path = validate_archive_path(run.get(field), f"{run_context}.{field}")
-            require(run_path.startswith(raw_path + "/"), f"{run_context}.{field} escapes its family")
+            require(
+                run_path.startswith(raw_path + "/"),
+                f"{run_context}.{field} escapes its family",
+            )
+
+
+def validate_paper_figure(case: dict[str, Any], context: str) -> None:
+    figure_id = case.get("paper_figure_id")
+    figure = case.get("paper_figure")
+    require(isinstance(figure, dict), f"{context}.paper_figure must be an object")
+    source_commit = figure.get("source_manuscript_commit")
+    require(
+        isinstance(source_commit, str)
+        and 7 <= len(source_commit) <= 40
+        and all(character in "0123456789abcdef" for character in source_commit),
+        f"{context}.paper_figure.source_manuscript_commit must be a Git SHA",
+    )
+    preview_path = validate_public_asset(
+        figure.get("preview_path"),
+        figure.get("preview_sha256"),
+        f"{context}.paper_figure.preview",
+    )
+    vector_path = validate_public_asset(
+        figure.get("vector_path"),
+        figure.get("vector_sha256"),
+        f"{context}.paper_figure.vector",
+    )
+    require(
+        PurePosixPath(preview_path).stem == figure_id
+        and PurePosixPath(vector_path).stem == figure_id,
+        f"{context}.paper_figure assets must match paper_figure_id",
+    )
 
 
 def validate_case(case: Any, index: int) -> str:
@@ -105,9 +170,39 @@ def validate_case(case: Any, index: int) -> str:
     require(isinstance(case.get("claim_scope"), str), f"{context} needs a claim_scope")
     raw_path = validate_archive_path(case.get("raw_path"), f"{context}.raw_path")
     require(isinstance(case.get("paper_figure_id"), str), f"{context} needs a paper_figure_id")
+    validate_paper_figure(case, context)
+    require(
+        isinstance(case.get("legacy_preview_policy"), str)
+        and case["legacy_preview_policy"],
+        f"{context} needs a legacy_preview_policy",
+    )
     validate_archive_assertions(case, context)
-    validate_run_paths(case.get("featured_runs"), raw_path, f"{context}.featured_runs")
+    validate_run_paths(
+        case.get("featured_runs"),
+        raw_path,
+        f"{context}.featured_runs",
+        "legacy_preview_path",
+    )
     return case_id
+
+
+def validate_results_page(cases: list[Any]) -> None:
+    page = RESULTS_PATH.read_text(encoding="utf-8")
+    require(
+        "run_summary6.png" not in page,
+        "curated Results page must not embed legacy per-run summary images",
+    )
+    for index, case in enumerate(cases):
+        require(isinstance(case, dict), f"cases[{index}] must be an object")
+        figure = case.get("paper_figure")
+        require(isinstance(figure, dict), f"cases[{index}].paper_figure must be an object")
+        preview_path = figure.get("preview_path")
+        require(isinstance(preview_path, str), f"cases[{index}] needs a preview path")
+        relative_path = "../" + str(PurePosixPath(preview_path).relative_to("docs"))
+        require(
+            relative_path in page,
+            f"curated Results page does not embed {relative_path}",
+        )
 
 
 def validate_under_review(entry: Any, context: str, runs_field: str | None = None) -> str:
@@ -117,7 +212,10 @@ def validate_under_review(entry: Any, context: str, runs_field: str | None = Non
     require(entry.get("status") == "under_review", f"{context} must be under_review")
     require(entry.get("quantitative_use") is False, f"{context} must prohibit quantitative use")
     for forbidden_key in ("classification", "current_values", "archive_assertions"):
-        require(forbidden_key not in entry, f"{context} must not freeze {forbidden_key} while under review")
+        require(
+            forbidden_key not in entry,
+            f"{context} must not freeze {forbidden_key} while under review",
+        )
     raw_path = validate_archive_path(entry.get("raw_path"), f"{context}.raw_path")
     constants_path = validate_archive_path(
         entry.get("constants_path"), f"{context}.constants_path"
@@ -172,7 +270,10 @@ def main() -> int:
         require(manifest.get("schema_version") == "1.1", "unsupported schema_version")
         policies = manifest.get("evidence_policy")
         require(isinstance(policies, dict), "evidence_policy must be an object")
-        require(set(policies) == ALLOWED_STATUSES, "evidence_policy keys do not match allowed statuses")
+        require(
+            set(policies) == ALLOWED_STATUSES,
+            "evidence_policy keys do not match allowed statuses",
+        )
 
         cases = manifest.get("cases")
         pending = manifest.get("pending_review")
@@ -197,6 +298,7 @@ def main() -> int:
             for index, entry in enumerate(excluded)
         )
         require(len(ids) == len(set(ids)), "manifest IDs must be unique")
+        validate_results_page(cases)
     except (OSError, json.JSONDecodeError, ValidationError) as exc:
         print(f"Paper III manifest validation failed: {exc}", file=sys.stderr)
         return 1
