@@ -1,0 +1,1245 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Reader-facing numerical companion and public data archive for Paper III on bifurcation in chemotaxis models with signal-dependent sensitivity.">
+      
+      
+        <meta name="author" content="Le Chen, Ian Ruau, and Wenxian Shen">
+      
+      
+        <link rel="canonical" href="https://chenle02.github.io/Chemataxis_Numerics/design/VERIFICATION-TIERS-2026-08/">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Verification tiers redesign (2026-08) - Chemotaxis Models III · Bifurcation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#verification-tiers-redesign-2026-08" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Chemotaxis Models III · Bifurcation" class="md-header__button md-logo" aria-label="Chemotaxis Models III · Bifurcation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Chemotaxis Models III · Bifurcation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Verification tiers redesign (2026-08)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/chenle02/Chemataxis_Numerics" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    chenle02/Chemataxis_Numerics
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Chemotaxis Models III · Bifurcation" class="md-nav__button md-logo" aria-label="Chemotaxis Models III · Bifurcation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Chemotaxis Models III · Bifurcation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/chenle02/Chemataxis_Numerics" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    chenle02/Chemataxis_Numerics
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../paper-iii/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Paper III
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../results/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Results
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reproduce/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Reproduce
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data & provenance
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cite
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design-tenet-wide-repo-curated-paper-pi-directive-2026-08-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design tenet — wide repo, curated paper (PI directive, 2026-08-08)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0-existing-anchors-to-extend-not-replace" class="md-nav__link">
+    <span class="md-ellipsis">
+      0. Existing anchors to extend, not replace
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-three-evidence-tiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Three evidence tiers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Three evidence tiers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#t1-run-card-evidence-in-docsresults" class="md-nav__link">
+    <span class="md-ellipsis">
+      T1 — run-card evidence in docs/results/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#t2-numpysympy-closed-form-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      T2 — NumPy/SymPy closed-form verification
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#t3-lean-formal-proof" class="md-nav__link">
+    <span class="md-ellipsis">
+      T3 — Lean formal proof
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-canonical-code-home-decision" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Canonical-code-home decision
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Canonical-code-home decision">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#options-evaluated" class="md-nav__link">
+    <span class="md-ellipsis">
+      Options evaluated
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommendation-option-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recommendation: option (a)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consumption-contract" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consumption contract
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-ci-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. CI architecture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. CI architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-fast-tier-extend-verifyyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Fast tier — extend verify.yml
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-heavy-tier-new-verify-heavyyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Heavy tier — new verify-heavy.yml
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-lean-tier-new-verify-leanyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Lean tier — new verify-lean.yml
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-pages-tier-keep-pagesyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 Pages tier — keep pages.yml
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-sitedashboard-redesign" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Site/dashboard redesign
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-migration-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Migration plan
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Migration plan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-m0-one-time-repository-repair-owner-gated" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase M0 — one-time repository repair (owner-gated)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-m1-canonical-home-extraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase M1 — canonical-home extraction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-m2-run-card-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase M2 — run-card layer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-m3-owner-gated-relabel-promotion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase M3 — owner-gated relabel promotion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-m4-new-high-mode-evidence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase M4 — new high-mode evidence
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-vendoring-contract-for-the-manuscript-repo" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Vendoring contract for the manuscript repo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Vendoring contract for the manuscript repo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#published-source-of-truth" class="md-nav__link">
+    <span class="md-ellipsis">
+      Published source of truth
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manuscript-side-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manuscript-side storage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#one-command-verified-sync-sketch" class="md-nav__link">
+    <span class="md-ellipsis">
+      One-command verified sync sketch
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-open-questions-for-the-owners" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Open questions for the owners
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Open questions for the owners">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ian-numerics-gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ian (numerics gate)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wenxian-mathematical-narrative" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wenxian (mathematical narrative)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-layout-and-canonical-home-decision" class="md-nav__link">
+    <span class="md-ellipsis">
+      Le (layout and canonical-home decision)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="verification-tiers-redesign-2026-08">Verification tiers redesign (2026-08)<a class="headerlink" href="#verification-tiers-redesign-2026-08" title="Permanent link">&para;</a></h1>
+<p>Status: design only for branch <code>redesign/verification-tiers-2026-08</code>.
+Scope: add a three-tier verification architecture to <code>Chemataxis_Numerics</code>
+without moving or relabeling any existing evidence in this branch.</p>
+<h2 id="design-tenet-wide-repo-curated-paper-pi-directive-2026-08-08">Design tenet — wide repo, curated paper (PI directive, 2026-08-08)<a class="headerlink" href="#design-tenet-wide-repo-curated-paper-pi-directive-2026-08-08" title="Permanent link">&para;</a></h2>
+<p><strong>The public data repo presents a much wider range of simulation results
+than the paper.</strong> The paper carries only the curated minimal set (the
+recommended near-threshold high-mode cases plus the crossover figure); this
+repo carries the complete evidence base:</p>
+<ul>
+<li>all ten design-matrix families from the Paper III restructure plan, not
+  just the four recommended for the manuscript;</li>
+<li>full β-sweeps per family, tracing the β⁺ regime crossover continuously;</li>
+<li>the full near-threshold ladder ({1,2,5}% × {above, below} × {±ε} seeds);</li>
+<li>regime maps over parameter planes ((β,γ) or (m,γ) at fixed L, with the
+  minimizing mode n₀ marked);</li>
+<li>mesh-refinement series and the historical raw simulation panels;</li>
+<li>the legacy folders — relabeled where the corrected coefficient requires
+  it, never deleted.</li>
+</ul>
+<p>Paired gate rule: <strong>every wide-range entry enters only through the run-card
++ label-gate pipeline — wide AND verified, never wide OR verified.</strong> The
+repo's current state (withheld/excluded markers, shortcut-labeled folders)
+is the counterexample this rule exists to prevent: ungated width becomes
+noise, and mislabeled width actively misleads.</p>
+<h2 id="0-existing-anchors-to-extend-not-replace">0. Existing anchors to extend, not replace<a class="headerlink" href="#0-existing-anchors-to-extend-not-replace" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>README.md</code> already distinguishes reader-facing evidence from provenance-only
+  archives and exposes verify/pages badges.</li>
+<li><code>.github/workflows/verify.yml</code> already enforces a fast manifest + docs gate.</li>
+<li><code>.github/workflows/pages.yml</code> already deploys the strict MkDocs build.</li>
+<li><code>docs/data/paper-iii-manifest.json</code> already encodes a two-layer evidence
+  contract (<code>validated_current</code> vs <code>provenance_only</code>).</li>
+<li><code>scripts/validate_paper3_manifest.py</code> is already the dependency-free public
+  contract checker.</li>
+<li><code>docs/</code> is already a curated reading layer over a much larger Git archive.</li>
+</ul>
+<p>The redesign should therefore preserve the current public contract model and
+generalize it from a one-release manifest to a three-tier verification ledger.</p>
+<h2 id="1-three-evidence-tiers">1. Three evidence tiers<a class="headerlink" href="#1-three-evidence-tiers" title="Permanent link">&para;</a></h2>
+<h3 id="t1-run-card-evidence-in-docsresults">T1 — run-card evidence in <code>docs/results/</code><a class="headerlink" href="#t1-run-card-evidence-in-docsresults" title="Permanent link">&para;</a></h3>
+<p>Purpose: freeze every reader-facing numerical case as a structured, hashed,
+portable artifact card.</p>
+<p>Each curated case folder gets a <code>run-card.yaml</code> with this minimum schema:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>case_id</code></td>
+<td>stable identifier used by docs, CI, and manuscript sync</td>
+</tr>
+<tr>
+<td><code>paper</code> / <code>claim_scope</code></td>
+<td>human-readable claim boundary</td>
+</tr>
+<tr>
+<td><code>parameters</code></td>
+<td><code>a,b,alpha,beta,m,gamma,mu,nu,c</code> and equilibrium mode</td>
+</tr>
+<tr>
+<td><code>L</code>, <code>n0</code></td>
+<td>domain length and critical mode</td>
+</tr>
+<tr>
+<td><code>chi_star</code></td>
+<td>closed-form threshold at the demonstration beta</td>
+</tr>
+<tr>
+<td><code>chi_star_disc</code></td>
+<td>discrete threshold at the production mesh</td>
+</tr>
+<tr>
+<td><code>beta_n0_closed_form</code></td>
+<td>signed cubic coefficient from the canonical verifier</td>
+</tr>
+<tr>
+<td><code>expected_regime</code></td>
+<td><code>supercritical</code> / <code>subcritical</code> / <code>degenerate</code></td>
+</tr>
+<tr>
+<td><code>measured_c2_sign</code></td>
+<td>sign returned by stationary continuation</td>
+</tr>
+<tr>
+<td><code>meshes</code></td>
+<td>mesh list used for the sign/convergence gate</td>
+</tr>
+<tr>
+<td><code>artifacts</code></td>
+<td>relative paths + SHA-256 for figures, JSON, CSV, NPZ, checksums</td>
+</tr>
+<tr>
+<td><code>provenance</code></td>
+<td>simulator revision, verifier revision, data revision</td>
+</tr>
+<tr>
+<td><code>status</code></td>
+<td><code>validated_current</code>, <code>candidate</code>, or <code>provenance_only</code></td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>T1 is the public-facing ledger layer; it does not recompute the science.</li>
+<li><code>constants.json</code> may remain as a legacy/generated file during migration, but
+  <code>run-card.yaml</code> becomes the authoritative per-case record.</li>
+<li>The current four stationary cases and two current time-figure families each
+  receive run cards; the historical archives remain explicitly
+  <code>provenance_only</code>.</li>
+</ul>
+<h3 id="t2-numpysympy-closed-form-verification">T2 — NumPy/SymPy closed-form verification<a class="headerlink" href="#t2-numpysympy-closed-form-verification" title="Permanent link">&para;</a></h3>
+<p>Purpose: adversarially check the mathematical classification logic behind the
+ run cards.</p>
+<p>This tier is the public, machine-checkable realization of
+<code>verify_paper3_quadratic_abc.py</code> plus the symbolic coefficient package. It
+must verify at least:</p>
+<ul>
+<li>exact quadratic decomposition <code>beta_n0(beta)=A beta^2 + B beta + C</code>;</li>
+<li>the ten verification families already validated to ~<code>1e-15</code>;</li>
+<li>the canonical regime classification used in every run card;</li>
+<li>consistency of <code>chi_star</code>, <code>chi_star_disc</code>, and <code>beta_n0</code> with the selected
+  case metadata.</li>
+</ul>
+<p>T2 is the first place where a label can fail. If a run card says
+<code>subcritical</code> but T2 computes <code>beta_n0 &gt; 0</code>, CI fails immediately even before
+any heavy numerics start.</p>
+<h3 id="t3-lean-formal-proof">T3 — Lean formal proof<a class="headerlink" href="#t3-lean-formal-proof" title="Permanent link">&para;</a></h3>
+<p>Purpose: give a proof-grade certificate that the closed-form quadratic identity
+is not only numerically right but algebraically forced.</p>
+<p>The Lean artifact is <code>Paper3QuadraticABC.lean</code>. In the redesigned companion it
+should be treated as a third evidence tier with its own status field in the
+ledger:</p>
+<ul>
+<li><code>passed</code> when the Lean job builds the theorem under the pinned mathlib cache;</li>
+<li><code>stale</code> when T2 changed but T3 was not rerun;</li>
+<li><code>not_applicable</code> for cases that depend only on T1/T2 data promotion.</li>
+</ul>
+<p>T3 does not replace T2. Lean proves the formula; T2 checks the case matrix and
+floating-point manifestations used by the public artifacts.</p>
+<h2 id="2-canonical-code-home-decision">2. Canonical-code-home decision<a class="headerlink" href="#2-canonical-code-home-decision" title="Permanent link">&para;</a></h2>
+<h3 id="options-evaluated">Options evaluated<a class="headerlink" href="#options-evaluated" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(a) <code>Chemotaxis_simulation</code> is canonical</td>
+<td>already public; already owns <code>implied_constants.py</code>; stationary validator was explicitly designed to be publishable there; natural home for CI-executed numerics</td>
+<td>requires moving Paper III symbolic verifier out of manuscript repo</td>
+</tr>
+<tr>
+<td>(b) <code>verification/</code> subtree in data repo</td>
+<td>keeps companion self-contained; easy to cite from this repo</td>
+<td>turns a frozen evidence repo into the mutable source of scientific truth; awkward for the simulator package to consume</td>
+</tr>
+<tr>
+<td>(c) submodule/subtree links</td>
+<td>reduces file copying</td>
+<td>adds a third sync surface, weakens offline/Overleaf ergonomics, and complicates release pinning</td>
+</tr>
+</tbody>
+</table>
+<h3 id="recommendation-option-a">Recommendation: option (a)<a class="headerlink" href="#recommendation-option-a" title="Permanent link">&para;</a></h3>
+<p>Make <code>Chemotaxis_simulation</code> the <strong>single canonical home for executable
+verification logic</strong>, in a dedicated public subtree such as:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Chemotaxis_simulation/
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  verification/paper3/
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    run_cards.py
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    verify_quadratic_abc.py
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    stationary_branch_validation.py
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    lean/Paper3QuadraticABC.lean
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    cases/*.yaml
+</code></pre></div>
+<p>Rationale:</p>
+<ol>
+<li>The duplication problem already centers on the simulator repo's
+   <code>implied_constants.py</code> versus manuscript-repo symbolic code; canonicalizing
+   in the simulator repo collapses the split at the point where public code
+   already lives.</li>
+<li>The stationary validator already advertises itself as independent of the
+   manuscript-only package and suitable for publication with the simulator.</li>
+<li>The data repo should remain the frozen evidence and release-ledger layer,
+   not the moving source of scientific logic.</li>
+<li>Separate workflow badges become honest: code/verifier health belongs to the
+   simulator/verification release; evidence-contract health belongs here.</li>
+</ol>
+<h3 id="consumption-contract">Consumption contract<a class="headerlink" href="#consumption-contract" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Data repo</strong>: pins one released simulator verification revision and imports
+  it in CI; no local forks of the mathematics.</li>
+<li><strong>Manuscript repo</strong>: vendors an exact snapshot of the verification subtree
+  under a tracked <code>codes/vendor/chemotaxis_verification/</code> path, with a
+  SHA-256 manifest and pinned source revision. This vendor step happens by an
+  explicit sync script, never by <code>pip install</code> during <code>latexmk</code>.</li>
+<li><strong>No compile-time fetch</strong>: Overleaf/arXiv/journal builds read only vendored
+  files and vendored figures.</li>
+</ul>
+<p>Rejected alternatives:</p>
+<ul>
+<li><strong>(b)</strong> would make the public data repo simultaneously the mutable code home
+  and immutable evidence home; those roles want different branching and release
+  rhythms.</li>
+<li><strong>(c)</strong> increases operational complexity for little gain and is hostile to the
+  offline manuscript build requirement.</li>
+</ul>
+<h2 id="3-ci-architecture">3. CI architecture<a class="headerlink" href="#3-ci-architecture" title="Permanent link">&para;</a></h2>
+<p>Use three verification workflows plus the existing Pages deploy workflow.
+Separate workflows, not separate jobs in one workflow, are preferred because
+README needs per-tier badges.</p>
+<h3 id="31-fast-tier-extend-verifyyml">3.1 Fast tier — extend <code>verify.yml</code><a class="headerlink" href="#31-fast-tier-extend-verifyyml" title="Permanent link">&para;</a></h3>
+<p>Trigger: every push and PR on every branch.</p>
+<p>Responsibilities:</p>
+<ol>
+<li>install lightweight verification dependencies;</li>
+<li>validate <code>run-card.yaml</code> files against a committed schema;</li>
+<li>run the T2 closed-form harness on the frozen family set;</li>
+<li>enforce the label gate on committed artifacts:
+   <code>run-card expected_regime == sign(beta_n0_closed_form)</code>;</li>
+<li>check that committed measured signs (if present) agree with the declared
+   regime;</li>
+<li>run <code>scripts/validate_paper3_manifest.py</code> (or its generalized successor);</li>
+<li>validate <code>CITATION.cff</code>;</li>
+<li>build MkDocs strictly and compare <code>site/</code> with committed <code>docs/</code> snapshot.</li>
+</ol>
+<p>Failure rule (CI-as-adversary): any disagreement among run-card label, T2
+closed form, and committed measured sign is a hard failure.</p>
+<h3 id="32-heavy-tier-new-verify-heavyyml">3.2 Heavy tier — new <code>verify-heavy.yml</code><a class="headerlink" href="#32-heavy-tier-new-verify-heavyyml" title="Permanent link">&para;</a></h3>
+<p>Trigger:</p>
+<ul>
+<li><code>schedule:</code> nightly;</li>
+<li><code>workflow_dispatch:</code>;</li>
+<li>path-triggered on changes to canonical verification code, case definitions,
+  run-card schema, or promotion manifests.</li>
+</ul>
+<p>Responsibilities:</p>
+<ol>
+<li>run stationary sign checks at <code>N=80</code> for every case flagged
+   <code>status in {candidate, validated_current}</code>;</li>
+<li>confirm <code>sign(c2_measured) == sign(beta_n0_closed_form)</code>;</li>
+<li>upload generated summaries as CI artifacts;</li>
+<li>refuse automatic promotion of mismatching cases.</li>
+</ol>
+<p>This tier is deliberately measurement-only and moderate-cost: it is the
+adversarial sign gate, not the full 3-mesh publication rerun.</p>
+<h3 id="33-lean-tier-new-verify-leanyml">3.3 Lean tier — new <code>verify-lean.yml</code><a class="headerlink" href="#33-lean-tier-new-verify-leanyml" title="Permanent link">&para;</a></h3>
+<p>Trigger: only when files under the Lean path change, plus manual dispatch.</p>
+<p>Implementation:</p>
+<ul>
+<li>standard Lean 4 action on <code>ubuntu-latest</code>;</li>
+<li><code>lake exe cache get</code> before build;</li>
+<li>build only the Paper III Lean package subtree;</li>
+<li>upload build log and theorem status summary.</li>
+</ul>
+<p>The Greenwood rule "never local Lean" does <strong>not</strong> apply to cloud CI runners;
+it remains a workstation-safety rule.</p>
+<h3 id="34-pages-tier-keep-pagesyml">3.4 Pages tier — keep <code>pages.yml</code><a class="headerlink" href="#34-pages-tier-keep-pagesyml" title="Permanent link">&para;</a></h3>
+<p><code>pages.yml</code> remains the publication workflow, but it should depend on the fast
+tier being green and should publish the new verification-ledger page.</p>
+<h2 id="4-sitedashboard-redesign">4. Site/dashboard redesign<a class="headerlink" href="#4-sitedashboard-redesign" title="Permanent link">&para;</a></h2>
+<p>Add <code>docs/verification-ledger.md</code> and place it in the MkDocs nav between
+<code>Results</code> and <code>Reproduce</code>.</p>
+<p>The page should present one row per case:</p>
+<table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Closed-form regime</th>
+<th>Measured sign</th>
+<th>Mesh convergence</th>
+<th>Lean status</th>
+<th>Public status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Recommended behavior:</p>
+<ul>
+<li>green row only if T1/T2/T3 agree where applicable;</li>
+<li>amber row for <code>candidate</code> cases awaiting owner promotion;</li>
+<li>grey row for <code>provenance_only</code> archives;</li>
+<li>direct links to run card, immutable bundle, fit summary, and paper figure.</li>
+</ul>
+<p>README badge redesign:</p>
+<ul>
+<li><code>Fast verify</code> → <code>verify.yml</code></li>
+<li><code>Heavy sign gate</code> → <code>verify-heavy.yml</code></li>
+<li><code>Lean proof</code> → <code>verify-lean.yml</code></li>
+<li><code>Deploy Pages</code> → <code>pages.yml</code></li>
+</ul>
+<p>The current README evidence ledger can stay, but its counts should be sourced
+from the machine-readable ledger generator rather than hand-maintained prose.</p>
+<h2 id="5-migration-plan">5. Migration plan<a class="headerlink" href="#5-migration-plan" title="Permanent link">&para;</a></h2>
+<h3 id="phase-m0-one-time-repository-repair-owner-gated">Phase M0 — one-time repository repair (owner-gated)<a class="headerlink" href="#phase-m0-one-time-repository-repair-owner-gated" title="Permanent link">&para;</a></h3>
+<p>Before any content promotion:</p>
+<ol>
+<li>repair the broken local <code>Chemataxis_Numerics</code> checkout (behind by dozens of
+   commits, Dropbox conflict files, missing <code>minimal_model/</code> locally);</li>
+<li>fast-forward to current <code>origin/master</code>;</li>
+<li>record the repair in an audit note so later label changes are not blamed on
+   Dropbox residue.</li>
+</ol>
+<p>This is operational repair, not scientific redesign.</p>
+<h3 id="phase-m1-canonical-home-extraction">Phase M1 — canonical-home extraction<a class="headerlink" href="#phase-m1-canonical-home-extraction" title="Permanent link">&para;</a></h3>
+<p>Move the Paper III verification logic from the manuscript repo into the chosen
+canonical home (<code>Chemotaxis_simulation/verification/paper3/</code>).</p>
+<p>Targets:</p>
+<ul>
+<li>closed-form coefficient package now living under
+  <code>codes/chemotaxis_symbolic/</code>;</li>
+<li><code>verify_paper3_quadratic_abc.py</code>;</li>
+<li>stationary validator driver and case definitions;</li>
+<li>Lean file <code>Paper3QuadraticABC.lean</code>.</li>
+</ul>
+<p>The manuscript repo becomes a vendor consumer, not the primary authoring home
+for these files.</p>
+<h3 id="phase-m2-run-card-layer">Phase M2 — run-card layer<a class="headerlink" href="#phase-m2-run-card-layer" title="Permanent link">&para;</a></h3>
+<p>Add run cards for all currently curated Paper III evidence and for all
+provenance-only archives. During this phase, do <strong>not</strong> relabel folders yet;
+instead, encode the corrected regime in the run card and keep the historical
+folder path as provenance.</p>
+<h3 id="phase-m3-owner-gated-relabel-promotion">Phase M3 — owner-gated relabel promotion<a class="headerlink" href="#phase-m3-owner-gated-relabel-promotion" title="Permanent link">&para;</a></h3>
+<p>Design target only; not executed on this branch.</p>
+<p>Pending relabel set from the restructure plan:</p>
+<ul>
+<li>all 4 <code>high_modes/subcritical/*m0p5_beta1_gamma{2,3}*</code> folders;</li>
+<li>both <code>minimal_model/*</code> folders (currently swapped);</li>
+<li><code>quasilinear/a=1</code> small-β rows currently living under <code>subcritical</code>.</li>
+</ul>
+<p>Promotion rule:</p>
+<ol>
+<li>relabel only after T2 and heavy-tier measured sign agree;</li>
+<li>regenerate all derived artifacts that encode labels:
+   <code>constants.json</code>, per-folder <code>README.md</code>, galleries, site summaries, and any
+   aggregated manifests;</li>
+<li>retain historical paths in provenance metadata if user-facing URLs must not
+   silently vanish.</li>
+</ol>
+<h3 id="phase-m4-new-high-mode-evidence">Phase M4 — new high-mode evidence<a class="headerlink" href="#phase-m4-new-high-mode-evidence" title="Permanent link">&para;</a></h3>
+<p>Add the new high-mode cases from plan §3 as <strong>future CI-produced artifacts</strong>,
+not hand-curated one-offs:</p>
+<ul>
+<li><code>(m,gamma)=(1/2,2)</code>, <code>L=5.3</code>, <code>n0=2</code>, <code>beta=1</code> and <code>beta=2</code>;</li>
+<li><code>(m,gamma)=(1/2,2)</code>, <code>L=8</code>, <code>n0=3</code>, <code>beta=1</code> and <code>beta=2</code>.</li>
+</ul>
+<p>These should enter first as <code>candidate</code> cases with generated run cards and CI
+artifacts, then be promoted to <code>validated_current</code> only after owner review.</p>
+<h2 id="6-vendoring-contract-for-the-manuscript-repo">6. Vendoring contract for the manuscript repo<a class="headerlink" href="#6-vendoring-contract-for-the-manuscript-repo" title="Permanent link">&para;</a></h2>
+<h3 id="published-source-of-truth">Published source of truth<a class="headerlink" href="#published-source-of-truth" title="Permanent link">&para;</a></h3>
+<p>Each promoted companion release publishes:</p>
+<ol>
+<li>a versioned release artifact (for example
+   <code>paper3-companion-vX.Y.Z.tar.gz</code>);</li>
+<li>a release-level <code>SHA256SUMS</code> manifest;</li>
+<li>a machine-readable ledger file enumerating the exact figures/data intended
+   for manuscript consumption.</li>
+</ol>
+<h3 id="manuscript-side-storage">Manuscript-side storage<a class="headerlink" href="#manuscript-side-storage" title="Permanent link">&para;</a></h3>
+<p>The manuscript repo stores a vendored snapshot under a tracked path such as:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Submission/Paper-III/vendor/companion/vX.Y.Z/
+</code></pre></div>
+<p>including:</p>
+<ul>
+<li>paper-facing PDF/PNG figures;</li>
+<li>release manifest / ledger JSON;</li>
+<li>selected run cards or summary tables if cited in prose;</li>
+<li>a text file pinning the simulator verification revision and release hash.</li>
+</ul>
+<h3 id="one-command-verified-sync-sketch">One-command verified sync sketch<a class="headerlink" href="#one-command-verified-sync-sketch" title="Permanent link">&para;</a></h3>
+<p>Sketch only (not implemented here):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>codes/sync_paper3_companion.sh<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span>--source<span class="w"> </span>../Chemataxis_Numerics<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span>--release<span class="w"> </span>vX.Y.Z<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span>--dest<span class="w"> </span>Submission/Paper-III/vendor/companion/vX.Y.Z
+</code></pre></div>
+<p>Required behavior:</p>
+<ol>
+<li>copy only whitelisted release artifacts;</li>
+<li>verify every copied file against the release <code>SHA256SUMS</code> and the ledger;</li>
+<li>write a local manifest recording source repo, commit, release tag, and
+   copied hashes;</li>
+<li>fail closed on missing or extra files;</li>
+<li>never execute during <code>latexmk</code>, Overleaf compile, arXiv upload build, or
+   journal source build.</li>
+</ol>
+<p>Compile rule: the manuscript always reads local vendored assets. Network access
+is forbidden at compile time.</p>
+<h2 id="7-open-questions-for-the-owners">7. Open questions for the owners<a class="headerlink" href="#7-open-questions-for-the-owners" title="Permanent link">&para;</a></h2>
+<h3 id="ian-numerics-gate">Ian (numerics gate)<a class="headerlink" href="#ian-numerics-gate" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Is <code>Chemotaxis_simulation</code> acceptable as the single canonical home for the
+   executable Paper III verification stack?</li>
+<li>Should heavy-tier CI stop at <code>N=80</code> sign checks, or should some candidate
+   cases immediately require the full 3-mesh publication gate?</li>
+<li>Do relabeled historical folders keep old paths plus metadata overlays, or do
+   we accept reader-visible path changes at the first promoted verification-tier
+   release?</li>
+</ol>
+<h3 id="wenxian-mathematical-narrative">Wenxian (mathematical narrative)<a class="headerlink" href="#wenxian-mathematical-narrative" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Should the public site explicitly present the <code>beta</code>-crossover story as a
+   named mathematical claim, or keep it as supporting numerical organization?</li>
+<li>Is the high-mode public narrative best grouped by <code>(m,gamma)</code> family or by
+   mode number <code>n0</code>?</li>
+<li>How prominently should <code>provenance_only</code> historical mislabels be explained to
+   readers versus left to the audit ledger?</li>
+</ol>
+<h3 id="le-layout-and-canonical-home-decision">Le (layout and canonical-home decision)<a class="headerlink" href="#le-layout-and-canonical-home-decision" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Approve or reject the recommendation that the simulator repo, not the data
+   repo, becomes canonical for executable verification logic.</li>
+<li>Decide whether <code>docs/design/</code> remains internal design history or is linked in
+   site navigation as public project-method documentation.</li>
+<li>Decide whether the manuscript should vendor only figures + manifests, or a
+   larger companion slice including run cards and validator summaries.</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2026 Le Chen, Ian Ruau, and Wenxian Shen · Numerical material licensed under CC BY 4.0
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.top", "content.code.copy", "content.tooltips", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+        <script src="../../assets/javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
