@@ -1,0 +1,1271 @@
+{
+  "acceptance": {
+    "gates": [
+      {
+        "limit": 1,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A-0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A-0.02/full-residual",
+        "passed": true,
+        "value": 1.7319479184152442e-14
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A-0.02/elliptic-residual",
+        "passed": true,
+        "value": 2.6423307986078726e-14
+      },
+      {
+        "limit": 5e-11,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A-0.02/amplitude",
+        "passed": true,
+        "value": 3.469446951953614e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A-0.02/u-positive",
+        "passed": true,
+        "value": 0.9800031745538146
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A-0.02/v-positive",
+        "passed": true,
+        "value": 0.9832471997786228
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A-0.02/sensitivity-positive",
+        "passed": true,
+        "value": 1.983247199778623
+      },
+      {
+        "limit": 1,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A-0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A-0.01/full-residual",
+        "passed": true,
+        "value": 2.4202861936828413e-14
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A-0.01/elliptic-residual",
+        "passed": true,
+        "value": 2.942091015256665e-14
+      },
+      {
+        "limit": 5e-11,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A-0.01/amplitude",
+        "passed": true,
+        "value": 3.469446951953614e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A-0.01/u-positive",
+        "passed": true,
+        "value": 0.9900010211376448
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A-0.01/v-positive",
+        "passed": true,
+        "value": 0.991649416081854
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A-0.01/sensitivity-positive",
+        "passed": true,
+        "value": 1.991649416081854
+      },
+      {
+        "limit": 1,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A-0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A-0.005/full-residual",
+        "passed": true,
+        "value": 1.7763568394002505e-14
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A-0.005/elliptic-residual",
+        "passed": true,
+        "value": 2.3203661214665772e-14
+      },
+      {
+        "limit": 5e-11,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A-0.005/amplitude",
+        "passed": true,
+        "value": 1.1275702593849246e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A-0.005/u-positive",
+        "passed": true,
+        "value": 0.9950002833571389
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A-0.005/v-positive",
+        "passed": true,
+        "value": 0.9958312063900483
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A-0.005/sensitivity-positive",
+        "passed": true,
+        "value": 1.9958312063900483
+      },
+      {
+        "limit": 1,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A-0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A-0.0025/full-residual",
+        "passed": true,
+        "value": 1.354472090042691e-14
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A-0.0025/elliptic-residual",
+        "passed": true,
+        "value": 2.3092638912203256e-14
+      },
+      {
+        "limit": 5e-11,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A-0.0025/amplitude",
+        "passed": true,
+        "value": 2.1250362580715887e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A-0.0025/u-positive",
+        "passed": true,
+        "value": 0.9975000743258585
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A-0.0025/v-positive",
+        "passed": true,
+        "value": 0.9979172336059446
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A-0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 1.9979172336059445
+      },
+      {
+        "limit": 1,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A+0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A+0.0025/full-residual",
+        "passed": true,
+        "value": 1.9761969838327786e-14
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A+0.0025/elliptic-residual",
+        "passed": true,
+        "value": 2.7977620220553945e-14
+      },
+      {
+        "limit": 5e-11,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A+0.0025/amplitude",
+        "passed": true,
+        "value": 4.336808689942018e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A+0.0025/u-positive",
+        "passed": true,
+        "value": 0.9975000743258611
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A+0.0025/v-positive",
+        "passed": true,
+        "value": 0.997917233605943
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A+0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 1.997917233605943
+      },
+      {
+        "limit": 1,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A+0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A+0.005/full-residual",
+        "passed": true,
+        "value": 1.2434497875801753e-14
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A+0.005/elliptic-residual",
+        "passed": true,
+        "value": 3.352873534367973e-14
+      },
+      {
+        "limit": 5e-11,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A+0.005/amplitude",
+        "passed": true,
+        "value": 3.469446951953614e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A+0.005/u-positive",
+        "passed": true,
+        "value": 0.9950002833571397
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A+0.005/v-positive",
+        "passed": true,
+        "value": 0.9958312063900482
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A+0.005/sensitivity-positive",
+        "passed": true,
+        "value": 1.995831206390048
+      },
+      {
+        "limit": 1,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A+0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A+0.01/full-residual",
+        "passed": true,
+        "value": 1.6653345369377348e-14
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A+0.01/elliptic-residual",
+        "passed": true,
+        "value": 2.864375403532904e-14
+      },
+      {
+        "limit": 5e-11,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A+0.01/amplitude",
+        "passed": true,
+        "value": 8.673617379884035e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A+0.01/u-positive",
+        "passed": true,
+        "value": 0.9900010211376462
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A+0.01/v-positive",
+        "passed": true,
+        "value": 0.9916494160818556
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A+0.01/sensitivity-positive",
+        "passed": true,
+        "value": 1.9916494160818556
+      },
+      {
+        "limit": 1,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A+0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A+0.02/full-residual",
+        "passed": true,
+        "value": 1.6431300764452317e-14
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A+0.02/elliptic-residual",
+        "passed": true,
+        "value": 2.886579864025407e-14
+      },
+      {
+        "limit": 5e-11,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A+0.02/amplitude",
+        "passed": true,
+        "value": 1.0408340855860843e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A+0.02/u-positive",
+        "passed": true,
+        "value": 0.9800031745538157
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A+0.02/v-positive",
+        "passed": true,
+        "value": 0.9832471997786238
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/A+0.02/sensitivity-positive",
+        "passed": true,
+        "value": 1.9832471997786238
+      },
+      {
+        "limit": 1,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A-0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A-0.02/full-residual",
+        "passed": true,
+        "value": 7.771561172376096e-14
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A-0.02/elliptic-residual",
+        "passed": true,
+        "value": 8.681944052568724e-14
+      },
+      {
+        "limit": 5e-11,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A-0.02/amplitude",
+        "passed": true,
+        "value": 3.469446951953614e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A-0.02/u-positive",
+        "passed": true,
+        "value": 0.9800007413678691
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A-0.02/v-positive",
+        "passed": true,
+        "value": 0.9832591215505095
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A-0.02/sensitivity-positive",
+        "passed": true,
+        "value": 1.9832591215505095
+      },
+      {
+        "limit": 1,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A-0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A-0.01/full-residual",
+        "passed": true,
+        "value": 8.504308368628699e-14
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A-0.01/elliptic-residual",
+        "passed": true,
+        "value": 9.392486788328824e-14
+      },
+      {
+        "limit": 5e-11,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A-0.01/amplitude",
+        "passed": true,
+        "value": 1.0408340855860843e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A-0.01/u-positive",
+        "passed": true,
+        "value": 0.9900004092820469
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A-0.01/v-positive",
+        "passed": true,
+        "value": 0.991656139196138
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A-0.01/sensitivity-positive",
+        "passed": true,
+        "value": 1.991656139196138
+      },
+      {
+        "limit": 1,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A-0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A-0.005/full-residual",
+        "passed": true,
+        "value": 5.229150445984487e-14
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A-0.005/elliptic-residual",
+        "passed": true,
+        "value": 1.0547118733938987e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A-0.005/amplitude",
+        "passed": true,
+        "value": 1.734723475976807e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A-0.005/u-positive",
+        "passed": true,
+        "value": 0.9950001299328698
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A-0.005/v-positive",
+        "passed": true,
+        "value": 0.9958347603178144
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A-0.005/sensitivity-positive",
+        "passed": true,
+        "value": 1.9958347603178144
+      },
+      {
+        "limit": 1,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A-0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A-0.0025/full-residual",
+        "passed": true,
+        "value": 9.126033262418787e-14
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A-0.0025/elliptic-residual",
+        "passed": true,
+        "value": 9.792167077193881e-14
+      },
+      {
+        "limit": 5e-11,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A-0.0025/amplitude",
+        "passed": true,
+        "value": 7.806255641895632e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A-0.0025/u-positive",
+        "passed": true,
+        "value": 0.9975000359112693
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A-0.0025/v-positive",
+        "passed": true,
+        "value": 0.9979190588987803
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A-0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 1.9979190588987803
+      },
+      {
+        "limit": 1,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A+0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A+0.0025/full-residual",
+        "passed": true,
+        "value": 9.037215420448774e-14
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A+0.0025/elliptic-residual",
+        "passed": true,
+        "value": 6.838973831690964e-14
+      },
+      {
+        "limit": 5e-11,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A+0.0025/amplitude",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A+0.0025/u-positive",
+        "passed": true,
+        "value": 0.9975000359112783
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A+0.0025/v-positive",
+        "passed": true,
+        "value": 0.9979190588987874
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A+0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 1.9979190588987874
+      },
+      {
+        "limit": 1,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A+0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A+0.005/full-residual",
+        "passed": true,
+        "value": 5.5289106626332796e-14
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A+0.005/elliptic-residual",
+        "passed": true,
+        "value": 9.170442183403793e-14
+      },
+      {
+        "limit": 5e-11,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A+0.005/amplitude",
+        "passed": true,
+        "value": 8.673617379884035e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A+0.005/u-positive",
+        "passed": true,
+        "value": 0.9950001299328757
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A+0.005/v-positive",
+        "passed": true,
+        "value": 0.9958347603178209
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A+0.005/sensitivity-positive",
+        "passed": true,
+        "value": 1.995834760317821
+      },
+      {
+        "limit": 1,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A+0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A+0.01/full-residual",
+        "passed": true,
+        "value": 5.81756864903582e-14
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A+0.01/elliptic-residual",
+        "passed": true,
+        "value": 9.126033262418787e-14
+      },
+      {
+        "limit": 5e-11,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A+0.01/amplitude",
+        "passed": true,
+        "value": 1.734723475976807e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A+0.01/u-positive",
+        "passed": true,
+        "value": 0.9900004092820521
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A+0.01/v-positive",
+        "passed": true,
+        "value": 0.9916561391961448
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A+0.01/sensitivity-positive",
+        "passed": true,
+        "value": 1.9916561391961447
+      },
+      {
+        "limit": 1,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A+0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A+0.02/full-residual",
+        "passed": true,
+        "value": 8.615330671091215e-14
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A+0.02/elliptic-residual",
+        "passed": true,
+        "value": 9.836575998178887e-14
+      },
+      {
+        "limit": 5e-11,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A+0.02/amplitude",
+        "passed": true,
+        "value": 6.938893903907228e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A+0.02/u-positive",
+        "passed": true,
+        "value": 0.9800007413678742
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A+0.02/v-positive",
+        "passed": true,
+        "value": 0.9832591215505135
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/A+0.02/sensitivity-positive",
+        "passed": true,
+        "value": 1.9832591215505135
+      },
+      {
+        "limit": 1,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A-0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A-0.02/full-residual",
+        "passed": true,
+        "value": 3.574918139293004e-13
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A-0.02/elliptic-residual",
+        "passed": true,
+        "value": 4.829470157119431e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A-0.02/amplitude",
+        "passed": true,
+        "value": 6.938893903907228e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A-0.02/u-positive",
+        "passed": true,
+        "value": 0.9800001346074217
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A-0.02/v-positive",
+        "passed": true,
+        "value": 0.9832621007325656
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A-0.02/sensitivity-positive",
+        "passed": true,
+        "value": 1.9832621007325657
+      },
+      {
+        "limit": 1,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A-0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A-0.01/full-residual",
+        "passed": true,
+        "value": 3.5504932327512506e-13
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A-0.01/elliptic-residual",
+        "passed": true,
+        "value": 4.688471832992036e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A-0.01/amplitude",
+        "passed": true,
+        "value": 1.734723475976807e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A-0.01/u-positive",
+        "passed": true,
+        "value": 0.9900002567162857
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A-0.01/v-positive",
+        "passed": true,
+        "value": 0.9916578193363677
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A-0.01/sensitivity-positive",
+        "passed": true,
+        "value": 1.9916578193363677
+      },
+      {
+        "limit": 1,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A-0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A-0.005/full-residual",
+        "passed": true,
+        "value": 3.268496584496461e-13
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A-0.005/elliptic-residual",
+        "passed": true,
+        "value": 5.413447468072263e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A-0.005/amplitude",
+        "passed": true,
+        "value": 8.673617379884035e-19
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A-0.005/u-positive",
+        "passed": true,
+        "value": 0.9950000916779831
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A-0.005/v-positive",
+        "passed": true,
+        "value": 0.9958356484749007
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A-0.005/sensitivity-positive",
+        "passed": true,
+        "value": 1.9958356484749007
+      },
+      {
+        "limit": 1,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A-0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A-0.0025/full-residual",
+        "passed": true,
+        "value": 2.731148640577885e-13
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A-0.0025/elliptic-residual",
+        "passed": true,
+        "value": 4.3365311341858614e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A-0.0025/amplitude",
+        "passed": true,
+        "value": 3.903127820947816e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A-0.0025/u-positive",
+        "passed": true,
+        "value": 0.9975000263329723
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A-0.0025/v-positive",
+        "passed": true,
+        "value": 0.9979195150575557
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A-0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 1.9979195150575557
+      },
+      {
+        "limit": 1,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A+0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A+0.0025/full-residual",
+        "passed": true,
+        "value": 3.2462921240039577e-13
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A+0.0025/elliptic-residual",
+        "passed": true,
+        "value": 3.9168668308775523e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A+0.0025/amplitude",
+        "passed": true,
+        "value": 1.734723475976807e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A+0.0025/u-positive",
+        "passed": true,
+        "value": 0.9975000263330018
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A+0.0025/v-positive",
+        "passed": true,
+        "value": 0.9979195150575945
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A+0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 1.9979195150575944
+      },
+      {
+        "limit": 1,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A+0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A+0.005/full-residual",
+        "passed": true,
+        "value": 2.7977620220553945e-13
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A+0.005/elliptic-residual",
+        "passed": true,
+        "value": 4.591882429849647e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A+0.005/amplitude",
+        "passed": true,
+        "value": 1.734723475976807e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A+0.005/u-positive",
+        "passed": true,
+        "value": 0.9950000916780104
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A+0.005/v-positive",
+        "passed": true,
+        "value": 0.9958356484749362
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A+0.005/sensitivity-positive",
+        "passed": true,
+        "value": 1.9958356484749362
+      },
+      {
+        "limit": 1,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A+0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A+0.01/full-residual",
+        "passed": true,
+        "value": 3.3728575488112256e-13
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A+0.01/elliptic-residual",
+        "passed": true,
+        "value": 5.184741524999481e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A+0.01/amplitude",
+        "passed": true,
+        "value": 5.204170427930421e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A+0.01/u-positive",
+        "passed": true,
+        "value": 0.9900002567163095
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A+0.01/v-positive",
+        "passed": true,
+        "value": 0.9916578193363896
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A+0.01/sensitivity-positive",
+        "passed": true,
+        "value": 1.9916578193363896
+      },
+      {
+        "limit": 1,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A+0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A+0.02/full-residual",
+        "passed": true,
+        "value": 3.7836400679225335e-13
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A+0.02/elliptic-residual",
+        "passed": true,
+        "value": 4.2810199829546036e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A+0.02/amplitude",
+        "passed": true,
+        "value": 0.0
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A+0.02/u-positive",
+        "passed": true,
+        "value": 0.9800001346074461
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A+0.02/v-positive",
+        "passed": true,
+        "value": 0.9832621007325908
+      },
+      {
+        "limit": "> 0",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/A+0.02/sensitivity-positive",
+        "passed": true,
+        "value": 1.9832621007325908
+      },
+      {
+        "limit": "same sign as +0.642440646909",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/c2-sign",
+        "passed": true,
+        "value": 0.624272903455631
+      },
+      {
+        "limit": 1e-09,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N40/intercept",
+        "passed": true,
+        "value": 5.10702591327572e-13
+      },
+      {
+        "limit": "same sign as +0.642440646909",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/c2-sign",
+        "passed": true,
+        "value": 0.6378994012598809
+      },
+      {
+        "limit": 1e-09,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/intercept",
+        "passed": true,
+        "value": 4.82280881897168e-13
+      },
+      {
+        "limit": ">= 1.8",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N80/c2-observed-order",
+        "passed": true,
+        "value": 2.000219255461763
+      },
+      {
+        "limit": "same sign as +0.642440646909",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/c2-sign",
+        "passed": true,
+        "value": 0.6413053492893434
+      },
+      {
+        "limit": 1e-09,
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/intercept",
+        "passed": true,
+        "value": 9.157119507108291e-13
+      },
+      {
+        "limit": ">= 1.8",
+        "name": "xover-m05-g2-L5p3-n2-beta0/N160/c2-observed-order",
+        "passed": true,
+        "value": 2.0000175270056286
+      },
+      {
+        "limit": "< 1",
+        "name": "xover-m05-g2-L5p3-n2-beta0/c2-error-monotone-N40-N80",
+        "passed": true,
+        "value": 0.24996200881066757
+      },
+      {
+        "limit": "< 1",
+        "name": "xover-m05-g2-L5p3-n2-beta0/c2-error-monotone-N80-N160",
+        "passed": true,
+        "value": 0.24999696281981534
+      },
+      {
+        "limit": 0.005,
+        "name": "xover-m05-g2-L5p3-n2-beta0/finest-c2-relative-error",
+        "passed": true,
+        "value": 0.0017671634339679956
+      },
+      {
+        "limit": 1,
+        "name": "xover-m05-g2-L5p3-n2-beta0/finest-reflection-pairs-complete",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "xover-m05-g2-L5p3-n2-beta0/finest-reflection-chi",
+        "passed": true,
+        "value": 2.8377300509419e-13
+      },
+      {
+        "limit": 1e-09,
+        "name": "xover-m05-g2-L5p3-n2-beta0/finest-reflection-u",
+        "passed": true,
+        "value": 3.752553823233029e-14
+      },
+      {
+        "limit": 1e-09,
+        "name": "xover-m05-g2-L5p3-n2-beta0/finest-reflection-v",
+        "passed": true,
+        "value": 5.795364188543317e-14
+      }
+    ],
+    "passed": true
+  },
+  "amplitudes": [
+    -0.02,
+    -0.01,
+    -0.005,
+    -0.0025,
+    0.0025,
+    0.005,
+    0.01,
+    0.02
+  ],
+  "artifacts": {
+    "branch_points": "branch-points.csv",
+    "checksums": "SHA256SUMS",
+    "figure_pdf": "stationary-continuation.pdf",
+    "figure_png": "stationary-continuation.png",
+    "fit_summary": "fit-summary.json",
+    "profiles": "stationary-profiles.csv",
+    "states": "stationary-states.npz",
+    "states_index": "states-index.json"
+  },
+  "cases": [
+    {
+      "bifurcation_coefficients": {
+        "C1_n0": 0.8314535398617504,
+        "C2_0": 0.5,
+        "C2_2n0": 0.07550926263164694,
+        "C3_n0": 0.0,
+        "a01": -0.5,
+        "a2n0": 0.5042457332927364,
+        "alpha_n0": 1.1685464601382496,
+        "beta_n0": 0.7507217437945042,
+        "chi_star": 2.058477028569631,
+        "chi_star_mode_n0": 2.058477028569631,
+        "gamma_2n0": 1.0087639674374778,
+        "gamma_cubic": -0.6055331165720629,
+        "lambda_2n0": 5.621704180043778,
+        "lambda_n0": 1.4054260450109446,
+        "sigma_2n0": -3.126486453190423
+      },
+      "continuum_threshold": {
+        "chi_star": 2.0584770285696314,
+        "minimizing_mode": 2,
+        "runner_up_gap": 0.540257251313371
+      },
+      "fits": [
+        {
+          "c2": 0.624272903455631,
+          "c2_relative_error": 0.028279255898322062,
+          "c4": 0.7577395673584281,
+          "case_name": "xover-m05-g2-L5p3-n2-beta0",
+          "chi_star_disc": 2.057765734453717,
+          "discrete_eigenvalue": 1.402538629247393,
+          "fit_residual_max": 1.006355511212276e-12,
+          "intercept_error": 5.10702591327572e-13,
+          "mesh": 40,
+          "minimizing_mode": 2,
+          "observed_order": null,
+          "reflection_chi_error_max": 1.1435297153639112e-12,
+          "reflection_u_error_max": 4.884981308350689e-15,
+          "reflection_v_error_max": 6.217248937900877e-15,
+          "theory_c2": 0.6424406469090558,
+          "unconstrained_c2": 0.624272895244014,
+          "unconstrained_c4": 0.7577569504309852,
+          "unconstrained_fit_residual_max": 8.44213587924969e-13,
+          "unconstrained_intercept": 2.0577657344542275
+        },
+        {
+          "c2": 0.6378994012598809,
+          "c2_relative_error": 0.007068739612015503,
+          "c4": 0.7845624925192314,
+          "case_name": "xover-m05-g2-L5p3-n2-beta0",
+          "chi_star_disc": 2.0582988129228155,
+          "discrete_eigenvalue": 1.404703745673261,
+          "fit_residual_max": 8.410073412147816e-13,
+          "intercept_error": 4.82280881897168e-13,
+          "mesh": 80,
+          "minimizing_mode": 2,
+          "observed_order": 2.000219255461763,
+          "reflection_chi_error_max": 7.73159314348959e-13,
+          "reflection_u_error_max": 9.769962616701378e-15,
+          "reflection_v_error_max": 1.2323475573339238e-14,
+          "theory_c2": 0.6424406469090558,
+          "unconstrained_c2": 0.6378993935021824,
+          "unconstrained_c4": 0.7845789101890578,
+          "unconstrained_fit_residual_max": 7.132072710192006e-13,
+          "unconstrained_intercept": 2.0582988129232977
+        },
+        {
+          "c2": 0.6413053492893434,
+          "c2_relative_error": 0.0017671634339679956,
+          "c4": 0.7912781588083985,
+          "case_name": "xover-m05-g2-L5p3-n2-beta0",
+          "chi_star_disc": 2.058432450154531,
+          "discrete_eigenvalue": 1.4052454423277225,
+          "fit_residual_max": 9.707194934210992e-13,
+          "intercept_error": 9.157119507108291e-13,
+          "mesh": 160,
+          "minimizing_mode": 2,
+          "observed_order": 2.0000175270056286,
+          "reflection_chi_error_max": 2.8377300509419e-13,
+          "reflection_u_error_max": 3.752553823233029e-14,
+          "reflection_v_error_max": 5.795364188543317e-14,
+          "theory_c2": 0.6424406469090558,
+          "unconstrained_c2": 0.6413053345712411,
+          "unconstrained_c4": 0.7913093165349638,
+          "unconstrained_fit_residual_max": 4.476419235288631e-13,
+          "unconstrained_intercept": 2.0584324501554465
+        }
+      ],
+      "parameters": {
+        "a": 1.0,
+        "alpha": 1.0,
+        "b": 1.0,
+        "beta": 0.0,
+        "c": 1.0,
+        "gamma": 2.0,
+        "length": 5.3,
+        "m": 0.5,
+        "minimal": false,
+        "mode": 2,
+        "mu": 1.0,
+        "name": "xover-m05-g2-L5p3-n2-beta0",
+        "nu": 1.0,
+        "title": "beta-crossover: m=1/2, gamma=2, L=5.3, n0=2, beta=0 (expected supercritical)",
+        "u_star": 1.0
+      }
+    }
+  ],
+  "meshes": [
+    40,
+    80,
+    160
+  ],
+  "method": {
+    "coefficient_source": "Chemotaxis_simulation.implied_constants.compute_bifurcation_coefficients",
+    "continuation_parameter": "signed first-cosine amplitude",
+    "diagnostic_fit": "chi = intercept + c2*A^2 + c4*A^4",
+    "discrete_threshold": "Chemotaxis_simulation.thresholds.chi_star_disc_fd",
+    "elliptic_operator": "Chemotaxis_simulation.simulation.solve_v",
+    "elliptic_residual_scope": "independent reconstruction of laplacian(v)-mu*v+nu*u^gamma",
+    "intercept_absolute_tolerance": 1e-09,
+    "minimum_observed_order": 1.8,
+    "primary_fit": "chi-chi_star_disc = c2*A^2 + c4*A^4",
+    "stationary_operator": "Chemotaxis_simulation.simulation.rhs",
+    "u_residual_scope": "all nodal u equations, including the dependent endpoint equation omitted from each minimal-model Newton system"
+  },
+  "point_count": 24,
+  "provenance": {
+    "generator": {
+      "dirty": false,
+      "path": "codes/stationary_branch_validation.py",
+      "revision": "fcfe8ea3033e3497756751dbcf35ba4d8e5f1f22"
+    },
+    "runtime": {
+      "matplotlib": "3.11.1",
+      "numpy": "2.5.1",
+      "python": "3.14.6",
+      "scipy": "1.18.0"
+    },
+    "simulator": {
+      "dirty": false,
+      "path": "simulation.py",
+      "revision": "7c2a09b24fdebb9000b9b996eb34150d6de5ed17"
+    }
+  },
+  "schema_version": 2
+}

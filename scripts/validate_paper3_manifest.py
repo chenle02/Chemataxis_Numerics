@@ -87,6 +87,9 @@ class ValidationError(RuntimeError):
     """Raised when the public evidence contract is inconsistent."""
 
 
+CANDIDATE_ROOT = "docs/results/paper-iii/stationary-continuation/candidates/"
+
+
 def require(condition: bool, message: str) -> None:
     if not condition:
         raise ValidationError(message)
@@ -481,6 +484,136 @@ def validate_results_page(
         require(entry["raw_path"] not in page, f"Results page links provenance-only {entry['id']}")
 
 
+def validate_candidate_case(entry: Any, index: int) -> str:
+    context = f"candidate_stationary_cases[{index}]"
+    require(isinstance(entry, dict), f"{context} must be an object")
+    case_id = entry.get("id")
+    require(isinstance(case_id, str) and case_id, f"{context} needs an id")
+    require(
+        case_id not in EXPECTED_STATIONARY_CASES,
+        f"{context} collides with a validated_current case id",
+    )
+    require(entry.get("status") == "candidate", f"{context} is not a candidate")
+    require(entry.get("quantitative_use") is False, f"{context} permits quantitative use")
+    require(entry.get("reader_facing") is False, f"{context} is reader-facing")
+
+    bundle = safe_path(entry.get("bundle_path"), f"{context}.bundle_path", CANDIDATE_ROOT)
+    require(
+        PurePosixPath(bundle).name == case_id,
+        f"{context}.bundle_path does not match the case id",
+    )
+
+    checksums = parse_checksums(f"{bundle}/SHA256SUMS")
+    require(set(checksums) == EXPECTED_BUNDLE_FILES, f"{context} checksum inventory changed")
+    for filename, expected_hash in checksums.items():
+        path = f"{bundle}/{filename}"
+        validate_archive_file(path, f"{context}.{filename}")
+        require(
+            sha256_git_object(path) == expected_hash,
+            f"{context} checksum failed for {filename}",
+        )
+
+    run_card = validate_archive_file(f"{bundle}/run-card.yaml", f"{context}.run_card")
+    require(
+        sha256_git_object(run_card) == entry.get("run_card_sha256"),
+        f"{context}.run_card_sha256 does not match the committed run card",
+    )
+
+    summary = git_json(f"{bundle}/fit-summary.json")
+    require(summary.get("schema_version") == 2, f"{context} fit-summary schema changed")
+    provenance = summary.get("provenance")
+    require(isinstance(provenance, dict), f"{context} fit-summary provenance is missing")
+    for producer in ("generator", "simulator"):
+        record = provenance.get(producer)
+        require(isinstance(record, dict), f"{context} {producer} provenance is missing")
+        require(record.get("dirty") is False, f"{context} {producer} tree was dirty")
+
+    acceptance = summary.get("acceptance")
+    require(isinstance(acceptance, dict), f"{context} fit-summary acceptance is missing")
+    gates = acceptance.get("gates")
+    require(isinstance(gates, list) and gates, f"{context} gates must be a nonempty array")
+    passed = sum(1 for gate in gates if isinstance(gate, dict) and gate.get("passed") is True)
+    require(acceptance.get("passed") is True, f"{context} bundle acceptance is false")
+    require(passed == len(gates), f"{context} bundle acceptance is not fully passed")
+    require(
+        entry.get("gates_passed") == passed and entry.get("gates_total") == len(gates),
+        f"{context} manifest gate counts disagree with the bundle",
+    )
+    require(summary.get("meshes") == entry.get("meshes"), f"{context}.meshes disagree with the bundle")
+
+    cases = summary.get("cases")
+    require(
+        isinstance(cases, list) and len(cases) == 1,
+        f"{context} bundle must hold exactly one case",
+    )
+    case = cases[0]
+    parameters = case.get("parameters")
+    require(isinstance(parameters, dict), f"{context} case parameters are missing")
+    require(parameters.get("name") == case_id, f"{context} bundle case name is not the case id")
+
+    coefficients = case.get("bifurcation_coefficients")
+    require(isinstance(coefficients, dict), f"{context} bifurcation coefficients are missing")
+    beta_n0 = coefficients.get("beta_n0")
+    alpha_n0 = coefficients.get("alpha_n0")
+    require(isinstance(beta_n0, (int, float)), f"{context} beta_n0 is not numeric")
+    require(
+        isinstance(alpha_n0, (int, float)) and float(alpha_n0) > 0.0,
+        f"{context} alpha_n0 must be positive",
+    )
+    assert_close(entry.get("beta_n0_closed_form"), beta_n0, f"{context}.beta_n0_closed_form")
+
+    threshold = case.get("continuum_threshold")
+    require(isinstance(threshold, dict), f"{context} continuum threshold is missing")
+    require(
+        threshold.get("minimizing_mode")
+        == parameters.get("mode")
+        == entry.get("critical_mode"),
+        f"{context} critical mode disagrees with the continuum minimizer",
+    )
+
+    fits = case.get("fits")
+    require(isinstance(fits, list) and fits, f"{context} fits must be a nonempty array")
+    finest = fits[-1]
+    require(isinstance(finest, dict), f"{context} finest fit must be an object")
+    measured_c2 = finest.get("c2")
+    theory_c2 = finest.get("theory_c2")
+    require(isinstance(measured_c2, (int, float)), f"{context} measured c2 is not numeric")
+    require(isinstance(theory_c2, (int, float)), f"{context} theory c2 is not numeric")
+    require(finest.get("mesh") == entry.get("finest_mesh"), f"{context}.finest_mesh disagrees")
+    assert_close(entry.get("measured_c2_finest"), measured_c2, f"{context}.measured_c2_finest")
+    assert_close(theory_c2, float(beta_n0) / float(alpha_n0), f"{context} theory c2 identity")
+
+    declared = entry.get("declared_regime")
+    require(
+        declared in {"supercritical", "subcritical"},
+        f"{context}.declared_regime is not a regime",
+    )
+    require(
+        declared == ("supercritical" if float(beta_n0) > 0.0 else "subcritical"),
+        f"{context} declared regime contradicts the closed-form beta_n0",
+    )
+    require(
+        (float(measured_c2) > 0.0) == (float(beta_n0) > 0.0),
+        f"{context} LABEL GATE failed: measured c2 sign disagrees with closed-form beta_n0",
+    )
+    return case_id
+
+
+def validate_candidates(entries: Any, results_page: str) -> list[dict[str, Any]]:
+    require(isinstance(entries, list), "candidate_stationary_cases must be an array")
+    require(bool(entries), "candidate_stationary_cases must not be empty")
+    seen: set[str] = set()
+    for index, entry in enumerate(entries):
+        case_id = validate_candidate_case(entry, index)
+        require(case_id not in seen, f"duplicate candidate case id {case_id}")
+        seen.add(case_id)
+    require(
+        "Candidate" in results_page,
+        "Results page does not disclose the candidate tier",
+    )
+    return entries
+
+
 def main() -> int:
     try:
         manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
@@ -491,7 +624,7 @@ def main() -> int:
         policies = manifest.get("evidence_policy")
         require(isinstance(policies, dict), "evidence_policy must be an object")
         require(
-            set(policies) == {"validated_current", "provenance_only"},
+            set(policies) == {"validated_current", "provenance_only", "candidate"},
             "evidence policy vocabulary changed",
         )
 
@@ -500,6 +633,9 @@ def main() -> int:
         time_cases = validate_time_cases(manifest.get("time_integration_cases"))
         page = RESULTS_PATH.read_text(encoding="utf-8")
         provenance = validate_provenance(manifest.get("provenance_only"), page)
+        candidates = validate_candidates(
+            manifest.get("candidate_stationary_cases"), page
+        )
         require(isinstance(stationary, dict), "stationary validation is missing")
         validate_results_page(stationary, time_cases, provenance)
     except (OSError, UnicodeDecodeError, json.JSONDecodeError, ValidationError) as exc:
@@ -508,7 +644,8 @@ def main() -> int:
 
     print(
         "Paper III manifest valid: 4 stationary cases (96 states, 780/780 gates), "
-        "2 time-integration figures, 4 provenance-only archives."
+        "2 time-integration figures, 4 provenance-only archives, "
+        f"{len(candidates)} candidate stationary cases (label gate enforced)."
     )
     return 0
 

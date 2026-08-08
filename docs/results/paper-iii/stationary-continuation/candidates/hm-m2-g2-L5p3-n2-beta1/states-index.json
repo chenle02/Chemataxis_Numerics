@@ -1,0 +1,442 @@
+{
+  "archive": "stationary-states.npz",
+  "array_dtype": "float64",
+  "array_naming": "<state_id>__<x|u|v>",
+  "schema_version": 1,
+  "state_count": 24,
+  "state_order": "case declaration, mesh ascending, amplitude ascending",
+  "states": [
+    {
+      "array_names": {
+        "u": "hm-m2-g2-L5p3-n2-beta1__N0080__Aminus_0p02__u",
+        "v": "hm-m2-g2-L5p3-n2-beta1__N0080__Aminus_0p02__v",
+        "x": "hm-m2-g2-L5p3-n2-beta1__N0080__Aminus_0p02__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "hm-m2-g2-L5p3-n2-beta1",
+      "chi": 4.118119969216914,
+      "measured_amplitude": -0.020000000000000004,
+      "mesh": 80,
+      "reflection_partner_id": "hm-m2-g2-L5p3-n2-beta1__N0080__Aplus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.02,
+      "state_id": "hm-m2-g2-L5p3-n2-beta1__N0080__Aminus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "hm-m2-g2-L5p3-n2-beta1__N0080__Aminus_0p01__u",
+        "v": "hm-m2-g2-L5p3-n2-beta1__N0080__Aminus_0p01__v",
+        "x": "hm-m2-g2-L5p3-n2-beta1__N0080__Aminus_0p01__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "hm-m2-g2-L5p3-n2-beta1",
+      "chi": 4.116977886703926,
+      "measured_amplitude": -0.009999999999999983,
+      "mesh": 80,
+      "reflection_partner_id": "hm-m2-g2-L5p3-n2-beta1__N0080__Aplus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.01,
+      "state_id": "hm-m2-g2-L5p3-n2-beta1__N0080__Aminus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "hm-m2-g2-L5p3-n2-beta1__N0080__Aminus_0p005__u",
+        "v": "hm-m2-g2-L5p3-n2-beta1__N0080__Aminus_0p005__v",
+        "x": "hm-m2-g2-L5p3-n2-beta1__N0080__Aminus_0p005__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "hm-m2-g2-L5p3-n2-beta1",
+      "chi": 4.1166926707742375,
+      "measured_amplitude": -0.004999999999999998,
+      "mesh": 80,
+      "reflection_partner_id": "hm-m2-g2-L5p3-n2-beta1__N0080__Aplus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.005,
+      "state_id": "hm-m2-g2-L5p3-n2-beta1__N0080__Aminus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "hm-m2-g2-L5p3-n2-beta1__N0080__Aminus_0p0025__u",
+        "v": "hm-m2-g2-L5p3-n2-beta1__N0080__Aminus_0p0025__v",
+        "x": "hm-m2-g2-L5p3-n2-beta1__N0080__Aminus_0p0025__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "hm-m2-g2-L5p3-n2-beta1",
+      "chi": 4.116621385810609,
+      "measured_amplitude": -0.0025000000000000014,
+      "mesh": 80,
+      "reflection_partner_id": "hm-m2-g2-L5p3-n2-beta1__N0080__Aplus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.0025,
+      "state_id": "hm-m2-g2-L5p3-n2-beta1__N0080__Aminus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "hm-m2-g2-L5p3-n2-beta1__N0080__Aplus_0p0025__u",
+        "v": "hm-m2-g2-L5p3-n2-beta1__N0080__Aplus_0p0025__v",
+        "x": "hm-m2-g2-L5p3-n2-beta1__N0080__Aplus_0p0025__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "hm-m2-g2-L5p3-n2-beta1",
+      "chi": 4.116621385809321,
+      "measured_amplitude": 0.0024999999999999944,
+      "mesh": 80,
+      "reflection_partner_id": "hm-m2-g2-L5p3-n2-beta1__N0080__Aminus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.0025,
+      "state_id": "hm-m2-g2-L5p3-n2-beta1__N0080__Aplus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "hm-m2-g2-L5p3-n2-beta1__N0080__Aplus_0p005__u",
+        "v": "hm-m2-g2-L5p3-n2-beta1__N0080__Aplus_0p005__v",
+        "x": "hm-m2-g2-L5p3-n2-beta1__N0080__Aplus_0p005__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "hm-m2-g2-L5p3-n2-beta1",
+      "chi": 4.116692670773691,
+      "measured_amplitude": 0.004999999999999997,
+      "mesh": 80,
+      "reflection_partner_id": "hm-m2-g2-L5p3-n2-beta1__N0080__Aminus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.005,
+      "state_id": "hm-m2-g2-L5p3-n2-beta1__N0080__Aplus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "hm-m2-g2-L5p3-n2-beta1__N0080__Aplus_0p01__u",
+        "v": "hm-m2-g2-L5p3-n2-beta1__N0080__Aplus_0p01__v",
+        "x": "hm-m2-g2-L5p3-n2-beta1__N0080__Aplus_0p01__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "hm-m2-g2-L5p3-n2-beta1",
+      "chi": 4.116977886703667,
+      "measured_amplitude": 0.010000000000000004,
+      "mesh": 80,
+      "reflection_partner_id": "hm-m2-g2-L5p3-n2-beta1__N0080__Aminus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.01,
+      "state_id": "hm-m2-g2-L5p3-n2-beta1__N0080__Aplus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "hm-m2-g2-L5p3-n2-beta1__N0080__Aplus_0p02__u",
+        "v": "hm-m2-g2-L5p3-n2-beta1__N0080__Aplus_0p02__v",
+        "x": "hm-m2-g2-L5p3-n2-beta1__N0080__Aplus_0p02__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "hm-m2-g2-L5p3-n2-beta1",
+      "chi": 4.1181199692168,
+      "measured_amplitude": 0.019999999999999997,
+      "mesh": 80,
+      "reflection_partner_id": "hm-m2-g2-L5p3-n2-beta1__N0080__Aminus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.02,
+      "state_id": "hm-m2-g2-L5p3-n2-beta1__N0080__Aplus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "hm-m2-g2-L5p3-n2-beta1__N0160__Aminus_0p02__u",
+        "v": "hm-m2-g2-L5p3-n2-beta1__N0160__Aminus_0p02__v",
+        "x": "hm-m2-g2-L5p3-n2-beta1__N0160__Aminus_0p02__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "hm-m2-g2-L5p3-n2-beta1",
+      "chi": 4.1184084550446745,
+      "measured_amplitude": -0.019999999999999997,
+      "mesh": 160,
+      "reflection_partner_id": "hm-m2-g2-L5p3-n2-beta1__N0160__Aplus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.02,
+      "state_id": "hm-m2-g2-L5p3-n2-beta1__N0160__Aminus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "hm-m2-g2-L5p3-n2-beta1__N0160__Aminus_0p01__u",
+        "v": "hm-m2-g2-L5p3-n2-beta1__N0160__Aminus_0p01__v",
+        "x": "hm-m2-g2-L5p3-n2-beta1__N0160__Aminus_0p01__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "hm-m2-g2-L5p3-n2-beta1",
+      "chi": 4.117250444842373,
+      "measured_amplitude": -0.009999999999999997,
+      "mesh": 160,
+      "reflection_partner_id": "hm-m2-g2-L5p3-n2-beta1__N0160__Aplus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.01,
+      "state_id": "hm-m2-g2-L5p3-n2-beta1__N0160__Aminus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "hm-m2-g2-L5p3-n2-beta1__N0160__Aminus_0p005__u",
+        "v": "hm-m2-g2-L5p3-n2-beta1__N0160__Aminus_0p005__v",
+        "x": "hm-m2-g2-L5p3-n2-beta1__N0160__Aminus_0p005__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "hm-m2-g2-L5p3-n2-beta1",
+      "chi": 4.11696126496349,
+      "measured_amplitude": -0.004999999999999994,
+      "mesh": 160,
+      "reflection_partner_id": "hm-m2-g2-L5p3-n2-beta1__N0160__Aplus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.005,
+      "state_id": "hm-m2-g2-L5p3-n2-beta1__N0160__Aminus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "hm-m2-g2-L5p3-n2-beta1__N0160__Aminus_0p0025__u",
+        "v": "hm-m2-g2-L5p3-n2-beta1__N0160__Aminus_0p0025__v",
+        "x": "hm-m2-g2-L5p3-n2-beta1__N0160__Aminus_0p0025__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "hm-m2-g2-L5p3-n2-beta1",
+      "chi": 4.116888990132447,
+      "measured_amplitude": -0.0025000000000000053,
+      "mesh": 160,
+      "reflection_partner_id": "hm-m2-g2-L5p3-n2-beta1__N0160__Aplus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.0025,
+      "state_id": "hm-m2-g2-L5p3-n2-beta1__N0160__Aminus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "hm-m2-g2-L5p3-n2-beta1__N0160__Aplus_0p0025__u",
+        "v": "hm-m2-g2-L5p3-n2-beta1__N0160__Aplus_0p0025__v",
+        "x": "hm-m2-g2-L5p3-n2-beta1__N0160__Aplus_0p0025__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "hm-m2-g2-L5p3-n2-beta1",
+      "chi": 4.116888990131411,
+      "measured_amplitude": 0.002499999999999993,
+      "mesh": 160,
+      "reflection_partner_id": "hm-m2-g2-L5p3-n2-beta1__N0160__Aminus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.0025,
+      "state_id": "hm-m2-g2-L5p3-n2-beta1__N0160__Aplus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "hm-m2-g2-L5p3-n2-beta1__N0160__Aplus_0p005__u",
+        "v": "hm-m2-g2-L5p3-n2-beta1__N0160__Aplus_0p005__v",
+        "x": "hm-m2-g2-L5p3-n2-beta1__N0160__Aplus_0p005__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "hm-m2-g2-L5p3-n2-beta1",
+      "chi": 4.116961264963166,
+      "measured_amplitude": 0.004999999999999994,
+      "mesh": 160,
+      "reflection_partner_id": "hm-m2-g2-L5p3-n2-beta1__N0160__Aminus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.005,
+      "state_id": "hm-m2-g2-L5p3-n2-beta1__N0160__Aplus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "hm-m2-g2-L5p3-n2-beta1__N0160__Aplus_0p01__u",
+        "v": "hm-m2-g2-L5p3-n2-beta1__N0160__Aplus_0p01__v",
+        "x": "hm-m2-g2-L5p3-n2-beta1__N0160__Aplus_0p01__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "hm-m2-g2-L5p3-n2-beta1",
+      "chi": 4.117250444842094,
+      "measured_amplitude": 0.009999999999999997,
+      "mesh": 160,
+      "reflection_partner_id": "hm-m2-g2-L5p3-n2-beta1__N0160__Aminus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.01,
+      "state_id": "hm-m2-g2-L5p3-n2-beta1__N0160__Aplus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "hm-m2-g2-L5p3-n2-beta1__N0160__Aplus_0p02__u",
+        "v": "hm-m2-g2-L5p3-n2-beta1__N0160__Aplus_0p02__v",
+        "x": "hm-m2-g2-L5p3-n2-beta1__N0160__Aplus_0p02__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "hm-m2-g2-L5p3-n2-beta1",
+      "chi": 4.118408455044561,
+      "measured_amplitude": 0.020000000000000004,
+      "mesh": 160,
+      "reflection_partner_id": "hm-m2-g2-L5p3-n2-beta1__N0160__Aminus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.02,
+      "state_id": "hm-m2-g2-L5p3-n2-beta1__N0160__Aplus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "hm-m2-g2-L5p3-n2-beta1__N0320__Aminus_0p02__u",
+        "v": "hm-m2-g2-L5p3-n2-beta1__N0320__Aminus_0p02__v",
+        "x": "hm-m2-g2-L5p3-n2-beta1__N0320__Aminus_0p02__x"
+      },
+      "array_shape": [
+        321
+      ],
+      "case": "hm-m2-g2-L5p3-n2-beta1",
+      "chi": 4.118480622241401,
+      "measured_amplitude": -0.020000000000000004,
+      "mesh": 320,
+      "reflection_partner_id": "hm-m2-g2-L5p3-n2-beta1__N0320__Aplus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.02,
+      "state_id": "hm-m2-g2-L5p3-n2-beta1__N0320__Aminus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "hm-m2-g2-L5p3-n2-beta1__N0320__Aminus_0p01__u",
+        "v": "hm-m2-g2-L5p3-n2-beta1__N0320__Aminus_0p01__v",
+        "x": "hm-m2-g2-L5p3-n2-beta1__N0320__Aminus_0p01__x"
+      },
+      "array_shape": [
+        321
+      ],
+      "case": "hm-m2-g2-L5p3-n2-beta1",
+      "chi": 4.117318630256496,
+      "measured_amplitude": -0.01,
+      "mesh": 320,
+      "reflection_partner_id": "hm-m2-g2-L5p3-n2-beta1__N0320__Aplus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.01,
+      "state_id": "hm-m2-g2-L5p3-n2-beta1__N0320__Aminus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "hm-m2-g2-L5p3-n2-beta1__N0320__Aminus_0p005__u",
+        "v": "hm-m2-g2-L5p3-n2-beta1__N0320__Aminus_0p005__v",
+        "x": "hm-m2-g2-L5p3-n2-beta1__N0320__Aminus_0p005__x"
+      },
+      "array_shape": [
+        321
+      ],
+      "case": "hm-m2-g2-L5p3-n2-beta1",
+      "chi": 4.117028459425809,
+      "measured_amplitude": -0.0050000000000000044,
+      "mesh": 320,
+      "reflection_partner_id": "hm-m2-g2-L5p3-n2-beta1__N0320__Aplus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.005,
+      "state_id": "hm-m2-g2-L5p3-n2-beta1__N0320__Aminus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "hm-m2-g2-L5p3-n2-beta1__N0320__Aminus_0p0025__u",
+        "v": "hm-m2-g2-L5p3-n2-beta1__N0320__Aminus_0p0025__v",
+        "x": "hm-m2-g2-L5p3-n2-beta1__N0320__Aminus_0p0025__x"
+      },
+      "array_shape": [
+        321
+      ],
+      "case": "hm-m2-g2-L5p3-n2-beta1",
+      "chi": 4.116955937134939,
+      "measured_amplitude": -0.002500000000000004,
+      "mesh": 320,
+      "reflection_partner_id": "hm-m2-g2-L5p3-n2-beta1__N0320__Aplus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.0025,
+      "state_id": "hm-m2-g2-L5p3-n2-beta1__N0320__Aminus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "hm-m2-g2-L5p3-n2-beta1__N0320__Aplus_0p0025__u",
+        "v": "hm-m2-g2-L5p3-n2-beta1__N0320__Aplus_0p0025__v",
+        "x": "hm-m2-g2-L5p3-n2-beta1__N0320__Aplus_0p0025__x"
+      },
+      "array_shape": [
+        321
+      ],
+      "case": "hm-m2-g2-L5p3-n2-beta1",
+      "chi": 4.11695593714028,
+      "measured_amplitude": 0.002500000000000004,
+      "mesh": 320,
+      "reflection_partner_id": "hm-m2-g2-L5p3-n2-beta1__N0320__Aminus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.0025,
+      "state_id": "hm-m2-g2-L5p3-n2-beta1__N0320__Aplus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "hm-m2-g2-L5p3-n2-beta1__N0320__Aplus_0p005__u",
+        "v": "hm-m2-g2-L5p3-n2-beta1__N0320__Aplus_0p005__v",
+        "x": "hm-m2-g2-L5p3-n2-beta1__N0320__Aplus_0p005__x"
+      },
+      "array_shape": [
+        321
+      ],
+      "case": "hm-m2-g2-L5p3-n2-beta1",
+      "chi": 4.117028459428212,
+      "measured_amplitude": 0.005000000000000001,
+      "mesh": 320,
+      "reflection_partner_id": "hm-m2-g2-L5p3-n2-beta1__N0320__Aminus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.005,
+      "state_id": "hm-m2-g2-L5p3-n2-beta1__N0320__Aplus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "hm-m2-g2-L5p3-n2-beta1__N0320__Aplus_0p01__u",
+        "v": "hm-m2-g2-L5p3-n2-beta1__N0320__Aplus_0p01__v",
+        "x": "hm-m2-g2-L5p3-n2-beta1__N0320__Aplus_0p01__x"
+      },
+      "array_shape": [
+        321
+      ],
+      "case": "hm-m2-g2-L5p3-n2-beta1",
+      "chi": 4.117318630257692,
+      "measured_amplitude": 0.010000000000000007,
+      "mesh": 320,
+      "reflection_partner_id": "hm-m2-g2-L5p3-n2-beta1__N0320__Aminus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.01,
+      "state_id": "hm-m2-g2-L5p3-n2-beta1__N0320__Aplus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "hm-m2-g2-L5p3-n2-beta1__N0320__Aplus_0p02__u",
+        "v": "hm-m2-g2-L5p3-n2-beta1__N0320__Aplus_0p02__v",
+        "x": "hm-m2-g2-L5p3-n2-beta1__N0320__Aplus_0p02__x"
+      },
+      "array_shape": [
+        321
+      ],
+      "case": "hm-m2-g2-L5p3-n2-beta1",
+      "chi": 4.118480622241969,
+      "measured_amplitude": 0.02,
+      "mesh": 320,
+      "reflection_partner_id": "hm-m2-g2-L5p3-n2-beta1__N0320__Aminus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.02,
+      "state_id": "hm-m2-g2-L5p3-n2-beta1__N0320__Aplus_0p02"
+    }
+  ]
+}

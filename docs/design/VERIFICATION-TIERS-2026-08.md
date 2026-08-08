@@ -399,11 +399,39 @@ is forbidden at compile time.
 3. How prominently should `provenance_only` historical mislabels be explained to
    readers versus left to the audit ledger?
 
-### Le (layout and canonical-home decision)
+### Le (layout and canonical-home decision) — ANSWERED 2026-08-08
 
 1. Approve or reject the recommendation that the simulator repo, not the data
    repo, becomes canonical for executable verification logic.
+   **ANSWERED: approved.** `Chemotaxis_simulation` is the canonical home for
+   executable Paper III verification logic. This implies retiring the stale
+   duplicate validator in favour of the extended `--case-file` version, which
+   is prerequisite work for the heavy CI tier (see the status note below).
 2. Decide whether `docs/design/` remains internal design history or is linked in
    site navigation as public project-method documentation.
+   **ANSWERED: stays internal.** It remains in the repository and readable by
+   URL, but is deliberately absent from `mkdocs.yml` `nav`.
 3. Decide whether the manuscript should vendor only figures + manifests, or a
    larger companion slice including run cards and validator summaries.
+   **ANSWERED: the larger slice** — run cards and validator summaries are
+   vendored alongside figures and manifests. To be applied when the
+   canonical-home migration (Phase M1) lands.
+
+Ian's and Wenxian's questions above remain **open**. Nothing implemented so far
+pre-empts them: the candidate tier uses v1's flat case-id layout, introduces no
+grouping taxonomy, touches no legacy folder, and asserts no `beta`-crossover
+claim.
+
+## 8. Implementation status (2026-08-08)
+
+| Item | State |
+| --- | --- |
+| T1 run-card evidence | **Landed** — 12 candidate bundles, each with its `run-card.yaml` |
+| Candidate tier in the contract | **Landed** — `evidence_policy.candidate`, `candidate_stationary_cases`, self-validating against each artifact |
+| Label gate in CI | **Landed in the fast tier** via `validate_paper3_manifest.py` (design §3.1) |
+| T3 Lean proof | **Proven** in the manuscript repo (`codes/lean/Paper3Regime.lean`); `alpha_n0 > 0` is the fact the label gate rests on |
+| §3.2 `verify-heavy.yml` | **Blocked** on Phase M1: re-running candidates needs the `--case-file` driver, which lives only in the manuscript repo's validator |
+| §3.3 `verify-lean.yml` | **Blocked**: the Lean sources are in the private manuscript repo, so a workflow here would build nothing |
+
+Deliberately not shipped as empty stubs: a workflow that gates nothing is worse
+than an absent one, because it reads as coverage.

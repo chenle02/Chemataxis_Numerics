@@ -707,9 +707,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#le-layout-and-canonical-home-decision" class="md-nav__link">
+  <a href="#le-layout-and-canonical-home-decision-answered-2026-08-08" class="md-nav__link">
     <span class="md-ellipsis">
-      Le (layout and canonical-home decision)
+      Le (layout and canonical-home decision) — ANSWERED 2026-08-08
     </span>
   </a>
   
@@ -717,6 +717,15 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-implementation-status-2026-08-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Implementation status (2026-08-08)
+    </span>
+  </a>
   
 </li>
       
@@ -1164,15 +1173,65 @@ is forbidden at compile time.</p>
 <li>How prominently should <code>provenance_only</code> historical mislabels be explained to
    readers versus left to the audit ledger?</li>
 </ol>
-<h3 id="le-layout-and-canonical-home-decision">Le (layout and canonical-home decision)<a class="headerlink" href="#le-layout-and-canonical-home-decision" title="Permanent link">&para;</a></h3>
+<h3 id="le-layout-and-canonical-home-decision-answered-2026-08-08">Le (layout and canonical-home decision) — ANSWERED 2026-08-08<a class="headerlink" href="#le-layout-and-canonical-home-decision-answered-2026-08-08" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Approve or reject the recommendation that the simulator repo, not the data
-   repo, becomes canonical for executable verification logic.</li>
+   repo, becomes canonical for executable verification logic.
+   <strong>ANSWERED: approved.</strong> <code>Chemotaxis_simulation</code> is the canonical home for
+   executable Paper III verification logic. This implies retiring the stale
+   duplicate validator in favour of the extended <code>--case-file</code> version, which
+   is prerequisite work for the heavy CI tier (see the status note below).</li>
 <li>Decide whether <code>docs/design/</code> remains internal design history or is linked in
-   site navigation as public project-method documentation.</li>
+   site navigation as public project-method documentation.
+   <strong>ANSWERED: stays internal.</strong> It remains in the repository and readable by
+   URL, but is deliberately absent from <code>mkdocs.yml</code> <code>nav</code>.</li>
 <li>Decide whether the manuscript should vendor only figures + manifests, or a
-   larger companion slice including run cards and validator summaries.</li>
+   larger companion slice including run cards and validator summaries.
+   <strong>ANSWERED: the larger slice</strong> — run cards and validator summaries are
+   vendored alongside figures and manifests. To be applied when the
+   canonical-home migration (Phase M1) lands.</li>
 </ol>
+<p>Ian's and Wenxian's questions above remain <strong>open</strong>. Nothing implemented so far
+pre-empts them: the candidate tier uses v1's flat case-id layout, introduces no
+grouping taxonomy, touches no legacy folder, and asserts no <code>beta</code>-crossover
+claim.</p>
+<h2 id="8-implementation-status-2026-08-08">8. Implementation status (2026-08-08)<a class="headerlink" href="#8-implementation-status-2026-08-08" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>State</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T1 run-card evidence</td>
+<td><strong>Landed</strong> — 12 candidate bundles, each with its <code>run-card.yaml</code></td>
+</tr>
+<tr>
+<td>Candidate tier in the contract</td>
+<td><strong>Landed</strong> — <code>evidence_policy.candidate</code>, <code>candidate_stationary_cases</code>, self-validating against each artifact</td>
+</tr>
+<tr>
+<td>Label gate in CI</td>
+<td><strong>Landed in the fast tier</strong> via <code>validate_paper3_manifest.py</code> (design §3.1)</td>
+</tr>
+<tr>
+<td>T3 Lean proof</td>
+<td><strong>Proven</strong> in the manuscript repo (<code>codes/lean/Paper3Regime.lean</code>); <code>alpha_n0 &gt; 0</code> is the fact the label gate rests on</td>
+</tr>
+<tr>
+<td>§3.2 <code>verify-heavy.yml</code></td>
+<td><strong>Blocked</strong> on Phase M1: re-running candidates needs the <code>--case-file</code> driver, which lives only in the manuscript repo's validator</td>
+</tr>
+<tr>
+<td>§3.3 <code>verify-lean.yml</code></td>
+<td><strong>Blocked</strong>: the Lean sources are in the private manuscript repo, so a workflow here would build nothing</td>
+</tr>
+</tbody>
+</table>
+<p>Deliberately not shipped as empty stubs: a workflow that gates nothing is worse
+than an absent one, because it reads as coverage.</p>
 
 
 

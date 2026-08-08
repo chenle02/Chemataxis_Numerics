@@ -1,0 +1,442 @@
+{
+  "archive": "stationary-states.npz",
+  "array_dtype": "float64",
+  "array_naming": "<state_id>__<x|u|v>",
+  "schema_version": 1,
+  "state_count": 24,
+  "state_order": "case declaration, mesh ascending, amplitude ascending",
+  "states": [
+    {
+      "array_names": {
+        "u": "hm-a10-g1-L3p5-n2-beta0__N0040__Aminus_0p02__u",
+        "v": "hm-a10-g1-L3p5-n2-beta0__N0040__Aminus_0p02__v",
+        "x": "hm-a10-g1-L3p5-n2-beta0__N0040__Aminus_0p02__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "hm-a10-g1-L3p5-n2-beta0",
+      "chi": 1.7325517138401687,
+      "measured_amplitude": -0.020000000000000018,
+      "mesh": 40,
+      "reflection_partner_id": "hm-a10-g1-L3p5-n2-beta0__N0040__Aplus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.02,
+      "state_id": "hm-a10-g1-L3p5-n2-beta0__N0040__Aminus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "hm-a10-g1-L3p5-n2-beta0__N0040__Aminus_0p01__u",
+        "v": "hm-a10-g1-L3p5-n2-beta0__N0040__Aminus_0p01__v",
+        "x": "hm-a10-g1-L3p5-n2-beta0__N0040__Aminus_0p01__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "hm-a10-g1-L3p5-n2-beta0",
+      "chi": 1.732547149665381,
+      "measured_amplitude": -0.010000000000000113,
+      "mesh": 40,
+      "reflection_partner_id": "hm-a10-g1-L3p5-n2-beta0__N0040__Aplus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.01,
+      "state_id": "hm-a10-g1-L3p5-n2-beta0__N0040__Aminus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "hm-a10-g1-L3p5-n2-beta0__N0040__Aminus_0p005__u",
+        "v": "hm-a10-g1-L3p5-n2-beta0__N0040__Aminus_0p005__v",
+        "x": "hm-a10-g1-L3p5-n2-beta0__N0040__Aminus_0p005__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "hm-a10-g1-L3p5-n2-beta0",
+      "chi": 1.7325460086353646,
+      "measured_amplitude": -0.004999999999999847,
+      "mesh": 40,
+      "reflection_partner_id": "hm-a10-g1-L3p5-n2-beta0__N0040__Aplus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.005,
+      "state_id": "hm-a10-g1-L3p5-n2-beta0__N0040__Aminus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "hm-a10-g1-L3p5-n2-beta0__N0040__Aminus_0p0025__u",
+        "v": "hm-a10-g1-L3p5-n2-beta0__N0040__Aminus_0p0025__v",
+        "x": "hm-a10-g1-L3p5-n2-beta0__N0040__Aminus_0p0025__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "hm-a10-g1-L3p5-n2-beta0",
+      "chi": 1.7325457233779311,
+      "measured_amplitude": -0.0024999999999998704,
+      "mesh": 40,
+      "reflection_partner_id": "hm-a10-g1-L3p5-n2-beta0__N0040__Aplus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.0025,
+      "state_id": "hm-a10-g1-L3p5-n2-beta0__N0040__Aminus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "hm-a10-g1-L3p5-n2-beta0__N0040__Aplus_0p0025__u",
+        "v": "hm-a10-g1-L3p5-n2-beta0__N0040__Aplus_0p0025__v",
+        "x": "hm-a10-g1-L3p5-n2-beta0__N0040__Aplus_0p0025__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "hm-a10-g1-L3p5-n2-beta0",
+      "chi": 1.7325457233810153,
+      "measured_amplitude": 0.002499999999999978,
+      "mesh": 40,
+      "reflection_partner_id": "hm-a10-g1-L3p5-n2-beta0__N0040__Aminus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.0025,
+      "state_id": "hm-a10-g1-L3p5-n2-beta0__N0040__Aplus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "hm-a10-g1-L3p5-n2-beta0__N0040__Aplus_0p005__u",
+        "v": "hm-a10-g1-L3p5-n2-beta0__N0040__Aplus_0p005__v",
+        "x": "hm-a10-g1-L3p5-n2-beta0__N0040__Aplus_0p005__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "hm-a10-g1-L3p5-n2-beta0",
+      "chi": 1.7325460086360032,
+      "measured_amplitude": 0.005000000000000125,
+      "mesh": 40,
+      "reflection_partner_id": "hm-a10-g1-L3p5-n2-beta0__N0040__Aminus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.005,
+      "state_id": "hm-a10-g1-L3p5-n2-beta0__N0040__Aplus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "hm-a10-g1-L3p5-n2-beta0__N0040__Aplus_0p01__u",
+        "v": "hm-a10-g1-L3p5-n2-beta0__N0040__Aplus_0p01__v",
+        "x": "hm-a10-g1-L3p5-n2-beta0__N0040__Aplus_0p01__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "hm-a10-g1-L3p5-n2-beta0",
+      "chi": 1.732547149666298,
+      "measured_amplitude": 0.00999999999999991,
+      "mesh": 40,
+      "reflection_partner_id": "hm-a10-g1-L3p5-n2-beta0__N0040__Aminus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.01,
+      "state_id": "hm-a10-g1-L3p5-n2-beta0__N0040__Aplus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "hm-a10-g1-L3p5-n2-beta0__N0040__Aplus_0p02__u",
+        "v": "hm-a10-g1-L3p5-n2-beta0__N0040__Aplus_0p02__v",
+        "x": "hm-a10-g1-L3p5-n2-beta0__N0040__Aplus_0p02__x"
+      },
+      "array_shape": [
+        41
+      ],
+      "case": "hm-a10-g1-L3p5-n2-beta0",
+      "chi": 1.7325517138404873,
+      "measured_amplitude": 0.019999999999999997,
+      "mesh": 40,
+      "reflection_partner_id": "hm-a10-g1-L3p5-n2-beta0__N0040__Aminus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.02,
+      "state_id": "hm-a10-g1-L3p5-n2-beta0__N0040__Aplus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "hm-a10-g1-L3p5-n2-beta0__N0080__Aminus_0p02__u",
+        "v": "hm-a10-g1-L3p5-n2-beta0__N0080__Aminus_0p02__v",
+        "x": "hm-a10-g1-L3p5-n2-beta0__N0080__Aminus_0p02__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "hm-a10-g1-L3p5-n2-beta0",
+      "chi": 1.7325690121246862,
+      "measured_amplitude": -0.01999999999999998,
+      "mesh": 80,
+      "reflection_partner_id": "hm-a10-g1-L3p5-n2-beta0__N0080__Aplus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.02,
+      "state_id": "hm-a10-g1-L3p5-n2-beta0__N0080__Aminus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "hm-a10-g1-L3p5-n2-beta0__N0080__Aminus_0p01__u",
+        "v": "hm-a10-g1-L3p5-n2-beta0__N0080__Aminus_0p01__v",
+        "x": "hm-a10-g1-L3p5-n2-beta0__N0080__Aminus_0p01__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "hm-a10-g1-L3p5-n2-beta0",
+      "chi": 1.7325643893393363,
+      "measured_amplitude": -0.010000000000000096,
+      "mesh": 80,
+      "reflection_partner_id": "hm-a10-g1-L3p5-n2-beta0__N0080__Aplus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.01,
+      "state_id": "hm-a10-g1-L3p5-n2-beta0__N0080__Aminus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "hm-a10-g1-L3p5-n2-beta0__N0080__Aminus_0p005__u",
+        "v": "hm-a10-g1-L3p5-n2-beta0__N0080__Aminus_0p005__v",
+        "x": "hm-a10-g1-L3p5-n2-beta0__N0080__Aminus_0p005__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "hm-a10-g1-L3p5-n2-beta0",
+      "chi": 1.732563233656384,
+      "measured_amplitude": -0.004999999999999935,
+      "mesh": 80,
+      "reflection_partner_id": "hm-a10-g1-L3p5-n2-beta0__N0080__Aplus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.005,
+      "state_id": "hm-a10-g1-L3p5-n2-beta0__N0080__Aminus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "hm-a10-g1-L3p5-n2-beta0__N0080__Aminus_0p0025__u",
+        "v": "hm-a10-g1-L3p5-n2-beta0__N0080__Aminus_0p0025__v",
+        "x": "hm-a10-g1-L3p5-n2-beta0__N0080__Aminus_0p0025__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "hm-a10-g1-L3p5-n2-beta0",
+      "chi": 1.7325629447352402,
+      "measured_amplitude": -0.0024999999999999883,
+      "mesh": 80,
+      "reflection_partner_id": "hm-a10-g1-L3p5-n2-beta0__N0080__Aplus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.0025,
+      "state_id": "hm-a10-g1-L3p5-n2-beta0__N0080__Aminus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "hm-a10-g1-L3p5-n2-beta0__N0080__Aplus_0p0025__u",
+        "v": "hm-a10-g1-L3p5-n2-beta0__N0080__Aplus_0p0025__v",
+        "x": "hm-a10-g1-L3p5-n2-beta0__N0080__Aplus_0p0025__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "hm-a10-g1-L3p5-n2-beta0",
+      "chi": 1.7325629447361457,
+      "measured_amplitude": 0.0024999999999999155,
+      "mesh": 80,
+      "reflection_partner_id": "hm-a10-g1-L3p5-n2-beta0__N0080__Aminus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.0025,
+      "state_id": "hm-a10-g1-L3p5-n2-beta0__N0080__Aplus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "hm-a10-g1-L3p5-n2-beta0__N0080__Aplus_0p005__u",
+        "v": "hm-a10-g1-L3p5-n2-beta0__N0080__Aplus_0p005__v",
+        "x": "hm-a10-g1-L3p5-n2-beta0__N0080__Aplus_0p005__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "hm-a10-g1-L3p5-n2-beta0",
+      "chi": 1.7325632336574681,
+      "measured_amplitude": 0.004999999999999971,
+      "mesh": 80,
+      "reflection_partner_id": "hm-a10-g1-L3p5-n2-beta0__N0080__Aminus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.005,
+      "state_id": "hm-a10-g1-L3p5-n2-beta0__N0080__Aplus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "hm-a10-g1-L3p5-n2-beta0__N0080__Aplus_0p01__u",
+        "v": "hm-a10-g1-L3p5-n2-beta0__N0080__Aplus_0p01__v",
+        "x": "hm-a10-g1-L3p5-n2-beta0__N0080__Aplus_0p01__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "hm-a10-g1-L3p5-n2-beta0",
+      "chi": 1.7325643893393543,
+      "measured_amplitude": 0.010000000000000012,
+      "mesh": 80,
+      "reflection_partner_id": "hm-a10-g1-L3p5-n2-beta0__N0080__Aminus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.01,
+      "state_id": "hm-a10-g1-L3p5-n2-beta0__N0080__Aplus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "hm-a10-g1-L3p5-n2-beta0__N0080__Aplus_0p02__u",
+        "v": "hm-a10-g1-L3p5-n2-beta0__N0080__Aplus_0p02__v",
+        "x": "hm-a10-g1-L3p5-n2-beta0__N0080__Aplus_0p02__x"
+      },
+      "array_shape": [
+        81
+      ],
+      "case": "hm-a10-g1-L3p5-n2-beta0",
+      "chi": 1.732569012125035,
+      "measured_amplitude": 0.01999999999999991,
+      "mesh": 80,
+      "reflection_partner_id": "hm-a10-g1-L3p5-n2-beta0__N0080__Aminus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.02,
+      "state_id": "hm-a10-g1-L3p5-n2-beta0__N0080__Aplus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "hm-a10-g1-L3p5-n2-beta0__N0160__Aminus_0p02__u",
+        "v": "hm-a10-g1-L3p5-n2-beta0__N0160__Aminus_0p02__v",
+        "x": "hm-a10-g1-L3p5-n2-beta0__N0160__Aminus_0p02__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "hm-a10-g1-L3p5-n2-beta0",
+      "chi": 1.7325735710064596,
+      "measured_amplitude": -0.020000000000000018,
+      "mesh": 160,
+      "reflection_partner_id": "hm-a10-g1-L3p5-n2-beta0__N0160__Aplus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.02,
+      "state_id": "hm-a10-g1-L3p5-n2-beta0__N0160__Aminus_0p02"
+    },
+    {
+      "array_names": {
+        "u": "hm-a10-g1-L3p5-n2-beta0__N0160__Aminus_0p01__u",
+        "v": "hm-a10-g1-L3p5-n2-beta0__N0160__Aminus_0p01__v",
+        "x": "hm-a10-g1-L3p5-n2-beta0__N0160__Aminus_0p01__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "hm-a10-g1-L3p5-n2-beta0",
+      "chi": 1.7325689335630923,
+      "measured_amplitude": -0.009999999999999943,
+      "mesh": 160,
+      "reflection_partner_id": "hm-a10-g1-L3p5-n2-beta0__N0160__Aplus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.01,
+      "state_id": "hm-a10-g1-L3p5-n2-beta0__N0160__Aminus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "hm-a10-g1-L3p5-n2-beta0__N0160__Aminus_0p005__u",
+        "v": "hm-a10-g1-L3p5-n2-beta0__N0160__Aminus_0p005__v",
+        "x": "hm-a10-g1-L3p5-n2-beta0__N0160__Aminus_0p005__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "hm-a10-g1-L3p5-n2-beta0",
+      "chi": 1.732567774227998,
+      "measured_amplitude": -0.005000000000000023,
+      "mesh": 160,
+      "reflection_partner_id": "hm-a10-g1-L3p5-n2-beta0__N0160__Aplus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.005,
+      "state_id": "hm-a10-g1-L3p5-n2-beta0__N0160__Aminus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "hm-a10-g1-L3p5-n2-beta0__N0160__Aminus_0p0025__u",
+        "v": "hm-a10-g1-L3p5-n2-beta0__N0160__Aminus_0p0025__v",
+        "x": "hm-a10-g1-L3p5-n2-beta0__N0160__Aminus_0p0025__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "hm-a10-g1-L3p5-n2-beta0",
+      "chi": 1.7325674844226244,
+      "measured_amplitude": -0.0024999999999999888,
+      "mesh": 160,
+      "reflection_partner_id": "hm-a10-g1-L3p5-n2-beta0__N0160__Aplus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": -0.0025,
+      "state_id": "hm-a10-g1-L3p5-n2-beta0__N0160__Aminus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "hm-a10-g1-L3p5-n2-beta0__N0160__Aplus_0p0025__u",
+        "v": "hm-a10-g1-L3p5-n2-beta0__N0160__Aplus_0p0025__v",
+        "x": "hm-a10-g1-L3p5-n2-beta0__N0160__Aplus_0p0025__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "hm-a10-g1-L3p5-n2-beta0",
+      "chi": 1.732567484306674,
+      "measured_amplitude": 0.002500000000000007,
+      "mesh": 160,
+      "reflection_partner_id": "hm-a10-g1-L3p5-n2-beta0__N0160__Aminus_0p0025",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.0025,
+      "state_id": "hm-a10-g1-L3p5-n2-beta0__N0160__Aplus_0p0025"
+    },
+    {
+      "array_names": {
+        "u": "hm-a10-g1-L3p5-n2-beta0__N0160__Aplus_0p005__u",
+        "v": "hm-a10-g1-L3p5-n2-beta0__N0160__Aplus_0p005__v",
+        "x": "hm-a10-g1-L3p5-n2-beta0__N0160__Aplus_0p005__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "hm-a10-g1-L3p5-n2-beta0",
+      "chi": 1.7325677741712486,
+      "measured_amplitude": 0.0050000000000000565,
+      "mesh": 160,
+      "reflection_partner_id": "hm-a10-g1-L3p5-n2-beta0__N0160__Aminus_0p005",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.005,
+      "state_id": "hm-a10-g1-L3p5-n2-beta0__N0160__Aplus_0p005"
+    },
+    {
+      "array_names": {
+        "u": "hm-a10-g1-L3p5-n2-beta0__N0160__Aplus_0p01__u",
+        "v": "hm-a10-g1-L3p5-n2-beta0__N0160__Aplus_0p01__v",
+        "x": "hm-a10-g1-L3p5-n2-beta0__N0160__Aplus_0p01__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "hm-a10-g1-L3p5-n2-beta0",
+      "chi": 1.7325689335341472,
+      "measured_amplitude": 0.009999999999999962,
+      "mesh": 160,
+      "reflection_partner_id": "hm-a10-g1-L3p5-n2-beta0__N0160__Aminus_0p01",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.01,
+      "state_id": "hm-a10-g1-L3p5-n2-beta0__N0160__Aplus_0p01"
+    },
+    {
+      "array_names": {
+        "u": "hm-a10-g1-L3p5-n2-beta0__N0160__Aplus_0p02__u",
+        "v": "hm-a10-g1-L3p5-n2-beta0__N0160__Aplus_0p02__v",
+        "x": "hm-a10-g1-L3p5-n2-beta0__N0160__Aplus_0p02__x"
+      },
+      "array_shape": [
+        161
+      ],
+      "case": "hm-a10-g1-L3p5-n2-beta0",
+      "chi": 1.7325735709922925,
+      "measured_amplitude": 0.019999999999999976,
+      "mesh": 160,
+      "reflection_partner_id": "hm-a10-g1-L3p5-n2-beta0__N0160__Aminus_0p02",
+      "reflection_partner_present": true,
+      "requested_amplitude": 0.02,
+      "state_id": "hm-a10-g1-L3p5-n2-beta0__N0160__Aplus_0p02"
+    }
+  ]
+}

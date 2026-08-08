@@ -1,0 +1,889 @@
+{
+  "acceptance": {
+    "gates": [
+      {
+        "limit": 1,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A-0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A-0.02/full-residual",
+        "passed": true,
+        "value": 4.121147867408581e-13
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A-0.02/elliptic-residual",
+        "passed": true,
+        "value": 6.092903959142859e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A-0.02/amplitude",
+        "passed": true,
+        "value": 1.1796119636642288e-16
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A-0.02/u-positive",
+        "passed": true,
+        "value": 9.979994934446193
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A-0.02/v-positive",
+        "passed": true,
+        "value": 9.995237456784269
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A-0.02/sensitivity-positive",
+        "passed": true,
+        "value": 10.995237456784269
+      },
+      {
+        "limit": 1,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A-0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A-0.01/full-residual",
+        "passed": true,
+        "value": 3.979039320256561e-13
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A-0.01/elliptic-residual",
+        "passed": true,
+        "value": 6.075140390748857e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A-0.01/amplitude",
+        "passed": true,
+        "value": 2.0816681711721685e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A-0.01/u-positive",
+        "passed": true,
+        "value": 9.989998734650756
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A-0.01/v-positive",
+        "passed": true,
+        "value": 9.997623436069313
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A-0.01/sensitivity-positive",
+        "passed": true,
+        "value": 10.997623436069313
+      },
+      {
+        "limit": 1,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A-0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A-0.005/full-residual",
+        "passed": true,
+        "value": 3.836930773104541e-13
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A-0.005/elliptic-residual",
+        "passed": true,
+        "value": 6.181721801112872e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A-0.005/amplitude",
+        "passed": true,
+        "value": 5.4643789493269423e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A-0.005/u-positive",
+        "passed": true,
+        "value": 9.99499968379263
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A-0.005/v-positive",
+        "passed": true,
+        "value": 9.998812894936885
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A-0.005/sensitivity-positive",
+        "passed": true,
+        "value": 10.998812894936885
+      },
+      {
+        "limit": 1,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A-0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A-0.0025/full-residual",
+        "passed": true,
+        "value": 2.984279490192421e-13
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A-0.0025/elliptic-residual",
+        "passed": true,
+        "value": 5.009326287108706e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A-0.0025/amplitude",
+        "passed": true,
+        "value": 2.7321894746634712e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A-0.0025/u-positive",
+        "passed": true,
+        "value": 9.997499920964588
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A-0.0025/v-positive",
+        "passed": true,
+        "value": 9.999406741692152
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A-0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 10.999406741692152
+      },
+      {
+        "limit": 1,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A+0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A+0.0025/full-residual",
+        "passed": true,
+        "value": 4.121147867408581e-13
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A+0.0025/elliptic-residual",
+        "passed": true,
+        "value": 4.796163466380676e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A+0.0025/amplitude",
+        "passed": true,
+        "value": 6.852157730108388e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A+0.0025/u-positive",
+        "passed": true,
+        "value": 9.997499920964641
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A+0.0025/v-positive",
+        "passed": true,
+        "value": 9.999406741692162
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A+0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 10.999406741692162
+      },
+      {
+        "limit": 1,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A+0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A+0.005/full-residual",
+        "passed": true,
+        "value": 3.694822225952521e-13
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A+0.005/elliptic-residual",
+        "passed": true,
+        "value": 5.737632591262809e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A+0.005/amplitude",
+        "passed": true,
+        "value": 8.673617379884035e-19
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A+0.005/u-positive",
+        "passed": true,
+        "value": 9.994999683792688
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A+0.005/v-positive",
+        "passed": true,
+        "value": 9.998812894936894
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A+0.005/sensitivity-positive",
+        "passed": true,
+        "value": 10.998812894936894
+      },
+      {
+        "limit": 1,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A+0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A+0.01/full-residual",
+        "passed": true,
+        "value": 4.547473508864641e-13
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A+0.01/elliptic-residual",
+        "passed": true,
+        "value": 5.613287612504791e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A+0.01/amplitude",
+        "passed": true,
+        "value": 1.474514954580286e-16
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A+0.01/u-positive",
+        "passed": true,
+        "value": 9.98999873465082
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A+0.01/v-positive",
+        "passed": true,
+        "value": 9.997623436069329
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A+0.01/sensitivity-positive",
+        "passed": true,
+        "value": 10.997623436069329
+      },
+      {
+        "limit": 1,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A+0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A+0.02/full-residual",
+        "passed": true,
+        "value": 3.836930773104541e-13
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A+0.02/elliptic-residual",
+        "passed": true,
+        "value": 6.181721801112872e-13
+      },
+      {
+        "limit": 5e-11,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A+0.02/amplitude",
+        "passed": true,
+        "value": 3.469446951953614e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A+0.02/u-positive",
+        "passed": true,
+        "value": 9.979994934446237
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A+0.02/v-positive",
+        "passed": true,
+        "value": 9.995237456784267
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/A+0.02/sensitivity-positive",
+        "passed": true,
+        "value": 10.995237456784267
+      },
+      {
+        "limit": 1,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A-0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A-0.02/full-residual",
+        "passed": true,
+        "value": 1.2789769243681803e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A-0.02/elliptic-residual",
+        "passed": true,
+        "value": 1.6679990721968352e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A-0.02/amplitude",
+        "passed": true,
+        "value": 1.734723475976807e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A-0.02/u-positive",
+        "passed": true,
+        "value": 9.979994866113547
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A-0.02/v-positive",
+        "passed": true,
+        "value": 9.995242960834222
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A-0.02/sensitivity-positive",
+        "passed": true,
+        "value": 10.995242960834222
+      },
+      {
+        "limit": 1,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A-0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A-0.01/full-residual",
+        "passed": true,
+        "value": 1.6342482922482304e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A-0.01/elliptic-residual",
+        "passed": true,
+        "value": 1.8740564655672642e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A-0.01/amplitude",
+        "passed": true,
+        "value": 9.367506770274758e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A-0.01/u-positive",
+        "passed": true,
+        "value": 9.989998717581186
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A-0.01/v-positive",
+        "passed": true,
+        "value": 9.997626206948114
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A-0.01/sensitivity-positive",
+        "passed": true,
+        "value": 10.997626206948114
+      },
+      {
+        "limit": 1,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A-0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A-0.005/full-residual",
+        "passed": true,
+        "value": 1.3784529073745944e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A-0.005/elliptic-residual",
+        "passed": true,
+        "value": 1.6626700016786344e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A-0.005/amplitude",
+        "passed": true,
+        "value": 5.811323644522304e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A-0.005/u-positive",
+        "passed": true,
+        "value": 9.994999679526963
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A-0.005/v-positive",
+        "passed": true,
+        "value": 9.998814285089718
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A-0.005/sensitivity-positive",
+        "passed": true,
+        "value": 10.998814285089718
+      },
+      {
+        "limit": 1,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A-0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A-0.0025/full-residual",
+        "passed": true,
+        "value": 1.5631940186722204e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A-0.0025/elliptic-residual",
+        "passed": true,
+        "value": 1.6413537196058314e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A-0.0025/amplitude",
+        "passed": true,
+        "value": 3.903127820947816e-18
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A-0.0025/u-positive",
+        "passed": true,
+        "value": 9.997499919898416
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A-0.0025/v-positive",
+        "passed": true,
+        "value": 9.999407437946925
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A-0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 10.999407437946925
+      },
+      {
+        "limit": 1,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A+0.0025/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A+0.0025/full-residual",
+        "passed": true,
+        "value": 1.5774048733874224e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A+0.0025/elliptic-residual",
+        "passed": true,
+        "value": 1.8776091792460647e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A+0.0025/amplitude",
+        "passed": true,
+        "value": 1.465841337200402e-16
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A+0.0025/u-positive",
+        "passed": true,
+        "value": 9.997499919898457
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A+0.0025/v-positive",
+        "passed": true,
+        "value": 9.99940743794695
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A+0.0025/sensitivity-positive",
+        "passed": true,
+        "value": 10.99940743794695
+      },
+      {
+        "limit": 1,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A+0.005/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A+0.005/full-residual",
+        "passed": true,
+        "value": 1.2647660696529783e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A+0.005/elliptic-residual",
+        "passed": true,
+        "value": 2.3003821070233244e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A+0.005/amplitude",
+        "passed": true,
+        "value": 2.688821387764051e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A+0.005/u-positive",
+        "passed": true,
+        "value": 9.99499967952698
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A+0.005/v-positive",
+        "passed": true,
+        "value": 9.998814285089724
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A+0.005/sensitivity-positive",
+        "passed": true,
+        "value": 10.998814285089724
+      },
+      {
+        "limit": 1,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A+0.01/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A+0.01/full-residual",
+        "passed": true,
+        "value": 1.7195134205394424e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A+0.01/elliptic-residual",
+        "passed": true,
+        "value": 1.666222715357435e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A+0.01/amplitude",
+        "passed": true,
+        "value": 1.9081958235744878e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A+0.01/u-positive",
+        "passed": true,
+        "value": 9.989998717581207
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A+0.01/v-positive",
+        "passed": true,
+        "value": 9.997626206948128
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A+0.01/sensitivity-positive",
+        "passed": true,
+        "value": 10.997626206948128
+      },
+      {
+        "limit": 1,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A+0.02/solver",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A+0.02/full-residual",
+        "passed": true,
+        "value": 1.5631940186722204e-12
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A+0.02/elliptic-residual",
+        "passed": true,
+        "value": 1.9237944570704713e-12
+      },
+      {
+        "limit": 5e-11,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A+0.02/amplitude",
+        "passed": true,
+        "value": 7.632783294297951e-17
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A+0.02/u-positive",
+        "passed": true,
+        "value": 9.979994866113563
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A+0.02/v-positive",
+        "passed": true,
+        "value": 9.995242960834227
+      },
+      {
+        "limit": "> 0",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/A+0.02/sensitivity-positive",
+        "passed": true,
+        "value": 10.995242960834227
+      },
+      {
+        "limit": "same sign as -1.49811574178",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/c2-sign",
+        "passed": true,
+        "value": -1.4996527208465908
+      },
+      {
+        "limit": 1e-09,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N40/intercept",
+        "passed": true,
+        "value": 5.019273885409348e-11
+      },
+      {
+        "limit": "same sign as -1.49811574178",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/c2-sign",
+        "passed": true,
+        "value": -1.4985067387657203
+      },
+      {
+        "limit": 1e-09,
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/intercept",
+        "passed": true,
+        "value": 9.802647582546342e-11
+      },
+      {
+        "limit": ">= 1.8",
+        "name": "hm-a10-g1-L3p5-n2-beta2/N80/c2-observed-order",
+        "passed": true,
+        "value": 1.9748681141630824
+      },
+      {
+        "limit": "< 1",
+        "name": "hm-a10-g1-L3p5-n2-beta2/c2-error-monotone-N40-N80",
+        "passed": true,
+        "value": 0.25439317764476166
+      },
+      {
+        "limit": 0.005,
+        "name": "hm-a10-g1-L3p5-n2-beta2/finest-c2-relative-error",
+        "passed": true,
+        "value": 0.00026099251135609135
+      },
+      {
+        "limit": 1,
+        "name": "hm-a10-g1-L3p5-n2-beta2/finest-reflection-pairs-complete",
+        "passed": true,
+        "value": 1
+      },
+      {
+        "limit": 1e-08,
+        "name": "hm-a10-g1-L3p5-n2-beta2/finest-reflection-chi",
+        "passed": true,
+        "value": 1.6186163520615082e-10
+      },
+      {
+        "limit": 1e-09,
+        "name": "hm-a10-g1-L3p5-n2-beta2/finest-reflection-u",
+        "passed": true,
+        "value": 1.0302869668521453e-13
+      },
+      {
+        "limit": 1e-09,
+        "name": "hm-a10-g1-L3p5-n2-beta2/finest-reflection-v",
+        "passed": true,
+        "value": 4.085620730620576e-14
+      }
+    ],
+    "passed": true
+  },
+  "amplitudes": [
+    -0.02,
+    -0.01,
+    -0.005,
+    -0.0025,
+    0.0025,
+    0.005,
+    0.01,
+    0.02
+  ],
+  "artifacts": {
+    "branch_points": "branch-points.csv",
+    "checksums": "SHA256SUMS",
+    "figure_pdf": "stationary-continuation.pdf",
+    "figure_png": "stationary-continuation.png",
+    "fit_summary": "fit-summary.json",
+    "profiles": "stationary-profiles.csv",
+    "states": "stationary-states.npz",
+    "states_index": "states-index.json"
+  },
+  "cases": [
+    {
+      "bifurcation_coefficients": {
+        "C1_n0": 0.23681373928144478,
+        "C2_0": 0.0,
+        "C2_2n0": 0.0,
+        "C3_n0": 0.0,
+        "a01": -0.05,
+        "a2n0": 0.037129038113049635,
+        "alpha_n0": 0.0630732446874839,
+        "beta_n0": -0.09449102075120734,
+        "chi_star": 209.64083952266583,
+        "chi_star_mode_n0": 209.64083952266583,
+        "gamma_2n0": 0.0035915770281926473,
+        "gamma_cubic": 0.00015082967105194356,
+        "lambda_2n0": 12.89091187081059,
+        "lambda_n0": 3.2227279677026477,
+        "sigma_2n0": -6.812490607229798
+      },
+      "continuum_threshold": {
+        "chi_star": 209.64083952266583,
+        "minimizing_mode": 2,
+        "runner_up_gap": 27.88496544846717
+      },
+      "fits": [
+        {
+          "c2": -1.4996527208465908,
+          "c2_relative_error": 0.0010259414728509154,
+          "c4": -0.006603372816691482,
+          "case_name": "hm-a10-g1-L3p5-n2-beta2",
+          "chi_star_disc": 209.63802102352997,
+          "discrete_eigenvalue": 3.216106946576268,
+          "fit_residual_max": 2.2685966754807925e-10,
+          "intercept_error": 5.019273885409348e-11,
+          "mesh": 40,
+          "minimizing_mode": 2,
+          "observed_order": null,
+          "reflection_chi_error_max": 3.5063862924289424e-10,
+          "reflection_u_error_max": 8.348877145181177e-14,
+          "reflection_v_error_max": 1.9539925233402755e-14,
+          "theory_c2": -1.498115741775972,
+          "unconstrained_c2": -1.4996535280168761,
+          "unconstrained_c4": -0.004894515486810434,
+          "unconstrained_fit_residual_max": 1.81643144969712e-10,
+          "unconstrained_intercept": 209.63802102358017
+        },
+        {
+          "c2": -1.4985067387657203,
+          "c2_relative_error": 0.00026099251135609135,
+          "c4": -0.0072154447684171985,
+          "case_name": "hm-a10-g1-L3p5-n2-beta2",
+          "chi_star_disc": 209.64010466007193,
+          "discrete_eigenvalue": 3.221071691098932,
+          "fit_residual_max": 1.8398419705707182e-10,
+          "intercept_error": -9.802647582546342e-11,
+          "mesh": 80,
+          "minimizing_mode": 2,
+          "observed_order": 1.9748681141630824,
+          "reflection_chi_error_max": 1.6186163520615082e-10,
+          "reflection_u_error_max": 1.0302869668521453e-13,
+          "reflection_v_error_max": 4.085620730620576e-14,
+          "theory_c2": -1.498115741775972,
+          "unconstrained_c2": -1.498505162977309,
+          "unconstrained_c4": -0.010550723321609543,
+          "unconstrained_fit_residual_max": 9.566747394273989e-11,
+          "unconstrained_intercept": 209.6401046599739
+        }
+      ],
+      "parameters": {
+        "a": 10.0,
+        "alpha": 1.0,
+        "b": 1.0,
+        "beta": 2.0,
+        "c": 1.0,
+        "gamma": 1.0,
+        "length": 3.5,
+        "m": 1.0,
+        "minimal": false,
+        "mode": 2,
+        "mu": 1.0,
+        "name": "hm-a10-g1-L3p5-n2-beta2",
+        "nu": 1.0,
+        "title": "high-mode: a=10, gamma=1, L=3.5, n0=2, beta=2 (expected subcritical)",
+        "u_star": 10.0
+      }
+    }
+  ],
+  "meshes": [
+    40,
+    80
+  ],
+  "method": {
+    "coefficient_source": "Chemotaxis_simulation.implied_constants.compute_bifurcation_coefficients",
+    "continuation_parameter": "signed first-cosine amplitude",
+    "diagnostic_fit": "chi = intercept + c2*A^2 + c4*A^4",
+    "discrete_threshold": "Chemotaxis_simulation.thresholds.chi_star_disc_fd",
+    "elliptic_operator": "Chemotaxis_simulation.simulation.solve_v",
+    "elliptic_residual_scope": "independent reconstruction of laplacian(v)-mu*v+nu*u^gamma",
+    "intercept_absolute_tolerance": 1e-09,
+    "minimum_observed_order": 1.8,
+    "primary_fit": "chi-chi_star_disc = c2*A^2 + c4*A^4",
+    "stationary_operator": "Chemotaxis_simulation.simulation.rhs",
+    "u_residual_scope": "all nodal u equations, including the dependent endpoint equation omitted from each minimal-model Newton system"
+  },
+  "point_count": 16,
+  "provenance": {
+    "generator": {
+      "dirty": false,
+      "path": "codes/stationary_branch_validation.py",
+      "revision": "fcfe8ea3033e3497756751dbcf35ba4d8e5f1f22"
+    },
+    "runtime": {
+      "matplotlib": "3.11.1",
+      "numpy": "2.5.1",
+      "python": "3.14.6",
+      "scipy": "1.18.0"
+    },
+    "simulator": {
+      "dirty": false,
+      "path": "simulation.py",
+      "revision": "7c2a09b24fdebb9000b9b996eb34150d6de5ed17"
+    }
+  },
+  "schema_version": 2
+}

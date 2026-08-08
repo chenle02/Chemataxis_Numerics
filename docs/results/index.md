@@ -130,10 +130,44 @@ no galleries or preview links for them.
     semidiscrete computations. The continuous-PDE conclusions come from the
     manuscript's analysis.
 
+## Candidate stationary cases (not validated evidence)
+
+!!! warning "These are candidates, not results of this paper"
+    The twelve bundles below are **not** part of the Paper III evidence
+    contract and must not be cited as validated. They are published so the
+    computation is inspectable and reproducible, at an explicitly lower tier
+    than the four `validated_current` stationary cases above. Promotion to
+    `validated_current` is an author decision that has not been taken.
+
+Each candidate extends the stationary-continuation study to a nontrivial
+critical mode (n₀ = 2 or 3) or to a new sensitivity exponent. Every bundle
+carries the same artifact set as the validated v1 bundle, plus the exact
+`run-card.yaml` it was generated from, and each is checked in CI by the same
+machinery that guards v1:
+
+- every file hash in `SHA256SUMS` is re-derived from the committed Git object;
+- the generating tree must have been clean;
+- the bundle's own acceptance gates must all pass;
+- the continuum minimizing mode must equal the declared critical mode;
+- `theory_c2` must equal `beta_n0 / alpha_n0`, with `alpha_n0 > 0`; and
+- the **label gate**: the sign of the measured branch slope `c₂` at the finest
+  mesh must equal the sign of the closed-form `beta_n0`, which must in turn
+  agree with the declared regime.
+
+The manifest's numbers for each candidate are compared against the bundle
+itself, so a manifest entry cannot disagree with the artifact it describes.
+
+Bundles live under `docs/results/paper-iii/stationary-continuation/candidates/`
+in the repository; every bundle path is listed under
+`candidate_stationary_cases` in the
+[evidence manifest](../data/paper-iii-manifest.json). Folder names are
+provenance identifiers, not evidence classifications.
+
 ## Machine-readable record
 
 The [Paper III evidence manifest](../data/paper-iii-manifest.json) freezes the
 two evidence layers, all source revisions, figure hashes, v1 checksums, case
 IDs, branch slopes, acceptance metrics, and provenance exclusions. CI resolves
 every declared object from Git and rejects a reader-facing link to any
-provenance-only raw family.
+provenance-only raw family. Candidate cases are recorded separately under
+`candidate_stationary_cases` and are excluded from the reader-facing contract.

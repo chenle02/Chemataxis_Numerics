@@ -457,6 +457,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#candidate-stationary-cases-not-validated-evidence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Candidate stationary cases (not validated evidence)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#machine-readable-record" class="md-nav__link">
     <span class="md-ellipsis">
       Machine-readable record
@@ -662,6 +671,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#candidate-stationary-cases-not-validated-evidence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Candidate stationary cases (not validated evidence)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#machine-readable-record" class="md-nav__link">
     <span class="md-ellipsis">
       Machine-readable record
@@ -821,12 +839,44 @@ no galleries or preview links for them.</p>
 semidiscrete computations. The continuous-PDE conclusions come from the
 manuscript's analysis.</p>
 </div>
+<h2 id="candidate-stationary-cases-not-validated-evidence">Candidate stationary cases (not validated evidence)<a class="headerlink" href="#candidate-stationary-cases-not-validated-evidence" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">These are candidates, not results of this paper</p>
+<p>The twelve bundles below are <strong>not</strong> part of the Paper III evidence
+contract and must not be cited as validated. They are published so the
+computation is inspectable and reproducible, at an explicitly lower tier
+than the four <code>validated_current</code> stationary cases above. Promotion to
+<code>validated_current</code> is an author decision that has not been taken.</p>
+</div>
+<p>Each candidate extends the stationary-continuation study to a nontrivial
+critical mode (n₀ = 2 or 3) or to a new sensitivity exponent. Every bundle
+carries the same artifact set as the validated v1 bundle, plus the exact
+<code>run-card.yaml</code> it was generated from, and each is checked in CI by the same
+machinery that guards v1:</p>
+<ul>
+<li>every file hash in <code>SHA256SUMS</code> is re-derived from the committed Git object;</li>
+<li>the generating tree must have been clean;</li>
+<li>the bundle's own acceptance gates must all pass;</li>
+<li>the continuum minimizing mode must equal the declared critical mode;</li>
+<li><code>theory_c2</code> must equal <code>beta_n0 / alpha_n0</code>, with <code>alpha_n0 &gt; 0</code>; and</li>
+<li>the <strong>label gate</strong>: the sign of the measured branch slope <code>c₂</code> at the finest
+  mesh must equal the sign of the closed-form <code>beta_n0</code>, which must in turn
+  agree with the declared regime.</li>
+</ul>
+<p>The manifest's numbers for each candidate are compared against the bundle
+itself, so a manifest entry cannot disagree with the artifact it describes.</p>
+<p>Bundles live under <code>docs/results/paper-iii/stationary-continuation/candidates/</code>
+in the repository; every bundle path is listed under
+<code>candidate_stationary_cases</code> in the
+<a href="../data/paper-iii-manifest.json">evidence manifest</a>. Folder names are
+provenance identifiers, not evidence classifications.</p>
 <h2 id="machine-readable-record">Machine-readable record<a class="headerlink" href="#machine-readable-record" title="Permanent link">&para;</a></h2>
 <p>The <a href="../data/paper-iii-manifest.json">Paper III evidence manifest</a> freezes the
 two evidence layers, all source revisions, figure hashes, v1 checksums, case
 IDs, branch slopes, acceptance metrics, and provenance exclusions. CI resolves
 every declared object from Git and rejects a reader-facing link to any
-provenance-only raw family.</p>
+provenance-only raw family. Candidate cases are recorded separately under
+<code>candidate_stationary_cases</code> and are excluded from the reader-facing contract.</p>
 
 
 
