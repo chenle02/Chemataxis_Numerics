@@ -4,6 +4,29 @@ Status: design only for branch `redesign/verification-tiers-2026-08`.
 Scope: add a three-tier verification architecture to `Chemataxis_Numerics`
 without moving or relabeling any existing evidence in this branch.
 
+## Design tenet — wide repo, curated paper (PI directive, 2026-08-08)
+
+**The public data repo presents a much wider range of simulation results
+than the paper.** The paper carries only the curated minimal set (the
+recommended near-threshold high-mode cases plus the crossover figure); this
+repo carries the complete evidence base:
+
+- all ten design-matrix families from the Paper III restructure plan, not
+  just the four recommended for the manuscript;
+- full β-sweeps per family, tracing the β⁺ regime crossover continuously;
+- the full near-threshold ladder ({1,2,5}% × {above, below} × {±ε} seeds);
+- regime maps over parameter planes ((β,γ) or (m,γ) at fixed L, with the
+  minimizing mode n₀ marked);
+- mesh-refinement series and the historical raw simulation panels;
+- the legacy folders — relabeled where the corrected coefficient requires
+  it, never deleted.
+
+Paired gate rule: **every wide-range entry enters only through the run-card
++ label-gate pipeline — wide AND verified, never wide OR verified.** The
+repo's current state (withheld/excluded markers, shortcut-labeled folders)
+is the counterexample this rule exists to prevent: ungated width becomes
+noise, and mislabeled width actively misleads.
+
 ## 0. Existing anchors to extend, not replace
 
 - `README.md` already distinguishes reader-facing evidence from provenance-only
