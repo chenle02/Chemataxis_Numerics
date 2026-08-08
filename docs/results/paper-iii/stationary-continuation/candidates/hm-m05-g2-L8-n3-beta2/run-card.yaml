@@ -1,0 +1,23 @@
+name: hm-m05-g2-L8-n3-beta2
+title: "high-mode: m=1/2, gamma=2, L=8, n0=3, beta=2 (expected subcritical)"
+minimal: false
+a: 1.0
+b: 1.0
+alpha: 1.0
+beta: 2.0
+m: 0.5
+gamma: 2.0
+nu: 1.0
+mu: 1.0
+c: 1.0
+L: 8.0
+n0: 3
+u_star: 1.0
+expected:
+  chi_star: 8.2168
+  beta_n0: -0.45732
+  regime: subcritical
+  beta_plus: 1.394
+provenance:
+  design: Submission/Paper-III/NUMERICS-RESTRUCTURE-PLAN.md (§3, row 4)
+  closed_form_verified: codes/verify_paper3_quadratic_abc.py (rel.err <= 7e-16)

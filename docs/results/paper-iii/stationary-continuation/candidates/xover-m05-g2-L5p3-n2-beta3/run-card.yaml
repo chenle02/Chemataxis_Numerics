@@ -1,0 +1,24 @@
+name: xover-m05-g2-L5p3-n2-beta3
+title: "beta-crossover: m=1/2, gamma=2, L=5.3, n0=2, beta=3 (expected subcritical)"
+minimal: false
+a: 1.0
+b: 1.0
+alpha: 1.0
+beta: 3.0
+m: 0.5
+gamma: 2.0
+nu: 1.0
+mu: 1.0
+c: 1.0
+L: 5.3
+n0: 2
+u_star: 1.0
+expected:
+  chi_star: 16.46782
+  beta_n0: -1.377093
+  regime: subcritical
+  beta_plus: 1.406
+provenance:
+  design: Submission/Paper-III/NUMERICS-RESTRUCTURE-PLAN.md (S3, beta-crossover figure; new point)
+  closed_form_verified: codes/verify_paper3_quadratic_abc.py (rel.err <= 7e-16)
+  pregate: module theory reproduces the design values to <= 1.6e-4 (2026-08-08)

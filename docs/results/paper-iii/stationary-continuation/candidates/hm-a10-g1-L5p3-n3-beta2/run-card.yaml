@@ -1,0 +1,24 @@
+name: hm-a10-g1-L5p3-n3-beta2
+title: "high-mode: a=10, gamma=1, L=5.3, n0=3, beta=2 (expected subcritical)"
+minimal: false
+a: 10.0
+b: 1.0
+alpha: 1.0
+beta: 2.0
+m: 1.0
+gamma: 1.0
+nu: 1.0
+mu: 1.0
+c: 1.0
+L: 5.3
+n0: 3
+u_star: 10.0
+expected:
+  chi_star: 209.63
+  beta_n0: -0.0950
+  regime: subcritical
+  beta_plus: 1.146
+provenance:
+  design: Submission/Paper-III/NUMERICS-RESTRUCTURE-PLAN.md (S3, optional tier row 10)
+  closed_form_verified: codes/verify_paper3_quadratic_abc.py (rel.err <= 7e-16)
+  pregate: module theory reproduces the design values to <= 1.6e-4 (2026-08-08)

@@ -20,7 +20,8 @@
   },
   "evidence_policy": {
     "validated_current": "The named artifact passed the checks frozen in this manifest and may support only its stated semidiscrete claim.",
-    "provenance_only": "The object is retained to document earlier work but is excluded from the reader-facing numerical evidence."
+    "provenance_only": "The object is retained to document earlier work but is excluded from the reader-facing numerical evidence.",
+    "candidate": "The named artifact passed its own deterministic acceptance gates and the label gate (measured branch-slope sign equals the closed-form beta_n0 sign), but it is not reader-facing evidence and must not be cited as validated. Promotion to validated_current is an author decision."
   },
   "stationary_validation": {
     "id": "paper3-stationary-continuation-v1",
@@ -234,7 +235,7 @@
       "archive_assertions": {
         "classification": "supercritical",
         "chi_star_mode_n0": 11.970925584731697,
-        "beta_n0": 9.508880363384589
+        "beta_n0": 9.50888036338459
       },
       "featured_runs": [
         {
@@ -298,6 +299,241 @@
       "reason": "The case is supercritical, while its A_rel files were generated from an obsolete negative coefficient.",
       "raw_path": "docs/results/quasilinear/subcritical/a1_b1_alpha1_m1_beta1_gamma1_mu1_nu1_L1_n1",
       "constants_path": "docs/results/quasilinear/subcritical/a1_b1_alpha1_m1_beta1_gamma1_mu1_nu1_L1_n1/constants.json"
+    }
+  ],
+  "candidate_stationary_cases": [
+    {
+      "id": "hm-a10-g1-L3p5-n2-beta0",
+      "status": "candidate",
+      "quantitative_use": false,
+      "reader_facing": false,
+      "bundle_path": "docs/results/paper-iii/stationary-continuation/candidates/hm-a10-g1-L3p5-n2-beta0",
+      "run_card_sha256": "ad6325ba500c1ec9140c4f504d2475f72b3d497d7614bc416fe44a88f1b71b03",
+      "critical_mode": 2,
+      "meshes": [
+        40,
+        80,
+        160
+      ],
+      "finest_mesh": 160,
+      "gates_passed": 183,
+      "gates_total": 183,
+      "beta_n0_closed_form": 0.11809712448608703,
+      "measured_c2_finest": 0.015457931339988861,
+      "declared_regime": "supercritical"
+    },
+    {
+      "id": "hm-a10-g1-L3p5-n2-beta2",
+      "status": "candidate",
+      "quantitative_use": false,
+      "reader_facing": false,
+      "bundle_path": "docs/results/paper-iii/stationary-continuation/candidates/hm-a10-g1-L3p5-n2-beta2",
+      "run_card_sha256": "1f4a3a9934b8300d0426f493b226e0961fdad91b3679d362eed1aa5ed5d5e0c9",
+      "critical_mode": 2,
+      "meshes": [
+        40,
+        80
+      ],
+      "finest_mesh": 80,
+      "gates_passed": 123,
+      "gates_total": 123,
+      "beta_n0_closed_form": -0.09449102075120734,
+      "measured_c2_finest": -1.4985067387657203,
+      "declared_regime": "subcritical"
+    },
+    {
+      "id": "hm-a10-g1-L5p3-n3-beta0",
+      "status": "candidate",
+      "quantitative_use": false,
+      "reader_facing": false,
+      "bundle_path": "docs/results/paper-iii/stationary-continuation/candidates/hm-a10-g1-L5p3-n3-beta0",
+      "run_card_sha256": "19c907e26e10c05385951e7e398471fca836c188d3bd44a2150e0eb57fe2d301",
+      "critical_mode": 3,
+      "meshes": [
+        48,
+        96,
+        192
+      ],
+      "finest_mesh": 192,
+      "gates_passed": 183,
+      "gates_total": 183,
+      "beta_n0_closed_form": 0.12138172189629055,
+      "measured_c2_finest": 0.0159509099485421,
+      "declared_regime": "supercritical"
+    },
+    {
+      "id": "hm-a10-g1-L5p3-n3-beta2",
+      "status": "candidate",
+      "quantitative_use": false,
+      "reader_facing": false,
+      "bundle_path": "docs/results/paper-iii/stationary-continuation/candidates/hm-a10-g1-L5p3-n3-beta2",
+      "run_card_sha256": "ed81b5339ed43cc85fde5ef1a2f1acf46f63afd3cf74ced2bccfb76248b809d9",
+      "critical_mode": 3,
+      "meshes": [
+        48,
+        96
+      ],
+      "finest_mesh": 96,
+      "gates_passed": 123,
+      "gates_total": 123,
+      "beta_n0_closed_form": -0.0949899884566199,
+      "measured_c2_finest": -1.5135244355464275,
+      "declared_regime": "subcritical"
+    },
+    {
+      "id": "hm-m05-g2-L5p3-n2-beta1",
+      "status": "candidate",
+      "quantitative_use": false,
+      "reader_facing": false,
+      "bundle_path": "docs/results/paper-iii/stationary-continuation/candidates/hm-m05-g2-L5p3-n2-beta1",
+      "run_card_sha256": "d6103f1cc1c7f0b03cb1b19992a0d99045c73f706a250825508fdc46e8bf4861",
+      "critical_mode": 2,
+      "meshes": [
+        40,
+        80
+      ],
+      "finest_mesh": 80,
+      "gates_passed": 123,
+      "gates_total": 123,
+      "beta_n0_closed_form": 0.26157104360164046,
+      "measured_c2_finest": 0.4471617156419697,
+      "declared_regime": "supercritical"
+    },
+    {
+      "id": "hm-m05-g2-L5p3-n2-beta2",
+      "status": "candidate",
+      "quantitative_use": false,
+      "reader_facing": false,
+      "bundle_path": "docs/results/paper-iii/stationary-continuation/candidates/hm-m05-g2-L5p3-n2-beta2",
+      "run_card_sha256": "692e467110160eca900673a541d1a6a1be79dd2bc5c3cccd9c6d7a5831e99615",
+      "critical_mode": 2,
+      "meshes": [
+        40,
+        80
+      ],
+      "finest_mesh": 80,
+      "gates_passed": 123,
+      "gates_total": 123,
+      "beta_n0_closed_form": -0.44770052800890203,
+      "measured_c2_finest": -1.5369754330655587,
+      "declared_regime": "subcritical"
+    },
+    {
+      "id": "hm-m05-g2-L8-n3-beta1",
+      "status": "candidate",
+      "quantitative_use": false,
+      "reader_facing": false,
+      "bundle_path": "docs/results/paper-iii/stationary-continuation/candidates/hm-m05-g2-L8-n3-beta1",
+      "run_card_sha256": "a3d42a443db036dd1a25f5d7ab41bc77f93fac46464a0b6c0ac2b8c479f248f9",
+      "critical_mode": 3,
+      "meshes": [
+        48,
+        96
+      ],
+      "finest_mesh": 96,
+      "gates_passed": 123,
+      "gates_total": 123,
+      "beta_n0_closed_form": 0.2532377728107042,
+      "measured_c2_finest": 0.43490695563065374,
+      "declared_regime": "supercritical"
+    },
+    {
+      "id": "hm-m05-g2-L8-n3-beta2",
+      "status": "candidate",
+      "quantitative_use": false,
+      "reader_facing": false,
+      "bundle_path": "docs/results/paper-iii/stationary-continuation/candidates/hm-m05-g2-L8-n3-beta2",
+      "run_card_sha256": "a4699a5f2627769f250271c5f3cf0165fd2dddfbac76499ab22df4525c2ef9ea",
+      "critical_mode": 3,
+      "meshes": [
+        48,
+        96
+      ],
+      "finest_mesh": 96,
+      "gates_passed": 123,
+      "gates_total": 123,
+      "beta_n0_closed_form": -0.45731522486934206,
+      "measured_c2_finest": -1.5808084235909916,
+      "declared_regime": "subcritical"
+    },
+    {
+      "id": "hm-m2-g2-L5p3-n2-beta1",
+      "status": "candidate",
+      "quantitative_use": false,
+      "reader_facing": false,
+      "bundle_path": "docs/results/paper-iii/stationary-continuation/candidates/hm-m2-g2-L5p3-n2-beta1",
+      "run_card_sha256": "c103030eab56457c9c24dfaa636f522ccd8133a24481cccac48ed6ec7f4b7509",
+      "critical_mode": 2,
+      "meshes": [
+        80,
+        160,
+        320
+      ],
+      "finest_mesh": 320,
+      "gates_passed": 183,
+      "gates_total": 183,
+      "beta_n0_closed_form": 2.2622417495055176,
+      "measured_c2_finest": 3.8674907744320235,
+      "declared_regime": "supercritical"
+    },
+    {
+      "id": "hm-m2-g2-L5p3-n2-beta6",
+      "status": "candidate",
+      "quantitative_use": false,
+      "reader_facing": false,
+      "bundle_path": "docs/results/paper-iii/stationary-continuation/candidates/hm-m2-g2-L5p3-n2-beta6",
+      "run_card_sha256": "6b4435720a1f82f9252776859eeb0d746bba39b08599be84f9d121071ca4deb1",
+      "critical_mode": 2,
+      "meshes": [
+        40,
+        80
+      ],
+      "finest_mesh": 80,
+      "gates_passed": 123,
+      "gates_total": 123,
+      "beta_n0_closed_form": -1.3512633490503942,
+      "measured_c2_finest": -74.25425046224179,
+      "declared_regime": "subcritical"
+    },
+    {
+      "id": "xover-m05-g2-L5p3-n2-beta0",
+      "status": "candidate",
+      "quantitative_use": false,
+      "reader_facing": false,
+      "bundle_path": "docs/results/paper-iii/stationary-continuation/candidates/xover-m05-g2-L5p3-n2-beta0",
+      "run_card_sha256": "d3ea7df2abc149cd8e7959b642049bc5ffd6b7c852b190258b06b77b2fde3294",
+      "critical_mode": 2,
+      "meshes": [
+        40,
+        80,
+        160
+      ],
+      "finest_mesh": 160,
+      "gates_passed": 183,
+      "gates_total": 183,
+      "beta_n0_closed_form": 0.7507217437945042,
+      "measured_c2_finest": 0.6413053492893434,
+      "declared_regime": "supercritical"
+    },
+    {
+      "id": "xover-m05-g2-L5p3-n2-beta3",
+      "status": "candidate",
+      "quantitative_use": false,
+      "reader_facing": false,
+      "bundle_path": "docs/results/paper-iii/stationary-continuation/candidates/xover-m05-g2-L5p3-n2-beta3",
+      "run_card_sha256": "664019c7660d3c47ff0410011cdf40266a6cb7f303ad53d0b7195fc7247c8050",
+      "critical_mode": 2,
+      "meshes": [
+        40,
+        80,
+        160
+      ],
+      "finest_mesh": 160,
+      "gates_passed": 183,
+      "gates_total": 183,
+      "beta_n0_closed_form": -1.3770929710371234,
+      "measured_c2_finest": -9.441942385384161,
+      "declared_regime": "subcritical"
     }
   ]
 }
