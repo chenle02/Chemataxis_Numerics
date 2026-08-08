@@ -463,6 +463,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Candidate stationary cases (not validated evidence)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#figures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figures
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-dependence-of-the-bifurcation-direction" class="md-nav__link">
+    <span class="md-ellipsis">
+      β-dependence of the bifurcation direction
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -677,6 +701,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Candidate stationary cases (not validated evidence)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#figures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figures
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-dependence-of-the-bifurcation-direction" class="md-nav__link">
+    <span class="md-ellipsis">
+      β-dependence of the bifurcation direction
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -708,6 +756,15 @@
 
 
 <h1 id="curated-paper-iii-results">Curated Paper III results<a class="headerlink" href="#curated-paper-iii-results" title="Permanent link">&para;</a></h1>
+<div class="admonition info">
+<p class="admonition-title">Working companion — evolving, not yet distributed</p>
+<p>This site is the coauthor-facing view of the Paper III computations while
+the paper is being prepared. Content evolves as results come in. It is not
+being distributed until the manuscript is submitted to a journal and
+arXiv, at which point a milestone tag will freeze the results to match the
+paper. Access is not restricted, so please note the evidence tier attached
+to anything you read here.</p>
+</div>
 <p>The release contains one complete stationary-continuation study and two
 selected time-integration figure families. These are the only reader-facing
 numerical objects. The larger historical archive is preserved for provenance,
@@ -865,9 +922,290 @@ machinery that guards v1:</p>
 </ul>
 <p>The manifest's numbers for each candidate are compared against the bundle
 itself, so a manifest entry cannot disagree with the artifact it describes.</p>
-<p>Bundles live under <code>docs/results/paper-iii/stationary-continuation/candidates/</code>
-in the repository; every bundle path is listed under
-<code>candidate_stationary_cases</code> in the
+<p>Twelve candidate bundles are published. Every row below is read from the
+bundle's own <code>fit-summary.json</code>; the site cannot disagree with the artifacts.</p>
+<table>
+<thead>
+<tr>
+<th>Case</th>
+<th>family</th>
+<th style="text-align: right;">L</th>
+<th style="text-align: right;">n₀</th>
+<th style="text-align: right;">β</th>
+<th style="text-align: right;">closed-form β_{n₀}</th>
+<th style="text-align: right;">measured c₂ (finest)</th>
+<th style="text-align: right;">order</th>
+<th style="text-align: center;">gates</th>
+<th>regime</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="paper-iii/stationary-continuation/candidates/hm-a10-g1-L3p5-n2-beta0/"><code>hm-a10-g1-L3p5-n2-beta0</code></a></td>
+<td>a=10, &gamma;=1</td>
+<td style="text-align: right;">3.5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">+0.118097</td>
+<td style="text-align: right;">+0.015458</td>
+<td style="text-align: right;">2.001</td>
+<td style="text-align: center;">183/183</td>
+<td>supercritical</td>
+</tr>
+<tr>
+<td><a href="paper-iii/stationary-continuation/candidates/hm-a10-g1-L3p5-n2-beta2/"><code>hm-a10-g1-L3p5-n2-beta2</code></a></td>
+<td>a=10, &gamma;=1</td>
+<td style="text-align: right;">3.5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">-0.094491</td>
+<td style="text-align: right;">-1.498507</td>
+<td style="text-align: right;">1.975</td>
+<td style="text-align: center;">123/123</td>
+<td>subcritical</td>
+</tr>
+<tr>
+<td><a href="paper-iii/stationary-continuation/candidates/hm-a10-g1-L5p3-n3-beta0/"><code>hm-a10-g1-L5p3-n3-beta0</code></a></td>
+<td>a=10, &gamma;=1</td>
+<td style="text-align: right;">5.3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">+0.121382</td>
+<td style="text-align: right;">+0.015951</td>
+<td style="text-align: right;">1.999</td>
+<td style="text-align: center;">183/183</td>
+<td>supercritical</td>
+</tr>
+<tr>
+<td><a href="paper-iii/stationary-continuation/candidates/hm-a10-g1-L5p3-n3-beta2/"><code>hm-a10-g1-L5p3-n3-beta2</code></a></td>
+<td>a=10, &gamma;=1</td>
+<td style="text-align: right;">5.3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">-0.094990</td>
+<td style="text-align: right;">-1.513524</td>
+<td style="text-align: right;">1.963</td>
+<td style="text-align: center;">123/123</td>
+<td>subcritical</td>
+</tr>
+<tr>
+<td><a href="paper-iii/stationary-continuation/candidates/hm-m05-g2-L5p3-n2-beta1/"><code>hm-m05-g2-L5p3-n2-beta1</code></a></td>
+<td>m=0.5, &gamma;=2</td>
+<td style="text-align: right;">5.3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">+0.261571</td>
+<td style="text-align: right;">+0.447162</td>
+<td style="text-align: right;">1.997</td>
+<td style="text-align: center;">123/123</td>
+<td>supercritical</td>
+</tr>
+<tr>
+<td><a href="paper-iii/stationary-continuation/candidates/hm-m05-g2-L5p3-n2-beta2/"><code>hm-m05-g2-L5p3-n2-beta2</code></a></td>
+<td>m=0.5, &gamma;=2</td>
+<td style="text-align: right;">5.3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">-0.447701</td>
+<td style="text-align: right;">-1.536975</td>
+<td style="text-align: right;">2.005</td>
+<td style="text-align: center;">123/123</td>
+<td>subcritical</td>
+</tr>
+<tr>
+<td><a href="paper-iii/stationary-continuation/candidates/hm-m05-g2-L8-n3-beta1/"><code>hm-m05-g2-L8-n3-beta1</code></a></td>
+<td>m=0.5, &gamma;=2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">+0.253238</td>
+<td style="text-align: right;">+0.434907</td>
+<td style="text-align: right;">1.996</td>
+<td style="text-align: center;">123/123</td>
+<td>supercritical</td>
+</tr>
+<tr>
+<td><a href="paper-iii/stationary-continuation/candidates/hm-m05-g2-L8-n3-beta2/"><code>hm-m05-g2-L8-n3-beta2</code></a></td>
+<td>m=0.5, &gamma;=2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">-0.457315</td>
+<td style="text-align: right;">-1.580808</td>
+<td style="text-align: right;">2.008</td>
+<td style="text-align: center;">123/123</td>
+<td>subcritical</td>
+</tr>
+<tr>
+<td><a href="paper-iii/stationary-continuation/candidates/hm-m2-g2-L5p3-n2-beta1/"><code>hm-m2-g2-L5p3-n2-beta1</code></a></td>
+<td>m=2, &gamma;=2</td>
+<td style="text-align: right;">5.3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">+2.262242</td>
+<td style="text-align: right;">+3.867491</td>
+<td style="text-align: right;">2.000</td>
+<td style="text-align: center;">183/183</td>
+<td>supercritical</td>
+</tr>
+<tr>
+<td><a href="paper-iii/stationary-continuation/candidates/hm-m2-g2-L5p3-n2-beta6/"><code>hm-m2-g2-L5p3-n2-beta6</code></a></td>
+<td>m=2, &gamma;=2</td>
+<td style="text-align: right;">5.3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">-1.351263</td>
+<td style="text-align: right;">-74.254250</td>
+<td style="text-align: right;">2.007</td>
+<td style="text-align: center;">123/123</td>
+<td>subcritical</td>
+</tr>
+<tr>
+<td><a href="paper-iii/stationary-continuation/candidates/xover-m05-g2-L5p3-n2-beta0/"><code>xover-m05-g2-L5p3-n2-beta0</code></a></td>
+<td>m=0.5, &gamma;=2</td>
+<td style="text-align: right;">5.3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">+0.750722</td>
+<td style="text-align: right;">+0.641305</td>
+<td style="text-align: right;">2.000</td>
+<td style="text-align: center;">183/183</td>
+<td>supercritical</td>
+</tr>
+<tr>
+<td><a href="paper-iii/stationary-continuation/candidates/xover-m05-g2-L5p3-n2-beta3/"><code>xover-m05-g2-L5p3-n2-beta3</code></a></td>
+<td>m=0.5, &gamma;=2</td>
+<td style="text-align: right;">5.3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">-1.377093</td>
+<td style="text-align: right;">-9.441942</td>
+<td style="text-align: right;">2.001</td>
+<td style="text-align: center;">183/183</td>
+<td>subcritical</td>
+</tr>
+</tbody>
+</table>
+<p><code>c₂</code> is the measured branch slope at the finest mesh and <code>β_{n₀}</code> the
+closed-form cubic coefficient; they carry the same sign because
+<code>c₂ = β_{n₀}/α_{n₀}</code> with <code>α_{n₀} &gt; 0</code>. Observed orders are the empirical
+mesh-refinement rates.</p>
+<h3 id="figures">Figures<a class="headerlink" href="#figures" title="Permanent link">&para;</a></h3>
+<div class="grid cards">
+<ul>
+<li>
+<p><strong><code>hm-a10-g1-L3p5-n2-beta0</code></strong></p>
+<p><img alt="hm-a10-g1-L3p5-n2-beta0" src="paper-iii/stationary-continuation/candidates/hm-a10-g1-L3p5-n2-beta0/stationary-continuation.png" /></p>
+<p>L=3.5, n₀=2, β=0 · β_{n₀}=+0.1181 · c₂=+0.0155 · <strong>supercritical</strong></p>
+</li>
+<li>
+<p><strong><code>hm-a10-g1-L3p5-n2-beta2</code></strong></p>
+<p><img alt="hm-a10-g1-L3p5-n2-beta2" src="paper-iii/stationary-continuation/candidates/hm-a10-g1-L3p5-n2-beta2/stationary-continuation.png" /></p>
+<p>L=3.5, n₀=2, β=2 · β_{n₀}=-0.0945 · c₂=-1.4985 · <strong>subcritical</strong></p>
+</li>
+<li>
+<p><strong><code>hm-a10-g1-L5p3-n3-beta0</code></strong></p>
+<p><img alt="hm-a10-g1-L5p3-n3-beta0" src="paper-iii/stationary-continuation/candidates/hm-a10-g1-L5p3-n3-beta0/stationary-continuation.png" /></p>
+<p>L=5.3, n₀=3, β=0 · β_{n₀}=+0.1214 · c₂=+0.0160 · <strong>supercritical</strong></p>
+</li>
+<li>
+<p><strong><code>hm-a10-g1-L5p3-n3-beta2</code></strong></p>
+<p><img alt="hm-a10-g1-L5p3-n3-beta2" src="paper-iii/stationary-continuation/candidates/hm-a10-g1-L5p3-n3-beta2/stationary-continuation.png" /></p>
+<p>L=5.3, n₀=3, β=2 · β_{n₀}=-0.0950 · c₂=-1.5135 · <strong>subcritical</strong></p>
+</li>
+<li>
+<p><strong><code>hm-m05-g2-L5p3-n2-beta1</code></strong></p>
+<p><img alt="hm-m05-g2-L5p3-n2-beta1" src="paper-iii/stationary-continuation/candidates/hm-m05-g2-L5p3-n2-beta1/stationary-continuation.png" /></p>
+<p>L=5.3, n₀=2, β=1 · β_{n₀}=+0.2616 · c₂=+0.4472 · <strong>supercritical</strong></p>
+</li>
+<li>
+<p><strong><code>hm-m05-g2-L5p3-n2-beta2</code></strong></p>
+<p><img alt="hm-m05-g2-L5p3-n2-beta2" src="paper-iii/stationary-continuation/candidates/hm-m05-g2-L5p3-n2-beta2/stationary-continuation.png" /></p>
+<p>L=5.3, n₀=2, β=2 · β_{n₀}=-0.4477 · c₂=-1.5370 · <strong>subcritical</strong></p>
+</li>
+<li>
+<p><strong><code>hm-m05-g2-L8-n3-beta1</code></strong></p>
+<p><img alt="hm-m05-g2-L8-n3-beta1" src="paper-iii/stationary-continuation/candidates/hm-m05-g2-L8-n3-beta1/stationary-continuation.png" /></p>
+<p>L=8, n₀=3, β=1 · β_{n₀}=+0.2532 · c₂=+0.4349 · <strong>supercritical</strong></p>
+</li>
+<li>
+<p><strong><code>hm-m05-g2-L8-n3-beta2</code></strong></p>
+<p><img alt="hm-m05-g2-L8-n3-beta2" src="paper-iii/stationary-continuation/candidates/hm-m05-g2-L8-n3-beta2/stationary-continuation.png" /></p>
+<p>L=8, n₀=3, β=2 · β_{n₀}=-0.4573 · c₂=-1.5808 · <strong>subcritical</strong></p>
+</li>
+<li>
+<p><strong><code>hm-m2-g2-L5p3-n2-beta1</code></strong></p>
+<p><img alt="hm-m2-g2-L5p3-n2-beta1" src="paper-iii/stationary-continuation/candidates/hm-m2-g2-L5p3-n2-beta1/stationary-continuation.png" /></p>
+<p>L=5.3, n₀=2, β=1 · β_{n₀}=+2.2622 · c₂=+3.8675 · <strong>supercritical</strong></p>
+</li>
+<li>
+<p><strong><code>hm-m2-g2-L5p3-n2-beta6</code></strong></p>
+<p><img alt="hm-m2-g2-L5p3-n2-beta6" src="paper-iii/stationary-continuation/candidates/hm-m2-g2-L5p3-n2-beta6/stationary-continuation.png" /></p>
+<p>L=5.3, n₀=2, β=6 · β_{n₀}=-1.3513 · c₂=-74.2543 · <strong>subcritical</strong></p>
+</li>
+<li>
+<p><strong><code>xover-m05-g2-L5p3-n2-beta0</code></strong></p>
+<p><img alt="xover-m05-g2-L5p3-n2-beta0" src="paper-iii/stationary-continuation/candidates/xover-m05-g2-L5p3-n2-beta0/stationary-continuation.png" /></p>
+<p>L=5.3, n₀=2, β=0 · β_{n₀}=+0.7507 · c₂=+0.6413 · <strong>supercritical</strong></p>
+</li>
+<li>
+<p><strong><code>xover-m05-g2-L5p3-n2-beta3</code></strong></p>
+<p><img alt="xover-m05-g2-L5p3-n2-beta3" src="paper-iii/stationary-continuation/candidates/xover-m05-g2-L5p3-n2-beta3/stationary-continuation.png" /></p>
+<p>L=5.3, n₀=2, β=3 · β_{n₀}=-1.3771 · c₂=-9.4419 · <strong>subcritical</strong></p>
+</li>
+</ul>
+</div>
+<h3 id="-dependence-of-the-bifurcation-direction">β-dependence of the bifurcation direction<a class="headerlink" href="#-dependence-of-the-bifurcation-direction" title="Permanent link">&para;</a></h3>
+<div class="admonition question">
+<p class="admonition-title">Numerical response to Wenxian's question of 2025-12-07</p>
+<p>Wenxian asked whether β affects the bifurcation <em>direction</em>, not only the
+threshold. These four measurements are in the same family
+(m=1/2, gamma=2, L=5.3, n0=2), with β the only quantity moved. They are reported as
+measurements; whether this becomes a named result in the paper is hers to
+decide.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">β</th>
+<th style="text-align: right;">closed-form β_{n₀}</th>
+<th style="text-align: right;">measured c₂ (finest)</th>
+<th>measured direction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">+0.750722</td>
+<td style="text-align: right;">+0.641305</td>
+<td>supercritical</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">+0.261571</td>
+<td style="text-align: right;">+0.447162</td>
+<td>supercritical</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">-0.447701</td>
+<td style="text-align: right;">-1.536975</td>
+<td>subcritical</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">-1.377093</td>
+<td style="text-align: right;">-9.441942</td>
+<td>subcritical</td>
+</tr>
+</tbody>
+</table>
+<p>The measured direction changes between β = 1 and β = 2, bracketing the positive
+root of the closed-form quadratic in β (β⁺ ≈ 1.406 for this family).</p>
+<p>Each bundle folder carries a <code>README.md</code> with its parameters, measured
+numbers, and a reproduction command; browse them on
+<a href="https://github.com/chenle02/Chemataxis_Numerics/tree/master/docs/results/paper-iii/stationary-continuation/candidates">GitHub</a>.
+Every bundle path is also listed under <code>candidate_stationary_cases</code> in the
 <a href="../data/paper-iii-manifest.json">evidence manifest</a>. Folder names are
 provenance identifiers, not evidence classifications.</p>
 <h2 id="machine-readable-record">Machine-readable record<a class="headerlink" href="#machine-readable-record" title="Permanent link">&para;</a></h2>

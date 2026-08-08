@@ -4,6 +4,14 @@ title: Results
 
 # Curated Paper III results
 
+!!! info "Working companion — evolving, not yet distributed"
+    This site is the coauthor-facing view of the Paper III computations while
+    the paper is being prepared. Content evolves as results come in. It is not
+    being distributed until the manuscript is submitted to a journal and
+    arXiv, at which point a milestone tag will freeze the results to match the
+    paper. Access is not restricted, so please note the evidence tier attached
+    to anything you read here.
+
 The release contains one complete stationary-continuation study and two
 selected time-integration figure families. These are the only reader-facing
 numerical objects. The larger historical archive is preserved for provenance,
@@ -157,9 +165,130 @@ machinery that guards v1:
 The manifest's numbers for each candidate are compared against the bundle
 itself, so a manifest entry cannot disagree with the artifact it describes.
 
-Bundles live under `docs/results/paper-iii/stationary-continuation/candidates/`
-in the repository; every bundle path is listed under
-`candidate_stationary_cases` in the
+Twelve candidate bundles are published. Every row below is read from the
+bundle's own `fit-summary.json`; the site cannot disagree with the artifacts.
+
+| Case | family | L | n₀ | β | closed-form β_{n₀} | measured c₂ (finest) | order | gates | regime |
+|---|---|---:|---:|---:|---:|---:|---:|:---:|---|
+| [`hm-a10-g1-L3p5-n2-beta0`](paper-iii/stationary-continuation/candidates/hm-a10-g1-L3p5-n2-beta0/) | a=10, &gamma;=1 | 3.5 | 2 | 0 | +0.118097 | +0.015458 | 2.001 | 183/183 | supercritical |
+| [`hm-a10-g1-L3p5-n2-beta2`](paper-iii/stationary-continuation/candidates/hm-a10-g1-L3p5-n2-beta2/) | a=10, &gamma;=1 | 3.5 | 2 | 2 | -0.094491 | -1.498507 | 1.975 | 123/123 | subcritical |
+| [`hm-a10-g1-L5p3-n3-beta0`](paper-iii/stationary-continuation/candidates/hm-a10-g1-L5p3-n3-beta0/) | a=10, &gamma;=1 | 5.3 | 3 | 0 | +0.121382 | +0.015951 | 1.999 | 183/183 | supercritical |
+| [`hm-a10-g1-L5p3-n3-beta2`](paper-iii/stationary-continuation/candidates/hm-a10-g1-L5p3-n3-beta2/) | a=10, &gamma;=1 | 5.3 | 3 | 2 | -0.094990 | -1.513524 | 1.963 | 123/123 | subcritical |
+| [`hm-m05-g2-L5p3-n2-beta1`](paper-iii/stationary-continuation/candidates/hm-m05-g2-L5p3-n2-beta1/) | m=0.5, &gamma;=2 | 5.3 | 2 | 1 | +0.261571 | +0.447162 | 1.997 | 123/123 | supercritical |
+| [`hm-m05-g2-L5p3-n2-beta2`](paper-iii/stationary-continuation/candidates/hm-m05-g2-L5p3-n2-beta2/) | m=0.5, &gamma;=2 | 5.3 | 2 | 2 | -0.447701 | -1.536975 | 2.005 | 123/123 | subcritical |
+| [`hm-m05-g2-L8-n3-beta1`](paper-iii/stationary-continuation/candidates/hm-m05-g2-L8-n3-beta1/) | m=0.5, &gamma;=2 | 8 | 3 | 1 | +0.253238 | +0.434907 | 1.996 | 123/123 | supercritical |
+| [`hm-m05-g2-L8-n3-beta2`](paper-iii/stationary-continuation/candidates/hm-m05-g2-L8-n3-beta2/) | m=0.5, &gamma;=2 | 8 | 3 | 2 | -0.457315 | -1.580808 | 2.008 | 123/123 | subcritical |
+| [`hm-m2-g2-L5p3-n2-beta1`](paper-iii/stationary-continuation/candidates/hm-m2-g2-L5p3-n2-beta1/) | m=2, &gamma;=2 | 5.3 | 2 | 1 | +2.262242 | +3.867491 | 2.000 | 183/183 | supercritical |
+| [`hm-m2-g2-L5p3-n2-beta6`](paper-iii/stationary-continuation/candidates/hm-m2-g2-L5p3-n2-beta6/) | m=2, &gamma;=2 | 5.3 | 2 | 6 | -1.351263 | -74.254250 | 2.007 | 123/123 | subcritical |
+| [`xover-m05-g2-L5p3-n2-beta0`](paper-iii/stationary-continuation/candidates/xover-m05-g2-L5p3-n2-beta0/) | m=0.5, &gamma;=2 | 5.3 | 2 | 0 | +0.750722 | +0.641305 | 2.000 | 183/183 | supercritical |
+| [`xover-m05-g2-L5p3-n2-beta3`](paper-iii/stationary-continuation/candidates/xover-m05-g2-L5p3-n2-beta3/) | m=0.5, &gamma;=2 | 5.3 | 2 | 3 | -1.377093 | -9.441942 | 2.001 | 183/183 | subcritical |
+
+`c₂` is the measured branch slope at the finest mesh and `β_{n₀}` the
+closed-form cubic coefficient; they carry the same sign because
+`c₂ = β_{n₀}/α_{n₀}` with `α_{n₀} > 0`. Observed orders are the empirical
+mesh-refinement rates.
+
+### Figures
+
+<div class="grid cards" markdown>
+
+-   **`hm-a10-g1-L3p5-n2-beta0`**
+
+    ![hm-a10-g1-L3p5-n2-beta0](paper-iii/stationary-continuation/candidates/hm-a10-g1-L3p5-n2-beta0/stationary-continuation.png)
+
+    L=3.5, n₀=2, β=0 · β_{n₀}=+0.1181 · c₂=+0.0155 · **supercritical**
+
+-   **`hm-a10-g1-L3p5-n2-beta2`**
+
+    ![hm-a10-g1-L3p5-n2-beta2](paper-iii/stationary-continuation/candidates/hm-a10-g1-L3p5-n2-beta2/stationary-continuation.png)
+
+    L=3.5, n₀=2, β=2 · β_{n₀}=-0.0945 · c₂=-1.4985 · **subcritical**
+
+-   **`hm-a10-g1-L5p3-n3-beta0`**
+
+    ![hm-a10-g1-L5p3-n3-beta0](paper-iii/stationary-continuation/candidates/hm-a10-g1-L5p3-n3-beta0/stationary-continuation.png)
+
+    L=5.3, n₀=3, β=0 · β_{n₀}=+0.1214 · c₂=+0.0160 · **supercritical**
+
+-   **`hm-a10-g1-L5p3-n3-beta2`**
+
+    ![hm-a10-g1-L5p3-n3-beta2](paper-iii/stationary-continuation/candidates/hm-a10-g1-L5p3-n3-beta2/stationary-continuation.png)
+
+    L=5.3, n₀=3, β=2 · β_{n₀}=-0.0950 · c₂=-1.5135 · **subcritical**
+
+-   **`hm-m05-g2-L5p3-n2-beta1`**
+
+    ![hm-m05-g2-L5p3-n2-beta1](paper-iii/stationary-continuation/candidates/hm-m05-g2-L5p3-n2-beta1/stationary-continuation.png)
+
+    L=5.3, n₀=2, β=1 · β_{n₀}=+0.2616 · c₂=+0.4472 · **supercritical**
+
+-   **`hm-m05-g2-L5p3-n2-beta2`**
+
+    ![hm-m05-g2-L5p3-n2-beta2](paper-iii/stationary-continuation/candidates/hm-m05-g2-L5p3-n2-beta2/stationary-continuation.png)
+
+    L=5.3, n₀=2, β=2 · β_{n₀}=-0.4477 · c₂=-1.5370 · **subcritical**
+
+-   **`hm-m05-g2-L8-n3-beta1`**
+
+    ![hm-m05-g2-L8-n3-beta1](paper-iii/stationary-continuation/candidates/hm-m05-g2-L8-n3-beta1/stationary-continuation.png)
+
+    L=8, n₀=3, β=1 · β_{n₀}=+0.2532 · c₂=+0.4349 · **supercritical**
+
+-   **`hm-m05-g2-L8-n3-beta2`**
+
+    ![hm-m05-g2-L8-n3-beta2](paper-iii/stationary-continuation/candidates/hm-m05-g2-L8-n3-beta2/stationary-continuation.png)
+
+    L=8, n₀=3, β=2 · β_{n₀}=-0.4573 · c₂=-1.5808 · **subcritical**
+
+-   **`hm-m2-g2-L5p3-n2-beta1`**
+
+    ![hm-m2-g2-L5p3-n2-beta1](paper-iii/stationary-continuation/candidates/hm-m2-g2-L5p3-n2-beta1/stationary-continuation.png)
+
+    L=5.3, n₀=2, β=1 · β_{n₀}=+2.2622 · c₂=+3.8675 · **supercritical**
+
+-   **`hm-m2-g2-L5p3-n2-beta6`**
+
+    ![hm-m2-g2-L5p3-n2-beta6](paper-iii/stationary-continuation/candidates/hm-m2-g2-L5p3-n2-beta6/stationary-continuation.png)
+
+    L=5.3, n₀=2, β=6 · β_{n₀}=-1.3513 · c₂=-74.2543 · **subcritical**
+
+-   **`xover-m05-g2-L5p3-n2-beta0`**
+
+    ![xover-m05-g2-L5p3-n2-beta0](paper-iii/stationary-continuation/candidates/xover-m05-g2-L5p3-n2-beta0/stationary-continuation.png)
+
+    L=5.3, n₀=2, β=0 · β_{n₀}=+0.7507 · c₂=+0.6413 · **supercritical**
+
+-   **`xover-m05-g2-L5p3-n2-beta3`**
+
+    ![xover-m05-g2-L5p3-n2-beta3](paper-iii/stationary-continuation/candidates/xover-m05-g2-L5p3-n2-beta3/stationary-continuation.png)
+
+    L=5.3, n₀=2, β=3 · β_{n₀}=-1.3771 · c₂=-9.4419 · **subcritical**
+
+</div>
+
+### β-dependence of the bifurcation direction
+
+!!! question "Numerical response to Wenxian's question of 2025-12-07"
+    Wenxian asked whether β affects the bifurcation *direction*, not only the
+    threshold. These four measurements are in the same family
+    (m=1/2, gamma=2, L=5.3, n0=2), with β the only quantity moved. They are reported as
+    measurements; whether this becomes a named result in the paper is hers to
+    decide.
+
+| β | closed-form β_{n₀} | measured c₂ (finest) | measured direction |
+|---:|---:|---:|---|
+| 0 | +0.750722 | +0.641305 | supercritical |
+| 1 | +0.261571 | +0.447162 | supercritical |
+| 2 | -0.447701 | -1.536975 | subcritical |
+| 3 | -1.377093 | -9.441942 | subcritical |
+
+The measured direction changes between β = 1 and β = 2, bracketing the positive
+root of the closed-form quadratic in β (β⁺ ≈ 1.406 for this family).
+
+Each bundle folder carries a `README.md` with its parameters, measured
+numbers, and a reproduction command; browse them on
+[GitHub](https://github.com/chenle02/Chemataxis_Numerics/tree/master/docs/results/paper-iii/stationary-continuation/candidates).
+Every bundle path is also listed under `candidate_stationary_cases` in the
 [evidence manifest](../data/paper-iii-manifest.json). Folder names are
 provenance identifiers, not evidence classifications.
 
