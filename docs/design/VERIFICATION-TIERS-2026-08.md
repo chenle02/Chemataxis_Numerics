@@ -1,8 +1,9 @@
 # Verification tiers redesign (2026-08)
 
-Status: design only for branch `redesign/verification-tiers-2026-08`.
-Scope: add a three-tier verification architecture to `Chemataxis_Numerics`
-without moving or relabeling any existing evidence in this branch.
+Status: implemented incrementally on `master`. The original canonical-home
+recommendation was superseded by the owner's final decision on 2026-08-09.
+Scope: maintain a three-tier verification architecture in
+`Chemataxis_Numerics` without relabeling historical evidence silently.
 
 ## Design tenet — wide repo, curated paper (PI directive, 2026-08-08)
 
@@ -121,50 +122,57 @@ floating-point manifestations used by the public artifacts.
 | (b) `verification/` subtree in data repo | keeps companion self-contained; easy to cite from this repo | turns a frozen evidence repo into the mutable source of scientific truth; awkward for the simulator package to consume |
 | (c) submodule/subtree links | reduces file copying | adds a third sync surface, weakens offline/Overleaf ergonomics, and complicates release pinning |
 
-### Recommendation: option (a)
+### Final owner decision: option (b)
 
-Make `Chemotaxis_simulation` the **single canonical home for executable
-verification logic**, in a dedicated public subtree such as:
+Make this repository the **single canonical home for the Lean formal proof**,
+in a dedicated subtree:
 
 ```text
-Chemotaxis_simulation/
-  verification/paper3/
-    run_cards.py
-    verify_quadratic_abc.py
-    stationary_branch_validation.py
-    lean/Paper3QuadraticABC.lean
-    cases/*.yaml
+Chemataxis_Numerics/
+  verification/
+    LICENSE
+    paper3/
+      README.md
+      lean/
+        lakefile.toml
+        lean-toolchain
+        lake-manifest.json
+        Paper3*.lean
+        AxiomCheck.lean
+        make_receipt.py
+        lean-receipt.json
 ```
 
 Rationale:
 
-1. The duplication problem already centers on the simulator repo's
-   `implied_constants.py` versus manuscript-repo symbolic code; canonicalizing
-   in the simulator repo collapses the split at the point where public code
-   already lives.
-2. The stationary validator already advertises itself as independent of the
-   manuscript-only package and suitable for publication with the simulator.
-3. The data repo should remain the frozen evidence and release-ledger layer,
-   not the moving source of scientific logic.
-4. Separate workflow badges become honest: code/verifier health belongs to the
-   simulator/verification release; evidence-contract health belongs here.
+1. The proof and the public evidence ledger can be cited at one owner-controlled
+   immutable revision.
+2. The Lean source is formal evidence, not reusable simulator functionality;
+   keeping the Python simulator canonical in Ian's repository preserves that
+   distinction.
+3. A narrow `verification/` subtree, separate MIT license, and path-triggered
+   CI prevent the formal package from blurring the numerical archive's release
+   contract.
+4. The public repository can run the proof without access to the private
+   manuscript repository.
 
 ### Consumption contract
 
-- **Data repo**: pins one released simulator verification revision and imports
-  it in CI; no local forks of the mathematics.
-- **Manuscript repo**: vendors an exact snapshot of the verification subtree
-  under a tracked `codes/vendor/chemotaxis_verification/` path, with a
-  SHA-256 manifest and pinned source revision. This vendor step happens by an
-  explicit sync script, never by `pip install` during `latexmk`.
+- **Data repo**: owns the Lean package, live axiom gate, receipt, and public
+  statement ledger.
+- **Simulator repo**: owns reusable Python simulation and coefficient logic;
+  it does not own the Lean source.
+- **Manuscript repo**: vendors an exact snapshot of the Lean subtree with a
+  pinned source revision. The vendor step is explicit and never runs during
+  `latexmk`.
 - **No compile-time fetch**: Overleaf/arXiv/journal builds read only vendored
   files and vendored figures.
 
-Rejected alternatives:
+Rejected alternatives after the final decision:
 
-- **(b)** would make the public data repo simultaneously the mutable code home
-  and immutable evidence home; those roles want different branching and release
-  rhythms.
+- **(a)** would put formal-proof governance under the simulator repository even
+  though the proof is a paper evidence artifact and Le requested direct control
+  of its public lifecycle.
 - **(c)** increases operational complexity for little gain and is hostile to the
   offline manuscript build requirement.
 
@@ -276,19 +284,18 @@ This is operational repair, not scientific redesign.
 
 ### Phase M1 — canonical-home extraction
 
-Move the Paper III verification logic from the manuscript repo into the chosen
-canonical home (`Chemotaxis_simulation/verification/paper3/`).
+Move the Paper III Lean package from the manuscript repo into the chosen
+canonical home (`Chemataxis_Numerics/verification/paper3/lean/`).
 
 Targets:
 
-- closed-form coefficient package now living under
-  `codes/chemotaxis_symbolic/`;
-- `verify_paper3_quadratic_abc.py`;
-- stationary validator driver and case definitions;
-- Lean file `Paper3QuadraticABC.lean`.
+- every receipt-backed `Paper3*.lean` module;
+- `AxiomCheck.lean`, the pinned Lake build files, and the receipt verifier;
+- `lean-receipt.json` and the public statement-coverage ledger.
 
-The manuscript repo becomes a vendor consumer, not the primary authoring home
-for these files.
+The simulator remains canonical for Python coefficient and numerical logic.
+The manuscript repo becomes a vendor consumer of the Lean package, not its
+primary authoring home.
 
 ### Phase M2 — run-card layer
 
@@ -399,14 +406,14 @@ is forbidden at compile time.
 3. How prominently should `provenance_only` historical mislabels be explained to
    readers versus left to the audit ledger?
 
-### Le (layout and canonical-home decision) — ANSWERED 2026-08-08
+### Le (layout and canonical-home decision) — FINAL ANSWER 2026-08-09
 
 1. Approve or reject the recommendation that the simulator repo, not the data
    repo, becomes canonical for executable verification logic.
-   **ANSWERED: approved.** `Chemotaxis_simulation` is the canonical home for
-   executable Paper III verification logic. This implies retiring the stale
-   duplicate validator in favour of the extended `--case-file` version, which
-   is prerequisite work for the heavy CI tier (see the status note below).
+   **SUPERSEDED.** Le's final instruction is that
+   `chenle02/Chemataxis_Numerics` is the canonical home for the Lean
+   verification. `Chemotaxis_simulation` remains canonical for reusable Python
+   simulator and coefficient logic.
 2. Decide whether `docs/design/` remains internal design history or is linked in
    site navigation as public project-method documentation.
    **ANSWERED: stays internal.** It remains in the repository and readable by
@@ -429,9 +436,9 @@ claim.
 | T1 run-card evidence | **Landed** — 12 candidate bundles, each with its `run-card.yaml` |
 | Candidate tier in the contract | **Landed** — `evidence_policy.candidate`, `candidate_stationary_cases`, self-validating against each artifact |
 | Label gate in CI | **Landed in the fast tier** via `validate_paper3_manifest.py` (design §3.1) |
-| T3 Lean proof | **Proven** in the manuscript repo (`codes/lean/Paper3Regime.lean`); `alpha_n0 > 0` is the fact the label gate rests on |
+| T3 Lean proof | **Publication in progress** — 167 receipt-backed theorems are being imported into `verification/paper3/lean/` with a complete statement ledger |
 | §3.2 `verify-heavy.yml` | **Blocked** on Phase M1: re-running candidates needs the `--case-file` driver, which lives only in the manuscript repo's validator |
-| §3.3 `verify-lean.yml` | **Blocked**: the Lean sources are in the private manuscript repo, so a workflow here would build nothing |
+| §3.3 `verify-lean.yml` | **In progress**: the canonical package and live axiom/receipt gates are being added together |
 
 Deliberately not shipped as empty stubs: a workflow that gates nothing is worse
 than an absent one, because it reads as coverage.

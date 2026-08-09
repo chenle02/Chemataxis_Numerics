@@ -1,7 +1,8 @@
 site_name: Chemotaxis Models III · Bifurcation
 site_description: >-
-  Reader-facing numerical companion and public data archive for Paper III on
-  bifurcation in chemotaxis models with signal-dependent sensitivity.
+  Reader-facing numerical companion, formal-verification source, and public
+  data archive for Paper III on bifurcation in chemotaxis models with
+  signal-dependent sensitivity.
 site_author: Le Chen, Ian Ruau, and Wenxian Shen
 site_url: https://chenle02.github.io/Chemataxis_Numerics/
 repo_url: https://github.com/chenle02/Chemataxis_Numerics
@@ -44,6 +45,8 @@ nav:
   - Home: index.md
   - Paper III: paper-iii.md
   - Results: results/index.md
+  - Lean verification: lean-verification.md
+  - Re-run Lean proof: lean-reproduce.md
   - Reproduce: reproduce.md
   - Data & provenance: data.md
   - Diagnostics: diagnostics/index.md
@@ -78,8 +81,8 @@ extra_javascript:
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 copyright: >-
-  &copy; 2026 Le Chen, Ian Ruau, and Wenxian Shen · Numerical material licensed
-  under CC BY 4.0
+  &copy; 2026 Le Chen, Ian Ruau, and Wenxian Shen · Numerical material and
+  documentation CC BY 4.0 · Formal-verification code MIT
 
 # Keep the public Pages artifact reader-sized. The complete raw archive remains
 # versioned and downloadable from GitHub, but is not copied into the site build.

@@ -82,9 +82,12 @@ refinement checks.
 | Quasi-linear supercritical figure | Non-minimal `a=10, beta=0` time archive | Below-threshold decay and two above-threshold trajectories |
 | Nonlinear-mobility supercritical figure | `m=2, beta=1, gamma=2` time archive | Nonlinear mobility and signal-production diagnostic |
 | Earlier minimal or branch-seeded runs | Historical Git objects | Provenance only; excluded from numerical claims |
+| Finite algebraic and modewise proof layer | Canonical Lean package and receipt | 167 declarations; exact inclusions and exclusions in the statement ledger |
 
 The [manifest](data/paper-iii-manifest.json) records the exact boundary and is
 checked on every push.
+The separate [Lean statement ledger](lean-verification.md) identifies every
+formalized claim and every analytical or numerical statement not covered.
 
 ## Revisions frozen by release 1.0.0
 

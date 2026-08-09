@@ -5,14 +5,16 @@ hide:
 ---
 
 <section class="paper-hero">
-  <div class="paper-hero__eyebrow">Paper III · Reproducible numerical evidence</div>
-  <h1>Bifurcation, tested two ways</h1>
+  <div class="paper-hero__eyebrow">Paper III · Reproducible numerical and formal evidence</div>
+  <h1>Bifurcation, checked in three evidence layers</h1>
   <p class="paper-hero__lead">
-    Stationary continuation resolves the local branch direction; selected
-    time evolutions show how the semidiscrete dynamics cross the threshold.
+    Stationary continuation resolves the local branch direction, selected
+    time evolutions show semidiscrete dynamics, and Lean checks the exact
+    finite algebra and modewise identities.
   </p>
   <div class="paper-hero__actions">
     <a class="md-button md-button--primary" href="results/">Read the results</a>
+    <a class="md-button" href="lean-verification/">Inspect the Lean proof</a>
     <a class="md-button" href="reproduce/">Verify the release</a>
   </div>
   <div class="paper-hero__authors">Le Chen · Ian Ruau · Wenxian Shen · Data release 1.0.0</div>
@@ -31,7 +33,9 @@ Paper III studies the loss of stability of a positive constant state as the
 chemotactic sensitivity crosses a critical value. This companion makes the
 numerical part of that argument inspectable: every reader-facing figure has a
 frozen vector source, every stationary state is archived, and the release
-manifest checks the exact paper and code revisions.
+manifest checks the exact paper and code revisions. A separate Lean package
+formally verifies the finite algebraic and modewise statements listed in the
+statement coverage ledger.
 
 <div class="feature-grid" markdown>
 
@@ -66,6 +70,17 @@ Verify 780 gates, all file digests, exact source revisions, and the immutable
 data bundle.
 
 [Reproduction guide](reproduce.md)
+</article>
+
+<article class="feature-card" markdown>
+<span class="feature-card__number">04</span>
+
+### Re-run the proof
+
+Build 167 Lean declarations, audit their axioms, and verify the source receipt
+with a novice-friendly guide.
+
+[Lean verification guide](lean-reproduce.md)
 </article>
 
 </div>

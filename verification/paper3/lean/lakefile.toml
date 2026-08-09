@@ -1,0 +1,70 @@
+name = "paper3abc"
+defaultTargets = ["Paper3QuadraticABC", "Paper3Regime", "Paper3TrigOrtho", "Paper3Model", "Paper3MinimalABC", "Paper3Semidiscrete", "Paper3Eigenmodes", "Paper3CenterJet", "Paper3CubicProjection", "Paper3QuadraticProjection", "Paper3ReducedAssembly", "Paper3TrigFinite", "Paper3TrigInfinite", "Paper3Thresholds", "Paper3DiscreteOrdering", "Paper3Taylor", "Paper3NormalForm", "Paper3ModalEquation", "Paper3ModalODE", "Paper3LinearRegime", "Paper3ConservativeMass"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "v4.32.2"
+
+[[lean_lib]]
+name = "Paper3QuadraticABC"
+
+[[lean_lib]]
+name = "Paper3Regime"
+
+[[lean_lib]]
+name = "Paper3TrigOrtho"
+
+[[lean_lib]]
+name = "Paper3Model"
+
+[[lean_lib]]
+name = "Paper3MinimalABC"
+
+[[lean_lib]]
+name = "Paper3Semidiscrete"
+
+[[lean_lib]]
+name = "Paper3Eigenmodes"
+
+[[lean_lib]]
+name = "Paper3CenterJet"
+
+[[lean_lib]]
+name = "Paper3CubicProjection"
+
+[[lean_lib]]
+name = "Paper3QuadraticProjection"
+
+[[lean_lib]]
+name = "Paper3ReducedAssembly"
+
+[[lean_lib]]
+name = "Paper3TrigFinite"
+
+[[lean_lib]]
+name = "Paper3TrigInfinite"
+
+[[lean_lib]]
+name = "Paper3Thresholds"
+
+[[lean_lib]]
+name = "Paper3DiscreteOrdering"
+
+[[lean_lib]]
+name = "Paper3Taylor"
+
+[[lean_lib]]
+name = "Paper3NormalForm"
+
+[[lean_lib]]
+name = "Paper3ModalEquation"
+
+[[lean_lib]]
+name = "Paper3ModalODE"
+
+[[lean_lib]]
+name = "Paper3LinearRegime"
+
+[[lean_lib]]
+name = "Paper3ConservativeMass"

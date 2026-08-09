@@ -1,0 +1,19 @@
+{
+  "schema": "paper3-lean-import-provenance/1",
+  "canonical_repository": "https://github.com/chenle02/Chemataxis_Numerics",
+  "canonical_path": "verification/paper3/lean",
+  "verification_version": "1.0.0",
+  "imported_from": {
+    "description": "private Paper III manuscript repository vendor source",
+    "branch": "feature/paper-III",
+    "commit": "4a51660",
+    "path": "codes/lean"
+  },
+  "receipt_sha256": "03b35a32e03dd11f1f328a797f61ec8416f56ccc13ead14a739f306760386cf8",
+  "theorem_count": 167,
+  "receipt_bound_file_count": 26,
+  "toolchain": "leanprover/lean4:v4.32.2",
+  "mathlib_revision": "905b95818eb32af7874a58b427f50c1711a5e96c",
+  "receipt_grade_host": "Home-Dell",
+  "receipt_grade_date": "2026-08-09"
+}

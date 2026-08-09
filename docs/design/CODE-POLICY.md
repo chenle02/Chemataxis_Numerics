@@ -19,11 +19,17 @@ number, and nobody can review the method.
 |---|---|---|
 | Reusable simulation / coefficient computation | `Chemotaxis_simulation` | Would another project want it? |
 | Validators and generators for published artifacts | this repo, `scripts/` | Does CI here need to run it? |
+| Formal proof source for claims certified by this companion | this repo, `verification/` | Is it a proof-grade certificate rather than a simulator feature? |
 | Paper-specific analysis, one-off waves, figure generation | manuscript repo, `codes/` | Is it meaningful only for this paper? |
 
 A checker that validates **this** repository's artifacts belongs **here**, so
 that this repository's CI can run it without depending on a private repository.
 That is why `audit_archived_constants.py` was moved here on 2026-08-09.
+
+The owner selected one narrow exception to the repository's original
+outputs-only role on 2026-08-09: Paper III's Lean package is canonical here.
+It lives in a separately licensed `verification/` subtree, has path-triggered
+CI, and is presented as formal evidence rather than simulation software.
 
 ## Single source of truth
 
@@ -31,6 +37,10 @@ Do not copy a module between repositories. A copy diverges silently, and the
 divergence is invisible until something built on the stale copy is published —
 which is precisely the failure this project already paid for once, with cached
 `beta_n0` values.
+
+The manuscript's Lean directory is a vendored snapshot, not an independent
+module. Its receipt and source hashes must match a named commit here; edits are
+made here first once the canonical import has landed.
 
 **Known outstanding violation:** `stationary_branch_validation.py` exists in
 both `Chemotaxis_simulation` (1404 lines) and the manuscript repo

@@ -1,0 +1,50 @@
+name: Verify Lean proof
+
+on:
+  pull_request:
+    paths:
+      - "verification/paper3/lean/**"
+      - "verification/paper3/README.md"
+      - "verification/paper3/IMPORT-PROVENANCE.json"
+      - "docs/lean-verification.md"
+      - ".github/workflows/verify-lean.yml"
+  push:
+    branches:
+      - master
+    paths:
+      - "verification/paper3/lean/**"
+      - "verification/paper3/README.md"
+      - "verification/paper3/IMPORT-PROVENANCE.json"
+      - "docs/lean-verification.md"
+      - ".github/workflows/verify-lean.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  proof:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Build pinned Lean package
+        uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: verification/paper3/lean
+          auto-config: false
+          build: true
+          test: false
+          lint: false
+          use-mathlib-cache: true
+
+      - name: Audit live theorem axioms and receipt
+        working-directory: verification/paper3/lean
+        shell: bash
+        run: |
+          set -o pipefail
+          lake env lean AxiomCheck.lean | tee axiom-report.txt
+          python3 make_receipt.py audit --axiom-output axiom-report.txt
+          python3 make_receipt.py verify

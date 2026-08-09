@@ -2,26 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://chenle02.github.io/Chemataxis_Numerics/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-08-09</lastmod>
     </url>
     <url>
          <loc>https://chenle02.github.io/Chemataxis_Numerics/cite/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-08-09</lastmod>
     </url>
     <url>
          <loc>https://chenle02.github.io/Chemataxis_Numerics/data/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-08-09</lastmod>
+    </url>
+    <url>
+         <loc>https://chenle02.github.io/Chemataxis_Numerics/lean-reproduce/</loc>
+         <lastmod>2026-08-09</lastmod>
+    </url>
+    <url>
+         <loc>https://chenle02.github.io/Chemataxis_Numerics/lean-verification/</loc>
+         <lastmod>2026-08-09</lastmod>
     </url>
     <url>
          <loc>https://chenle02.github.io/Chemataxis_Numerics/paper-iii/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-08-09</lastmod>
     </url>
     <url>
          <loc>https://chenle02.github.io/Chemataxis_Numerics/reproduce/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-08-09</lastmod>
+    </url>
+    <url>
+         <loc>https://chenle02.github.io/Chemataxis_Numerics/design/CODE-POLICY/</loc>
+         <lastmod>2026-08-09</lastmod>
+    </url>
+    <url>
+         <loc>https://chenle02.github.io/Chemataxis_Numerics/design/VERIFICATION-TIERS-2026-08/</loc>
+         <lastmod>2026-08-09</lastmod>
+    </url>
+    <url>
+         <loc>https://chenle02.github.io/Chemataxis_Numerics/diagnostics/</loc>
+         <lastmod>2026-08-09</lastmod>
+    </url>
+    <url>
+         <loc>https://chenle02.github.io/Chemataxis_Numerics/diagnostics/high_modes-subcritical/</loc>
+         <lastmod>2026-08-09</lastmod>
+    </url>
+    <url>
+         <loc>https://chenle02.github.io/Chemataxis_Numerics/diagnostics/high_modes-supercritical/</loc>
+         <lastmod>2026-08-09</lastmod>
+    </url>
+    <url>
+         <loc>https://chenle02.github.io/Chemataxis_Numerics/diagnostics/nonlinear_beta_gamma-subcritical/</loc>
+         <lastmod>2026-08-09</lastmod>
+    </url>
+    <url>
+         <loc>https://chenle02.github.io/Chemataxis_Numerics/diagnostics/nonlinear_beta_gamma-supercritical/</loc>
+         <lastmod>2026-08-09</lastmod>
+    </url>
+    <url>
+         <loc>https://chenle02.github.io/Chemataxis_Numerics/diagnostics/quasilinear-subcritical/</loc>
+         <lastmod>2026-08-09</lastmod>
+    </url>
+    <url>
+         <loc>https://chenle02.github.io/Chemataxis_Numerics/diagnostics/quasilinear-supercritical/</loc>
+         <lastmod>2026-08-09</lastmod>
     </url>
     <url>
          <loc>https://chenle02.github.io/Chemataxis_Numerics/results/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-08-09</lastmod>
     </url>
 </urlset>

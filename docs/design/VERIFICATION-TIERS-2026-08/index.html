@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Reader-facing numerical companion and public data archive for Paper III on bifurcation in chemotaxis models with signal-dependent sensitivity.">
+        <meta name="description" content="Reader-facing numerical companion, formal-verification source, and public data archive for Paper III on bifurcation in chemotaxis models with signal-dependent sensitivity.">
       
       
         <meta name="author" content="Le Chen, Ian Ruau, and Wenxian Shen">
@@ -329,6 +329,50 @@
   
   
     <li class="md-nav__item">
+      <a href="../../lean-verification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lean verification
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lean-reproduce/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Re-run Lean proof
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../reproduce/" class="md-nav__link">
         
   
@@ -516,9 +560,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#recommendation-option-a" class="md-nav__link">
+  <a href="#final-owner-decision-option-b" class="md-nav__link">
     <span class="md-ellipsis">
-      Recommendation: option (a)
+      Final owner decision: option (b)
     </span>
   </a>
   
@@ -729,9 +773,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#le-layout-and-canonical-home-decision-answered-2026-08-08" class="md-nav__link">
+  <a href="#le-layout-and-canonical-home-decision-final-answer-2026-08-09" class="md-nav__link">
     <span class="md-ellipsis">
-      Le (layout and canonical-home decision) — ANSWERED 2026-08-08
+      Le (layout and canonical-home decision) — FINAL ANSWER 2026-08-09
     </span>
   </a>
   
@@ -771,9 +815,10 @@
 
 
 <h1 id="verification-tiers-redesign-2026-08">Verification tiers redesign (2026-08)<a class="headerlink" href="#verification-tiers-redesign-2026-08" title="Permanent link">&para;</a></h1>
-<p>Status: design only for branch <code>redesign/verification-tiers-2026-08</code>.
-Scope: add a three-tier verification architecture to <code>Chemataxis_Numerics</code>
-without moving or relabeling any existing evidence in this branch.</p>
+<p>Status: implemented incrementally on <code>master</code>. The original canonical-home
+recommendation was superseded by the owner's final decision on 2026-08-09.
+Scope: maintain a three-tier verification architecture in
+<code>Chemataxis_Numerics</code> without relabeling historical evidence silently.</p>
 <h2 id="design-tenet-wide-repo-curated-paper-pi-directive-2026-08-08">Design tenet — wide repo, curated paper (PI directive, 2026-08-08)<a class="headerlink" href="#design-tenet-wide-repo-curated-paper-pi-directive-2026-08-08" title="Permanent link">&para;</a></h2>
 <p><strong>The public data repo presents a much wider range of simulation results
 than the paper.</strong> The paper carries only the curated minimal set (the
@@ -942,46 +987,53 @@ floating-point manifestations used by the public artifacts.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="recommendation-option-a">Recommendation: option (a)<a class="headerlink" href="#recommendation-option-a" title="Permanent link">&para;</a></h3>
-<p>Make <code>Chemotaxis_simulation</code> the <strong>single canonical home for executable
-verification logic</strong>, in a dedicated public subtree such as:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Chemotaxis_simulation/
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  verification/paper3/
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    run_cards.py
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    verify_quadratic_abc.py
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    stationary_branch_validation.py
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    lean/Paper3QuadraticABC.lean
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    cases/*.yaml
+<h3 id="final-owner-decision-option-b">Final owner decision: option (b)<a class="headerlink" href="#final-owner-decision-option-b" title="Permanent link">&para;</a></h3>
+<p>Make this repository the <strong>single canonical home for the Lean formal proof</strong>,
+in a dedicated subtree:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Chemataxis_Numerics/
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  verification/
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    LICENSE
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    paper3/
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>      README.md
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>      lean/
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>        lakefile.toml
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        lean-toolchain
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>        lake-manifest.json
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>        Paper3*.lean
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>        AxiomCheck.lean
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>        make_receipt.py
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>        lean-receipt.json
 </code></pre></div>
 <p>Rationale:</p>
 <ol>
-<li>The duplication problem already centers on the simulator repo's
-   <code>implied_constants.py</code> versus manuscript-repo symbolic code; canonicalizing
-   in the simulator repo collapses the split at the point where public code
-   already lives.</li>
-<li>The stationary validator already advertises itself as independent of the
-   manuscript-only package and suitable for publication with the simulator.</li>
-<li>The data repo should remain the frozen evidence and release-ledger layer,
-   not the moving source of scientific logic.</li>
-<li>Separate workflow badges become honest: code/verifier health belongs to the
-   simulator/verification release; evidence-contract health belongs here.</li>
+<li>The proof and the public evidence ledger can be cited at one owner-controlled
+   immutable revision.</li>
+<li>The Lean source is formal evidence, not reusable simulator functionality;
+   keeping the Python simulator canonical in Ian's repository preserves that
+   distinction.</li>
+<li>A narrow <code>verification/</code> subtree, separate MIT license, and path-triggered
+   CI prevent the formal package from blurring the numerical archive's release
+   contract.</li>
+<li>The public repository can run the proof without access to the private
+   manuscript repository.</li>
 </ol>
 <h3 id="consumption-contract">Consumption contract<a class="headerlink" href="#consumption-contract" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>Data repo</strong>: pins one released simulator verification revision and imports
-  it in CI; no local forks of the mathematics.</li>
-<li><strong>Manuscript repo</strong>: vendors an exact snapshot of the verification subtree
-  under a tracked <code>codes/vendor/chemotaxis_verification/</code> path, with a
-  SHA-256 manifest and pinned source revision. This vendor step happens by an
-  explicit sync script, never by <code>pip install</code> during <code>latexmk</code>.</li>
+<li><strong>Data repo</strong>: owns the Lean package, live axiom gate, receipt, and public
+  statement ledger.</li>
+<li><strong>Simulator repo</strong>: owns reusable Python simulation and coefficient logic;
+  it does not own the Lean source.</li>
+<li><strong>Manuscript repo</strong>: vendors an exact snapshot of the Lean subtree with a
+  pinned source revision. The vendor step is explicit and never runs during
+  <code>latexmk</code>.</li>
 <li><strong>No compile-time fetch</strong>: Overleaf/arXiv/journal builds read only vendored
   files and vendored figures.</li>
 </ul>
-<p>Rejected alternatives:</p>
+<p>Rejected alternatives after the final decision:</p>
 <ul>
-<li><strong>(b)</strong> would make the public data repo simultaneously the mutable code home
-  and immutable evidence home; those roles want different branching and release
-  rhythms.</li>
+<li><strong>(a)</strong> would put formal-proof governance under the simulator repository even
+  though the proof is a paper evidence artifact and Le requested direct control
+  of its public lifecycle.</li>
 <li><strong>(c)</strong> increases operational complexity for little gain and is hostile to the
   offline manuscript build requirement.</li>
 </ul>
@@ -1092,18 +1144,17 @@ from the machine-readable ledger generator rather than hand-maintained prose.</p
 </ol>
 <p>This is operational repair, not scientific redesign.</p>
 <h3 id="phase-m1-canonical-home-extraction">Phase M1 — canonical-home extraction<a class="headerlink" href="#phase-m1-canonical-home-extraction" title="Permanent link">&para;</a></h3>
-<p>Move the Paper III verification logic from the manuscript repo into the chosen
-canonical home (<code>Chemotaxis_simulation/verification/paper3/</code>).</p>
+<p>Move the Paper III Lean package from the manuscript repo into the chosen
+canonical home (<code>Chemataxis_Numerics/verification/paper3/lean/</code>).</p>
 <p>Targets:</p>
 <ul>
-<li>closed-form coefficient package now living under
-  <code>codes/chemotaxis_symbolic/</code>;</li>
-<li><code>verify_paper3_quadratic_abc.py</code>;</li>
-<li>stationary validator driver and case definitions;</li>
-<li>Lean file <code>Paper3QuadraticABC.lean</code>.</li>
+<li>every receipt-backed <code>Paper3*.lean</code> module;</li>
+<li><code>AxiomCheck.lean</code>, the pinned Lake build files, and the receipt verifier;</li>
+<li><code>lean-receipt.json</code> and the public statement-coverage ledger.</li>
 </ul>
-<p>The manuscript repo becomes a vendor consumer, not the primary authoring home
-for these files.</p>
+<p>The simulator remains canonical for Python coefficient and numerical logic.
+The manuscript repo becomes a vendor consumer of the Lean package, not its
+primary authoring home.</p>
 <h3 id="phase-m2-run-card-layer">Phase M2 — run-card layer<a class="headerlink" href="#phase-m2-run-card-layer" title="Permanent link">&para;</a></h3>
 <p>Add run cards for all currently curated Paper III evidence and for all
 provenance-only archives. During this phase, do <strong>not</strong> relabel folders yet;
@@ -1195,14 +1246,14 @@ is forbidden at compile time.</p>
 <li>How prominently should <code>provenance_only</code> historical mislabels be explained to
    readers versus left to the audit ledger?</li>
 </ol>
-<h3 id="le-layout-and-canonical-home-decision-answered-2026-08-08">Le (layout and canonical-home decision) — ANSWERED 2026-08-08<a class="headerlink" href="#le-layout-and-canonical-home-decision-answered-2026-08-08" title="Permanent link">&para;</a></h3>
+<h3 id="le-layout-and-canonical-home-decision-final-answer-2026-08-09">Le (layout and canonical-home decision) — FINAL ANSWER 2026-08-09<a class="headerlink" href="#le-layout-and-canonical-home-decision-final-answer-2026-08-09" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Approve or reject the recommendation that the simulator repo, not the data
    repo, becomes canonical for executable verification logic.
-   <strong>ANSWERED: approved.</strong> <code>Chemotaxis_simulation</code> is the canonical home for
-   executable Paper III verification logic. This implies retiring the stale
-   duplicate validator in favour of the extended <code>--case-file</code> version, which
-   is prerequisite work for the heavy CI tier (see the status note below).</li>
+   <strong>SUPERSEDED.</strong> Le's final instruction is that
+   <code>chenle02/Chemataxis_Numerics</code> is the canonical home for the Lean
+   verification. <code>Chemotaxis_simulation</code> remains canonical for reusable Python
+   simulator and coefficient logic.</li>
 <li>Decide whether <code>docs/design/</code> remains internal design history or is linked in
    site navigation as public project-method documentation.
    <strong>ANSWERED: stays internal.</strong> It remains in the repository and readable by
@@ -1240,7 +1291,7 @@ claim.</p>
 </tr>
 <tr>
 <td>T3 Lean proof</td>
-<td><strong>Proven</strong> in the manuscript repo (<code>codes/lean/Paper3Regime.lean</code>); <code>alpha_n0 &gt; 0</code> is the fact the label gate rests on</td>
+<td><strong>Publication in progress</strong> — 167 receipt-backed theorems are being imported into <code>verification/paper3/lean/</code> with a complete statement ledger</td>
 </tr>
 <tr>
 <td>§3.2 <code>verify-heavy.yml</code></td>
@@ -1248,7 +1299,7 @@ claim.</p>
 </tr>
 <tr>
 <td>§3.3 <code>verify-lean.yml</code></td>
-<td><strong>Blocked</strong>: the Lean sources are in the private manuscript repo, so a workflow here would build nothing</td>
+<td><strong>In progress</strong>: the canonical package and live axiom/receipt gates are being added together</td>
 </tr>
 </tbody>
 </table>
@@ -1289,7 +1340,7 @@ than an absent one, because it reads as coverage.</p>
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      &copy; 2026 Le Chen, Ian Ruau, and Wenxian Shen · Numerical material licensed under CC BY 4.0
+      &copy; 2026 Le Chen, Ian Ruau, and Wenxian Shen · Numerical material and documentation CC BY 4.0 · Formal-verification code MIT
     </div>
   
   

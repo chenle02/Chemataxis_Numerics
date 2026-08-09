@@ -1,7 +1,9 @@
 # Repository Guidelines (Chemataxis\_Numerics)
 
-This repository is a public, GitHub-Pages-facing home for **numerical outputs** (images/videos) accompanying our chemotaxis papers.
-It is intentionally separate from the manuscript + code repo.
+This repository is the public, GitHub-Pages-facing evidence home for our
+chemotaxis papers. It contains curated **numerical outputs** and the canonical
+Paper III **Lean formal verification**. It remains separate from the manuscript
+repository and from the reusable Python simulator.
 
 ## GitHub Pages
 
@@ -37,7 +39,27 @@ Each meaningful results folder should include:
   - `git lfs track "*.mp4" "*.mov" "*.webm"`
   - commit the resulting `.gitattributes`
 
+## Formal Verification
+
+- Canonical Paper III proof source: `verification/paper3/lean/`.
+- Reader-facing statement ledger: `docs/lean-verification.md`.
+- The root CC BY 4.0 license covers documentation and numerical material; the
+  formal-verification subtree has its own MIT license at
+  `verification/LICENSE`.
+- Every Lean-source change must update the live axiom audit and
+  `lean-receipt.json`, preserve the pinned toolchain and dependency manifest,
+  and keep the statement ledger at the exact proved claim boundary.
+- Run Lean on Home-Dell for receipt-grade local builds. The path-triggered
+  GitHub workflow may also build the public package on an isolated cloud
+  runner.
+- The manuscript repository may vendor an exact hash-pinned snapshot, but it
+  is not a second canonical source. After publication, proof changes originate
+  here and are synchronized outward explicitly.
+
 ## What Belongs Here vs. the Code Repo
 
-- Put **run scripts, YAML configs, raw logs, and reproducibility notes** in the manuscript/code repo.
+- Put reusable Python simulation logic in `Chemotaxis_simulation` and
+  paper-specific analysis scripts in the manuscript repository.
+- Put repository-local validators in `scripts/` and canonical formal proof
+  source in `verification/`.
 - Put **curated outputs** (selected images/videos + per-folder `README.md` + `fancy.html`) in this public repo.

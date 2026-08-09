@@ -1,0 +1,883 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Reader-facing numerical companion, formal-verification source, and public data archive for Paper III on bifurcation in chemotaxis models with signal-dependent sensitivity.">
+      
+      
+        <meta name="author" content="Le Chen, Ian Ruau, and Wenxian Shen">
+      
+      
+        <link rel="canonical" href="https://chenle02.github.io/Chemataxis_Numerics/lean-verification/">
+      
+      
+        <link rel="prev" href="../results/">
+      
+      
+        <link rel="next" href="../lean-reproduce/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Lean verification - Chemotaxis Models III · Bifurcation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#paper-iii-lean-verification" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Chemotaxis Models III · Bifurcation" class="md-header__button md-logo" aria-label="Chemotaxis Models III · Bifurcation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Chemotaxis Models III · Bifurcation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Lean verification
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/chenle02/Chemataxis_Numerics" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    chenle02/Chemataxis_Numerics
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Chemotaxis Models III · Bifurcation" class="md-nav__button md-logo" aria-label="Chemotaxis Models III · Bifurcation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Chemotaxis Models III · Bifurcation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/chenle02/Chemataxis_Numerics" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    chenle02/Chemataxis_Numerics
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paper-iii/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Paper III
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../results/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Results
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Lean verification
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lean verification
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#verified-statements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verified statements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partially-verified-named-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      Partially verified named results
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#not-formalized" class="md-nav__link">
+    <span class="md-ellipsis">
+      Not formalized
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#residual-trust-boundary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Residual trust boundary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lean-reproduce/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Re-run Lean proof
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reproduce/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Reproduce
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data & provenance
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../diagnostics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Diagnostics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cite
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#verified-statements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verified statements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partially-verified-named-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      Partially verified named results
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#not-formalized" class="md-nav__link">
+    <span class="md-ellipsis">
+      Not formalized
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#residual-trust-boundary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Residual trust boundary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="paper-iii-lean-verification">Paper III Lean verification<a class="headerlink" href="#paper-iii-lean-verification" title="Permanent link">&para;</a></h1>
+<p>The canonical package in
+<a href="https://github.com/chenle02/Chemataxis_Numerics/tree/master/verification/paper3/lean"><code>verification/paper3/lean/</code></a>
+contains 167 receipt-backed Lean declarations. A pristine Home-Dell rebuild
+completed 8,696 jobs under Lean <code>v4.32.2</code> and mathlib revision
+<code>905b95818eb32af7874a58b427f50c1711a5e96c</code>. The live axiom audit accepts only
+<code>propext</code>, <code>Classical.choice</code>, and <code>Quot.sound</code>; it rejects <code>sorryAx</code>.</p>
+<p>This page separates three statuses:</p>
+<ul>
+<li><strong>Verified</strong> means the stated finite, algebraic, or modewise claim is proved
+  in Lean, included in <code>AxiomCheck.lean</code>, and bound by the receipt.</li>
+<li><strong>Partially verified</strong> means a named analytical result has a specified
+  algebraic core proved, but the full PDE or functional-analytic assertion is
+  not formalized.</li>
+<li><strong>Not formalized</strong> means no Lean proof is claimed. This does not mean the
+  manuscript statement is false.</li>
+</ul>
+<h2 id="verified-statements">Verified statements<a class="headerlink" href="#verified-statements" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Manuscript statement</th>
+<th>Receipt-backed Lean evidence</th>
+<th>Exact boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Positive equilibrium, equation (1.4), p. 4, label <code>E:equilibrium</code></td>
+<td><code>Paper3Thresholds.equilibriumU_pos</code>, <code>equilibriumV_pos</code>, <code>equilibrium_logistic_residual</code>, <code>equilibrium_signal_residual</code></td>
+<td>Positivity and both constant steady-state residual identities.</td>
+</tr>
+<tr>
+<td>Linear cosine modes and growth rate, equations (1.5)--(1.7), p. 5, labels <code>E:main-linear-PE1</code>, <code>E:sigma_n</code>, <code>E:main-linear-PE2</code>; Lemma 2.2, p. 11, label <code>L:eigenvalues</code></td>
+<td><code>Paper3Eigenmodes.hasDerivAt_mode</code>, <code>second_deriv_mode</code>, <code>mode_neumann_boundary</code>, <code>coupled_mode_substitution</code>, <code>cosine_mode_linearized_residuals</code></td>
+<td>Each concrete Neumann cosine eigenpair and its coupled <code>u</code>/<code>v</code> substitution are proved. No stronger operator-spectrum completeness claim is added.</td>
+</tr>
+<tr>
+<td>Modal threshold and lower bound, equations (1.8)--(1.9), p. 5, labels <code>E:chi-star</code>, <code>E:chi-star-lower</code></td>
+<td><code>Paper3Thresholds.modeFactor_lower_bound</code>, <code>modeFactor_eq_lower_bound</code>, <code>modeFactor_zero_isGLB</code>, <code>modeThreshold_lower_bound</code>, <code>isMinMode_beta_iff</code>, <code>modeThreshold_succ_tendsto_atTop</code>, <code>exists_minimizing_positive_mode</code></td>
+<td>Sharp pointwise bound, equality for <code>a*alpha&gt;0</code>, the minimal <code>a=0</code> greatest-lower-bound endpoint, positivity, divergence, discrete attainment, and beta-independent minimizers.</td>
+</tr>
+<tr>
+<td>Positivity and beta monotonicity of the crossing coefficient, equations (1.13), p. 7, and (4.2), p. 31, labels <code>E:alpha-beta-defs</code>, <code>E:alpha_n0-minimal</code></td>
+<td><code>Paper3Model.alphaN0_pos</code>, <code>alphaN0_strictAnti</code>, <code>alphaN0_pos_minimal</code>, <code>c2_pos_iff_betaN0_pos</code>, <code>c2_neg_iff_betaN0_neg</code></td>
+<td>Both model classes under primitive parameter positivity; the sign of <code>c2</code> follows from the sign of <code>beta_n0</code>.</td>
+</tr>
+<tr>
+<td>Bilinear and trilinear cosine integrals, Lemma 2.3, p. 11, label <code>L:trig-integrals</code></td>
+<td><code>Paper3TrigFinite.integral_range_bilinear_nat</code>, <code>integral_range_trilinear_nat</code>; <code>Paper3TrigInfinite.integral_cosineSeries_bilinear</code>, <code>integral_cosineSeries_trilinear</code></td>
+<td>Both finite and <code>ell^1</code> displays, all three/seven index families, constant-mode corrections, absolute summability, and integral/series interchanges.</td>
+</tr>
+<tr>
+<td>Scalar Taylor coefficients, equations (3.2)--(3.3), pp. 13--14, labels <code>E:local-bifurcation-eq2</code>, <code>E:local-bifurcation-eq3</code></td>
+<td><code>Paper3Taylor.sensitivity_weight_derivatives</code>, <code>mobility_density_derivatives</code>, <code>signal_derivatives</code>, <code>logistic_derivatives</code>, <code>taylor_factorial_normalization</code></td>
+<td>Scalar derivatives and factorial coefficients through cubic order; not the function-valued remainder estimates.</td>
+</tr>
+<tr>
+<td>Positive-mode elliptic solve, equation (3.9), p. 16, label <code>E:vk=uk</code></td>
+<td><code>Paper3ModalEquation.bilinearMain_self_eq</code>, <code>trilinearMain_self_eq</code>, <code>elliptic_mode_solution</code>, <code>elliptic_mode_denominator_ne_zero</code></td>
+<td>Exact three/seven-family coefficient sums and the denominator-aware projected solve.</td>
+</tr>
+<tr>
+<td>Projected modal ODE coefficients, equations (3.14a)--(3.15), pp. 20--21, labels <code>E:mode-ode-u0</code>, <code>E:mode-ode-uk</code>, <code>E:Fk-def</code></td>
+<td><code>Paper3ModalODE.average_mode_quadratic_projection</code>, <code>positive_mode_quadratic_projection</code>, <code>positive_mode_cubic_projection</code>, <code>chemotactic_quotient_cancels_of_pos</code></td>
+<td>Exact zero-mode square collection, normalized <code>-q2/4</code> and <code>-q3/24</code> positive-mode coefficients, and cancellation of positive sensitivity.</td>
+</tr>
+<tr>
+<td>Quadratic center-graph coefficients, equations (3.21), (3.26a)--(3.26b), pp. 23--24, labels <code>E:a_0,i</code>, <code>E:a_k,i-zero</code>, <code>E:a_k,i&gt;0</code>; minimal equations (4.9a)--(4.9b), p. 33</td>
+<td><code>Paper3CenterJet.coefficients_of_quadratic_jet_residual</code>, <code>nonminimal_constant_mode_coefficients</code>, <code>nonminimal_second_mode_coefficients</code>, <code>minimal_second_mode_coefficients</code>, <code>nonminimal_p2_invariance_solution</code>, <code>minimal_p2_invariance_solution</code></td>
+<td>Finite jet residual extraction and nonzero spectral-denominator wrappers; not analytic center-manifold existence.</td>
+</tr>
+<tr>
+<td>Quadratic forcing and compact cubic chemotactic projection, equations (3.25), (3.29), p. 24, labels <code>E:Gamma2n0-explicit</code>, <code>E:Gamma-n0-explicit</code>; minimal equations (4.8), p. 32, and (4.11), p. 33</td>
+<td><code>Paper3QuadraticProjection.normalized_second_mode_projection</code>, <code>nonminimal_chiGamma2_eq_affine</code>, <code>minimal_chiGamma2_eq_affine</code>; <code>Paper3CubicProjection.normalized_critical_projection</code>, <code>nonminimal_Gamma3_eq_projected_compact</code>, <code>minimal_Gamma3_eq_projected_compact</code></td>
+<td>Independent finite harmonic projections and bridges to both raw model definitions.</td>
+</tr>
+<tr>
+<td>Logistic harmonic and reduced cubic assembly, equations (3.27), (3.31), pp. 24--25, labels <code>E:S2S3-center</code>, <code>E:beta-n0</code>; minimal equation (4.13), p. 33, label <code>E:beta-n0-minimal</code></td>
+<td><code>Paper3ReducedAssembly.normalized_quadratic_logistic_projection</code>, <code>normalized_cubic_logistic_projection</code>, <code>nonminimal_betaRaw_eq_projected_channels</code>, <code>minimal_betaRaw_eq_projected_channel</code></td>
+<td>Exact finite assembly of the projected logistic and chemotactic channels.</td>
+</tr>
+<tr>
+<td>Quadratic dependence on beta, equation (3.32), p. 26, label <code>E:beta-quadratic</code>, and minimal equation (4.13), p. 33</td>
+<td><code>Paper3QuadraticABC.beta_quadratic</code>, <code>Paper3MinimalABC.betaMin_quadratic</code>, <code>Paper3QuadraticABC.regime_classification</code></td>
+<td>Exact <code>A*beta^2+B*beta+C</code> identities. Regime classification is conditional on <code>A&lt;0&lt;C</code> and a supplied positive root; concrete parameter signs remain T2 evidence.</td>
+</tr>
+<tr>
+<td>Cubic scalar normal-form conclusions, equations (3.30), p. 25, and (4.12), p. 33, labels <code>E:center-ODE-final</code>, <code>E:center-ODE-final-minimal</code></td>
+<td><code>Paper3NormalForm.nonzero_equilibrium_branch_side</code>, <code>branch_amplitudes</code>, <code>nonzero_equilibrium_eq_branch</code>, <code>deriv_at_nonzero_equilibrium</code>, <code>supercritical_deriv_neg</code>, <code>subcritical_deriv_pos</code></td>
+<td>Exact cubic branch side, two leading roots, uniqueness among nonzero roots, and scalar derivative signs. Remainder perturbation and PDE lifting are excluded.</td>
+</tr>
+<tr>
+<td>Fixed-mode semidiscrete consistency, Proposition 1.3, p. 9, label <code>P:semidiscrete-threshold</code>; equations (6.2)--(6.3), p. 37, labels <code>E:disc-eigenvalues</code>, <code>E:disc-threshold</code></td>
+<td><code>Paper3Semidiscrete.discLam_eq_continuum_mul_sinc_sq</code>, <code>discLam_tendsto_continuum</code>, <code>modeThreshold_disc_tendsto</code></td>
+<td>Exact discrete-eigenvalue identity and convergence of each fixed positive mode and its threshold.</td>
+</tr>
+<tr>
+<td>Discrete/continuum ordering and minimal-model mesh minimum, pp. 37 and 41</td>
+<td><code>Paper3DiscreteOrdering.discLam_lt_continuum</code>, <code>modeFactor_lt_of_turning_le</code>, <code>modeFactor_lt_of_le_turning</code>; <code>Paper3Semidiscrete.minimalDiscThreshold_isLeast</code>, <code>minimalDiscThreshold_tendsto</code></td>
+<td>Strict represented-mode eigenvalue underestimate, both threshold-map ordering regimes, exact mode-one minimum in the minimal model, and convergence of those minima.</td>
+</tr>
+<tr>
+<td>Conservative trapezoidal mass, equation (6.6), p. 41, label <code>E:main-DIS-conservative</code>, and the following unnumbered assertion</td>
+<td><code>Paper3ConservativeMass.flux_difference_telescope</code>, <code>conservative_flux_mass_rate_zero</code>, <code>conservative_scheme_preserves_trapezoidal_mass</code></td>
+<td>For arbitrary face fluxes and node rates satisfying (6.6), the half-weighted endpoints and all interior differences cancel exactly. Trajectory existence/differentiability is not asserted.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="partially-verified-named-results">Partially verified named results<a class="headerlink" href="#partially-verified-named-results" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Named result</th>
+<th>What Lean verifies</th>
+<th>What remains outside the proof package</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Proposition 1.2, p. 5, label <code>P:review-prop-2</code></td>
+<td><code>Paper3LinearRegime</code> proves every represented positive-mode growth rate is negative below, zero at, and positive above its modal threshold.</td>
+<td>Full semigroup stability/instability and nonlinear PDE consequences.</td>
+</tr>
+<tr>
+<td>Theorem 1.1, p. 7, label <code>T:local-bifurcation-1</code></td>
+<td>Non-minimal Taylor coefficients, modal projections, center-jet coefficients, cubic assembly, branch side, leading amplitudes, and scalar stability signs.</td>
+<td>Existence of PDE branches, local uniqueness, Hadamard/implicit-function arguments, remainder control, elliptic regularity, and stability lifting to the PDE.</td>
+</tr>
+<tr>
+<td>Theorem 1.2, p. 8, label <code>T:local-bifurcation-2</code></td>
+<td>The analogous fixed-mass minimal-model finite jet, coefficient assembly, branch side, leading amplitudes, and scalar signs.</td>
+<td>Center-manifold existence in the fixed-mass phase space, PDE branch existence/uniqueness, remainder control, and PDE stability lifting.</td>
+</tr>
+<tr>
+<td>Center-manifold calculations in Sections 3--4</td>
+<td>Independent finite invariance residuals and harmonic projections recover the displayed graph and cubic coefficients.</td>
+<td>Existence, smoothness, and invariance of the analytic center manifold itself.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="not-formalized">Not formalized<a class="headerlink" href="#not-formalized" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Manuscript statement</th>
+<th>Why it is not claimed as Lean-verified</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Proposition 1.1, p. 4, label <code>P:review-prop-1</code></td>
+<td>PDE well-posedness and global existence require a substantial parabolic/elliptic estimates library; this paper only reviews the result.</td>
+</tr>
+<tr>
+<td>Lemma 2.1, p. 10, label <code>L:center-manifold-reduction</code></td>
+<td>The general sectorial-operator center-manifold theorem, analytic semigroups, and local semiflow machinery are outside this finite verification package.</td>
+</tr>
+<tr>
+<td>Full Theorems 1.1 and 1.2, pp. 7--8</td>
+<td>Their finite algebraic cores are listed above, but the complete functional-analytic bifurcation and PDE stability arguments are not formalized.</td>
+</tr>
+<tr>
+<td>Theorem 1.3, p. 9, label <code>T:global-bifurcation</code></td>
+<td>Unilateral global continuation requires infinite-dimensional topology, compactness, and global bifurcation machinery not developed here.</td>
+</tr>
+<tr>
+<td>Full Proposition 1.2, p. 5</td>
+<td>Only the exact modewise sign algebra is formalized; semigroup-level stability is not.</td>
+</tr>
+<tr>
+<td>Numerical figures, tables, fitted slopes, residual measurements, and mesh observations</td>
+<td>These are empirical T1/T2 artifacts checked by numerical validators and manifests. Lean does not turn floating-point measurements into analytical PDE theorems.</td>
+</tr>
+<tr>
+<td>Function-valued Taylor remainder estimates and root perturbation by remainders</td>
+<td>Lean checks scalar derivatives and the exact cubic polynomial, not the Banach-space remainder bounds, Hadamard lemma, or implicit-function step.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="residual-trust-boundary">Residual trust boundary<a class="headerlink" href="#residual-trust-boundary" title="Permanent link">&para;</a></h2>
+<p>Lean checks consequences of the formal definitions. The primitive model
+parameters and initial scalar/modal formulas are a transcription of the
+manuscript, so fidelity of that initial transcription remains a human-reviewed
+seam. The package reduces that seam by independently deriving the finite
+harmonic projections, invariance-residual solutions, and reduced coefficient
+assembly instead of merely restating the final formulas.</p>
+<p>The receipt records source hashes, the toolchain, all dependency revisions,
+and the live axiom result. See the
+<a href="https://github.com/chenle02/Chemataxis_Numerics/blob/master/verification/paper3/lean/README.md"><code>lean/README.md</code></a>
+for rebuild instructions and detailed theorem mapping.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2026 Le Chen, Ian Ruau, and Wenxian Shen · Numerical material and documentation CC BY 4.0 · Formal-verification code MIT
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.sections", "navigation.top", "content.code.copy", "content.tooltips", "search.highlight", "search.share"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+        <script src="../assets/javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

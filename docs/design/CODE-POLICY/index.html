@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Reader-facing numerical companion and public data archive for Paper III on bifurcation in chemotaxis models with signal-dependent sensitivity.">
+        <meta name="description" content="Reader-facing numerical companion, formal-verification source, and public data archive for Paper III on bifurcation in chemotaxis models with signal-dependent sensitivity.">
       
       
         <meta name="author" content="Le Chen, Ian Ruau, and Wenxian Shen">
@@ -329,6 +329,50 @@
   
   
     <li class="md-nav__item">
+      <a href="../../lean-verification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lean verification
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lean-reproduce/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Re-run Lean proof
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../reproduce/" class="md-nav__link">
         
   
@@ -531,6 +575,11 @@ number, and nobody can review the method.</p>
 <td>Does CI here need to run it?</td>
 </tr>
 <tr>
+<td>Formal proof source for claims certified by this companion</td>
+<td>this repo, <code>verification/</code></td>
+<td>Is it a proof-grade certificate rather than a simulator feature?</td>
+</tr>
+<tr>
 <td>Paper-specific analysis, one-off waves, figure generation</td>
 <td>manuscript repo, <code>codes/</code></td>
 <td>Is it meaningful only for this paper?</td>
@@ -540,11 +589,18 @@ number, and nobody can review the method.</p>
 <p>A checker that validates <strong>this</strong> repository's artifacts belongs <strong>here</strong>, so
 that this repository's CI can run it without depending on a private repository.
 That is why <code>audit_archived_constants.py</code> was moved here on 2026-08-09.</p>
+<p>The owner selected one narrow exception to the repository's original
+outputs-only role on 2026-08-09: Paper III's Lean package is canonical here.
+It lives in a separately licensed <code>verification/</code> subtree, has path-triggered
+CI, and is presented as formal evidence rather than simulation software.</p>
 <h2 id="single-source-of-truth">Single source of truth<a class="headerlink" href="#single-source-of-truth" title="Permanent link">&para;</a></h2>
 <p>Do not copy a module between repositories. A copy diverges silently, and the
 divergence is invisible until something built on the stale copy is published —
 which is precisely the failure this project already paid for once, with cached
 <code>beta_n0</code> values.</p>
+<p>The manuscript's Lean directory is a vendored snapshot, not an independent
+module. Its receipt and source hashes must match a named commit here; edits are
+made here first once the canonical import has landed.</p>
 <p><strong>Known outstanding violation:</strong> <code>stationary_branch_validation.py</code> exists in
 both <code>Chemotaxis_simulation</code> (1404 lines) and the manuscript repo
 (1459 lines), diverging by ~118 lines; the manuscript copy is ahead. This is
@@ -609,7 +665,7 @@ them:</p>
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      &copy; 2026 Le Chen, Ian Ruau, and Wenxian Shen · Numerical material licensed under CC BY 4.0
+      &copy; 2026 Le Chen, Ian Ruau, and Wenxian Shen · Numerical material and documentation CC BY 4.0 · Formal-verification code MIT
     </div>
   
   

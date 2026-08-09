@@ -1,21 +1,24 @@
-# Chemotaxis Models III · Numerical companion
+# Chemotaxis Models III · Evidence companion
 
 [![Companion site](https://img.shields.io/badge/companion%20site-open-165a72?logo=githubpages)](https://chenle02.github.io/Chemataxis_Numerics/)
 [![Verify evidence](https://github.com/chenle02/Chemataxis_Numerics/actions/workflows/verify.yml/badge.svg)](https://github.com/chenle02/Chemataxis_Numerics/actions/workflows/verify.yml)
+[![Verify Lean proof](https://github.com/chenle02/Chemataxis_Numerics/actions/workflows/verify-lean.yml/badge.svg)](https://github.com/chenle02/Chemataxis_Numerics/actions/workflows/verify-lean.yml)
 [![Deploy Pages](https://github.com/chenle02/Chemataxis_Numerics/actions/workflows/pages.yml/badge.svg)](https://github.com/chenle02/Chemataxis_Numerics/actions/workflows/pages.yml)
 [![Release 1.0.0](https://img.shields.io/badge/data-v1.0.0-253b80)](CHANGELOG.md)
 [![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-d97706.svg)](LICENSE)
+[![Lean code: MIT](https://img.shields.io/badge/Lean%20code-MIT-6b7280.svg)](verification/LICENSE)
 
-The public numerical companion to *Chemotaxis models with signal-dependent
+The public numerical and formal-verification companion to *Chemotaxis models with signal-dependent
 sensitivity and a logistic-type source. III: Bifurcation* by Le Chen, Ian
 Ruau, and Wenxian Shen.
 
-Release 1.0.0 mirrors the manuscript's numerical evidence at two complementary
+Release 1.0.0 freezes the manuscript's numerical evidence at two complementary
 levels: stationary continuation checks the local branch coefficient in four
 parameter regimes, while two time-integration figures illustrate selected
 near-threshold semidiscrete dynamics. Historical runs that failed the final
 coefficient or conservation audit remain in Git for provenance, but are not
-part of the reader-facing evidence.
+part of the reader-facing evidence. The separately versioned T3 layer supplies
+the canonical Lean proof source and its own reproducibility receipt.
 
 ## Evidence ledger
 
@@ -23,6 +26,7 @@ part of the reader-facing evidence.
 | --- | ---: | --- | --- |
 | Amplitude-constrained stationary continuation | 4 | `N=40,80,160`; 96 states; 780/780 gates; second-order coefficient convergence | Validated current |
 | Near-threshold time integration | 2 | Quasi-linear and nonlinear-mobility manuscript figure families | Validated current |
+| Lean formal verification | 167 declarations | 26 receipt-bound files; pinned Lean/mathlib; live axiom audit | Proof-grade T3 |
 | Earlier fixed-mass and coefficient-seeded runs | 4 families | Retained only to document superseded calculations | Provenance only |
 
 The stationary cases cover both branch directions in both model classes:
@@ -45,6 +49,18 @@ The contract validator uses only the Python standard library:
 python scripts/validate_paper3_manifest.py
 (cd docs/results/paper-iii/stationary-continuation/v1 && sha256sum --check SHA256SUMS)
 ```
+
+To rebuild the formal proof without downloading the large numerical archive,
+follow the [novice Lean guide](docs/lean-reproduce.md). From an existing clone,
+the short route is:
+
+```bash
+bash verification/paper3/verify.sh
+```
+
+The [statement coverage ledger](docs/lean-verification.md) lists exactly what
+is verified, partially verified, and not formalized, with the reason for every
+boundary.
 
 Reproduce the stationary validation from the exact simulator revision:
 
@@ -93,12 +109,15 @@ The complete historical result tree remains under `docs/results/`. Folder
 names are stable provenance identifiers, not evidence classifications. Only
 the curated site and versioned manifest define the current Paper III contract.
 
-Simulation code is maintained separately in
+Reusable simulation code is maintained separately in
 [`ianruau/Chemotaxis_simulation`](https://github.com/ianruau/Chemotaxis_simulation).
+The canonical Lean proof source is maintained in
+[`verification/paper3/lean/`](verification/paper3/lean/).
 
 ## Citation and license
 
 Use the repository's [`CITATION.cff`](CITATION.cff), cite version 1.0.0 and the
 exact Git revision used, and cite the associated Paper III manuscript. The
 documentation and published numerical material are licensed under
-[CC BY 4.0](LICENSE).
+[CC BY 4.0](LICENSE). Formal-verification code under `verification/` is
+licensed separately under the [MIT License](verification/LICENSE).

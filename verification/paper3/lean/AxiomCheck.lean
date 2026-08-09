@@ -1,0 +1,190 @@
+import Paper3Regime
+import Paper3TrigOrtho
+import Paper3Model
+import Paper3MinimalABC
+import Paper3Semidiscrete
+import Paper3Eigenmodes
+import Paper3CenterJet
+import Paper3CubicProjection
+import Paper3QuadraticProjection
+import Paper3ReducedAssembly
+import Paper3TrigFinite
+import Paper3TrigInfinite
+import Paper3Thresholds
+import Paper3DiscreteOrdering
+import Paper3Taylor
+import Paper3NormalForm
+import Paper3ModalEquation
+import Paper3ModalODE
+import Paper3LinearRegime
+import Paper3ConservativeMass
+
+open Paper3QuadraticABC
+
+#print axioms Paper3QuadraticABC.alphaN0_pos
+#print axioms Paper3QuadraticABC.alphaN0_strictAnti
+#print axioms Paper3QuadraticABC.quadratic_factor_of_root
+#print axioms Paper3QuadraticABC.cofactor_neg
+#print axioms Paper3QuadraticABC.regime_classification
+#print axioms Paper3QuadraticABC.c2_pos_iff_betaN0_pos
+#print axioms Paper3QuadraticABC.c2_neg_iff_betaN0_neg
+#print axioms Paper3QuadraticABC.beta_quadratic
+#print axioms Paper3TrigOrtho.integral_cos_linear
+#print axioms Paper3TrigOrtho.integral_cos_mode_int
+#print axioms Paper3TrigOrtho.integral_mode_mul_mode
+#print axioms Paper3Model.kap_pos
+#print axioms Paper3Model.one_lt_w
+#print axioms Paper3Model.alphaN0_pos
+#print axioms Paper3Model.alphaN0_strictAnti
+#print axioms Paper3Model.c2_pos_iff_betaN0_pos
+#print axioms Paper3Model.c2_neg_iff_betaN0_neg
+#print axioms Paper3Model.us_pos_of_nonminimal
+#print axioms Paper3Model.alphaN0_ofParams
+#print axioms Paper3Model.alphaN0_pos_minimal
+#print axioms Paper3MinimalABC.betaMin_quadratic
+#print axioms Paper3TrigOrtho.modeZ_natCast
+#print axioms Paper3TrigOrtho.integral_triple_modeZ
+#print axioms Paper3TrigOrtho.integral_finset_bilinear
+#print axioms Paper3Semidiscrete.discLam_eq_continuum_mul_sinc_sq
+#print axioms Paper3Semidiscrete.discArg_tendsto_zero
+#print axioms Paper3Semidiscrete.discLam_tendsto_continuum
+#print axioms Paper3Semidiscrete.modeThreshold_disc_tendsto
+#print axioms Paper3Semidiscrete.discArg_mem_Icc
+#print axioms Paper3Semidiscrete.discArg_one_le
+#print axioms Paper3Semidiscrete.discLam_one_le
+#print axioms Paper3Semidiscrete.minimalDiscThreshold_one_le
+#print axioms Paper3Semidiscrete.minimalDiscThreshold_isLeast
+#print axioms Paper3Semidiscrete.minimalDiscThreshold_tendsto
+#print axioms Paper3Eigenmodes.hasDerivAt_mode
+#print axioms Paper3Eigenmodes.second_deriv_mode
+#print axioms Paper3Eigenmodes.mode_neumann_boundary
+#print axioms Paper3Eigenmodes.coupled_mode_substitution
+#print axioms Paper3Eigenmodes.cosine_mode_linearized_residuals
+#print axioms Paper3CenterJet.coefficients_of_quadratic_jet_residual
+#print axioms Paper3CenterJet.nonminimal_constant_mode_coefficients
+#print axioms Paper3CenterJet.nonminimal_second_mode_coefficients
+#print axioms Paper3CenterJet.minimal_second_mode_coefficients
+#print axioms Paper3CenterJet.nonminimal_a01_residual
+#print axioms Paper3CenterJet.nonminimal_p2_invariance_solution
+#print axioms Paper3CenterJet.minimal_p2_invariance_solution
+#print axioms Paper3CenterJet.betaMin_quadratic_of_simple_mode
+#print axioms Paper3CubicProjection.cos_mul_sin_two
+#print axioms Paper3CubicProjection.cos_two_mul_sin
+#print axioms Paper3CubicProjection.mobility_quadratic_collection
+#print axioms Paper3CubicProjection.cubicFlux_decomposition
+#print axioms Paper3CubicProjection.hasDerivAt_cubicFlux
+#print axioms Paper3CubicProjection.neg_deriv_cubicFlux
+#print axioms Paper3CubicProjection.normalized_critical_projection
+#print axioms Paper3CubicProjection.nonminimal_Gamma3_eq_projected_compact
+#print axioms Paper3CubicProjection.minimal_Gamma3_eq_projected_compact
+#print axioms Paper3QuadraticProjection.quadraticFlux_decomposition
+#print axioms Paper3QuadraticProjection.hasDerivAt_quadraticFlux
+#print axioms Paper3QuadraticProjection.neg_deriv_quadraticFlux
+#print axioms Paper3QuadraticProjection.normalized_second_mode_projection
+#print axioms Paper3QuadraticProjection.nonminimal_chiGamma2_eq_affine
+#print axioms Paper3QuadraticProjection.minimal_chiGamma2_eq_affine
+#print axioms Paper3ReducedAssembly.quadraticCenterCubic_decomposition
+#print axioms Paper3ReducedAssembly.normalized_quadratic_logistic_projection
+#print axioms Paper3ReducedAssembly.cosine_cube_decomposition
+#print axioms Paper3ReducedAssembly.normalized_cubic_logistic_projection
+#print axioms Paper3ReducedAssembly.logistic_channel_collection
+#print axioms Paper3ReducedAssembly.nonminimal_betaRaw_eq_projected_channels
+#print axioms Paper3ReducedAssembly.minimal_betaRaw_eq_projected_channel
+#print axioms Paper3TrigFinite.integral_triple_mode_nat
+#print axioms Paper3TrigFinite.integral_four_modeZ
+#print axioms Paper3TrigFinite.integral_four_mode_nat
+#print axioms Paper3TrigFinite.integral_finset_bilinear_nat
+#print axioms Paper3TrigFinite.integral_finset_trilinear_nat
+#print axioms Paper3TrigFinite.sum_range_bilinear_zero_correction
+#print axioms Paper3TrigFinite.sum_range_trilinear_zero_correction
+#print axioms Paper3TrigFinite.integral_range_bilinear_nat
+#print axioms Paper3TrigFinite.integral_range_trilinear_nat
+#print axioms Paper3TrigInfinite.norm_mode_le_one
+#print axioms Paper3TrigInfinite.summable_norm_cosine_terms
+#print axioms Paper3TrigInfinite.cosineSeries_mul
+#print axioms Paper3TrigInfinite.intervalIntegral_tsum_of_summable_integral_norm
+#print axioms Paper3TrigInfinite.summable_bilinear_integral_norm
+#print axioms Paper3TrigInfinite.summable_bilinearMain
+#print axioms Paper3TrigInfinite.summable_bilinearCorrection
+#print axioms Paper3TrigInfinite.tsum_bilinearCorrection
+#print axioms Paper3TrigInfinite.integral_cosineSeries_bilinear_tsum
+#print axioms Paper3TrigInfinite.integral_cosineSeries_bilinear
+#print axioms Paper3TrigInfinite.cosineSeries_mul_three
+#print axioms Paper3TrigInfinite.summable_trilinear_integral_norm
+#print axioms Paper3TrigInfinite.summable_trilinearMain
+#print axioms Paper3TrigInfinite.summable_trilinearCorrection
+#print axioms Paper3TrigInfinite.tsum_trilinearCorrection
+#print axioms Paper3TrigInfinite.integral_cosineSeries_trilinear_tsum
+#print axioms Paper3TrigInfinite.integral_cosineSeries_trilinear
+#print axioms Paper3Thresholds.equilibriumU_rpow_alpha
+#print axioms Paper3Thresholds.equilibriumU_pos
+#print axioms Paper3Thresholds.equilibriumV_pos
+#print axioms Paper3Thresholds.equilibrium_logistic_residual
+#print axioms Paper3Thresholds.equilibrium_signal_residual
+#print axioms Paper3Thresholds.modeFactor_lower_bound
+#print axioms Paper3Thresholds.modeFactor_eq_lower_bound
+#print axioms Paper3Thresholds.modeFactor_zero_eq
+#print axioms Paper3Thresholds.modeFactor_zero_isGLB
+#print axioms Paper3Thresholds.modeThreshold_lower_bound
+#print axioms Paper3Thresholds.modeThreshold_le_iff
+#print axioms Paper3Thresholds.isMinMode_iff
+#print axioms Paper3Thresholds.thresholdPrefactor_pos
+#print axioms Paper3Thresholds.isMinMode_beta_iff
+#print axioms Paper3Thresholds.continuumLam_pos
+#print axioms Paper3Thresholds.continuumLam_succ_tendsto_atTop
+#print axioms Paper3Thresholds.lam_le_modeFactor
+#print axioms Paper3Thresholds.modeFactor_pos
+#print axioms Paper3Thresholds.modeThreshold_pos
+#print axioms Paper3Thresholds.modeThreshold_succ_tendsto_atTop
+#print axioms Paper3Thresholds.exists_global_min_of_tendsto_atTop
+#print axioms Paper3Thresholds.exists_minimizing_positive_mode
+#print axioms Paper3DiscreteOrdering.discLam_lt_continuum
+#print axioms Paper3DiscreteOrdering.discLam_pos
+#print axioms Paper3DiscreteOrdering.modeFactor_sub
+#print axioms Paper3DiscreteOrdering.modeFactor_lt_of_turning_le
+#print axioms Paper3DiscreteOrdering.modeFactor_lt_of_le_turning
+#print axioms Paper3DiscreteOrdering.disc_modeThreshold_lt_of_turning_le
+#print axioms Paper3DiscreteOrdering.continuum_modeThreshold_lt_of_le_turning
+#print axioms Paper3Taylor.rpow_first
+#print axioms Paper3Taylor.rpow_second
+#print axioms Paper3Taylor.rpow_third
+#print axioms Paper3Taylor.sensitivity_weight_derivatives
+#print axioms Paper3Taylor.mobility_density_derivatives
+#print axioms Paper3Taylor.signal_derivatives
+#print axioms Paper3Taylor.logistic_derivatives
+#print axioms Paper3Taylor.taylor_factorial_normalization
+#print axioms Paper3NormalForm.nonzero_equilibrium_sq
+#print axioms Paper3NormalForm.nonzero_equilibrium_branch_side
+#print axioms Paper3NormalForm.amplitude_sq_pos
+#print axioms Paper3NormalForm.branch_amplitudes
+#print axioms Paper3NormalForm.nonzero_equilibrium_eq_branch
+#print axioms Paper3NormalForm.deriv_normalForm
+#print axioms Paper3NormalForm.deriv_at_nonzero_equilibrium
+#print axioms Paper3NormalForm.supercritical_deriv_neg
+#print axioms Paper3NormalForm.subcritical_deriv_pos
+#print axioms Paper3ModalEquation.bilinearMain_self_eq
+#print axioms Paper3ModalEquation.trilinearMain_self_eq
+#print axioms Paper3ModalEquation.elliptic_mode_solution
+#print axioms Paper3ModalEquation.elliptic_mode_denominator_ne_zero
+#print axioms Paper3ModalODE.tsum_bilinearMain_self_eq
+#print axioms Paper3ModalODE.tsum_trilinearMain_self_eq
+#print axioms Paper3ModalODE.bilinearZeroSummand_off_diag
+#print axioms Paper3ModalODE.bilinearZeroSummand_diag
+#print axioms Paper3ModalODE.summable_square
+#print axioms Paper3ModalODE.summable_bilinearZeroSummand
+#print axioms Paper3ModalODE.bilinearIndexSum_zero_eq
+#print axioms Paper3ModalODE.square_tsum_eq_zero_add_positive
+#print axioms Paper3ModalODE.average_mode_quadratic_projection
+#print axioms Paper3ModalODE.positive_mode_quadratic_projection
+#print axioms Paper3ModalODE.positive_mode_cubic_projection
+#print axioms Paper3ModalODE.chemotactic_quotient_cancels
+#print axioms Paper3ModalODE.chemotactic_quotient_cancels_of_pos
+#print axioms Paper3LinearRegime.modalGrowth_factorization
+#print axioms Paper3LinearRegime.modalGrowth_neg_iff
+#print axioms Paper3LinearRegime.modalGrowth_pos_iff
+#print axioms Paper3LinearRegime.modalGrowth_eq_zero_iff
+#print axioms Paper3LinearRegime.all_modalGrowth_neg
+#print axioms Paper3LinearRegime.selected_modalGrowth_pos
+#print axioms Paper3ConservativeMass.flux_difference_telescope
+#print axioms Paper3ConservativeMass.conservative_flux_mass_rate_zero
+#print axioms Paper3ConservativeMass.conservative_scheme_preserves_trapezoidal_mass

@@ -20,3 +20,7 @@ site/
 # Misc
 *.tmp
 *.swp
+
+# Lean local build and audit output
+.lake/
+verification/paper3/lean/axiom-report.txt

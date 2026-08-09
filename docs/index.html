@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Reader-facing numerical companion and public data archive for Paper III on bifurcation in chemotaxis models with signal-dependent sensitivity.">
+        <meta name="description" content="Reader-facing numerical companion, formal-verification source, and public data archive for Paper III on bifurcation in chemotaxis models with signal-dependent sensitivity.">
       
       
         <meta name="author" content="Le Chen, Ian Ruau, and Wenxian Shen">
@@ -349,6 +349,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#re-run-the-proof" class="md-nav__link">
+    <span class="md-ellipsis">
+      Re-run the proof
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -415,6 +424,50 @@
   
   <span class="md-ellipsis">
     Results
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lean-verification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lean verification
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lean-reproduce/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Re-run Lean proof
     
   </span>
   
@@ -575,6 +628,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#re-run-the-proof" class="md-nav__link">
+    <span class="md-ellipsis">
+      Re-run the proof
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -620,14 +682,16 @@
 
 
 <section class="paper-hero">
-  <div class="paper-hero__eyebrow">Paper III · Reproducible numerical evidence</div>
-  <h1>Bifurcation, tested two ways</h1>
+  <div class="paper-hero__eyebrow">Paper III · Reproducible numerical and formal evidence</div>
+  <h1>Bifurcation, checked in three evidence layers</h1>
   <p class="paper-hero__lead">
-    Stationary continuation resolves the local branch direction; selected
-    time evolutions show how the semidiscrete dynamics cross the threshold.
+    Stationary continuation resolves the local branch direction, selected
+    time evolutions show semidiscrete dynamics, and Lean checks the exact
+    finite algebra and modewise identities.
   </p>
   <div class="paper-hero__actions">
     <a class="md-button md-button--primary" href="results/">Read the results</a>
+    <a class="md-button" href="lean-verification/">Inspect the Lean proof</a>
     <a class="md-button" href="reproduce/">Verify the release</a>
   </div>
   <div class="paper-hero__authors">Le Chen · Ian Ruau · Wenxian Shen · Data release 1.0.0</div>
@@ -645,7 +709,9 @@
 chemotactic sensitivity crosses a critical value. This companion makes the
 numerical part of that argument inspectable: every reader-facing figure has a
 frozen vector source, every stationary state is archived, and the release
-manifest checks the exact paper and code revisions.</p>
+manifest checks the exact paper and code revisions. A separate Lean package
+formally verifies the finite algebraic and modewise statements listed in the
+statement coverage ledger.</p>
 <div class="feature-grid">
 <article class="feature-card">
 <p><span class="feature-card__number">01</span></p>
@@ -667,6 +733,13 @@ figures.</p>
 <p>Verify 780 gates, all file digests, exact source revisions, and the immutable
 data bundle.</p>
 <p><a href="reproduce/">Reproduction guide</a></p>
+</article>
+<article class="feature-card">
+<p><span class="feature-card__number">04</span></p>
+<h3 id="re-run-the-proof">Re-run the proof<a class="headerlink" href="#re-run-the-proof" title="Permanent link">&para;</a></h3>
+<p>Build 167 Lean declarations, audit their axioms, and verify the source receipt
+with a novice-friendly guide.</p>
+<p><a href="lean-reproduce/">Lean verification guide</a></p>
 </article>
 </div>
 <h2 id="evidence-matrix">Evidence matrix<a class="headerlink" href="#evidence-matrix" title="Permanent link">&para;</a></h2>
@@ -770,7 +843,7 @@ hashes, and the four coefficient-convergence records. The
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      &copy; 2026 Le Chen, Ian Ruau, and Wenxian Shen · Numerical material licensed under CC BY 4.0
+      &copy; 2026 Le Chen, Ian Ruau, and Wenxian Shen · Numerical material and documentation CC BY 4.0 · Formal-verification code MIT
     </div>
   
   

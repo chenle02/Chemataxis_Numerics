@@ -1,0 +1,918 @@
+{
+  "dependencies": {
+    "Cli": {
+      "inputRev": "v4.32.0",
+      "rev": "88679d088c9720c27ebdf2ba4dafe17341747f94"
+    },
+    "LeanSearchClient": {
+      "inputRev": "main",
+      "rev": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843"
+    },
+    "Qq": {
+      "inputRev": "master",
+      "rev": "38d591e778f100aec9762bb582f9c7f55f50e9dc"
+    },
+    "aesop": {
+      "inputRev": "master",
+      "rev": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3"
+    },
+    "batteries": {
+      "inputRev": "main",
+      "rev": "023ce7d62a0531e22a5331e20b587817a80d49ff"
+    },
+    "importGraph": {
+      "inputRev": "main",
+      "rev": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12"
+    },
+    "mathlib": {
+      "inputRev": "v4.32.2",
+      "rev": "905b95818eb32af7874a58b427f50c1711a5e96c"
+    },
+    "plausible": {
+      "inputRev": "main",
+      "rev": "e12c1910fe855cbfc38803cd4e55543906d5fa62"
+    },
+    "proofwidgets": {
+      "inputRev": "main",
+      "rev": "6e311e2a844da9b2cc3971187df2fe0066947b93"
+    }
+  },
+  "evidence_tier": "T3",
+  "expected_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "files": {
+    "AxiomCheck.lean": "e6a576570f967087a0eb41a2d8d98d65c53a4877f75e79e1e152d8454054d021",
+    "Paper3CenterJet.lean": "44030a9a72a8e705edbf731372c5cd13ce27e2fa758e71e86447c311744b2fa9",
+    "Paper3ConservativeMass.lean": "3fd932da58121955c4221333e994c659b3880dadb5810e826d750f7aa377ae4e",
+    "Paper3CubicProjection.lean": "a8d349906548b3279b72e510d267f760e1657ceee3aa09237e62fea5acaa2580",
+    "Paper3DiscreteOrdering.lean": "613a8b96129c08eaa56f365901bc419a4a52f1dfbb6f724bf79921f44e30de0d",
+    "Paper3Eigenmodes.lean": "3e69142b73997b0b26c2a7c32b2c5b44cdec339d645dcfff99576eaf449e6373",
+    "Paper3LinearRegime.lean": "7e8f4c1798962df5b91ccd388be0a8f971fed27c4c192f5e650b793ef256b0b7",
+    "Paper3MinimalABC.lean": "badf753858d5e66d1f716e818b9e8080fc1da9a917347783711a6385e0d9778c",
+    "Paper3ModalEquation.lean": "a07d64905eebc03df97cb758e2cb2376cdd9087d777d4c67b16db5d468e317f0",
+    "Paper3ModalODE.lean": "52230ba53492c271010cb6b956a7adc403c1ee1962c31f587b41e953f3415134",
+    "Paper3Model.lean": "b68a262aae827f186e57eeeaecdac6fdcf8c3ccc1f921ac527fa47f92ec845a6",
+    "Paper3NormalForm.lean": "b06a1c7ed5f020c8656101cb7cbe399290a70c054c7dfc54eac338bb3dd46f53",
+    "Paper3QuadraticABC.lean": "67282b3a0f7dec426ac8fd116835b79a59d155a0598bb0c53ff0ef39807c93c3",
+    "Paper3QuadraticProjection.lean": "85d952f9577a9b6551e2fb85542deb77b4071769bee1248d734b8ee39da7fbac",
+    "Paper3ReducedAssembly.lean": "aaf9156c29e6457b693dcc7ae6f99ff16ccf42b39ead243c66033b0ba7143a3c",
+    "Paper3Regime.lean": "5eaa9ac114612e12c3410c9dacfac5d25c7030873fb195b52d98ecc17c5faf71",
+    "Paper3Semidiscrete.lean": "abf7e7b7002b00b10b54426152b243fac45077bf80d66b3e7678c486196d23f7",
+    "Paper3Taylor.lean": "534de228290305ea1a8100d4e4724135982b4fc77e87bfaa25502d926158b022",
+    "Paper3Thresholds.lean": "720d3200dd918434d28f90660e217960ab4a0f507605172a328d175827aaa705",
+    "Paper3TrigFinite.lean": "5264b97ba3633b12341eba6ad7dbba15568e1f8b4edd3410da59daa00a2f1e65",
+    "Paper3TrigInfinite.lean": "fa076e7fbda0e43ea842674e467d9f19996337bf03b2e9cc190c2c63afa00562",
+    "Paper3TrigOrtho.lean": "43c040c9b9a2b94954b83db61c7c88024827b2c9683ad15cda4933c2647a203b",
+    "lake-manifest.json": "0a3b9e6cf3130b351ec863467c7293ba82f29c79afd4d38bc05bffd1c4465d13",
+    "lakefile.toml": "41d3c6b707f3292690373f475a606ca06499b8f8b24570946ae2b04fa20a5988",
+    "lean-toolchain": "2bdc48adfa58d0017e538a0ad117c5d73d35deec879978f909406a80c8037273",
+    "make_receipt.py": "324949357cb9068a6d86097167544a9f0a4fb3328d77aba8f7793bff43a70e06"
+  },
+  "generated_on_date": "2026-08-09",
+  "generated_on_host": "Home-Dell",
+  "paper": "Paper III (bifurcation)",
+  "schema": "paper3-lean-receipt/1",
+  "self_containment_verified": true,
+  "theorem_count": 167,
+  "theorems": {
+    "Paper3CenterJet.betaMin_quadratic_of_simple_mode": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3CenterJet.coefficients_of_quadratic_jet_residual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3CenterJet.minimal_p2_invariance_solution": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3CenterJet.minimal_second_mode_coefficients": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3CenterJet.nonminimal_a01_residual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3CenterJet.nonminimal_constant_mode_coefficients": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3CenterJet.nonminimal_p2_invariance_solution": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3CenterJet.nonminimal_second_mode_coefficients": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3ConservativeMass.conservative_flux_mass_rate_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3ConservativeMass.conservative_scheme_preserves_trapezoidal_mass": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3ConservativeMass.flux_difference_telescope": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3CubicProjection.cos_mul_sin_two": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3CubicProjection.cos_two_mul_sin": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3CubicProjection.cubicFlux_decomposition": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3CubicProjection.hasDerivAt_cubicFlux": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3CubicProjection.minimal_Gamma3_eq_projected_compact": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3CubicProjection.mobility_quadratic_collection": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3CubicProjection.neg_deriv_cubicFlux": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3CubicProjection.nonminimal_Gamma3_eq_projected_compact": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3CubicProjection.normalized_critical_projection": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3DiscreteOrdering.continuum_modeThreshold_lt_of_le_turning": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3DiscreteOrdering.discLam_lt_continuum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3DiscreteOrdering.discLam_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3DiscreteOrdering.disc_modeThreshold_lt_of_turning_le": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3DiscreteOrdering.modeFactor_lt_of_le_turning": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3DiscreteOrdering.modeFactor_lt_of_turning_le": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3DiscreteOrdering.modeFactor_sub": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Eigenmodes.cosine_mode_linearized_residuals": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Eigenmodes.coupled_mode_substitution": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Eigenmodes.hasDerivAt_mode": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Eigenmodes.mode_neumann_boundary": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Eigenmodes.second_deriv_mode": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3LinearRegime.all_modalGrowth_neg": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3LinearRegime.modalGrowth_eq_zero_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3LinearRegime.modalGrowth_factorization": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3LinearRegime.modalGrowth_neg_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3LinearRegime.modalGrowth_pos_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3LinearRegime.selected_modalGrowth_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3MinimalABC.betaMin_quadratic": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3ModalEquation.bilinearMain_self_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3ModalEquation.elliptic_mode_denominator_ne_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3ModalEquation.elliptic_mode_solution": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3ModalEquation.trilinearMain_self_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3ModalODE.average_mode_quadratic_projection": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3ModalODE.bilinearIndexSum_zero_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3ModalODE.bilinearZeroSummand_diag": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3ModalODE.bilinearZeroSummand_off_diag": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3ModalODE.chemotactic_quotient_cancels": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3ModalODE.chemotactic_quotient_cancels_of_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3ModalODE.positive_mode_cubic_projection": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3ModalODE.positive_mode_quadratic_projection": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3ModalODE.square_tsum_eq_zero_add_positive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3ModalODE.summable_bilinearZeroSummand": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3ModalODE.summable_square": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3ModalODE.tsum_bilinearMain_self_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3ModalODE.tsum_trilinearMain_self_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Model.alphaN0_ofParams": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Model.alphaN0_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Model.alphaN0_pos_minimal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Model.alphaN0_strictAnti": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Model.c2_neg_iff_betaN0_neg": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Model.c2_pos_iff_betaN0_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Model.kap_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Model.one_lt_w": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Model.us_pos_of_nonminimal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3NormalForm.amplitude_sq_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3NormalForm.branch_amplitudes": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3NormalForm.deriv_at_nonzero_equilibrium": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3NormalForm.deriv_normalForm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3NormalForm.nonzero_equilibrium_branch_side": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3NormalForm.nonzero_equilibrium_eq_branch": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3NormalForm.nonzero_equilibrium_sq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3NormalForm.subcritical_deriv_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3NormalForm.supercritical_deriv_neg": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3QuadraticABC.alphaN0_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3QuadraticABC.alphaN0_strictAnti": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3QuadraticABC.beta_quadratic": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3QuadraticABC.c2_neg_iff_betaN0_neg": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3QuadraticABC.c2_pos_iff_betaN0_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3QuadraticABC.cofactor_neg": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3QuadraticABC.quadratic_factor_of_root": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3QuadraticABC.regime_classification": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3QuadraticProjection.hasDerivAt_quadraticFlux": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3QuadraticProjection.minimal_chiGamma2_eq_affine": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3QuadraticProjection.neg_deriv_quadraticFlux": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3QuadraticProjection.nonminimal_chiGamma2_eq_affine": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3QuadraticProjection.normalized_second_mode_projection": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3QuadraticProjection.quadraticFlux_decomposition": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3ReducedAssembly.cosine_cube_decomposition": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3ReducedAssembly.logistic_channel_collection": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3ReducedAssembly.minimal_betaRaw_eq_projected_channel": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3ReducedAssembly.nonminimal_betaRaw_eq_projected_channels": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3ReducedAssembly.normalized_cubic_logistic_projection": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3ReducedAssembly.normalized_quadratic_logistic_projection": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3ReducedAssembly.quadraticCenterCubic_decomposition": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Semidiscrete.discArg_mem_Icc": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Semidiscrete.discArg_one_le": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Semidiscrete.discArg_tendsto_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Semidiscrete.discLam_eq_continuum_mul_sinc_sq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Semidiscrete.discLam_one_le": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Semidiscrete.discLam_tendsto_continuum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Semidiscrete.minimalDiscThreshold_isLeast": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Semidiscrete.minimalDiscThreshold_one_le": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Semidiscrete.minimalDiscThreshold_tendsto": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Semidiscrete.modeThreshold_disc_tendsto": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Taylor.logistic_derivatives": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Taylor.mobility_density_derivatives": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Taylor.rpow_first": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Taylor.rpow_second": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Taylor.rpow_third": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Taylor.sensitivity_weight_derivatives": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Taylor.signal_derivatives": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Taylor.taylor_factorial_normalization": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Thresholds.continuumLam_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Thresholds.continuumLam_succ_tendsto_atTop": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Thresholds.equilibriumU_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Thresholds.equilibriumU_rpow_alpha": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Thresholds.equilibriumV_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Thresholds.equilibrium_logistic_residual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Thresholds.equilibrium_signal_residual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Thresholds.exists_global_min_of_tendsto_atTop": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Thresholds.exists_minimizing_positive_mode": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Thresholds.isMinMode_beta_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Thresholds.isMinMode_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Thresholds.lam_le_modeFactor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Thresholds.modeFactor_eq_lower_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Thresholds.modeFactor_lower_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Thresholds.modeFactor_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Thresholds.modeFactor_zero_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Thresholds.modeFactor_zero_isGLB": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Thresholds.modeThreshold_le_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Thresholds.modeThreshold_lower_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Thresholds.modeThreshold_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Thresholds.modeThreshold_succ_tendsto_atTop": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3Thresholds.thresholdPrefactor_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3TrigFinite.integral_finset_bilinear_nat": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3TrigFinite.integral_finset_trilinear_nat": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3TrigFinite.integral_four_modeZ": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3TrigFinite.integral_four_mode_nat": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3TrigFinite.integral_range_bilinear_nat": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3TrigFinite.integral_range_trilinear_nat": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3TrigFinite.integral_triple_mode_nat": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3TrigFinite.sum_range_bilinear_zero_correction": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3TrigFinite.sum_range_trilinear_zero_correction": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3TrigInfinite.cosineSeries_mul": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3TrigInfinite.cosineSeries_mul_three": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3TrigInfinite.integral_cosineSeries_bilinear": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3TrigInfinite.integral_cosineSeries_bilinear_tsum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3TrigInfinite.integral_cosineSeries_trilinear": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3TrigInfinite.integral_cosineSeries_trilinear_tsum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3TrigInfinite.intervalIntegral_tsum_of_summable_integral_norm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3TrigInfinite.norm_mode_le_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3TrigInfinite.summable_bilinearCorrection": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3TrigInfinite.summable_bilinearMain": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3TrigInfinite.summable_bilinear_integral_norm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3TrigInfinite.summable_norm_cosine_terms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3TrigInfinite.summable_trilinearCorrection": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3TrigInfinite.summable_trilinearMain": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3TrigInfinite.summable_trilinear_integral_norm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3TrigInfinite.tsum_bilinearCorrection": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3TrigInfinite.tsum_trilinearCorrection": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3TrigOrtho.integral_cos_linear": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3TrigOrtho.integral_cos_mode_int": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3TrigOrtho.integral_finset_bilinear": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3TrigOrtho.integral_mode_mul_mode": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3TrigOrtho.integral_triple_modeZ": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Paper3TrigOrtho.modeZ_natCast": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "toolchain": "leanprover/lean4:v4.32.2"
+}
