@@ -13,6 +13,11 @@
 
 ??? example "`a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L3p5_n2` · n₀=2 · χ\*=1.7326 · 13 panels"
 
+    **Parameters** — $a$=10, $b$=1, $\alpha$=1, $m$=1, $\beta$=0, $\gamma$=1, $\mu$=1, $\nu$=1, $L$=3.5, $n_0$=2
+
+    **Derived** — $u^*$=10.0000, $\chi^*$=1.7326, $A$=-2.5740e-03, $\beta^+$=1.135, $\beta_{n_0}(\beta)$=+1.1810e-01 → **supercritical** at this $\beta$
+
+
     **chi1-6459_ep0-0010_m**
 
     ![chi1-6459_ep0-0010_m](../results/high_modes/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L3p5_n2/runs/chi1-6459_ep0-0010_m/run_summary6.png)
@@ -67,6 +72,11 @@
 
 ??? example "`a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L5p3_n3` · n₀=3 · χ\*=1.7325 · 12 panels"
 
+    **Parameters** — $a$=10, $b$=1, $\alpha$=1, $m$=1, $\beta$=0, $\gamma$=1, $\mu$=1, $\nu$=1, $L$=5.3, $n_0$=3
+
+    **Derived** — $u^*$=10.0000, $\chi^*$=1.7325, $A$=-2.6961e-03, $\beta^+$=1.146, $\beta_{n_0}(\beta)$=+1.2138e-01 → **supercritical** at this $\beta$
+
+
     **chi1-6458_ep0-0010_m**
 
     ![chi1-6458_ep0-0010_m](../results/high_modes/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L5p3_n3/runs/chi1-6458_ep0-0010_m/run_summary6.png)
@@ -116,6 +126,11 @@
     ![chi1-8191_ep0-0010_p](../results/high_modes/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L5p3_n3/runs/chi1-8191_ep0-0010_p/run_summary6.png)
 
 ??? example "`a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L5p3_n2` · n₀=2 · χ\*=4.1170 · 18 panels"
+
+    **Parameters** — $a$=1, $b$=1, $\alpha$=1, $m$=2, $\beta$=1, $\gamma$=2, $\mu$=1, $\nu$=1, $L$=5.3, $n_0$=2
+
+    **Derived** — $u^*$=1.0000, $\chi^*$=4.1170, $A$=-1.1006e-01, $\beta^+$=4.818, $\beta_{n_0}(\beta)$=+2.2622e+00 → **supercritical** at this $\beta$
+
 
     **chi3-9087_ep0-0010_m**
 
@@ -191,6 +206,11 @@
 
 ??? example "`a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L8_n3` · n₀=3 · χ\*=4.1084 · 18 panels"
 
+    **Parameters** — $a$=1, $b$=1, $\alpha$=1, $m$=2, $\beta$=1, $\gamma$=2, $\mu$=1, $\nu$=1, $L$=8, $n_0$=3
+
+    **Derived** — $u^*$=1.0000, $\chi^*$=4.1084, $A$=-1.1170e-01, $\beta^+$=4.795, $\beta_{n_0}(\beta)$=+2.2518e+00 → **supercritical** at this $\beta$
+
+
     **chi3-8978_ep0-0010_m**
 
     ![chi3-8978_ep0-0010_m](../results/high_modes/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L8_n3/runs/chi3-8978_ep0-0010_m/run_summary6.png)
@@ -265,6 +285,11 @@
 
 ??? example "`a1_b1_alpha1_m2_beta1_gamma3_mu1_nu1_L5p3_n2` · n₀=2 · χ\*=2.7446 · 12 panels"
 
+    **Parameters** — $a$=1, $b$=1, $\alpha$=1, $m$=2, $\beta$=1, $\gamma$=3, $\mu$=1, $\nu$=1, $L$=5.3, $n_0$=2
+
+    **Derived** — $u^*$=1.0000, $\chi^*$=2.7446, $A$=-2.4764e-01, $\beta^+$=6.855, $\beta_{n_0}(\beta)$=+1.6939e+00 → **supercritical** at this $\beta$
+
+
     **chi2-6073_ep0-0010_m**
 
     ![chi2-6073_ep0-0010_m](../results/high_modes/supercritical/a1_b1_alpha1_m2_beta1_gamma3_mu1_nu1_L5p3_n2/runs/chi2-6073_ep0-0010_m/run_summary6.png)
@@ -314,6 +339,11 @@
     ![chi2-8819_ep0-0010_p](../results/high_modes/supercritical/a1_b1_alpha1_m2_beta1_gamma3_mu1_nu1_L5p3_n2/runs/chi2-8819_ep0-0010_p/run_summary6.png)
 
 ??? example "`a1_b1_alpha1_m2_beta1_gamma3_mu1_nu1_L8_n3` · n₀=3 · χ\*=2.7389 · 12 panels"
+
+    **Parameters** — $a$=1, $b$=1, $\alpha$=1, $m$=2, $\beta$=1, $\gamma$=3, $\mu$=1, $\nu$=1, $L$=8, $n_0$=3
+
+    **Derived** — $u^*$=1.0000, $\chi^*$=2.7389, $A$=-2.5133e-01, $\beta^+$=6.783, $\beta_{n_0}(\beta)$=+1.6752e+00 → **supercritical** at this $\beta$
+
 
     **chi2-6019_ep0-0010_m**
 

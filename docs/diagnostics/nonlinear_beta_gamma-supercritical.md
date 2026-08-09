@@ -13,6 +13,11 @@
 
 ??? example "`a1_b1_alpha1_m2_beta0p5_gamma2_mu1_nu1_L1_n1` · n₀=1 · χ\*=8.4647 · 12 panels"
 
+    **Parameters** — $a$=1, $b$=1, $\alpha$=1, $m$=2, $\beta$=0.5, $\gamma$=2, $\mu$=1, $\nu$=1, $L$=1, $n_0$=1
+
+    **Derived** — $u^*$=1.0000, $\chi^*$=8.4647, $A$=-1.6161e-02, $\beta^+$=5.312, $\beta_{n_0}(\beta)$=+1.0573e+01 → **supercritical** at this $\beta$
+
+
     **chi8-0355_ep0-0010_m**
 
     ![chi8-0355_ep0-0010_m](../results/nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta0p5_gamma2_mu1_nu1_L1_n1/runs/chi8-0355_ep0-0010_m/run_summary6.png)
@@ -62,6 +67,11 @@
     ![chi8-8880_ep0-0010_p](../results/nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta0p5_gamma2_mu1_nu1_L1_n1/runs/chi8-8880_ep0-0010_p/run_summary6.png)
 
 ??? example "`a1_b1_alpha1_m2_beta0p5_gamma3_mu1_nu1_L1_n1` · n₀=1 · χ\*=5.6431 · 12 panels"
+
+    **Parameters** — $a$=1, $b$=1, $\alpha$=1, $m$=2, $\beta$=0.5, $\gamma$=3, $\mu$=1, $\nu$=1, $L$=1, $n_0$=1
+
+    **Derived** — $u^*$=1.0000, $\chi^*$=5.6431, $A$=-3.6363e-02, $\beta^+$=40.182, $\beta_{n_0}(\beta)$=+8.4619e+00 → **supercritical** at this $\beta$
+
 
     **chi5-3570_ep0-0010_m**
 
@@ -113,6 +123,11 @@
 
 ??? example "`a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1` · n₀=1 · χ\*=11.9709 · 12 panels"
 
+    **Parameters** — $a$=1, $b$=1, $\alpha$=1, $m$=2, $\beta$=1, $\gamma$=2, $\mu$=1, $\nu$=1, $L$=1, $n_0$=1
+
+    **Derived** — $u^*$=1.0000, $\chi^*$=11.9709, $A$=-1.6161e-02, $\beta^+$=5.312, $\beta_{n_0}(\beta)$=+9.5089e+00 → **supercritical** at this $\beta$
+
+
     **chi11-3639_ep0-0010_m**
 
     ![chi11-3639_ep0-0010_m](../results/nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1/runs/chi11-3639_ep0-0010_m/run_summary6.png)
@@ -162,6 +177,11 @@
     ![chi12-5695_ep0-0010_p](../results/nonlinear_beta_gamma/supercritical/a1_b1_alpha1_m2_beta1_gamma2_mu1_nu1_L1_n1/runs/chi12-5695_ep0-0010_p/run_summary6.png)
 
 ??? example "`a1_b1_alpha1_m2_beta1_gamma3_mu1_nu1_L1_n1` · n₀=1 · χ\*=7.9806 · 12 panels"
+
+    **Parameters** — $a$=1, $b$=1, $\alpha$=1, $m$=2, $\beta$=1, $\gamma$=3, $\mu$=1, $\nu$=1, $L$=1, $n_0$=1
+
+    **Derived** — $u^*$=1.0000, $\chi^*$=7.9806, $A$=-3.6363e-02, $\beta^+$=40.182, $\beta_{n_0}(\beta)$=+9.0677e+00 → **supercritical** at this $\beta$
+
 
     **chi7-5759_ep0-0010_m**
 

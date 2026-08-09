@@ -13,6 +13,11 @@
 
 ??? example "`a10_b1_alpha1_m1_beta1p5_gamma1_mu1_nu1_L1_n1` · n₀=1 · χ\*=79.8348 · 30 panels"
 
+    **Parameters** — $a$=10, $b$=1, $\alpha$=1, $m$=1, $\beta$=1.5, $\gamma$=1, $\mu$=1, $\nu$=1, $L$=1, $n_0$=1
+
+    **Derived** — $u^*$=10.0000, $\chi^*$=79.8348, $A$=-3.0552e-04, $\beta^+$=0.814, $\beta_{n_0}(\beta)$=-6.4853e-02 → **subcritical** at this $\beta$
+
+
     **chi75-8150_A_rel1e-01_m**
 
     ![chi75-8150_A_rel1e-01_m](../results/quasilinear/subcritical/a10_b1_alpha1_m1_beta1p5_gamma1_mu1_nu1_L1_n1/runs/chi75-8150_A_rel1e-01_m/run_summary6.png)
@@ -134,6 +139,11 @@
     ![chi87-8183_ep0-0010_p](../results/quasilinear/subcritical/a10_b1_alpha1_m1_beta1p5_gamma1_mu1_nu1_L1_n1/runs/chi87-8183_ep0-0010_p/run_summary6.png)
 
 ??? example "`a10_b1_alpha1_m1_beta2_gamma1_mu1_nu1_L1_n1` · n₀=1 · χ\*=264.7821 · 30 panels"
+
+    **Parameters** — $a$=10, $b$=1, $\alpha$=1, $m$=1, $\beta$=2, $\gamma$=1, $\mu$=1, $\nu$=1, $L$=1, $n_0$=1
+
+    **Derived** — $u^*$=10.0000, $\chi^*$=264.7821, $A$=-3.0552e-04, $\beta^+$=0.814, $\beta_{n_0}(\beta)$=-1.1228e-01 → **subcritical** at this $\beta$
+
 
     **chi251-4500_A_rel1e-01_m**
 
@@ -257,6 +267,11 @@
 
 ??? example "`a1_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1` · n₀=1 · χ\*=11.9709 · 30 panels"
 
+    **Parameters** — $a$=1, $b$=1, $\alpha$=1, $m$=1, $\beta$=0, $\gamma$=1, $\mu$=1, $\nu$=1, $L$=1, $n_0$=1
+
+    **Derived** — $u^*$=1.0000, $\chi^*$=11.9709, $A$=-4.0403e-03, $\beta^+$=2.159, $\beta_{n_0}(\beta)$=+5.7006e+00 → **supercritical** at this $\beta$
+
+
     **chi11-3639_A_rel1e-01_m**
 
     ![chi11-3639_A_rel1e-01_m](../results/quasilinear/subcritical/a1_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1/runs/chi11-3639_A_rel1e-01_m/run_summary6.png)
@@ -379,6 +394,11 @@
 
 ??? example "`a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1` · n₀=1 · χ\*=16.9294 · 30 panels"
 
+    **Parameters** — $a$=1, $b$=1, $\alpha$=1, $m$=1, $\beta$=0.5, $\gamma$=1, $\mu$=1, $\nu$=1, $L$=1, $n_0$=1
+
+    **Derived** — $u^*$=1.0000, $\chi^*$=16.9294, $A$=-4.0403e-03, $\beta^+$=2.159, $\beta_{n_0}(\beta)$=+4.3835e+00 → **supercritical** at this $\beta$
+
+
     **chi16-0710_A_rel1e-01_m**
 
     ![chi16-0710_A_rel1e-01_m](../results/quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi16-0710_A_rel1e-01_m/run_summary6.png)
@@ -500,6 +520,11 @@
     ![chi18-6224_ep0-0010_p](../results/quasilinear/subcritical/a1_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi18-6224_ep0-0010_p/run_summary6.png)
 
 ??? example "`a1_b1_alpha1_m1_beta2_gamma1_mu1_nu1_L1_n1` · n₀=1 · χ\*=47.8837 · 30 panels"
+
+    **Parameters** — $a$=1, $b$=1, $\alpha$=1, $m$=1, $\beta$=2, $\gamma$=1, $\mu$=1, $\nu$=1, $L$=1, $n_0$=1
+
+    **Derived** — $u^*$=1.0000, $\chi^*$=47.8837, $A$=-4.0403e-03, $\beta^+$=2.159, $\beta_{n_0}(\beta)$=+4.2017e-01 → **supercritical** at this $\beta$
+
 
     **chi45-4556_A_rel1e-01_m**
 

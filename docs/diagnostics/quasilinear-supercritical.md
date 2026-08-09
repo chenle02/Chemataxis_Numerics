@@ -13,6 +13,11 @@
 
 ??? example "`a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1` · n₀=1 · χ\*=2.1883 · 12 panels"
 
+    **Parameters** — $a$=10, $b$=1, $\alpha$=1, $m$=1, $\beta$=0, $\gamma$=1, $\mu$=1, $\nu$=1, $L$=1, $n_0$=1
+
+    **Derived** — $u^*$=10.0000, $\chi^*$=2.1883, $A$=-3.0552e-04, $\beta^+$=0.814, $\beta_{n_0}(\beta)$=+7.6503e-02 → **supercritical** at this $\beta$
+
+
     **chi2-0781_ep0-0010_m**
 
     ![chi2-0781_ep0-0010_m](../results/quasilinear/supercritical/a10_b1_alpha1_m1_beta0_gamma1_mu1_nu1_L1_n1/runs/chi2-0781_ep0-0010_m/run_summary6.png)
@@ -63,6 +68,11 @@
 
 ??? example "`a10_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1` · n₀=1 · χ\*=7.2577 · 12 panels"
 
+    **Parameters** — $a$=10, $b$=1, $\alpha$=1, $m$=1, $\beta$=0.5, $\gamma$=1, $\mu$=1, $\nu$=1, $L$=1, $n_0$=1
+
+    **Derived** — $u^*$=10.0000, $\chi^*$=7.2577, $A$=-3.0552e-04, $\beta^+$=0.814, $\beta_{n_0}(\beta)$=+2.9537e-02 → **supercritical** at this $\beta$
+
+
     **chi6-8923_ep0-0010_m**
 
     ![chi6-8923_ep0-0010_m](../results/quasilinear/supercritical/a10_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi6-8923_ep0-0010_m/run_summary6.png)
@@ -112,6 +122,11 @@
     ![chi7-6206_ep0-0010_p](../results/quasilinear/supercritical/a10_b1_alpha1_m1_beta0p5_gamma1_mu1_nu1_L1_n1/runs/chi7-6206_ep0-0010_p/run_summary6.png)
 
 ??? example "`a10_b1_alpha1_m1_beta1_gamma1_mu1_nu1_L1_n1` · n₀=1 · χ\*=24.0711 · 12 panels"
+
+    **Parameters** — $a$=10, $b$=1, $\alpha$=1, $m$=1, $\beta$=1, $\gamma$=1, $\mu$=1, $\nu$=1, $L$=1, $n_0$=1
+
+    **Derived** — $u^*$=10.0000, $\chi^*$=24.0711, $A$=-3.0552e-04, $\beta^+$=0.814, $\beta_{n_0}(\beta)$=-1.7582e-02 → **subcritical** at this $\beta$
+
 
     **chi22-8591_ep0-0010_m**
 
