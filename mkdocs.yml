@@ -46,6 +46,7 @@ nav:
   - Results: results/index.md
   - Reproduce: reproduce.md
   - Data & provenance: data.md
+  - Diagnostics: diagnostics/index.md
   - Cite: cite.md
 
 plugins:
