@@ -1,0 +1,58 @@
+name: Archived constants drift
+
+# Recomputes every archived bifurcation coefficient with the simulator and
+# fails if an archive disagrees. This is the check whose absence let 28
+# archives keep a pre-correction beta_n0 unnoticed: the fix propagated forward
+# into the papers, but nothing compared the archives against the code.
+#
+# It is deliberately NOT part of "Verify data contract": the recomputation is
+# symbolic and takes ~11 minutes, while this drift only moves when the
+# simulator or the archives change. So it runs weekly, on demand, and on
+# pushes that touch the archives or the pinned revision.
+
+on:
+  schedule:
+    - cron: "23 5 * * 1"
+  workflow_dispatch:
+  push:
+    paths:
+      - "docs/results/**/constants.json"
+      - "docs/results/**/config.yaml"
+      - "docs/data/paper-iii-manifest.json"
+      - "scripts/audit_archived_constants.py"
+      - ".github/workflows/constants-drift.yml"
+
+jobs:
+  drift:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Check out data repository
+        uses: actions/checkout@v7
+
+      - name: Resolve pinned simulator revision
+        id: pin
+        run: |
+          rev=$(python -c "import json;print(json.load(open('docs/data/paper-iii-manifest.json'))['release']['simulator_revision'])")
+          echo "revision=$rev" >> "$GITHUB_OUTPUT"
+          echo "pinned simulator revision: $rev"
+
+      - name: Check out the pinned simulator
+        uses: actions/checkout@v7
+        with:
+          repository: ianruau/Chemotaxis_simulation
+          ref: ${{ steps.pin.outputs.revision }}
+          path: .simulator
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install simulator dependencies
+        run: python -m pip install numpy scipy sympy pyyaml
+
+      - name: Recompute archived constants and fail on drift
+        run: |
+          python scripts/audit_archived_constants.py --check \
+            --simulator "${GITHUB_WORKSPACE}/.simulator"
