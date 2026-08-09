@@ -1,11 +1,16 @@
 {
   "alpha_n0": 0.5812242949361085,
-  "beta_n0": 1.4926938914174637,
+  "beta_n0": 2.2518260111837383,
   "chi_hi": 4.108419313693148,
   "chi_lo": 4.108333561221174,
   "chi_star": 4.108419313693148,
   "chi_star_disc": 4.108333561221174,
   "chi_star_mode_n0": 4.108419313693148,
   "classification": "supercritical",
-  "n0": 3
+  "n0": 3,
+  "regenerated_on": "2026-08-08",
+  "simulator_revision": "7c2a09b24fdebb9000b9b996eb34150d6de5ed17",
+  "superseded_beta_n0": 1.4926938914174637,
+  "superseded_classification": "supercritical",
+  "superseded_reason": "pre-center-graph cubic coefficient; corrected value published in Paper III (Tb:singular-beta-gamma)"
 }
