@@ -123,6 +123,112 @@ nonlinear chemotactic mobility and nonlinear signal production.
 [Vector figure](../assets/images/paper3-supercritical-nonlinear.pdf){ .md-button }
 </div>
 
+## Approaching the threshold: the square-root amplitude law
+
+<div class="result-card" markdown>
+<div class="result-card__topline">
+  <span class="status-pill status-pill--review">New 2026-08 · not yet promoted</span>
+  <span>6 offsets · both seeds · all runs converged</span>
+</div>
+
+### Why the earlier pictures looked far from the constant state
+
+The published time-integration panels sit at \(+1\%\), \(+2\%\) and \(+5\%\)
+above \(\chi^*\), where the amplitude is already \(O(0.3)\)–\(O(0.5)\). That is
+not near threshold. Theory predicts
+
+\[
+A(\chi_0)\sim\sqrt{\frac{\chi_0-\chi^*(u^*)}{c_2}},
+\qquad c_2=\frac{\beta_{n_0}}{\alpha_{n_0}},
+\]
+
+so the branch collapses onto the constant state as \(\chi_0\downarrow\chi^*\).
+This sweep goes down to \(+0.1\%\) on the supercritical family
+\(m=\tfrac12,\ \gamma=2,\ L=5.3,\ n_0=2,\ \beta=1\), with
+\(\chi^*=4.116954\), \(\alpha_{n_0}=0.584273\), \(\beta_{n_0}=0.261571\),
+\(c_2=0.447686\).
+
+| Offset | \(\chi_0-\chi^*\) | \(\lvert A\rvert\) measured | \(\sqrt{(\chi_0-\chi^*)/c_2}\) | Relative deviation |
+| --- | ---: | ---: | ---: | ---: |
+| `+0.1%` | `4.1170e-03` | `0.09591` | `0.09590` | `+0.0%` |
+| `+0.25%` | `1.0292e-02` | `0.14964` | `0.15162` | `-1.3%` |
+| `+0.5%` | `2.0585e-02` | `0.20797` | `0.21443` | `-3.0%` |
+| `+1%` | `4.1170e-02` | `0.28000` | `0.30325` | `-7.7%` |
+| `+2%` | `8.2339e-02` | `0.38160` | `0.42886` | `-11.0%` |
+| `+5%` | `2.0585e-01` | `0.52590` | `0.67809` | `-22.4%` |
+
+At \(+0.1\%\) the measured amplitude matches the prediction to four significant
+figures, and \(A(+\varepsilon)=-A(-\varepsilon)\) to every digit shown. The
+log–log slope is `0.4811` over the three near-threshold offsets and `0.4854`
+over the two smallest, against \(\tfrac12\) predicted.
+
+!!! warning "Read the near-threshold rows, not the six-point fit"
+    A slope fitted over all six offsets gives `0.4381`. That number is
+    dominated by the large-offset rows where the quartic term is not small.
+    The square-root law is a statement about the limit
+    \(\chi_0\downarrow\chi^*\).
+
+### Critical slowing down
+
+The growth rate vanishes at threshold, so the closer the run, the longer it
+must be integrated:
+
+| Offset | \(\chi_0-\chi^*\) | Settling time |
+| --- | ---: | ---: |
+| `+0.1%` | `4.1170e-03` | `2840` |
+| `+0.25%` | `1.0292e-02` | `1338` |
+| `+0.5%` | `2.0585e-02` | `743` |
+
+This gives \(t_{\text{settle}}\propto(\chi_0-\chi^*)^{-0.833}\). The exponent is
+shallower than \(-1\) because
+\(t\approx\sigma^{-1}\log(A_\infty/\varepsilon)\) with
+\(\sigma\propto\chi_0-\chi^*\), and the logarithmic factor shrinks too; the
+combination \(t(\chi_0-\chi^*)/\log(A_\infty/\varepsilon)\) is constant to
+within `12%`.
+
+**Practical consequence.** A near-threshold run stopped too early reports an
+amplitude that has not settled, and will appear to violate the square-root law.
+
+[Summary JSON](https://github.com/chenle02/Chemataxis_Numerics/blob/master/docs/data/paper-iii-amplitude-law.json){ .md-button }
+</div>
+
+## Subcritical families above the direction-reversal threshold
+
+<div class="result-card" markdown>
+<div class="result-card__topline">
+  <span class="status-pill status-pill--review">New 2026-08 · not yet promoted</span>
+  <span>4 families · 3 meshes each</span>
+</div>
+
+A family is subcritical only when \(\beta>\beta^+\), the unique positive root of
+\(\beta_{n_0}\). Several archived runs sit *below* their own \(\beta^+\) and are
+therefore supercritical at their own parameters, which is why no branch appears
+below \(\chi^*\) for them. The four families here are evaluated above
+\(\beta^+\); in every case \(\chi_h(A)<\chi_h^*\) at every prescribed amplitude.
+
+| \(m\) | \(\gamma\) | \(L\) | \(n_0\) | \(\beta^+\) | \(\beta\) | Finest \(N\) | Measured \(c_2\) | Theory \(c_2\) | Rel. error | Order |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| `0.5` | `2` | `1.0` | `1` | `2.540` | `3` | `160` | `-5.07897` | `-5.08775` | `1.7e-03` | `2.000` |
+| `0.5` | `3` | `5.3` | `2` | `4.369` | `5` | `640` | `-15.04668` | `-15.02116` | `1.7e-03` | `2.004` |
+| `0.5` | `3` | `8.0` | `3` | `4.318` | `5` | `768` | `-16.55107` | `-16.51077` | `2.4e-03` | `2.003` |
+| `2` | `2` | `1.0` | `1` | `5.312` | `6` | `320` | `-55.27701` | `-55.47344` | `3.5e-03` | `1.984` |
+
+All with \(a=b=\alpha=\mu=\nu=1\) and \(u^*=1\).
+
+!!! note "Disclosed diagnostic, and two families out of range"
+    The free-intercept discrepancy, at most `3.93e-10` for the v1 benchmarks,
+    reaches `1.7e-09`, `1.6e-09` and `1.3e-07` for rows 2–4. It is a property of
+    the quartic *fit*, not of the branch: halving the amplitude window drops it
+    by more than an order of magnitude while \(c_2\) is unchanged to all
+    reported digits. The published amplitude set was kept rather than narrowed.
+
+    Two further families require \(\beta^+\approx27.8\) and \(\approx40.2\).
+    Since \(\chi^*\propto2^{\beta}\) at \(v^*=1\), those need sensitivities of
+    order \(10^{9}\) and \(10^{13}\), so they are out of range and are not
+    reported.
+
+</div>
+
 ## Provenance boundary
 
 Four earlier families remain versioned but are excluded from the current
