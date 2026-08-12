@@ -1,0 +1,2299 @@
+{
+ "description": "Sign of C = beta_{n_0}(0) in beta_{n_0}(beta)=A beta^2+B beta+C for the non-minimal 1D chemotaxis model of Paper III. Every point is screened against the standing hypotheses of T:local-bifurcation-1; points marked admissible=false are NOT counterexamples to the classification.",
+ "fixed": {
+  "a": 1,
+  "alpha": 1
+ },
+ "families": [
+  {
+   "family": "base",
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "n_admissible": 12,
+   "n_C_negative": 4,
+   "gamma_critical_bracket": [
+    4.25,
+    4.5
+   ]
+  },
+  {
+   "family": "small-b",
+   "params": {
+    "m": 1,
+    "b": 0.2,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "n_admissible": 12,
+   "n_C_negative": 4,
+   "gamma_critical_bracket": [
+    4.25,
+    4.5
+   ]
+  },
+  {
+   "family": "small-m",
+   "params": {
+    "m": 0.5,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "n_admissible": 12,
+   "n_C_negative": 4,
+   "gamma_critical_bracket": [
+    4.25,
+    4.5
+   ]
+  },
+  {
+   "family": "small-m-small-b",
+   "params": {
+    "m": 0.5,
+    "b": 0.2,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "n_admissible": 12,
+   "n_C_negative": 4,
+   "gamma_critical_bracket": [
+    4.25,
+    4.5
+   ]
+  },
+  {
+   "family": "large-m",
+   "params": {
+    "m": 2,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "n_admissible": 12,
+   "n_C_negative": 5,
+   "gamma_critical_bracket": [
+    4,
+    4.25
+   ]
+  },
+  {
+   "family": "fast-signal",
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 10,
+    "mu": 1
+   },
+   "n_admissible": 12,
+   "n_C_negative": 4,
+   "gamma_critical_bracket": [
+    4.25,
+    4.5
+   ]
+  },
+  {
+   "family": "strong-decay",
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 5
+   },
+   "n_admissible": 12,
+   "n_C_negative": 6,
+   "gamma_critical_bracket": [
+    3.5,
+    4
+   ]
+  },
+  {
+   "family": "long-domain",
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 2.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "n_admissible": 12,
+   "n_C_negative": 6,
+   "gamma_critical_bracket": [
+    3.5,
+    4
+   ]
+  }
+ ],
+ "records": [
+  {
+   "family": "base",
+   "gamma": 1,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.004040346831448881,
+   "B": -2.6321424127549253,
+   "C": 5.700617923621502,
+   "positive_roots": [
+    2.1586185302082357
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "base",
+   "gamma": 1.5,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.009090780370759983,
+   "B": -2.8428972952240765,
+   "C": 7.455001923907548,
+   "positive_roots": [
+    2.600697286681965
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "base",
+   "gamma": 2,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.016161387325795525,
+   "B": -2.3167746284210198,
+   "C": 8.25466570642522,
+   "positive_roots": [
+    3.478587676586755
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "base",
+   "gamma": 2.5,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.02525216769655551,
+   "B": -1.0537744123457558,
+   "C": 8.099609271174517,
+   "positive_roots": [
+    6.632216435839211
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "base",
+   "gamma": 3,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.03636312148303993,
+   "B": 0.946103353001716,
+   "C": 6.98983261815544,
+   "positive_roots": [
+    32.02120512077976
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "base",
+   "gamma": 3.5,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.0494942486852488,
+   "B": 3.6828586676213955,
+   "C": 4.92533574736799,
+   "positive_roots": [
+    75.72398886301734
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "base",
+   "gamma": 4,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.0646455493031821,
+   "B": 7.156491531513282,
+   "C": 1.9061186588121655,
+   "positive_roots": [
+    110.9692562987863
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "base",
+   "gamma": 4.25,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.07297876464304542,
+   "B": 9.169637044436303,
+   "C": 0.0384900328711132,
+   "positive_roots": [
+    125.65221419204825
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "base",
+   "gamma": 4.5,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.08181702333683985,
+   "B": 11.367001944677376,
+   "C": -2.067818647512033,
+   "positive_roots": [
+    0.18215298304987376,
+    138.749837953354
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "base",
+   "gamma": 5,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.10100867078622204,
+   "B": 16.31438990711368,
+   "C": -6.996476171604605,
+   "positive_roots": [
+    0.4299978440809221,
+    161.08474915859938
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "base",
+   "gamma": 6,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.14545248593215973,
+   "B": 28.419798479802907,
+   "C": -19.717951873094872,
+   "positive_roots": [
+    0.696291723396877,
+    194.69258937869816
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "base",
+   "gamma": 8,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.2585821972127284,
+   "B": 61.47314621644785,
+   "C": -56.61754588929589,
+   "positive_roots": [
+    0.9246087381069679,
+    236.8069399882564
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-b",
+   "gamma": 1,
+   "params": {
+    "m": 1,
+    "b": 0.2,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.00044892742571654243,
+   "B": -0.17560393816748165,
+   "C": 0.2280247169448601,
+   "positive_roots": [
+    1.2942348910095058
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-b",
+   "gamma": 1.5,
+   "params": {
+    "m": 1,
+    "b": 0.2,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.0012254972657913077,
+   "B": -0.2091567597502541,
+   "C": 0.2982000769563019,
+   "positive_roots": [
+    1.4140101792539648
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-b",
+   "gamma": 2,
+   "params": {
+    "m": 1,
+    "b": 0.2,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.0023907377700880957,
+   "B": -0.1790299980591646,
+   "C": 0.3301866282570088,
+   "positive_roots": [
+    1.800994683107135
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-b",
+   "gamma": 2.5,
+   "params": {
+    "m": 1,
+    "b": 0.2,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.003899583233702462,
+   "B": -0.0841830107788413,
+   "C": 0.3239843708469807,
+   "positive_roots": [
+    3.333747487950506
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-b",
+   "gamma": 3,
+   "params": {
+    "m": 1,
+    "b": 0.2,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.00572611512393549,
+   "B": 0.07306659992724672,
+   "C": 0.27959330472621763,
+   "positive_roots": [
+    15.842343298509087
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-b",
+   "gamma": 3.5,
+   "params": {
+    "m": 1,
+    "b": 0.2,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.007862718115824239,
+   "B": 0.2907909267649043,
+   "C": 0.1970134298947196,
+   "positive_roots": [
+    37.64904396965828
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-b",
+   "gamma": 4,
+   "params": {
+    "m": 1,
+    "b": 0.2,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.010310268634590742,
+   "B": 0.5679423851169755,
+   "C": 0.07624474635248663,
+   "positive_roots": [
+    55.21904175248406
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-b",
+   "gamma": 4.25,
+   "params": {
+    "m": 1,
+    "b": 0.2,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.01165165482345407,
+   "B": 0.728645844479502,
+   "C": 0.001539601314844528,
+   "positive_roots": [
+    62.53793767475537
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-b",
+   "gamma": 4.5,
+   "params": {
+    "m": 1,
+    "b": 0.2,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.013072009903267701,
+   "B": 0.9040624384236693,
+   "C": -0.0827127459004813,
+   "positive_roots": [
+    0.0916114321790736,
+    69.06855943012073
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-b",
+   "gamma": 5,
+   "params": {
+    "m": 1,
+    "b": 0.2,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.016151049000567744,
+   "B": 1.2989892155577325,
+   "C": -0.27985904686418417,
+   "positive_roots": [
+    0.21602393140004575,
+    80.21152077557659
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-b",
+   "gamma": 6,
+   "params": {
+    "m": 1,
+    "b": 0.2,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.02326941916818049,
+   "B": 2.2651599977611965,
+   "C": -0.7887180749237949,
+   "positive_roots": [
+    0.34944976249107135,
+    96.99548099790644
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-b",
+   "gamma": 8,
+   "params": {
+    "m": 1,
+    "b": 0.2,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.041372939724314016,
+   "B": 4.903119273760363,
+   "C": -2.2647018355718354,
+   "positive_roots": [
+    0.4637043871232804,
+    118.0465901781648
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-m",
+   "gamma": 1,
+   "params": {
+    "m": 0.5,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.004040346831448881,
+   "B": -2.68547151264038,
+   "C": 2.4439354890366145,
+   "positive_roots": [
+    0.9088155916513029
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-m",
+   "gamma": 1.5,
+   "params": {
+    "m": 0.5,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.009090780370759983,
+   "B": -2.9228909450522584,
+   "C": 4.829742973418683,
+   "positive_roots": [
+    1.6439797751277807
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-m",
+   "gamma": 2,
+   "params": {
+    "m": 0.5,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.016161387325795525,
+   "B": -2.4234328281919293,
+   "C": 6.260830240032378,
+   "positive_roots": [
+    2.5404166966799755
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-m",
+   "gamma": 2.5,
+   "params": {
+    "m": 0.5,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.02525216769655551,
+   "B": -1.1870971620593926,
+   "C": 6.737197288877699,
+   "positive_roots": [
+    5.118124968379926
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-m",
+   "gamma": 3,
+   "params": {
+    "m": 0.5,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.03636312148303993,
+   "B": 0.7861160533453517,
+   "C": 6.258844119954646,
+   "positive_roots": [
+    27.808087263914096
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-m",
+   "gamma": 3.5,
+   "params": {
+    "m": 0.5,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.0494942486852488,
+   "B": 3.4962068180223036,
+   "C": 4.825770733263219,
+   "positive_roots": [
+    71.9929699130608
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-m",
+   "gamma": 4,
+   "params": {
+    "m": 0.5,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.0646455493031821,
+   "B": 6.943175131971463,
+   "C": 2.4379771288034187,
+   "positive_roots": [
+    107.7537534564421
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-m",
+   "gamma": 4.25,
+   "params": {
+    "m": 0.5,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.07297876464304542,
+   "B": 8.942988369923121,
+   "C": 0.8860602449103778,
+   "positive_roots": [
+    122.641335775561
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-m",
+   "gamma": 4.5,
+   "params": {
+    "m": 0.5,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.08181702333683985,
+   "B": 11.127020995192831,
+   "C": -0.9045366934247562,
+   "positive_roots": [
+    0.08134055095059103,
+    135.9175083607606
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-m",
+   "gamma": 5,
+   "params": {
+    "m": 0.5,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.10100867078622204,
+   "B": 16.047744407686405,
+   "C": -5.201770733421305,
+   "positive_roots": [
+    0.32480746230830143,
+    158.5501117181486
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-m",
+   "gamma": 6,
+   "params": {
+    "m": 0.5,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.14545248593215973,
+   "B": 28.099823880490177,
+   "C": -16.660399466719525,
+   "positive_roots": [
+    0.5947313715609592,
+    192.59429321201455
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-m",
+   "gamma": 8,
+   "params": {
+    "m": 0.5,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.2585821972127284,
+   "B": 61.04651341736422,
+   "C": -51.034299546536445,
+   "positive_roots": [
+    0.8389718908076507,
+    235.24268444666612
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-m-small-b",
+   "gamma": 1,
+   "params": {
+    "m": 0.5,
+    "b": 0.2,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.00044892742571654243,
+   "B": -0.17915921149317862,
+   "C": 0.09775741956146457,
+   "positive_roots": [
+    0.5449015111669642
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-m-small-b",
+   "gamma": 1.5,
+   "params": {
+    "m": 0.5,
+    "b": 0.2,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.0012254972657913077,
+   "B": -0.21503085654677162,
+   "C": 0.19318971893674733,
+   "positive_roots": [
+    0.8938741915531582
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-m-small-b",
+   "gamma": 2,
+   "params": {
+    "m": 0.5,
+    "b": 0.2,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.0023907377700880957,
+   "B": -0.1872344749646192,
+   "C": 0.2504332096012951,
+   "positive_roots": [
+    1.3154431071497947
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-m-small-b",
+   "gamma": 2.5,
+   "params": {
+    "m": 0.5,
+    "b": 0.2,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.003899583233702462,
+   "B": -0.09466138784855815,
+   "C": 0.26948789155510794,
+   "positive_roots": [
+    2.573937980411163
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-m-small-b",
+   "gamma": 3,
+   "params": {
+    "m": 0.5,
+    "b": 0.2,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.00572611512393549,
+   "B": 0.060369195192614626,
+   "C": 0.25035376479818583,
+   "positive_roots": [
+    13.727689855643739
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-m-small-b",
+   "gamma": 3.5,
+   "params": {
+    "m": 0.5,
+    "b": 0.2,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.007862718115824239,
+   "B": 0.2759120112235083,
+   "C": 0.19303082933052876,
+   "positive_roots": [
+    35.777366145091
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-m-small-b",
+   "gamma": 4,
+   "params": {
+    "m": 0.5,
+    "b": 0.2,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.010310268634590742,
+   "B": 0.5509043340353605,
+   "C": 0.09751908515213674,
+   "positive_roots": [
+    53.60902158484605
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-m-small-b",
+   "gamma": 4.25,
+   "params": {
+    "m": 0.5,
+    "b": 0.2,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.01165165482345407,
+   "B": 0.7105333306273072,
+   "C": 0.035442409796415116,
+   "positive_roots": [
+    61.03116405595871
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-m-small-b",
+   "gamma": 4.5,
+   "params": {
+    "m": 0.5,
+    "b": 0.2,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.013072009903267701,
+   "B": 0.884877689953453,
+   "C": -0.03618146773699025,
+   "positive_roots": [
+    0.040913393410983316,
+    67.6516370637497
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-m-small-b",
+   "gamma": 5,
+   "params": {
+    "m": 0.5,
+    "b": 0.2,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.016151049000567744,
+   "B": 1.2776643995446746,
+   "C": -0.2080708293368522,
+   "positive_roots": [
+    0.16318913090932635,
+    78.94401929250404
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-m-small-b",
+   "gamma": 6,
+   "params": {
+    "m": 0.5,
+    "b": 0.2,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.02326941916818049,
+   "B": 2.239563667981284,
+   "C": -0.6664159786687809,
+   "positive_roots": [
+    0.2984908258632858,
+    95.9464412798659
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "small-m-small-b",
+   "gamma": 8,
+   "params": {
+    "m": 0.5,
+    "b": 0.2,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.041372939724314016,
+   "B": 4.868988737207846,
+   "C": -2.0413719818614577,
+   "positive_roots": [
+    0.42076432416166404,
+    117.26458193481935
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "large-m",
+   "gamma": 1,
+   "params": {
+    "m": 2,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.004040346831448881,
+   "B": -2.525484212984016,
+   "C": 11.600146133169963,
+   "positive_roots": [
+    4.55997063850043
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "large-m",
+   "gamma": 1.5,
+   "params": {
+    "m": 2,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.009090780370759983,
+   "B": -2.6829099955677123,
+   "C": 12.09168316526396,
+   "positive_roots": [
+    4.440126925855624
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "large-m",
+   "gamma": 2,
+   "params": {
+    "m": 2,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.016161387325795525,
+   "B": -2.1034582288792008,
+   "C": 11.628499979589584,
+   "positive_roots": [
+    5.31151583042948
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "large-m",
+   "gamma": 2.5,
+   "params": {
+    "m": 2,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.02525216769655551,
+   "B": -0.787128912918482,
+   "C": 10.210596576146836,
+   "positive_roots": [
+    9.855719707914515
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "large-m",
+   "gamma": 3,
+   "params": {
+    "m": 2,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.03636312148303993,
+   "B": 1.2660779523144445,
+   "C": 7.8379729549357116,
+   "positive_roots": [
+    40.181922304999006
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "large-m",
+   "gamma": 3.5,
+   "params": {
+    "m": 2,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.0494942486852488,
+   "B": 4.056162366819579,
+   "C": 4.510629115956214,
+   "positive_roots": [
+    83.04954583471297
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "large-m",
+   "gamma": 4,
+   "params": {
+    "m": 2,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.0646455493031821,
+   "B": 7.58312433059692,
+   "C": 0.2285650592083432,
+   "positive_roots": [
+    117.33324894631652
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "large-m",
+   "gamma": 4.25,
+   "params": {
+    "m": 2,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.07297876464304542,
+   "B": 9.62293439346267,
+   "C": -2.2704870508287325,
+   "positive_roots": [
+    0.23636910606092484,
+    131.62300725541186
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "large-m",
+   "gamma": 4.5,
+   "params": {
+    "m": 2,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.08181702333683985,
+   "B": 11.84696384364647,
+   "C": -5.008219215307902,
+   "positive_roots": [
+    0.42398431620557875,
+    144.37429066958364
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "large-m",
+   "gamma": 5,
+   "params": {
+    "m": 2,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.10100867078622204,
+   "B": 16.847680905968225,
+   "C": -11.199723707592522,
+   "positive_roots": [
+    0.6674342869012764,
+    166.12696836022582
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "large-m",
+   "gamma": 6,
+   "params": {
+    "m": 2,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.14545248593215973,
+   "B": 29.059747678428366,
+   "C": -26.446893345466883,
+   "positive_roots": [
+    0.9142706966983627,
+    198.8743234424357
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "large-m",
+   "gamma": 8,
+   "params": {
+    "m": 2,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.2585821972127284,
+   "B": 62.32641181461513,
+   "C": -68.39787523443609,
+   "positive_roots": [
+    1.1024565142903584,
+    239.92887698985228
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "fast-signal",
+   "gamma": 1,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 10,
+    "mu": 1
+   },
+   "A": -0.013356518451070684,
+   "B": -4.7899903218227635,
+   "C": 5.700617923621502,
+   "positive_roots": [
+    1.1861871085482323
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "fast-signal",
+   "gamma": 1.5,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 10,
+    "mu": 1
+   },
+   "A": -0.030052166514909037,
+   "B": -5.17852707232939,
+   "C": 7.455001923907548,
+   "positive_roots": [
+    1.427768892131801
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "fast-signal",
+   "gamma": 2,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 10,
+    "mu": 1
+   },
+   "A": -0.053426073804282735,
+   "B": -4.22942488256618,
+   "C": 8.25466570642522,
+   "positive_roots": [
+    1.905840678591814
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "fast-signal",
+   "gamma": 2.5,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 10,
+    "mu": 1
+   },
+   "A": -0.08347824031919177,
+   "B": -1.9426837525331333,
+   "C": 8.099609271174517,
+   "positive_roots": [
+    3.609459465177811
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "fast-signal",
+   "gamma": 3,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 10,
+    "mu": 1
+   },
+   "A": -0.12020866605963615,
+   "B": 1.6816963177697501,
+   "C": 6.98983261815544,
+   "positive_roots": [
+    17.34266696687868
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "fast-signal",
+   "gamma": 3.5,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 10,
+    "mu": 1
+   },
+   "A": -0.16361735102561586,
+   "B": 6.643715328342471,
+   "C": 4.92533574736799,
+   "positive_roots": [
+    41.333490498300065
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "fast-signal",
+   "gamma": 4,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 10,
+    "mu": 1
+   },
+   "A": -0.21370429521713094,
+   "B": 12.943373279185028,
+   "C": 1.9061186588121655,
+   "positive_roots": [
+    60.71365336175025
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "fast-signal",
+   "gamma": 4.25,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 10,
+    "mu": 1
+   },
+   "A": -0.2412521145224642,
+   "B": 16.594816857207494,
+   "C": 0.0384900328711132,
+   "positive_roots": [
+    68.78852204697719
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "fast-signal",
+   "gamma": 4.5,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 10,
+    "mu": 1
+   },
+   "A": -0.27046949863418135,
+   "B": 20.58067017029742,
+   "C": -2.067818647512033,
+   "positive_roots": [
+    0.10060684377693072,
+    75.99178166666815
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "fast-signal",
+   "gamma": 5,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 10,
+    "mu": 1
+   },
+   "A": -0.33391296127676706,
+   "B": 29.555606001679653,
+   "C": -6.996476171604605,
+   "positive_roots": [
+    0.23735898324466131,
+    88.27554536365248
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "fast-signal",
+   "gamma": 6,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 10,
+    "mu": 1
+   },
+   "A": -0.4808346642385446,
+   "B": 51.51839448525362,
+   "C": -19.717951873094872,
+   "positive_roots": [
+    0.3841132053476117,
+    106.7595648962276
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "fast-signal",
+   "gamma": 8,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 10,
+    "mu": 1
+   },
+   "A": -0.8548171808685238,
+   "B": 111.4956387356396,
+   "C": -56.61754588929589,
+   "positive_roots": [
+    0.5097930653619986,
+    129.9223522295608
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -28.803228026446398
+  },
+  {
+   "family": "strong-decay",
+   "gamma": 1,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 5
+   },
+   "A": -0.006658305064559209,
+   "B": -0.7828461920583165,
+   "C": 5.554368283939905,
+   "positive_roots": [
+    6.711933175922142
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -25.943123756610078
+  },
+  {
+   "family": "strong-decay",
+   "gamma": 1.5,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 5
+   },
+   "A": -0.01498118639525822,
+   "B": -0.7122960397199127,
+   "C": 7.076910243465133,
+   "positive_roots": [
+    8.43789444391403
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -25.943123756610078
+  },
+  {
+   "family": "strong-decay",
+   "gamma": 2,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 5
+   },
+   "A": -0.026633220258236837,
+   "B": -0.33376372180313424,
+   "C": 7.539478685852337,
+   "positive_roots": [
+    11.688106193228585
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -25.943123756610078
+  },
+  {
+   "family": "strong-decay",
+   "gamma": 2.5,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 5
+   },
+   "A": -0.041614406653495056,
+   "B": 0.3527507616920189,
+   "C": 6.942073611101516,
+   "positive_roots": [
+    17.831793918613826
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -25.943123756610078
+  },
+  {
+   "family": "strong-decay",
+   "gamma": 3,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 5
+   },
+   "A": -0.05992474558103288,
+   "B": 1.3472474107655468,
+   "C": 5.284695019212669,
+   "positive_roots": [
+    25.88877358447223
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -25.943123756610078
+  },
+  {
+   "family": "strong-decay",
+   "gamma": 3.5,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 5
+   },
+   "A": -0.08156423704085031,
+   "B": 2.6497262254174494,
+   "C": 2.5673429101857974,
+   "positive_roots": [
+    33.42798901479414
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -25.943123756610078
+  },
+  {
+   "family": "strong-decay",
+   "gamma": 4,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 5
+   },
+   "A": -0.10653288103294735,
+   "B": 4.260187205647727,
+   "C": -1.2099827159790988,
+   "positive_roots": [
+    0.28606742612569896,
+    39.70334395879856
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -25.943123756610078
+  },
+  {
+   "family": "strong-decay",
+   "gamma": 4.25,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 5
+   },
+   "A": -0.12026563522860072,
+   "B": 5.180911007854756,
+   "C": -3.496135597988306,
+   "positive_roots": [
+    0.6857263071989518,
+    42.39317148440119
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -25.943123756610078
+  },
+  {
+   "family": "strong-decay",
+   "gamma": 4.5,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 5
+   },
+   "A": -0.13483067755732397,
+   "B": 6.178630351456379,
+   "C": -6.04728185928202,
+   "positive_roots": [
+    1.000589312993593,
+    44.824518617874006
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -25.943123756610078
+  },
+  {
+   "family": "strong-decay",
+   "gamma": 5,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 5
+   },
+   "A": -0.16645762661398023,
+   "B": 8.405055662843406,
+   "C": -11.944554519722967,
+   "positive_roots": [
+    1.4635353468250514,
+    49.030129820797214
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -25.943123756610078
+  },
+  {
+   "family": "strong-decay",
+   "gamma": 6,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 5
+   },
+   "A": -0.23969898232413153,
+   "B": 13.781852782352582,
+   "C": -26.919020392018933,
+   "positive_roots": [
+    2.0245070049842737,
+    55.47199401776998
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -25.943123756610078
+  },
+  {
+   "family": "strong-decay",
+   "gamma": 8,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 1.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 5
+   },
+   "A": -0.4261315241317894,
+   "B": 28.231233008311435,
+   "C": -69.58763434226717,
+   "positive_roots": [
+    2.564160579870511,
+    63.68588526179874
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -25.943123756610078
+  },
+  {
+   "family": "long-domain",
+   "gamma": 1,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 2.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.015199279668360448,
+   "B": -0.8404100200935348,
+   "C": 1.483055165657535,
+   "positive_roots": [
+    1.7116918292240153
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -6.445204047028675
+  },
+  {
+   "family": "long-domain",
+   "gamma": 1.5,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 2.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.03419837925381101,
+   "B": -0.8162161278831086,
+   "C": 1.986175875021316,
+   "positive_roots": [
+    2.2258174485980553
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -6.445204047028675
+  },
+  {
+   "family": "long-domain",
+   "gamma": 2,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 2.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.06079711867344179,
+   "B": -0.4957563008345532,
+   "C": 2.1238186454318146,
+   "positive_roots": [
+    3.1031089946119144
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -6.445204047028675
+  },
+  {
+   "family": "long-domain",
+   "gamma": 2.5,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 2.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.0949954979272528,
+   "B": 0.12096946105213129,
+   "C": 1.8959834768890311,
+   "positive_roots": [
+    5.149367999512909
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -6.445204047028675
+  },
+  {
+   "family": "long-domain",
+   "gamma": 3,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 2.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.13679351701524403,
+   "B": 1.033961157776945,
+   "C": 1.302670369392965,
+   "positive_roots": [
+    8.658398685239389
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -6.445204047028675
+  },
+  {
+   "family": "long-domain",
+   "gamma": 3.5,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 2.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.1861911759374155,
+   "B": 2.2432187893398874,
+   "C": 0.3438793229436167,
+   "positive_roots": [
+    12.199327712441416
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -6.445204047028675
+  },
+  {
+   "family": "long-domain",
+   "gamma": 4,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 2.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.24318847469376717,
+   "B": 3.7487423557409594,
+   "C": -0.9803896624590139,
+   "positive_roots": [
+    0.2661191487651063,
+    15.148848030339613
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -6.445204047028675
+  },
+  {
+   "family": "long-domain",
+   "gamma": 4.25,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 2.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.2745369890097606,
+   "B": 4.612603864505794,
+   "C": -1.7795783822678102,
+   "positive_roots": [
+    0.39509884437949216,
+    16.406294225250925
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -6.445204047028675
+  },
+  {
+   "family": "long-domain",
+   "gamma": 4.5,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 2.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.3077854132842991,
+   "B": 5.55053185698016,
+   "C": -2.6701365868149267,
+   "positive_roots": [
+    0.49462608002946057,
+    17.53914555895713
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -6.445204047028675
+  },
+  {
+   "family": "long-domain",
+   "gamma": 5,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 2.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.3799819917090112,
+   "B": 7.64858729305749,
+   "C": -4.725361450124122,
+   "positive_roots": [
+    0.6380324059361367,
+    19.49078280095596
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -6.445204047028675
+  },
+  {
+   "family": "long-domain",
+   "gamma": 6,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 2.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.5471740680609761,
+   "B": 12.733495969726539,
+   "C": -9.93224499360236,
+   "positive_roots": [
+    0.8080684011669015,
+    22.463312157583445
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -6.445204047028675
+  },
+  {
+   "family": "long-domain",
+   "gamma": 8,
+   "params": {
+    "m": 1,
+    "b": 1,
+    "L": 2.0,
+    "n0": 1,
+    "nu": 1,
+    "mu": 1
+   },
+   "A": -0.9727538987750687,
+   "B": 26.45850454112218,
+   "C": -24.731747347998223,
+   "positive_roots": [
+    0.9692781268435107,
+    26.230309121729647
+   ],
+   "admissible": true,
+   "admissibility": "ok",
+   "argmin_mode": 1,
+   "sigma_2n0": -6.445204047028675
+  }
+ ],
+ "source_repo_revision": "f4b2bb5",
+ "reproducer": "codes/c_sign_region_sweep.py in the Paper III working repository",
+ "evidence_note": "Exact symbolic computation (sympy), deterministic and reproducible. Every point is screened against the standing hypotheses of T:local-bifurcation-1; records with admissible=false are NOT counterexamples. gamma_critical_bracket is a GRID BRACKET, never an exact root, since C is sampled rather than solved. This is not a validated_current numerical result in the sense of the manifest evidence_policy; promotion is an author decision."
+}

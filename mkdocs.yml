@@ -45,6 +45,7 @@ nav:
   - Home: index.md
   - Paper III: paper-iii.md
   - Results: results/index.md
+  - Sign of C: results/c-sign-region.md
   - Lean verification: lean-verification.md
   - Re-run Lean proof: lean-reproduce.md
   - Reproduce: reproduce.md
