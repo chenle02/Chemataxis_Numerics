@@ -84,6 +84,47 @@ roughly `0.04 .. 1.1` in the physically sensible families. On `[0, beta_1)` the
 bifurcation is subcritical — an inversion relative to the `C > 0` picture, at
 ordinary values of the desensitization exponent.
 
+## Why the threshold is governed by `gamma`
+
+Setting `beta = 0` in the assembled cubic coefficient gives an **exact identity**
+splitting `C` into two competing parts:
+
+```
+C  =  [ c_1 (4 a_{0,1} + 2 a_{2n_0,1}) + c_3 ]   -   chi^* Gamma_{n_0}^{(3)}
+      \________ logistic ________/                  \___ chemotactic ___/
+```
+
+`c_3` carries the factor `alpha - 1`, so it vanishes identically in the
+quadratic-logistic case `alpha = 1`. Since `chi^* > 0`, the chemotactic term
+carries the sign of `-Gamma_{n_0}^{(3)}`.
+
+Across the crossing at `gamma ~ 4.25` in the base family the two parts behave
+very differently:
+
+| | at `gamma = 4.25` | at `gamma = 4.5` | change |
+|---|---|---|---|
+| logistic | −0.3106 | −0.2853 | **+0.025** |
+| chemotactic | +0.3491 | −1.7825 | **−2.13** |
+| `C` | +0.0385 | −2.0678 | — |
+
+`Gamma_{n_0}^{(3)}` itself changes sign there (−0.124 → +0.670). The chemotactic
+projection is therefore what destroys `C > 0`, and it is why the production
+exponent is the controlling parameter.
+
+### What is NOT true
+
+The attractive clean statement — *"`C > 0` requires `Gamma_{n_0}^{(3)} < 0`"*,
+which would follow if the logistic term were always negative — is **false**.
+A scope scan of **72 admissible points** (`scope_scan` in the data file) found:
+
+- the logistic term **non-negative at 12 points**, all with `m = 2`;
+- `sign(C)` differing from `sign(-Gamma_{n_0}^{(3)})` at **2 points**.
+
+So neither part is sign-definite. The decomposition is an identity; the
+dominance of the chemotactic term is an empirical statement about the sampled
+range, not a theorem. This is recorded because the clean version is the natural
+thing to assume and it does not hold.
+
 ## Caveats
 
 - `gamma_critical_bracket` in the data is a **grid bracket**, not a solved root.
@@ -97,6 +138,8 @@ ordinary values of the desensitization exponent.
 
 ## Data and reproduction
 
+- Data: [`paper-iii-c-sign-decomposition.json`](../data/paper-iii-c-sign-decomposition.json)
+  — the `gamma` sweep of the two parts plus the 72-point `scope_scan`.
 - Data: [`paper-iii-c-sign-scan.json`](../data/paper-iii-c-sign-scan.json) —
   96 records with `A`, `B`, `C`, positive roots, admissibility verdict and the
   minimising mode for every point.
