@@ -148,3 +148,86 @@ thing to assume and it does not hold.
   - `codes/c_sign_region_sweep.py` — the eight-family sweep that produced this data
   - `codes/two_roots_hunt.py` — direct bracketing of the two roots
   - `codes/plot_c_sign.py` — the manuscript figure
+
+## When `beta_n0` stays negative for every `beta`
+
+Wenxian Shen asked (2026-08-13) whether the sub-case
+
+```
+C < 0   and   beta_n0(beta) < 0  for all beta >= 0
+```
+
+can occur, or is excluded. It **occurs**, on an open set of admissible
+parameters, so the `C < 0` branch splits into two genuinely different patterns
+rather than one.
+
+### Criterion
+
+With `A < 0` the parabola opens downward, and `C < 0` puts `beta_n0(0)` below
+the axis, so `beta_n0` can reach `[0, infinity)` only through a positive root.
+The roots multiply to `C/A > 0` and therefore share a sign, and they sum to
+`-B/A`. Hence, writing `D = B^2 - 4AC`:
+
+| condition | pattern |
+|---|---|
+| `B <= 0` | `beta_n0 < 0` on all of `beta >= 0` — subcritical throughout |
+| `B > 0` and `D < 0` | `beta_n0 < 0` on all of `beta >= 0` — subcritical throughout |
+| `B > 0` and `D >= 0` | two positive roots `beta_1 < beta_2` — sub / super / sub |
+
+So the case is **not** excluded by sign considerations; the question is whether
+the admissible region reaches it.
+
+### Witness
+
+`a = b = m = gamma = nu = mu = L = 1` with `alpha = 5`, admissible, minimising
+index `n_0 = 1`, `sigma_{2n_0}(chi*) = -28.5068`:
+
+```
+A = -0.00613654      B = -11.4039      C = -2.92797
+```
+
+All three coefficients are negative, so `beta_n0(beta) < 0` for every
+`beta >= 0` immediately. Confirmed by evaluating `beta_n0` directly, not through
+`A, B, C`:
+
+| `beta` | 0 | 1 | 5 | 50 |
+|---|---|---|---|---|
+| `beta_n0` | -2.92797 | -14.338 | -60.1009 | -588.464 |
+
+This family sits at `gamma = 1`, the value both manuscript families already use,
+and differs from the two-root counterexample only in `(alpha, gamma)`.
+
+### How large the region is
+
+175 admissible-screened points across five targeted 2-D sweeps crossing `alpha`
+against the knobs that drive `C` negative (`m`, `b`, `a`, `mu`, `gamma`). The
+grid was deliberately built to *realise* the case rather than to reconfirm the
+reference point — a "not found" from a confirmatory grid would carry no
+information.
+
+| quantity | value |
+|---|---|
+| points evaluated | 175 |
+| with `C < 0` | 59 |
+| realising the case | 41 |
+| of those, admissible | 41 (all) |
+| admissible points with `A >= 0` | 0 |
+| `alpha` values realising it | 3, 4, 5, 6, 8 |
+
+**Mechanism.** All 41 realisations arrive through `B <= 0`; none through
+`D < 0`. The closest approach to a negative discriminant (`D ~ 0.27` at
+`alpha = 8`, `mu = 100`) was inadmissible. So it is the sign of `B`, not the
+discriminant, that selects between the two patterns. `alpha` is what drives `B`
+negative, but it pushes `C` positive at the same time, which is why the sweeps
+cross `alpha` against the `C`-negative knobs.
+
+### Data and reproduction
+
+- Data: [`paper-iii-beta-n0-all-negative.json`](../data/paper-iii-beta-n0-all-negative.json)
+  — all 175 records with `A`, `B`, `C`, `D`, admissibility and the sweep name,
+  plus the 41 hits and a summary block.
+- Data: [`paper-iii-beta-n0-sensitivity.json`](../data/paper-iii-beta-n0-sensitivity.json)
+  — the one-at-a-time pass that located `alpha` as the knob flipping `B`.
+- Reproducer, in the Paper III working repository:
+  `codes/beta_n0_all_negative_hunt.py --mode hunt`.
+
