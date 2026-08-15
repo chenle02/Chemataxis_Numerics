@@ -231,3 +231,67 @@ cross `alpha` against the `C`-negative knobs.
 - Reproducer, in the Paper III working repository:
   `codes/beta_n0_all_negative_hunt.py --mode hunt`.
 
+## Where the supercritical window lives
+
+The organising object is not the sign of a coefficient but the **supercritical
+window** itself. Since `A < 0` throughout the admissible range,
+
+```
+{ beta >= 0 : beta_n0(beta) > 0 }
+```
+
+is exactly the part of the interval between the two roots that lies in
+`[0, infinity)`. With `D = B^2 - 4AC` and `beta_pm = (B -+ sqrt(D)) / (2|A|)`:
+
+| condition | window | is `beta = 0` inside? |
+|---|---|---|
+| `C > 0` | `[0, beta_+)` | **yes** |
+| `C < 0`, `B > 0`, `D > 0` | `(beta_-, beta_+)` | **no** |
+| otherwise | **empty** | subcritical for every `beta >= 0` |
+
+So the sign of `C` decides only *whether `beta = 0` sits inside the window*.
+Note `D = 0` leaves the window **empty** rather than degenerate, since the two
+roots coincide.
+
+### Sweep
+
+82 points, eight parameters, each varied with the others held at
+`a = b = m = gamma = nu = mu = L = 1`, `n_0 = 1`. **This is the first sweep in
+which `nu` and `L` were varied at all** — both had previously been pinned at 1.
+
+| parameter | points | admissible | nonempty window | window empty at |
+|---|---|---|---|---|
+| `gamma` | 15 | 15 | 15 | -- |
+| `alpha` | 13 | 13 | 9 | 5, 6, 7, 8 |
+| `m` | 11 | 11 | 11 | -- |
+| `b` | 10 | 10 | 10 | -- |
+| `mu` | 8 | 8 | 8 | -- |
+| `nu` | 8 | 8 | 8 | -- |
+| `L` | 9 | 7 | 7 | -- |
+| `a` | 8 | 8 | 8 | -- |
+
+Two things stand out. `A < 0` held at **every** admissible point, now including
+the `nu` and `L` directions that had never been probed. And **`alpha` is the
+only parameter in the sweep that closes the window**: every other parameter
+keeps a nonempty supercritical window across its whole admissible range.
+
+As always this is a bounded search along one-parameter families, not a claim
+about the whole admissible set.
+
+### Figures
+
+- [`paper3-regime-windows.pdf`](figs/paper3-regime-windows.pdf) — eight panels,
+  `beta` on the horizontal axis (log), swept parameter on the vertical; the
+  band is the supercritical window, red dashed curves are the roots, grey
+  dotted rows are inadmissible.
+- [`paper3-regime-parabolas.pdf`](figs/paper3-regime-parabolas.pdf) — monic
+  families `beta_n0/|A|`; dividing by `|A| > 0` preserves sign and roots
+  exactly while making curves of very different magnitude comparable.
+
+### Data and reproduction
+
+- Data: [`paper-iii-regime-sweep.json`](../data/paper-iii-regime-sweep.json) —
+  all 82 records with `A`, `B`, `C`, `D`, roots, window and admissibility.
+- Reproducer, in the Paper III working repository:
+  `codes/paper3_regime_maps.py --sweep` then `--figures`.
+
