@@ -295,3 +295,36 @@ about the whole admissible set.
 - Reproducer, in the Paper III working repository:
   `codes/paper3_regime_maps.py --sweep` then `--figures`.
 
+### The collapsed picture, and the single number `kappa`
+
+On the physically relevant window the cubic coefficient is **effectively
+affine** in `beta`, not visibly quadratic: the vertex sits at
+`beta = S/2 = B/(2|A|)`, which for the families above is at 80, 326, 929 and
+1328 -- never inside `[0,3]`. The `beta^2` term contributes at most 9 there
+while `S*beta` contributes hundreds.
+
+Rescaling to `u = beta/S` collapses every family onto a one-parameter curve
+
+```
+beta_n0 / (|A| S^2)  =  -u^2 + u - kappa,        kappa := A*C / B^2
+```
+
+with vertex always at `u = 1/2`. The classification is then a single
+dimensionless number:
+
+| `kappa` | pattern |
+|---|---|
+| `kappa < 0` (i.e. `C > 0`) | one positive root |
+| `0 < kappa < 1/4`, `B > 0` | two positive roots |
+| `kappa = 1/4` | double root, the degenerate case |
+| `kappa > 1/4`, or `B < 0` | none -- subcritical throughout |
+
+This unifies the discriminant study above: `1/(4 kappa)` is exactly the
+`B^2/(4AC)` margin, so the minimum margin `5.321` reported there corresponds to
+`kappa ~ 0.047`, well below the `1/4` required for a double root.
+
+The bottom row of
+[`paper3-regime-parabolas.pdf`](figs/paper3-regime-parabolas.pdf) shows the
+collapsed curves against a dashed `kappa = 1/4` reference, so each family's
+distance from degeneracy is visible directly.
+
