@@ -336,3 +336,12 @@
     transition: none;
   }
 }
+
+/* Narrow screens. A Lean declaration name inside a table cell stays whole (Material's default
+   word-break would split it every few characters); the table scrolls inside Material's
+   scroll wrapper instead. Same rule as growth-rates-lean. */
+.md-typeset td code,
+.md-typeset th code {
+  word-break: normal;
+  overflow-wrap: normal;
+}
