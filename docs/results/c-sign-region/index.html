@@ -1,0 +1,1540 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Reader-facing numerical companion, formal-verification source, and public data archive for Paper III on bifurcation in chemotaxis models with signal-dependent sensitivity.">
+      
+      
+        <meta name="author" content="Le Chen, Ian Ruau, and Wenxian Shen">
+      
+      
+        <link rel="canonical" href="https://chenle02.github.io/Chemataxis_Numerics/results/c-sign-region/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../../lean-verification/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Sign of C in the cubic coefficient - Chemotaxis Models III · Bifurcation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#where-the-cubic-coefficient-starts-negative" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Chemotaxis Models III · Bifurcation" class="md-header__button md-logo" aria-label="Chemotaxis Models III · Bifurcation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Chemotaxis Models III · Bifurcation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Sign of C in the cubic coefficient
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/chenle02/Chemataxis_Numerics" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    chenle02/Chemataxis_Numerics
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Chemotaxis Models III · Bifurcation" class="md-nav__button md-logo" aria-label="Chemotaxis Models III · Bifurcation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Chemotaxis Models III · Bifurcation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/chenle02/Chemataxis_Numerics" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    chenle02/Chemataxis_Numerics
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../paper-iii/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Paper III
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Results
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Sign of C
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sign of C
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-this-is" class="md-nav__link">
+    <span class="md-ellipsis">
+      What this is
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#headline-the-threshold-is-governed-by-gamma-almost-alone" class="md-nav__link">
+    <span class="md-ellipsis">
+      Headline: the threshold is governed by gamma, almost alone
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-happens-when-c-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      What happens when C &lt; 0
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What happens when C &lt; 0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-second-root-is-not-physical-the-first-one-is" class="md-nav__link">
+    <span class="md-ellipsis">
+      The second root is not physical; the first one is
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-the-threshold-is-governed-by-gamma" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why the threshold is governed by gamma
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why the threshold is governed by gamma">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-not-true" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is NOT true
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#caveats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Caveats
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-and-reproduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data and reproduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-beta_n0-stays-negative-for-every-beta" class="md-nav__link">
+    <span class="md-ellipsis">
+      When beta_n0 stays negative for every beta
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="When beta_n0 stays negative for every beta">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#criterion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criterion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#witness" class="md-nav__link">
+    <span class="md-ellipsis">
+      Witness
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-large-the-region-is" class="md-nav__link">
+    <span class="md-ellipsis">
+      How large the region is
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-and-reproduction_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data and reproduction
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-the-supercritical-window-lives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Where the supercritical window lives
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Where the supercritical window lives">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sweep" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sweep
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#figures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figures
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-and-reproduction_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data and reproduction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-collapsed-picture-and-the-single-number-kappa" class="md-nav__link">
+    <span class="md-ellipsis">
+      The collapsed picture, and the single number kappa
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lean-verification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lean verification
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lean-reproduce/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Re-run Lean proof
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reproduce/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Reproduce
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data & provenance
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diagnostics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Diagnostics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cite
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-this-is" class="md-nav__link">
+    <span class="md-ellipsis">
+      What this is
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#headline-the-threshold-is-governed-by-gamma-almost-alone" class="md-nav__link">
+    <span class="md-ellipsis">
+      Headline: the threshold is governed by gamma, almost alone
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-happens-when-c-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      What happens when C &lt; 0
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What happens when C &lt; 0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-second-root-is-not-physical-the-first-one-is" class="md-nav__link">
+    <span class="md-ellipsis">
+      The second root is not physical; the first one is
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-the-threshold-is-governed-by-gamma" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why the threshold is governed by gamma
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why the threshold is governed by gamma">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-not-true" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is NOT true
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#caveats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Caveats
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-and-reproduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data and reproduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-beta_n0-stays-negative-for-every-beta" class="md-nav__link">
+    <span class="md-ellipsis">
+      When beta_n0 stays negative for every beta
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="When beta_n0 stays negative for every beta">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#criterion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criterion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#witness" class="md-nav__link">
+    <span class="md-ellipsis">
+      Witness
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-large-the-region-is" class="md-nav__link">
+    <span class="md-ellipsis">
+      How large the region is
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-and-reproduction_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data and reproduction
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-the-supercritical-window-lives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Where the supercritical window lives
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Where the supercritical window lives">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sweep" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sweep
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#figures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figures
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-and-reproduction_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data and reproduction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-collapsed-picture-and-the-single-number-kappa" class="md-nav__link">
+    <span class="md-ellipsis">
+      The collapsed picture, and the single number kappa
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="where-the-cubic-coefficient-starts-negative">Where the cubic coefficient starts negative<a class="headerlink" href="#where-the-cubic-coefficient-starts-negative" title="Permanent link">&para;</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Evidence tier — symbolic, screened, not <code>validated_current</code></p>
+<p>This page reports an <strong>exact symbolic computation</strong> (sympy), deterministic and
+reproducible from a committed script. It is <em>not</em> a numerical simulation and
+therefore does not carry the <code>validated_current</code> tier of the
+<a href="../../data/">manifest evidence policy</a>: it has no branch-slope label gate to
+pass. Every parameter point is screened against the standing hypotheses of
+the local-bifurcation theorem, and points failing that screen are retained in
+the data but are <strong>not</strong> counterexamples to anything. Promotion to
+reader-facing validated evidence is an author decision.</p>
+</div>
+<h2 id="what-this-is">What this is<a class="headerlink" href="#what-this-is" title="Permanent link">&para;</a></h2>
+<p>Paper III writes the cubic coefficient of the reduced pitchfork equation as a
+quadratic in the desensitization exponent <code>beta</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>beta_n0(beta) = A beta^2 + B beta + C ,        C = beta_n0(0)
+</code></pre></div>
+<p>and proves that <code>A &lt; 0</code> throughout the admissible parameter range. The direction
+classification — supercritical below a single threshold <code>beta^+</code>, subcritical
+above it — additionally requires <strong><code>C &gt; 0</code></strong>, which is a separate hypothesis and
+not a consequence of <code>A &lt; 0</code>.</p>
+<p>This dataset maps where that hypothesis holds.</p>
+<h2 id="headline-the-threshold-is-governed-by-gamma-almost-alone">Headline: the threshold is governed by <code>gamma</code>, almost alone<a class="headerlink" href="#headline-the-threshold-is-governed-by-gamma-almost-alone" title="Permanent link">&para;</a></h2>
+<p>Eight parameter families, twelve production exponents each: <strong>96 screened
+points, 37 of them admissible with <code>C &lt; 0</code>.</strong></p>
+<table>
+<thead>
+<tr>
+<th>family</th>
+<th><code>m</code></th>
+<th><code>b</code></th>
+<th><code>nu</code></th>
+<th><code>mu</code></th>
+<th><code>L</code></th>
+<th><code>C&lt;0</code> count</th>
+<th><code>gamma</code> bracket for <code>C = 0</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>base</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>[4.25, 4.5]</td>
+</tr>
+<tr>
+<td>small-b</td>
+<td>1</td>
+<td>0.2</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>[4.25, 4.5]</td>
+</tr>
+<tr>
+<td>small-m</td>
+<td>0.5</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>[4.25, 4.5]</td>
+</tr>
+<tr>
+<td>small-m-small-b</td>
+<td>0.5</td>
+<td>0.2</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>[4.25, 4.5]</td>
+</tr>
+<tr>
+<td>large-m</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>5</td>
+<td>[4, 4.25]</td>
+</tr>
+<tr>
+<td>fast-signal</td>
+<td>1</td>
+<td>1</td>
+<td>10</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>[4.25, 4.5]</td>
+</tr>
+<tr>
+<td>strong-decay</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>5</td>
+<td>1</td>
+<td>6</td>
+<td><strong>[3.5, 4]</strong></td>
+</tr>
+<tr>
+<td>long-domain</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>6</td>
+<td><strong>[3.5, 4]</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Fixed throughout: <code>a = 1</code>, <code>alpha = 1</code>, <code>n_0 = 1</code>.</p>
+<p><strong><code>C &gt; 0</code> requires roughly <code>gamma &lt;~ 4</code>, across every family sampled.</strong> The
+sign change is controlled almost entirely by the production exponent, and only
+weakly by <code>(m, b, nu, mu, L)</code>. Stronger signal decay (<code>mu = 5</code>) and a longer
+domain (<code>L = 2</code>) push the threshold down to <code>[3.5, 4]</code>.</p>
+<p>Both parameter families reported in the manuscript use <code>gamma = 1</code>, which is why
+the issue does not appear there.</p>
+<h2 id="what-happens-when-c-0">What happens when <code>C &lt; 0</code><a class="headerlink" href="#what-happens-when-c-0" title="Permanent link">&para;</a></h2>
+<p>With <code>A &lt; 0</code> the product of the roots is <code>C/A</code>. While <code>C &gt; 0</code> that product is
+negative, so the roots have opposite signs and exactly one is positive — the
+<code>beta^+</code> of the classification. Once <code>C &lt; 0</code> the product turns positive, the
+negative root crosses the origin, and there are <strong>two</strong> positive roots
+<code>0 &lt; beta_1 &lt; beta_2</code>. The direction pattern becomes subcritical, supercritical,
+subcritical.</p>
+<p>Representative admissible case, base family at <code>gamma = 5</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>A = -0.101009    B = +16.314390    C = -6.996476
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>positive roots:  beta_1 = 0.4300 ,  beta_2 = 161.085
+</code></pre></div>
+<h3 id="the-second-root-is-not-physical-the-first-one-is">The second root is not physical; the first one is<a class="headerlink" href="#the-second-root-is-not-physical-the-first-one-is" title="Permanent link">&para;</a></h3>
+<p><code>beta_2</code> is large in every case located here — 67.65 at best, up to <code>4.7e7</code>.
+There is a structural reason: the root sum is <code>B/|A|</code>, and <code>B</code> dominates <code>|A|</code>
+throughout the <code>C &lt; 0</code> region, so no search in this family will produce a
+moderate second root.</p>
+<p>The consequence that matters is therefore <strong><code>beta_1</code></strong>, which ranges over
+roughly <code>0.04 .. 1.1</code> in the physically sensible families. On <code>[0, beta_1)</code> the
+bifurcation is subcritical — an inversion relative to the <code>C &gt; 0</code> picture, at
+ordinary values of the desensitization exponent.</p>
+<h2 id="why-the-threshold-is-governed-by-gamma">Why the threshold is governed by <code>gamma</code><a class="headerlink" href="#why-the-threshold-is-governed-by-gamma" title="Permanent link">&para;</a></h2>
+<p>Setting <code>beta = 0</code> in the assembled cubic coefficient gives an <strong>exact identity</strong>
+splitting <code>C</code> into two competing parts:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>C  =  [ c_1 (4 a_{0,1} + 2 a_{2n_0,1}) + c_3 ]   -   chi^* Gamma_{n_0}^{(3)}
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>      \________ logistic ________/                  \___ chemotactic ___/
+</code></pre></div>
+<p><code>c_3</code> carries the factor <code>alpha - 1</code>, so it vanishes identically in the
+quadratic-logistic case <code>alpha = 1</code>. Since <code>chi^* &gt; 0</code>, the chemotactic term
+carries the sign of <code>-Gamma_{n_0}^{(3)}</code>.</p>
+<p>Across the crossing at <code>gamma ~ 4.25</code> in the base family the two parts behave
+very differently:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>at <code>gamma = 4.25</code></th>
+<th>at <code>gamma = 4.5</code></th>
+<th>change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>logistic</td>
+<td>−0.3106</td>
+<td>−0.2853</td>
+<td><strong>+0.025</strong></td>
+</tr>
+<tr>
+<td>chemotactic</td>
+<td>+0.3491</td>
+<td>−1.7825</td>
+<td><strong>−2.13</strong></td>
+</tr>
+<tr>
+<td><code>C</code></td>
+<td>+0.0385</td>
+<td>−2.0678</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><code>Gamma_{n_0}^{(3)}</code> itself changes sign there (−0.124 → +0.670). The chemotactic
+projection is therefore what destroys <code>C &gt; 0</code>, and it is why the production
+exponent is the controlling parameter.</p>
+<h3 id="what-is-not-true">What is NOT true<a class="headerlink" href="#what-is-not-true" title="Permanent link">&para;</a></h3>
+<p>The attractive clean statement — <em>"<code>C &gt; 0</code> requires <code>Gamma_{n_0}^{(3)} &lt; 0</code>"</em>,
+which would follow if the logistic term were always negative — is <strong>false</strong>.
+A scope scan of <strong>72 admissible points</strong> (<code>scope_scan</code> in the data file) found:</p>
+<ul>
+<li>the logistic term <strong>non-negative at 12 points</strong>, all with <code>m = 2</code>;</li>
+<li><code>sign(C)</code> differing from <code>sign(-Gamma_{n_0}^{(3)})</code> at <strong>2 points</strong>.</li>
+</ul>
+<p>So neither part is sign-definite. The decomposition is an identity; the
+dominance of the chemotactic term is an empirical statement about the sampled
+range, not a theorem. This is recorded because the clean version is the natural
+thing to assume and it does not hold.</p>
+<h2 id="caveats">Caveats<a class="headerlink" href="#caveats" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>gamma_critical_bracket</code> in the data is a <strong>grid bracket</strong>, not a solved root.
+  <code>C</code> is sampled at the listed <code>gamma</code> values only.</li>
+<li>Rows with <code>b = 5</code> in the wider working-repository scan are unphysical on
+  <strong>both</strong> roots (<code>beta_1</code> from 56.6 up to <code>2.1e5</code>) and should not be cited as
+  evidence. They are excluded from the families above.</li>
+<li>Admissibility here means: <code>n_0</code> is the unique minimiser of <code>chi_n(u*)</code>,
+  <code>sigma_{2n_0}(chi*) &lt; 0</code>, and <code>u*, v*, chi* &gt; 0</code>. It does <strong>not</strong> assert that a
+  family is physically interesting.</li>
+</ul>
+<h2 id="data-and-reproduction">Data and reproduction<a class="headerlink" href="#data-and-reproduction" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Data: <a href="../../data/paper-iii-c-sign-decomposition.json"><code>paper-iii-c-sign-decomposition.json</code></a>
+  — the <code>gamma</code> sweep of the two parts plus the 72-point <code>scope_scan</code>.</li>
+<li>Data: <a href="../../data/paper-iii-c-sign-scan.json"><code>paper-iii-c-sign-scan.json</code></a> —
+  96 records with <code>A</code>, <code>B</code>, <code>C</code>, positive roots, admissibility verdict and the
+  minimising mode for every point.</li>
+<li>Reproducers, in the Paper III working repository:</li>
+<li><code>codes/c_sign_probe.py</code> — single-point evaluation with the admissibility screen</li>
+<li><code>codes/c_sign_region_sweep.py</code> — the eight-family sweep that produced this data</li>
+<li><code>codes/two_roots_hunt.py</code> — direct bracketing of the two roots</li>
+<li><code>codes/plot_c_sign.py</code> — the manuscript figure</li>
+</ul>
+<h2 id="when-beta_n0-stays-negative-for-every-beta">When <code>beta_n0</code> stays negative for every <code>beta</code><a class="headerlink" href="#when-beta_n0-stays-negative-for-every-beta" title="Permanent link">&para;</a></h2>
+<p>Wenxian Shen asked (2026-08-13) whether the sub-case</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>C &lt; 0   and   beta_n0(beta) &lt; 0  for all beta &gt;= 0
+</code></pre></div>
+<p>can occur, or is excluded. It <strong>occurs</strong>, on an open set of admissible
+parameters, so the <code>C &lt; 0</code> branch splits into two genuinely different patterns
+rather than one.</p>
+<h3 id="criterion">Criterion<a class="headerlink" href="#criterion" title="Permanent link">&para;</a></h3>
+<p>With <code>A &lt; 0</code> the parabola opens downward, and <code>C &lt; 0</code> puts <code>beta_n0(0)</code> below
+the axis, so <code>beta_n0</code> can reach <code>[0, infinity)</code> only through a positive root.
+The roots multiply to <code>C/A &gt; 0</code> and therefore share a sign, and they sum to
+<code>-B/A</code>. Hence, writing <code>D = B^2 - 4AC</code>:</p>
+<table>
+<thead>
+<tr>
+<th>condition</th>
+<th>pattern</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>B &lt;= 0</code></td>
+<td><code>beta_n0 &lt; 0</code> on all of <code>beta &gt;= 0</code> — subcritical throughout</td>
+</tr>
+<tr>
+<td><code>B &gt; 0</code> and <code>D &lt; 0</code></td>
+<td><code>beta_n0 &lt; 0</code> on all of <code>beta &gt;= 0</code> — subcritical throughout</td>
+</tr>
+<tr>
+<td><code>B &gt; 0</code> and <code>D &gt;= 0</code></td>
+<td>two positive roots <code>beta_1 &lt; beta_2</code> — sub / super / sub</td>
+</tr>
+</tbody>
+</table>
+<p>So the case is <strong>not</strong> excluded by sign considerations; the question is whether
+the admissible region reaches it.</p>
+<h3 id="witness">Witness<a class="headerlink" href="#witness" title="Permanent link">&para;</a></h3>
+<p><code>a = b = m = gamma = nu = mu = L = 1</code> with <code>alpha = 5</code>, admissible, minimising
+index <code>n_0 = 1</code>, <code>sigma_{2n_0}(chi*) = -28.5068</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>A = -0.00613654      B = -11.4039      C = -2.92797
+</code></pre></div>
+<p>All three coefficients are negative, so <code>beta_n0(beta) &lt; 0</code> for every
+<code>beta &gt;= 0</code> immediately. Confirmed by evaluating <code>beta_n0</code> directly, not through
+<code>A, B, C</code>:</p>
+<table>
+<thead>
+<tr>
+<th><code>beta</code></th>
+<th>0</th>
+<th>1</th>
+<th>5</th>
+<th>50</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>beta_n0</code></td>
+<td>-2.92797</td>
+<td>-14.338</td>
+<td>-60.1009</td>
+<td>-588.464</td>
+</tr>
+</tbody>
+</table>
+<p>This family sits at <code>gamma = 1</code>, the value both manuscript families already use,
+and differs from the two-root counterexample only in <code>(alpha, gamma)</code>.</p>
+<h3 id="how-large-the-region-is">How large the region is<a class="headerlink" href="#how-large-the-region-is" title="Permanent link">&para;</a></h3>
+<p>175 admissible-screened points across five targeted 2-D sweeps crossing <code>alpha</code>
+against the knobs that drive <code>C</code> negative (<code>m</code>, <code>b</code>, <code>a</code>, <code>mu</code>, <code>gamma</code>). The
+grid was deliberately built to <em>realise</em> the case rather than to reconfirm the
+reference point — a "not found" from a confirmatory grid would carry no
+information.</p>
+<table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>points evaluated</td>
+<td>175</td>
+</tr>
+<tr>
+<td>with <code>C &lt; 0</code></td>
+<td>59</td>
+</tr>
+<tr>
+<td>realising the case</td>
+<td>41</td>
+</tr>
+<tr>
+<td>of those, admissible</td>
+<td>41 (all)</td>
+</tr>
+<tr>
+<td>admissible points with <code>A &gt;= 0</code></td>
+<td>0</td>
+</tr>
+<tr>
+<td><code>alpha</code> values realising it</td>
+<td>3, 4, 5, 6, 8</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Mechanism.</strong> All 41 realisations arrive through <code>B &lt;= 0</code>; none through
+<code>D &lt; 0</code>. The closest approach to a negative discriminant (<code>D ~ 0.27</code> at
+<code>alpha = 8</code>, <code>mu = 100</code>) was inadmissible. So it is the sign of <code>B</code>, not the
+discriminant, that selects between the two patterns. <code>alpha</code> is what drives <code>B</code>
+negative, but it pushes <code>C</code> positive at the same time, which is why the sweeps
+cross <code>alpha</code> against the <code>C</code>-negative knobs.</p>
+<h3 id="data-and-reproduction_1">Data and reproduction<a class="headerlink" href="#data-and-reproduction_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Data: <a href="../../data/paper-iii-beta-n0-all-negative.json"><code>paper-iii-beta-n0-all-negative.json</code></a>
+  — all 175 records with <code>A</code>, <code>B</code>, <code>C</code>, <code>D</code>, admissibility and the sweep name,
+  plus the 41 hits and a summary block.</li>
+<li>Data: <a href="../../data/paper-iii-beta-n0-sensitivity.json"><code>paper-iii-beta-n0-sensitivity.json</code></a>
+  — the one-at-a-time pass that located <code>alpha</code> as the knob flipping <code>B</code>.</li>
+<li>Reproducer, in the Paper III working repository:
+  <code>codes/beta_n0_all_negative_hunt.py --mode hunt</code>.</li>
+</ul>
+<h2 id="where-the-supercritical-window-lives">Where the supercritical window lives<a class="headerlink" href="#where-the-supercritical-window-lives" title="Permanent link">&para;</a></h2>
+<p>The organising object is not the sign of a coefficient but the <strong>supercritical
+window</strong> itself. Since <code>A &lt; 0</code> throughout the admissible range,</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>{ beta &gt;= 0 : beta_n0(beta) &gt; 0 }
+</code></pre></div>
+<p>is exactly the part of the interval between the two roots that lies in
+<code>[0, infinity)</code>. With <code>D = B^2 - 4AC</code> and <code>beta_pm = (B -+ sqrt(D)) / (2|A|)</code>:</p>
+<table>
+<thead>
+<tr>
+<th>condition</th>
+<th>window</th>
+<th>is <code>beta = 0</code> inside?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>C &gt; 0</code></td>
+<td><code>[0, beta_+)</code></td>
+<td><strong>yes</strong></td>
+</tr>
+<tr>
+<td><code>C &lt; 0</code>, <code>B &gt; 0</code>, <code>D &gt; 0</code></td>
+<td><code>(beta_-, beta_+)</code></td>
+<td><strong>no</strong></td>
+</tr>
+<tr>
+<td>otherwise</td>
+<td><strong>empty</strong></td>
+<td>subcritical for every <code>beta &gt;= 0</code></td>
+</tr>
+</tbody>
+</table>
+<p>So the sign of <code>C</code> decides only <em>whether <code>beta = 0</code> sits inside the window</em>.
+Note <code>D = 0</code> leaves the window <strong>empty</strong> rather than degenerate, since the two
+roots coincide.</p>
+<h3 id="sweep">Sweep<a class="headerlink" href="#sweep" title="Permanent link">&para;</a></h3>
+<p>82 points, eight parameters, each varied with the others held at
+<code>a = b = m = gamma = nu = mu = L = 1</code>, <code>n_0 = 1</code>. <strong>This is the first sweep in
+which <code>nu</code> and <code>L</code> were varied at all</strong> — both had previously been pinned at 1.</p>
+<table>
+<thead>
+<tr>
+<th>parameter</th>
+<th>points</th>
+<th>admissible</th>
+<th>nonempty window</th>
+<th>window empty at</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>gamma</code></td>
+<td>15</td>
+<td>15</td>
+<td>15</td>
+<td>--</td>
+</tr>
+<tr>
+<td><code>alpha</code></td>
+<td>13</td>
+<td>13</td>
+<td>9</td>
+<td>5, 6, 7, 8</td>
+</tr>
+<tr>
+<td><code>m</code></td>
+<td>11</td>
+<td>11</td>
+<td>11</td>
+<td>--</td>
+</tr>
+<tr>
+<td><code>b</code></td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+<td>--</td>
+</tr>
+<tr>
+<td><code>mu</code></td>
+<td>8</td>
+<td>8</td>
+<td>8</td>
+<td>--</td>
+</tr>
+<tr>
+<td><code>nu</code></td>
+<td>8</td>
+<td>8</td>
+<td>8</td>
+<td>--</td>
+</tr>
+<tr>
+<td><code>L</code></td>
+<td>9</td>
+<td>7</td>
+<td>7</td>
+<td>--</td>
+</tr>
+<tr>
+<td><code>a</code></td>
+<td>8</td>
+<td>8</td>
+<td>8</td>
+<td>--</td>
+</tr>
+</tbody>
+</table>
+<p>Two things stand out. <code>A &lt; 0</code> held at <strong>every</strong> admissible point, now including
+the <code>nu</code> and <code>L</code> directions that had never been probed. And <strong><code>alpha</code> is the
+only parameter in the sweep that closes the window</strong>: every other parameter
+keeps a nonempty supercritical window across its whole admissible range.</p>
+<p>As always this is a bounded search along one-parameter families, not a claim
+about the whole admissible set.</p>
+<h3 id="figures">Figures<a class="headerlink" href="#figures" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="../figs/paper3-regime-windows.pdf"><code>paper3-regime-windows.pdf</code></a> — eight panels,
+  <code>beta</code> on the horizontal axis (log), swept parameter on the vertical; the
+  band is the supercritical window, red dashed curves are the roots, grey
+  dotted rows are inadmissible.</li>
+<li><a href="../figs/paper3-regime-parabolas.pdf"><code>paper3-regime-parabolas.pdf</code></a> — monic
+  families <code>beta_n0/|A|</code>; dividing by <code>|A| &gt; 0</code> preserves sign and roots
+  exactly while making curves of very different magnitude comparable.</li>
+</ul>
+<h3 id="data-and-reproduction_2">Data and reproduction<a class="headerlink" href="#data-and-reproduction_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Data: <a href="../../data/paper-iii-regime-sweep.json"><code>paper-iii-regime-sweep.json</code></a> —
+  all 82 records with <code>A</code>, <code>B</code>, <code>C</code>, <code>D</code>, roots, window and admissibility.</li>
+<li>Reproducer, in the Paper III working repository:
+  <code>codes/paper3_regime_maps.py --sweep</code> then <code>--figures</code>.</li>
+</ul>
+<h3 id="the-collapsed-picture-and-the-single-number-kappa">The collapsed picture, and the single number <code>kappa</code><a class="headerlink" href="#the-collapsed-picture-and-the-single-number-kappa" title="Permanent link">&para;</a></h3>
+<p>On the physically relevant window the cubic coefficient is <strong>effectively
+affine</strong> in <code>beta</code>, not visibly quadratic: the vertex sits at
+<code>beta = S/2 = B/(2|A|)</code>, which for the families above is at 80, 326, 929 and
+1328 -- never inside <code>[0,3]</code>. The <code>beta^2</code> term contributes at most 9 there
+while <code>S*beta</code> contributes hundreds.</p>
+<p>Rescaling to <code>u = beta/S</code> collapses every family onto a one-parameter curve</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>beta_n0 / (|A| S^2)  =  -u^2 + u - kappa,        kappa := A*C / B^2
+</code></pre></div>
+<p>with vertex always at <code>u = 1/2</code>. The classification is then a single
+dimensionless number:</p>
+<table>
+<thead>
+<tr>
+<th><code>kappa</code></th>
+<th>pattern</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>kappa &lt; 0</code> (i.e. <code>C &gt; 0</code>)</td>
+<td>one positive root</td>
+</tr>
+<tr>
+<td><code>0 &lt; kappa &lt; 1/4</code>, <code>B &gt; 0</code></td>
+<td>two positive roots</td>
+</tr>
+<tr>
+<td><code>kappa = 1/4</code></td>
+<td>double root, the degenerate case</td>
+</tr>
+<tr>
+<td><code>kappa &gt; 1/4</code>, or <code>B &lt; 0</code></td>
+<td>none -- subcritical throughout</td>
+</tr>
+</tbody>
+</table>
+<p>This unifies the discriminant study above: <code>1/(4 kappa)</code> is exactly the
+<code>B^2/(4AC)</code> margin, so the minimum margin <code>5.321</code> reported there corresponds to
+<code>kappa ~ 0.047</code>, well below the <code>1/4</code> required for a double root.</p>
+<p>The bottom row of
+<a href="../figs/paper3-regime-parabolas.pdf"><code>paper3-regime-parabolas.pdf</code></a> shows the
+collapsed curves against a dashed <code>kappa = 1/4</code> reference, so each family's
+distance from degeneracy is visible directly.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2026 Le Chen, Ian Ruau, and Wenxian Shen · Numerical material and documentation CC BY 4.0 · Formal-verification code MIT
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.top", "content.code.copy", "content.tooltips", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+        <script src="../../assets/javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

@@ -276,18 +276,18 @@ bundle's own `fit-summary.json`; the site cannot disagree with the artifacts.
 
 | Case | family | L | n₀ | β | closed-form β_{n₀} | measured c₂ (finest) | order | gates | regime |
 |---|---|---:|---:|---:|---:|---:|---:|:---:|---|
-| [`hm-a10-g1-L3p5-n2-beta0`](paper-iii/stationary-continuation/candidates/hm-a10-g1-L3p5-n2-beta0/) | a=10, &gamma;=1 | 3.5 | 2 | 0 | +0.118097 | +0.015458 | 2.001 | 183/183 | supercritical |
-| [`hm-a10-g1-L3p5-n2-beta2`](paper-iii/stationary-continuation/candidates/hm-a10-g1-L3p5-n2-beta2/) | a=10, &gamma;=1 | 3.5 | 2 | 2 | -0.094491 | -1.498507 | 1.975 | 123/123 | subcritical |
-| [`hm-a10-g1-L5p3-n3-beta0`](paper-iii/stationary-continuation/candidates/hm-a10-g1-L5p3-n3-beta0/) | a=10, &gamma;=1 | 5.3 | 3 | 0 | +0.121382 | +0.015951 | 1.999 | 183/183 | supercritical |
-| [`hm-a10-g1-L5p3-n3-beta2`](paper-iii/stationary-continuation/candidates/hm-a10-g1-L5p3-n3-beta2/) | a=10, &gamma;=1 | 5.3 | 3 | 2 | -0.094990 | -1.513524 | 1.963 | 123/123 | subcritical |
-| [`hm-m05-g2-L5p3-n2-beta1`](paper-iii/stationary-continuation/candidates/hm-m05-g2-L5p3-n2-beta1/) | m=0.5, &gamma;=2 | 5.3 | 2 | 1 | +0.261571 | +0.447162 | 1.997 | 123/123 | supercritical |
-| [`hm-m05-g2-L5p3-n2-beta2`](paper-iii/stationary-continuation/candidates/hm-m05-g2-L5p3-n2-beta2/) | m=0.5, &gamma;=2 | 5.3 | 2 | 2 | -0.447701 | -1.536975 | 2.005 | 123/123 | subcritical |
-| [`hm-m05-g2-L8-n3-beta1`](paper-iii/stationary-continuation/candidates/hm-m05-g2-L8-n3-beta1/) | m=0.5, &gamma;=2 | 8 | 3 | 1 | +0.253238 | +0.434907 | 1.996 | 123/123 | supercritical |
-| [`hm-m05-g2-L8-n3-beta2`](paper-iii/stationary-continuation/candidates/hm-m05-g2-L8-n3-beta2/) | m=0.5, &gamma;=2 | 8 | 3 | 2 | -0.457315 | -1.580808 | 2.008 | 123/123 | subcritical |
-| [`hm-m2-g2-L5p3-n2-beta1`](paper-iii/stationary-continuation/candidates/hm-m2-g2-L5p3-n2-beta1/) | m=2, &gamma;=2 | 5.3 | 2 | 1 | +2.262242 | +3.867491 | 2.000 | 183/183 | supercritical |
-| [`hm-m2-g2-L5p3-n2-beta6`](paper-iii/stationary-continuation/candidates/hm-m2-g2-L5p3-n2-beta6/) | m=2, &gamma;=2 | 5.3 | 2 | 6 | -1.351263 | -74.254250 | 2.007 | 123/123 | subcritical |
-| [`xover-m05-g2-L5p3-n2-beta0`](paper-iii/stationary-continuation/candidates/xover-m05-g2-L5p3-n2-beta0/) | m=0.5, &gamma;=2 | 5.3 | 2 | 0 | +0.750722 | +0.641305 | 2.000 | 183/183 | supercritical |
-| [`xover-m05-g2-L5p3-n2-beta3`](paper-iii/stationary-continuation/candidates/xover-m05-g2-L5p3-n2-beta3/) | m=0.5, &gamma;=2 | 5.3 | 2 | 3 | -1.377093 | -9.441942 | 2.001 | 183/183 | subcritical |
+| [`hm-a10-g1-L3p5-n2-beta0`](https://github.com/chenle02/Chemataxis_Numerics/tree/master/docs/results/paper-iii/stationary-continuation/candidates/hm-a10-g1-L3p5-n2-beta0) | a=10, &gamma;=1 | 3.5 | 2 | 0 | +0.118097 | +0.015458 | 2.001 | 183/183 | supercritical |
+| [`hm-a10-g1-L3p5-n2-beta2`](https://github.com/chenle02/Chemataxis_Numerics/tree/master/docs/results/paper-iii/stationary-continuation/candidates/hm-a10-g1-L3p5-n2-beta2) | a=10, &gamma;=1 | 3.5 | 2 | 2 | -0.094491 | -1.498507 | 1.975 | 123/123 | subcritical |
+| [`hm-a10-g1-L5p3-n3-beta0`](https://github.com/chenle02/Chemataxis_Numerics/tree/master/docs/results/paper-iii/stationary-continuation/candidates/hm-a10-g1-L5p3-n3-beta0) | a=10, &gamma;=1 | 5.3 | 3 | 0 | +0.121382 | +0.015951 | 1.999 | 183/183 | supercritical |
+| [`hm-a10-g1-L5p3-n3-beta2`](https://github.com/chenle02/Chemataxis_Numerics/tree/master/docs/results/paper-iii/stationary-continuation/candidates/hm-a10-g1-L5p3-n3-beta2) | a=10, &gamma;=1 | 5.3 | 3 | 2 | -0.094990 | -1.513524 | 1.963 | 123/123 | subcritical |
+| [`hm-m05-g2-L5p3-n2-beta1`](https://github.com/chenle02/Chemataxis_Numerics/tree/master/docs/results/paper-iii/stationary-continuation/candidates/hm-m05-g2-L5p3-n2-beta1) | m=0.5, &gamma;=2 | 5.3 | 2 | 1 | +0.261571 | +0.447162 | 1.997 | 123/123 | supercritical |
+| [`hm-m05-g2-L5p3-n2-beta2`](https://github.com/chenle02/Chemataxis_Numerics/tree/master/docs/results/paper-iii/stationary-continuation/candidates/hm-m05-g2-L5p3-n2-beta2) | m=0.5, &gamma;=2 | 5.3 | 2 | 2 | -0.447701 | -1.536975 | 2.005 | 123/123 | subcritical |
+| [`hm-m05-g2-L8-n3-beta1`](https://github.com/chenle02/Chemataxis_Numerics/tree/master/docs/results/paper-iii/stationary-continuation/candidates/hm-m05-g2-L8-n3-beta1) | m=0.5, &gamma;=2 | 8 | 3 | 1 | +0.253238 | +0.434907 | 1.996 | 123/123 | supercritical |
+| [`hm-m05-g2-L8-n3-beta2`](https://github.com/chenle02/Chemataxis_Numerics/tree/master/docs/results/paper-iii/stationary-continuation/candidates/hm-m05-g2-L8-n3-beta2) | m=0.5, &gamma;=2 | 8 | 3 | 2 | -0.457315 | -1.580808 | 2.008 | 123/123 | subcritical |
+| [`hm-m2-g2-L5p3-n2-beta1`](https://github.com/chenle02/Chemataxis_Numerics/tree/master/docs/results/paper-iii/stationary-continuation/candidates/hm-m2-g2-L5p3-n2-beta1) | m=2, &gamma;=2 | 5.3 | 2 | 1 | +2.262242 | +3.867491 | 2.000 | 183/183 | supercritical |
+| [`hm-m2-g2-L5p3-n2-beta6`](https://github.com/chenle02/Chemataxis_Numerics/tree/master/docs/results/paper-iii/stationary-continuation/candidates/hm-m2-g2-L5p3-n2-beta6) | m=2, &gamma;=2 | 5.3 | 2 | 6 | -1.351263 | -74.254250 | 2.007 | 123/123 | subcritical |
+| [`xover-m05-g2-L5p3-n2-beta0`](https://github.com/chenle02/Chemataxis_Numerics/tree/master/docs/results/paper-iii/stationary-continuation/candidates/xover-m05-g2-L5p3-n2-beta0) | m=0.5, &gamma;=2 | 5.3 | 2 | 0 | +0.750722 | +0.641305 | 2.000 | 183/183 | supercritical |
+| [`xover-m05-g2-L5p3-n2-beta3`](https://github.com/chenle02/Chemataxis_Numerics/tree/master/docs/results/paper-iii/stationary-continuation/candidates/xover-m05-g2-L5p3-n2-beta3) | m=0.5, &gamma;=2 | 5.3 | 2 | 3 | -1.377093 | -9.441942 | 2.001 | 183/183 | subcritical |
 
 `c₂` is the measured branch slope at the finest mesh and `β_{n₀}` the
 closed-form cubic coefficient; they carry the same sign because
